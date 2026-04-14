@@ -1,0 +1,1285 @@
+{
+  "pid_analysis": {
+    "pid_id": "568c3d37",
+    "source_type": "dexpi",
+    "source_file": "D:\\SafePLCGen\\Patch Evaluation\\Part A four DEXPI XML files from three repositories\\DEXPI-1 DEXPI Reference P&ID (complex)\\C01V04-VER.EX01.xml",
+    "timestamp": "2026-04-14T20:41:04.311668",
+    "equipment": [
+      {
+        "id": "358402e3-21aa-4184-9452-f8498ae8987d",
+        "tag": "H1007",
+        "component_type": "equipment",
+        "label": "H1007",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "subtype": "other",
+        "nozzles": [
+          "0c977408-1d2c-4b79-b292-5064505f8b2f",
+          "26a5099d-8d12-4c73-900f-5645a890e4e2",
+          "e1e35f77-3c24-44c8-bfb5-621642e8a3c2",
+          "c1b3a8d8-c6de-42f4-a45b-c081b7ebe492"
+        ]
+      },
+      {
+        "id": "3a4a77a3-e657-43b6-a85f-f2b03a57aaf9",
+        "tag": "H1008",
+        "component_type": "equipment",
+        "label": "H1008",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "subtype": "other",
+        "nozzles": [
+          "a19a2b3e-449f-4516-a8d9-8fa2367ead76",
+          "3a026f02-7b20-4327-b5a8-ba01187d687a",
+          "cd0178d8-4ea4-40a2-a127-f2c13b52db6c",
+          "3cb1dcd9-3a5d-4159-acd2-53e0da4b302d"
+        ]
+      },
+      {
+        "id": "e0513ed2-1b5c-4123-8af5-050e2d38943a",
+        "tag": "P4711",
+        "component_type": "equipment",
+        "label": "P4711",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "subtype": "pump",
+        "nozzles": [
+          "bbbd5025-053f-49c7-b5c8-9c43abda0295",
+          "bc603367-0db8-4098-92f1-557758f8690e"
+        ]
+      },
+      {
+        "id": "0cdba05d-65f1-45f3-bea4-cf9459f93d3b",
+        "tag": "P4712",
+        "component_type": "equipment",
+        "label": "P4712",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "subtype": "other",
+        "nozzles": [
+          "5ca0e004-33f8-4b8c-8737-8ea884dca285",
+          "9fe0dfbe-ed97-48db-b970-41ce5b80fed5"
+        ]
+      },
+      {
+        "id": "8b32e5de-30be-4c82-965b-f6563220c659",
+        "tag": "T4750",
+        "component_type": "equipment",
+        "label": "T4750",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "subtype": "tank",
+        "nozzles": [
+          "91caae5c-c18b-463b-a284-a27350151136",
+          "51aa5222-2b2c-419c-a5ef-5c5a5c8a046f",
+          "a326baf9-8165-41ed-beaa-4ab4c7b6f17b",
+          "d07b724e-4897-49da-a7c1-ca2d64e5355c",
+          "43f9bbb3-9807-4a2e-b173-eff0b8cc63bf",
+          "3f2a1939-a95e-4899-8530-6358e7a28c20",
+          "124e1f6a-11c5-453e-9ca0-e13de5a7945b"
+        ]
+      }
+    ],
+    "instruments": [
+      {
+        "id": "ProcessInstrumentationFunction-1",
+        "tag": "PI-4712.01",
+        "component_type": "instrument",
+        "label": "PI-4712.01",
+        "description": "PI-4712.01 — Field",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "measured_variable": "P",
+        "function": "I",
+        "loop_number": "4712.01",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "ProcessInstrumentationFunction-2",
+        "tag": "PICSA-4712.02",
+        "component_type": "instrument",
+        "label": "PICSA-4712.02",
+        "description": "PICSA-4712.02 — CentralLocation",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "measured_variable": "P",
+        "function": "C",
+        "loop_number": "4712.02",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "ProcessInstrumentationFunction-3",
+        "tag": "HS-4750.01",
+        "component_type": "instrument",
+        "label": "HS-4750.01",
+        "description": "HS-4750.01 — CentralLocation",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "measured_variable": null,
+        "function": "S",
+        "loop_number": "4750.01",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "ProcessInstrumentationFunction-4",
+        "tag": "TICSA-4750.03",
+        "component_type": "instrument",
+        "label": "TICSA-4750.03",
+        "description": "TICSA-4750.03 — CentralLocation",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "measured_variable": "T",
+        "function": "C",
+        "loop_number": "4750.03",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      }
+    ],
+    "valves": [
+      {
+        "id": "ActuatingSystem-1",
+        "tag": "PV4712.02",
+        "component_type": "valve",
+        "label": "PV4712.02",
+        "description": "PV4712.02",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "valve_type": "control",
+        "fail_position": "",
+        "actuator_type": "",
+        "sil_level": 0
+      },
+      {
+        "id": "ActuatingSystem-2",
+        "tag": "HV4750.01",
+        "component_type": "valve",
+        "label": "HV4750.01",
+        "description": "HV4750.01",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "valve_type": "manual",
+        "fail_position": "",
+        "actuator_type": "",
+        "sil_level": 0
+      },
+      {
+        "id": "ActuatingSystem-3",
+        "tag": "TV4750.03",
+        "component_type": "valve",
+        "label": "TV4750.03",
+        "description": "TV4750.03",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "valve_type": "control",
+        "fail_position": "",
+        "actuator_type": "",
+        "sil_level": 0
+      }
+    ],
+    "piping": [
+      {
+        "id": "2f78c098-a0f8-462c-9fc0-5e6086979908",
+        "tag": "2f78c098-a0f8-462c-9fc0-5e6086979908",
+        "component_type": "piping",
+        "label": "2f78c098-a0f8-462c-9fc0-5e6086979908",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "2f78c098-a0f8-462c-9fc0-5e6086979908",
+        "flow_direction": ""
+      },
+      {
+        "id": "31e998b1-9987-431c-af61-d5ddbb2a8c90",
+        "tag": "31e998b1-9987-431c-af61-d5ddbb2a8c90",
+        "component_type": "piping",
+        "label": "31e998b1-9987-431c-af61-d5ddbb2a8c90",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "31e998b1-9987-431c-af61-d5ddbb2a8c90",
+        "flow_direction": ""
+      },
+      {
+        "id": "6c00b36f-b497-47c8-bad9-dbf9ba1e777d",
+        "tag": "6c00b36f-b497-47c8-bad9-dbf9ba1e777d",
+        "component_type": "piping",
+        "label": "6c00b36f-b497-47c8-bad9-dbf9ba1e777d",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "6c00b36f-b497-47c8-bad9-dbf9ba1e777d",
+        "flow_direction": ""
+      },
+      {
+        "id": "8c7156d4-9178-4cfa-adcf-79168bf108dd",
+        "tag": "8c7156d4-9178-4cfa-adcf-79168bf108dd",
+        "component_type": "piping",
+        "label": "8c7156d4-9178-4cfa-adcf-79168bf108dd",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "8c7156d4-9178-4cfa-adcf-79168bf108dd",
+        "flow_direction": ""
+      },
+      {
+        "id": "007d4b14-f59e-4252-9729-4274d50472f5",
+        "tag": "007d4b14-f59e-4252-9729-4274d50472f5",
+        "component_type": "piping",
+        "label": "007d4b14-f59e-4252-9729-4274d50472f5",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "007d4b14-f59e-4252-9729-4274d50472f5",
+        "flow_direction": ""
+      },
+      {
+        "id": "4fd52b5b-3e43-4ec3-99bb-866d0a1018bb",
+        "tag": "4fd52b5b-3e43-4ec3-99bb-866d0a1018bb",
+        "component_type": "piping",
+        "label": "4fd52b5b-3e43-4ec3-99bb-866d0a1018bb",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "4fd52b5b-3e43-4ec3-99bb-866d0a1018bb",
+        "flow_direction": ""
+      },
+      {
+        "id": "6abc51ea-65f9-42e5-a018-e598471d495f",
+        "tag": "6abc51ea-65f9-42e5-a018-e598471d495f",
+        "component_type": "piping",
+        "label": "6abc51ea-65f9-42e5-a018-e598471d495f",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "6abc51ea-65f9-42e5-a018-e598471d495f",
+        "flow_direction": ""
+      },
+      {
+        "id": "dbf449b3-a6e0-4434-8d4a-bf7eee47a33f",
+        "tag": "dbf449b3-a6e0-4434-8d4a-bf7eee47a33f",
+        "component_type": "piping",
+        "label": "dbf449b3-a6e0-4434-8d4a-bf7eee47a33f",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "dbf449b3-a6e0-4434-8d4a-bf7eee47a33f",
+        "flow_direction": ""
+      },
+      {
+        "id": "d8e67086-cabe-4e10-978e-1583ae77b35c",
+        "tag": "d8e67086-cabe-4e10-978e-1583ae77b35c",
+        "component_type": "piping",
+        "label": "d8e67086-cabe-4e10-978e-1583ae77b35c",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "d8e67086-cabe-4e10-978e-1583ae77b35c",
+        "flow_direction": ""
+      },
+      {
+        "id": "3e5f9db5-e7d1-4d4e-a17e-9361c6e61175",
+        "tag": "3e5f9db5-e7d1-4d4e-a17e-9361c6e61175",
+        "component_type": "piping",
+        "label": "3e5f9db5-e7d1-4d4e-a17e-9361c6e61175",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "3e5f9db5-e7d1-4d4e-a17e-9361c6e61175",
+        "flow_direction": ""
+      },
+      {
+        "id": "529a4d21-974f-4c1c-be48-08b49e0118f5",
+        "tag": "529a4d21-974f-4c1c-be48-08b49e0118f5",
+        "component_type": "piping",
+        "label": "529a4d21-974f-4c1c-be48-08b49e0118f5",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "529a4d21-974f-4c1c-be48-08b49e0118f5",
+        "flow_direction": ""
+      },
+      {
+        "id": "a341f5e7-7cf6-4a87-9de4-e41ab46b78b1",
+        "tag": "a341f5e7-7cf6-4a87-9de4-e41ab46b78b1",
+        "component_type": "piping",
+        "label": "a341f5e7-7cf6-4a87-9de4-e41ab46b78b1",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "a341f5e7-7cf6-4a87-9de4-e41ab46b78b1",
+        "flow_direction": ""
+      },
+      {
+        "id": "d2ba360f-16be-4737-b6d4-55feda1f4ee9",
+        "tag": "d2ba360f-16be-4737-b6d4-55feda1f4ee9",
+        "component_type": "piping",
+        "label": "d2ba360f-16be-4737-b6d4-55feda1f4ee9",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "d2ba360f-16be-4737-b6d4-55feda1f4ee9",
+        "flow_direction": ""
+      },
+      {
+        "id": "cae7b12a-069c-4411-b507-18a597df5c4e",
+        "tag": "cae7b12a-069c-4411-b507-18a597df5c4e",
+        "component_type": "piping",
+        "label": "cae7b12a-069c-4411-b507-18a597df5c4e",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "cae7b12a-069c-4411-b507-18a597df5c4e",
+        "flow_direction": ""
+      },
+      {
+        "id": "16c9bd62-de4b-4e2f-b976-ab042f2e18de",
+        "tag": "16c9bd62-de4b-4e2f-b976-ab042f2e18de",
+        "component_type": "piping",
+        "label": "16c9bd62-de4b-4e2f-b976-ab042f2e18de",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "16c9bd62-de4b-4e2f-b976-ab042f2e18de",
+        "flow_direction": ""
+      },
+      {
+        "id": "0f0cc9cd-7fc1-46e9-854c-1155d383aad1",
+        "tag": "0f0cc9cd-7fc1-46e9-854c-1155d383aad1",
+        "component_type": "piping",
+        "label": "0f0cc9cd-7fc1-46e9-854c-1155d383aad1",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "0f0cc9cd-7fc1-46e9-854c-1155d383aad1",
+        "flow_direction": ""
+      },
+      {
+        "id": "3be4bec9-491d-4b70-b7a2-2d8b7c285e18",
+        "tag": "3be4bec9-491d-4b70-b7a2-2d8b7c285e18",
+        "component_type": "piping",
+        "label": "3be4bec9-491d-4b70-b7a2-2d8b7c285e18",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "3be4bec9-491d-4b70-b7a2-2d8b7c285e18",
+        "flow_direction": ""
+      },
+      {
+        "id": "2a6d793a-890c-4b7a-a630-f69a054d2f2a",
+        "tag": "2a6d793a-890c-4b7a-a630-f69a054d2f2a",
+        "component_type": "piping",
+        "label": "2a6d793a-890c-4b7a-a630-f69a054d2f2a",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "2a6d793a-890c-4b7a-a630-f69a054d2f2a",
+        "flow_direction": ""
+      },
+      {
+        "id": "698688d3-cb57-420c-8ac7-6b4d88753f72",
+        "tag": "698688d3-cb57-420c-8ac7-6b4d88753f72",
+        "component_type": "piping",
+        "label": "698688d3-cb57-420c-8ac7-6b4d88753f72",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "698688d3-cb57-420c-8ac7-6b4d88753f72",
+        "flow_direction": ""
+      },
+      {
+        "id": "8c68ffb5-08c4-4016-be01-df596e6a55ba",
+        "tag": "8c68ffb5-08c4-4016-be01-df596e6a55ba",
+        "component_type": "piping",
+        "label": "8c68ffb5-08c4-4016-be01-df596e6a55ba",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "8c68ffb5-08c4-4016-be01-df596e6a55ba",
+        "flow_direction": ""
+      },
+      {
+        "id": "3cda4595-722a-4318-bfff-2511236f3a16",
+        "tag": "3cda4595-722a-4318-bfff-2511236f3a16",
+        "component_type": "piping",
+        "label": "3cda4595-722a-4318-bfff-2511236f3a16",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "3cda4595-722a-4318-bfff-2511236f3a16",
+        "flow_direction": ""
+      },
+      {
+        "id": "73595996-5e47-43d6-87a3-4e7b5c4d8876",
+        "tag": "73595996-5e47-43d6-87a3-4e7b5c4d8876",
+        "component_type": "piping",
+        "label": "73595996-5e47-43d6-87a3-4e7b5c4d8876",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "73595996-5e47-43d6-87a3-4e7b5c4d8876",
+        "flow_direction": ""
+      },
+      {
+        "id": "5db5ebd7-bf38-415b-92bf-e168cf800fce",
+        "tag": "5db5ebd7-bf38-415b-92bf-e168cf800fce",
+        "component_type": "piping",
+        "label": "5db5ebd7-bf38-415b-92bf-e168cf800fce",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 1.0,
+        "from_component": "",
+        "to_component": "",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "5db5ebd7-bf38-415b-92bf-e168cf800fce",
+        "flow_direction": ""
+      }
+    ],
+    "control_loops": [
+      {
+        "id": "bf08e8c9",
+        "loop_number": "4712.01",
+        "loop_type": "",
+        "measured_variable": "P",
+        "controlled_variable": "",
+        "sensor_id": "ProcessInstrumentationFunction-1",
+        "controller_id": "",
+        "actuator_id": "",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "98b986c6",
+        "loop_number": "4712.02",
+        "loop_type": "",
+        "measured_variable": "",
+        "controlled_variable": "",
+        "sensor_id": "",
+        "controller_id": "ProcessInstrumentationFunction-2",
+        "actuator_id": "ActuatingSystem-1",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "6933fe25",
+        "loop_number": "4750.01",
+        "loop_type": "",
+        "measured_variable": "",
+        "controlled_variable": "",
+        "sensor_id": "ProcessInstrumentationFunction-3",
+        "controller_id": "",
+        "actuator_id": "ActuatingSystem-2",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "de22678e",
+        "loop_number": "4750.03",
+        "loop_type": "",
+        "measured_variable": "",
+        "controlled_variable": "",
+        "sensor_id": "",
+        "controller_id": "ProcessInstrumentationFunction-4",
+        "actuator_id": "ActuatingSystem-3",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "358402e3-21aa-4184-9452-f8498ae8987d",
+          "component_type": "equipment",
+          "tag": "H1007",
+          "label": "H1007",
+          "properties": {
+            "subtype": "other"
+          }
+        },
+        {
+          "id": "3a4a77a3-e657-43b6-a85f-f2b03a57aaf9",
+          "component_type": "equipment",
+          "tag": "H1008",
+          "label": "H1008",
+          "properties": {
+            "subtype": "other"
+          }
+        },
+        {
+          "id": "e0513ed2-1b5c-4123-8af5-050e2d38943a",
+          "component_type": "equipment",
+          "tag": "P4711",
+          "label": "P4711",
+          "properties": {
+            "subtype": "pump"
+          }
+        },
+        {
+          "id": "0cdba05d-65f1-45f3-bea4-cf9459f93d3b",
+          "component_type": "equipment",
+          "tag": "P4712",
+          "label": "P4712",
+          "properties": {
+            "subtype": "other"
+          }
+        },
+        {
+          "id": "8b32e5de-30be-4c82-965b-f6563220c659",
+          "component_type": "equipment",
+          "tag": "T4750",
+          "label": "T4750",
+          "properties": {
+            "subtype": "tank"
+          }
+        },
+        {
+          "id": "ProcessInstrumentationFunction-1",
+          "component_type": "instrument",
+          "tag": "PI-4712.01",
+          "label": "PI-4712.01",
+          "properties": {
+            "measured_variable": "P",
+            "function": "I",
+            "plc_io_type": "AI",
+            "loop_number": "4712.01"
+          }
+        },
+        {
+          "id": "ProcessInstrumentationFunction-2",
+          "component_type": "instrument",
+          "tag": "PICSA-4712.02",
+          "label": "PICSA-4712.02",
+          "properties": {
+            "measured_variable": "P",
+            "function": "C",
+            "plc_io_type": "AI",
+            "loop_number": "4712.02"
+          }
+        },
+        {
+          "id": "ProcessInstrumentationFunction-3",
+          "component_type": "instrument",
+          "tag": "HS-4750.01",
+          "label": "HS-4750.01",
+          "properties": {
+            "measured_variable": "",
+            "function": "S",
+            "plc_io_type": "DI",
+            "loop_number": "4750.01"
+          }
+        },
+        {
+          "id": "ProcessInstrumentationFunction-4",
+          "component_type": "instrument",
+          "tag": "TICSA-4750.03",
+          "label": "TICSA-4750.03",
+          "properties": {
+            "measured_variable": "T",
+            "function": "C",
+            "plc_io_type": "AI",
+            "loop_number": "4750.03"
+          }
+        },
+        {
+          "id": "ActuatingSystem-1",
+          "component_type": "valve",
+          "tag": "PV4712.02",
+          "label": "PV4712.02",
+          "properties": {
+            "valve_type": "control",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "ActuatingSystem-2",
+          "component_type": "valve",
+          "tag": "HV4750.01",
+          "label": "HV4750.01",
+          "properties": {
+            "valve_type": "manual",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "ActuatingSystem-3",
+          "component_type": "valve",
+          "tag": "TV4750.03",
+          "label": "TV4750.03",
+          "properties": {
+            "valve_type": "control",
+            "fail_position": ""
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source_id": "ProcessInstrumentationFunction-2",
+          "target_id": "ActuatingSystem-1",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "4712.02"
+          }
+        },
+        {
+          "source_id": "ProcessInstrumentationFunction-3",
+          "target_id": "ActuatingSystem-2",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "4750.01"
+          }
+        },
+        {
+          "source_id": "ProcessInstrumentationFunction-4",
+          "target_id": "ActuatingSystem-3",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "4750.03"
+          }
+        }
+      ]
+    },
+    "extraction_confidence": 1.0,
+    "warnings": [],
+    "raw_vlm_output": null
+  },
+  "generated_code": {
+    "code": "(* Generated by SafePLC-Gen Multimodal — CODESYS 3.5 *)\n(* IEC 61131-3 Structured Text *)\n(* Date: 2026-04-14T20:43:47.878977 *)\n\nPROGRAM Main\nVAR\n    (* AT-addressed I/O variables *)\n    PI_4712_01_Raw               AT %IW0       : INT := 0;\n    PICSA_4712_02_Raw            AT %IW2       : INT := 0;\n    TICSA_4750_03_Raw            AT %IW4       : INT := 0;\n    PV4712_02_Out                AT %QW0       : INT := 0;\n    TV4750_03_Out                AT %QW2       : INT := 0;\n    HS_4750_01                   AT %IX0.0     : BOOL := FALSE;\nEND_VAR\n\nVAR\n    (* Internal variables *)\n    FirstScan                    : BOOL := TRUE;\n    \n    (* Scaled process variables *)\n    PI_4712_01_Scaled            : REAL := 0.0;\n    PICSA_4712_02_Scaled         : REAL := 0.0;\n    TICSA_4750_03_Scaled         : REAL := 0.0;\n    \n    (* Alarm setpoints *)\n    PI_4712_01_HH_SP             : REAL := 150.0;\n    PI_4712_01_H_SP              : REAL := 120.0;\n    PI_4712_01_L_SP              : REAL := 20.0;\n    PI_4712_01_LL_SP             : REAL := 10.0;\n    PI_4712_01_Deadband          : REAL := 2.0;\n    \n    PICSA_4712_02_HH_SP          : REAL := 150.0;\n    PICSA_4712_02_H_SP           : REAL := 120.0;\n    PICSA_4712_02_L_SP           : REAL := 20.0;\n    PICSA_4712_02_LL_SP          : REAL := 10.0;\n    PICSA_4712_02_Deadband       : REAL := 2.0;\n    \n    TICSA_4750_03_HH_SP          : REAL := 200.0;\n    TICSA_4750_03_H_SP           : REAL := 180.0;\n    TICSA_4750_03_L_SP           : REAL := 50.0;\n    TICSA_4750_03_LL_SP          : REAL := 30.0;\n    TICSA_4750_03_Deadband       : REAL := 5.0;\n    \n    (* Alarm states *)\n    PI_4712_01_HH_Latch          : SR := (S1 := FALSE, R := FALSE);\n    PI_4712_01_H                 : BOOL := FALSE;\n    PI_4712_01_L                 : BOOL := FALSE;\n    PI_4712_01_LL_Latch          : SR := (S1 := FALSE, R := FALSE);\n    \n    PICSA_4712_02_HH_Latch       : SR := (S1 := FALSE, R := FALSE);\n    PICSA_4712_02_H              : BOOL := FALSE;\n    PICSA_4712_02_L              : BOOL := FALSE;\n    PICSA_4712_02_LL_Latch       : SR := (S1 := FALSE, R := FALSE);\n    \n    TICSA_4750_03_HH_Latch       : SR := (S1 := FALSE, R := FALSE);\n    TICSA_4750_03_H              : BOOL := FALSE;\n    TICSA_4750_03_L              : BOOL := FALSE;\n    TICSA_4750_03_LL_Latch       : SR := (S1 := FALSE, R := FALSE);\n    \n    (* Control loop variables *)\n    PICSA_4712_02_SP             : REAL := 100.0;\n    PICSA_4712_02_Error          : REAL := 0.0;\n    PICSA_4712_02_Integral       : REAL := 0.0;\n    PICSA_4712_02_Output         : REAL := 0.0;\n    PICSA_4712_02_Kp             : REAL := 1.0;\n    PICSA_4712_02_Ki             : REAL := 0.1;\n    \n    TICSA_4750_03_SP             : REAL := 150.0;\n    TICSA_4750_03_Error          : REAL := 0.0;\n    TICSA_4750_03_Integral       : REAL := 0.0;\n    TICSA_4750_03_Output         : REAL := 0.0;\n    TICSA_4750_03_Kp             : REAL := 1.0;\n    TICSA_4750_03_Ki             : REAL := 0.1;\n    \n    (* Acknowledgement inputs *)\n    PI_4712_01_Ack               : BOOL := FALSE;\n    PICSA_4712_02_Ack            : BOOL := FALSE;\n    TICSA_4750_03_Ack            : BOOL := FALSE;\n    \n    (* System alarm aggregation *)\n    System_Alarm                 : BOOL := FALSE;\nEND_VAR\n\n(* First-scan initialization *)\nIF FirstScan THEN\n    PV4712_02_Out := 6554;\n    TV4750_03_Out := 6554;\n    PICSA_4712_02_Integral := 0.0;\n    TICSA_4750_03_Integral := 0.0;\n    FirstScan := FALSE;\n    RETURN;\nEND_IF;\n\n(* Scale analog inputs from 4-20mA to engineering units *)\nPI_4712_01_Scaled := ((INT_TO_REAL(PI_4712_01_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0 + 0.0;\nPICSA_4712_02_Scaled := ((INT_TO_REAL(PICSA_4712_02_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0 + 0.0;\nTICSA_4750_03_Scaled := ((INT_TO_REAL(TICSA_4750_03_Raw) - 6554.0) / (32767.0 - 6554.0)) * 250.0 + 0.0;\n\n(* PI-4712.01 Four-level alarm logic *)\nIF PI_4712_01_Scaled >= PI_4712_01_HH_SP THEN\n    PI_4712_01_HH_Latch.S1 := TRUE;\nELSIF PI_4712_01_Scaled <= (PI_4712_01_HH_SP - PI_4712_01_Deadband) THEN\n    PI_4712_01_HH_Latch.S1 := FALSE;\nEND_IF;\n\nIF PI_4712_01_HH_Latch.Q1 AND PI_4712_01_Ack AND (PI_4712_01_Scaled <= (PI_4712_01_HH_SP - PI_4712_01_Deadband)) THEN\n    PI_4712_01_HH_Latch.R := TRUE;\nEND_IF;\n\nIF PI_4712_01_Scaled >= PI_4712_01_H_SP THEN\n    PI_4712_01_H := TRUE;\nELSIF PI_4712_01_Scaled <= (PI_4712_01_H_SP - PI_4712_01_Deadband) THEN\n    PI_4712_01_H := FALSE;\nEND_IF;\n\nIF PI_4712_01_Scaled <= PI_4712_01_L_SP THEN\n    PI_4712_01_L := TRUE;\nELSIF PI_4712_01_Scaled >= (PI_4712_01_L_SP + PI_4712_01_Deadband) THEN\n    PI_4712_01_L := FALSE;\nEND_IF;\n\nIF PI_4712_01_Scaled <= PI_4712_01_LL_SP THEN\n    PI_4712_01_LL_Latch.S1 := TRUE;\nELSIF PI_4712_01_Scaled >= (PI_4712_01_LL_SP + PI_4712_01_Deadband) THEN\n    PI_4712_01_LL_Latch.S1 := FALSE;\nEND_IF;\n\nIF PI_4712_01_LL_Latch.Q1 AND PI_4712_01_Ack AND (PI_4712_01_Scaled >= (PI_4712_01_LL_SP + PI_4712_01_Deadband)) THEN\n    PI_4712_01_LL_Latch.R := TRUE;\nEND_IF;\n\n(* PICSA-4712.02 Four-level alarm logic *)\nIF PICSA_4712_02_Scaled >= PICSA_4712_02_HH_SP THEN\n    PICSA_4712_02_HH_Latch.S1 := TRUE;\nELSIF PICSA_4712_02_Scaled <= (PICSA_4712_02_HH_SP - PICSA_4712_02_Deadband) THEN\n    PICSA_4712_02_HH_Latch.S1 := FALSE;\nEND_IF;\n\nIF PICSA_4712_02_HH_Latch.Q1 AND PICSA_4712_02_Ack AND (PICSA_4712_02_Scaled <= (PICSA_4712_02_HH_SP - PICSA_4712_02_Deadband)) THEN\n    PICSA_4712_02_HH_Latch.R := TRUE;\nEND_IF;\n\nIF PICSA_4712_02_Scaled >= PICSA_4712_02_H_SP THEN\n    PICSA_4712_02_H := TRUE;\nELSIF PICSA_4712_02_Scaled <= (PICSA_4712_02_H_SP - PICSA_4712_02_Deadband) THEN\n    PICSA_4712_02_H := FALSE;\nEND_IF;\n\nIF PICSA_4712_02_Scaled <= PICSA_4712_02_L_SP THEN\n    PICSA_4712_02_L := TRUE;\nELSIF PICSA_4712_02_Scaled >= (PICSA_4712_02_L_SP + PICSA_4712_02_Deadband) THEN\n    PICSA_4712_02_L := FALSE;\nEND_IF;\n\nIF PICSA_4712_02_Scaled <= PICSA_4712_02_LL_SP THEN\n    PICSA_4712_02_LL_Latch.S1 := TRUE;\nELSIF PICSA_4712_02_Scaled >= (PICSA_4712_02_LL_SP + PICSA_4712_02_Deadband) THEN\n    PICSA_4712_02_LL_Latch.S1 := FALSE;\nEND_IF;\n\nIF PICSA_4712_02_LL_Latch.Q1 AND PICSA_4712_02_Ack AND (PICSA_4712_02_Scaled >= (PICSA_4712_02_LL_SP + PICSA_4712_02_Deadband)) THEN\n    PICSA_4712_02_LL_Latch.R := TRUE;\nEND_IF;\n\n(* TICSA-4750.03 Four-level alarm logic *)\nIF TICSA_4750_03_Scaled >= TICSA_4750_03_HH_SP THEN\n    TICSA_4750_03_HH_Latch.S1 := TRUE;\nELSIF TICSA_4750_03_Scaled <= (TICSA_4750_03_HH_SP - TICSA_4750_03_Deadband) THEN\n    TICSA_4750_03_HH_Latch.S1 := FALSE;\nEND_IF;\n\nIF TICSA_4750_03_HH_Latch.Q1 AND TICSA_4750_03_Ack AND (TICSA_4750_03_Scaled <= (TICSA_4750_03_HH_SP - TICSA_4750_03_Deadband)) THEN\n    TICSA_4750_03_HH_Latch.R := TRUE;\nEND_IF;\n\nIF TICSA_4750_03_Scaled >= TICSA_4750_03_H_SP THEN\n    TICSA_4750_03_H := TRUE;\nELSIF TICSA_4750_03_Scaled <= (TICSA_4750_03_H_SP - TICSA_4750_03_Deadband) THEN\n    TICSA_4750_03_H := FALSE;\nEND_IF;\n\nIF TICSA_4750_03_Scaled <= TICSA_4750_03_L_SP THEN\n    TICSA_4750_03_L := TRUE;\nELSIF TICSA_4750_03_Scaled >= (TICSA_4750_03_L_SP + TICSA_4750_03_Deadband) THEN\n    TICSA_4750_03_L := FALSE;\nEND_IF;\n\nIF TICSA_4750_03_Scaled <= TICSA_4750_03_LL_SP THEN\n    TICSA_4750_03_LL_Latch.S1 := TRUE;\nELSIF TICSA_4750_03_Scaled >= (TICSA_4750_03_LL_SP + TICSA_4750_03_Deadband) THEN\n    TICSA_4750_03_LL_Latch.S1 := FALSE;\nEND_IF;\n\nIF TICSA_4750_03_LL_Latch.Q1 AND TICSA_4750_03_Ack AND (TICSA_4750_03_Scaled >= (TICSA_4750_03_LL_SP + TICSA_4750_03_Deadband)) THEN\n    TICSA_4750_03_LL_Latch.R := TRUE;\nEND_IF;\n\n(* PICSA-4712.02 PI Control Loop *)\nPICSA_4712_02_Error := PICSA_4712_02_SP - PICSA_4712_02_Scaled;\nPICSA_4712_02_Integral := PICSA_4712_02_Integral + (PICSA_4712_02_Ki * PICSA_4712_02_Error);\n\nIF PICSA_4712_02_Integral > 100.0 THEN\n    PICSA_4712_02_Integral := 100.0;\nELSIF PICSA_4712_02_Integral < 0.0 THEN\n    PICSA_4712_02_Integral := 0.0;\nEND_IF;\n\nPICSA_4712_02_Output := (PICSA_4712_02_Kp * PICSA_4712_02_Error) + PICSA_4712_02_Integral;\n\nIF PICSA_4712_02_Output > 100.0 THEN\n    PICSA_4712_02_Output := 100.0;\nELSIF PICSA_4712_02_Output < 0.0 THEN\n    PICSA_4712_02_Output := 0.0;\nEND_IF;\n\nPV4712_02_Out := REAL_TO_INT(6554.0 + (PICSA_4712_02_Output / 100.0) * (32767.0 - 6554.0));\n\n(* TICSA-4750.03 PI Control Loop with manual override *)\nIF HS_4750_01 THEN\n    TICSA_4750_03_Error := TICSA_4750_03_SP - TICSA_4750_03_Scaled;\n    TICSA_4750_03_Integral := TICSA_4750_03_Integral + (TICSA_4750_03_Ki * TICSA_4750_03_Error);\n    \n    IF TICSA_4750_03_Integral > 100.0 THEN\n        TICSA_4750_03_Integral := 100.0;\n    ELSIF TICSA_4750_03_Integral < 0.0 THEN\n        TICSA_4750_03_Integral := 0.0;\n    END_IF;\n    \n    TICSA_4750_03_Output := (TICSA_4750_03_Kp * TICSA_4750_03_Error) + TICSA_4750_03_Integral;\n    \n    IF TICSA_4750_03_Output > 100.0 THEN\n        TICSA_4750_03_Output := 100.0;\n    ELSIF TICSA_4750_03_Output < 0.0 THEN\n        TICSA_4750_03_Output := 0.0;\n    END_IF;\n    \n    TV4750_03_Out := REAL_TO_INT(6554.0 + (TICSA_4750_03_Output / 100.0) * (32767.0 - 6554.0));\nELSE\n    TV4750_03_Out := 6554;\nEND_IF;\n\n(* Execute SR function blocks *)\nPI_4712_01_HH_Latch();\nPI_4712_01_LL_Latch();\nPICSA_4712_02_HH_Latch();\nPICSA_4712_02_LL_Latch();\nTICSA_4750_03_HH_Latch();\nTICSA_4750_03_LL_Latch();\n\n(* Reset latch reset inputs *)\nPI_4712_01_HH_Latch.R := FALSE;\nPI_4712_01_LL_Latch.R := FALSE;\nPICSA_4712_02_HH_Latch.R := FALSE;\nPICSA_4712_02_LL_Latch.R := FALSE;\nTICSA_4750_03_HH_Latch.R := FALSE;\nTICSA_4750_03_LL_Latch.R := FALSE;\n\n(* Aggregate all alarm states *)\nSystem_Alarm :=\n    PI_4712_01_HH_Latch.Q1 OR PI_4712_01_LL_Latch.Q1 OR\n    PI_4712_01_H           OR PI_4712_01_L            OR\n    PICSA_4712_02_HH_Latch.Q1 OR PICSA_4712_02_LL_Latch.Q1 OR\n    PICSA_4712_02_H           OR PICSA_4712_02_L            OR\n    TICSA_4750_03_HH_Latch.Q1 OR TICSA_4750_03_LL_Latch.Q1 OR\n    TICSA_4750_03_H           OR TICSA_4750_03_L;\n\nEND_PROGRAM",
+    "vendor": "codesys",
+    "target_loops": [
+      "4712.01",
+      "4712.02",
+      "4750.01",
+      "4750.03"
+    ],
+    "safety_functions_included": [],
+    "generation_context": "IEC 61508 Software Safety Requirements for ST Code Generation. Mandatory software requirements derived from IEC 61508:2010 Part 3 for safety-related PLC code. These apply to ALL generated code when a SIL target is specified. Keywords: IEC 61508 SIL safety software variable initialisation defensive programming diagnostic safe state. Category: safety_rule. Standards: IEC 61508:2010 Part 3 §7.4 (software design) IEC 61508:2010 Part 3 Table A.3 (techniques by SIL) ISO/IEC TR 5469:2024 (AI in safety ",
+    "warnings": [],
+    "timestamp": "2026-04-14T20:43:47.886533"
+  },
+  "code_validation": {
+    "is_valid": true,
+    "total_errors": 0,
+    "total_warnings": 1,
+    "tiers_available": 5,
+    "tiers_passed": 5,
+    "tier_results": [
+      {
+        "tier": "tier1_builtin",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "built-in v1.0",
+        "execution_time_ms": 6.3,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "SYN-006",
+            "message": "Division by 'O' without visible zero-check",
+            "line": null,
+            "suggestion": "Add guard: IF O <> 0.0 THEN ... END_IF"
+          }
+        ]
+      },
+      {
+        "tier": "tier2_blark",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "blark 0.8.3",
+        "execution_time_ms": 1544.7,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "BLK-001",
+            "message": "ST code parsed successfully — syntax valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier3_matiec",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "matiec/iec2c",
+        "execution_time_ms": 162.0,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "MAT-001",
+            "message": "matiec compilation successful — code is valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier4_iec_checker",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 1,
+        "tool_version": "iec-checker v0.4",
+        "execution_time_ms": 21.0,
+        "findings": [
+          {
+            "severity": "warning",
+            "code": "IEC-ParserError",
+            "message": "",
+            "line": 45,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier5_plcopen_xml",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "PLCopen TC6 v2.01",
+        "execution_time_ms": 2.2,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "XML-001",
+            "message": "PLCopen XML generated successfully (13562 characters)",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      }
+    ],
+    "has_plcopen_xml": true,
+    "feedback_for_llm": "Validation PASSED — no errors found.",
+    "timestamp": "2026-04-14T20:43:47.887584"
+  },
+  "safety_check": {
+    "is_compliant": true,
+    "sil_level_achieved": 3,
+    "checks_passed": [
+      "variable_initialisation",
+      "emergency_stop_handling (no safety functions)",
+      "alarm_handling",
+      "defensive_programming",
+      "no_unused_variables"
+    ],
+    "checks_failed": [],
+    "recommendations": [
+      "Consider adding timeout protection for communication and process operations.",
+      "Provisional SIL 2 assigned. Target SIL 3 will be granted only if NuXmv/PLCverif formal verification passes all generated LTL/CTL properties."
+    ],
+    "interlock_coverage": 0.0,
+    "diagnostic_coverage": 0.0
+  },
+  "fault_diagnosis": {
+    "fault_id": "2b434229",
+    "symptom": "Full P&ID fault analysis (FMEA + SDG propagation)",
+    "root_causes": [
+      {
+        "component_tag": "HS-4750.01",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "PV4712.02",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "PV4712.02",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TV4750.03",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TV4750.03",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "P4711",
+        "fault_mode": "seal_failure",
+        "system_effect": "Process fluid loss — HSE/environmental hazard",
+        "severity": "critical",
+        "detection": "Seal pot level alarm; shaft leak detector",
+        "action": "Switch to standby pump; schedule seal replacement",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-4750.01",
+        "fault_mode": "spurious_operation",
+        "system_effect": "Nuisance shutdown",
+        "severity": "major",
+        "detection": "Trip log review; instrument calibration check",
+        "action": "Re-calibrate set-point; check for vibration or contamination",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "PV4712.02",
+        "fault_mode": "fail_as_is",
+        "system_effect": "Loss of control — process drifts from setpoint",
+        "severity": "major",
+        "detection": "Controller output deviation alarm",
+        "action": "Check valve positioner signal; inspect packing / gland",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "PV4712.02",
+        "fault_mode": "external_leak",
+        "system_effect": "Fugitive emission — HSE hazard if toxic/flammable",
+        "severity": "major",
+        "detection": "Periodic leak check per API 624; FID / gas detector",
+        "action": "Tighten packing; replace stem packing at next shutdown",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TV4750.03",
+        "fault_mode": "fail_as_is",
+        "system_effect": "Loss of control — process drifts from setpoint",
+        "severity": "major",
+        "detection": "Controller output deviation alarm",
+        "action": "Check valve positioner signal; inspect packing / gland",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TV4750.03",
+        "fault_mode": "external_leak",
+        "system_effect": "Fugitive emission — HSE hazard if toxic/flammable",
+        "severity": "major",
+        "detection": "Periodic leak check per API 624; FID / gas detector",
+        "action": "Tighten packing; replace stem packing at next shutdown",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "P4711",
+        "fault_mode": "cavitation",
+        "system_effect": "Loss of head, impeller damage, vibration",
+        "severity": "major",
+        "detection": "VT-101 vibration transmitter; FIA-L low-flow alarm",
+        "action": "Increase suction pressure; check NPSH; reduce speed",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "P4711",
+        "fault_mode": "loss_of_prime",
+        "system_effect": "No flow — downstream starvation",
+        "severity": "major",
+        "detection": "PI-102 pressure drop; FIA-L",
+        "action": "Check suction valve fully open; re-prime; inspect strainer",
+        "sdg_reach": 0
+      }
+    ],
+    "propagation_paths": [
+      {
+        "initiating_tag": "PICSA-4712.02",
+        "deviation": "high",
+        "propagation_chain": [
+          "PV4712.02 (control ↓)"
+        ],
+        "terminal_effect": "Process variable above safe operating limit — alarm/trip demand possible.",
+        "severity": "critical"
+      },
+      {
+        "initiating_tag": "PICSA-4712.02",
+        "deviation": "low",
+        "propagation_chain": [
+          "PV4712.02 (control ↑)"
+        ],
+        "terminal_effect": "Process variable below safe operating limit — loss of control possible.",
+        "severity": "critical"
+      },
+      {
+        "initiating_tag": "TICSA-4750.03",
+        "deviation": "high",
+        "propagation_chain": [
+          "TV4750.03 (control ↓)"
+        ],
+        "terminal_effect": "Process variable above safe operating limit — alarm/trip demand possible.",
+        "severity": "critical"
+      },
+      {
+        "initiating_tag": "TICSA-4750.03",
+        "deviation": "low",
+        "propagation_chain": [
+          "TV4750.03 (control ↑)"
+        ],
+        "terminal_effect": "Process variable below safe operating limit — loss of control possible.",
+        "severity": "critical"
+      },
+      {
+        "initiating_tag": "HV4750.01",
+        "deviation": "high",
+        "propagation_chain": [
+          "PI-4712.01 (pressure ↑)"
+        ],
+        "terminal_effect": "Process variable above safe operating limit — alarm/trip demand possible.",
+        "severity": "critical"
+      }
+    ],
+    "fmea_records": [
+      {
+        "component_tag": "HS-4750.01",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-4750.01",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "PV4712.02",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "PV4712.02",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "PV4712.02",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "PV4712.02",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "TV4750.03",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "TV4750.03",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "TV4750.03",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "TV4750.03",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "P4711",
+        "component_type": "Pump",
+        "fault_mode": "cavitation",
+        "failure_effect_local": "Pump cavitation",
+        "failure_effect_system": "Loss of head, impeller damage, vibration",
+        "detection_method": "VT-101 vibration transmitter; FIA-L low-flow alarm",
+        "severity": "major",
+        "recommended_action": "Increase suction pressure; check NPSH; reduce speed"
+      },
+      {
+        "component_tag": "P4711",
+        "component_type": "Pump",
+        "fault_mode": "seal_failure",
+        "failure_effect_local": "Mechanical seal failure",
+        "failure_effect_system": "Process fluid loss — HSE/environmental hazard",
+        "detection_method": "Seal pot level alarm; shaft leak detector",
+        "severity": "critical",
+        "recommended_action": "Switch to standby pump; schedule seal replacement"
+      },
+      {
+        "component_tag": "P4711",
+        "component_type": "Pump",
+        "fault_mode": "loss_of_prime",
+        "failure_effect_local": "Pump loses prime",
+        "failure_effect_system": "No flow — downstream starvation",
+        "detection_method": "PI-102 pressure drop; FIA-L",
+        "severity": "major",
+        "recommended_action": "Check suction valve fully open; re-prime; inspect strainer"
+      }
+    ],
+    "severity": "critical",
+    "repair_procedure": "PRIORITY REPAIR ACTIONS (Critical fault modes):\nReference: IEC 61511:2016+AMD1 Clause 5.2 — Functional Safety Management\n\n  [HS-4750.01] FAIL_TO_OPERATE\n    Effect  : Safety function fails dangerously — hazard not detected\n    Detect  : SIL proof-test; PFDavg calculation\n    Action  : Immediate proof-test; replace if failed; review SIL maintenance schedule\n\n  [PV4712.02] STUCK_OPEN\n    Effect  : Uncontrolled flow — possible flooding or overpressure downstream\n    Detect  : Positioner feedback deviation alarm\n    Action  : Switch to manual bypass; inspect actuator diaphragm, positioner\n\n  [PV4712.02] STUCK_CLOSED\n    Effect  : Flow stoppage — process starvation, pump dead-heading\n    Detect  : Low flow alarm (FIA-L); pump trip on low-flow protection\n    Action  : Check air supply pressure; inspect positioner; replace actuator\n\n  [P4711] SEAL_FAILURE\n    Effect  : Process fluid loss — HSE/environmental hazard\n    Detect  : Seal pot level alarm; shaft leak detector\n    Action  : Switch to standby pump; schedule seal replacement\n",
+    "affected_components": [
+      "HS-4750.01",
+      "TV4750.03",
+      "P4711",
+      "PV4712.02"
+    ],
+    "sdg_node_count": 11,
+    "sdg_edge_count": 3,
+    "timestamp": "2026-04-14T20:43:52.020460"
+  },
+  "formal_verification": {
+    "status": "passed",
+    "tool_used": "nuxmv",
+    "tool_version": "nuXmv 2.1.0",
+    "properties_generated": 19,
+    "properties_verified": 19,
+    "properties_failed": 0,
+    "properties": [],
+    "counterexamples": [],
+    "nusmv_model": "-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model\n-- Source P&ID: D:\\SafePLCGen\\Patch Evaluation\\Part A four DEXPI XML files from three repositories\\DEXPI-1 DEXPI Reference P&ID (complex)\\C01V04-VER.EX01.xml\n-- Vendor: codesys\n-- Safety functions: 0\n-- NOTE: Boolean abstraction — conservative over-approximation.\n-- Compatible with NuXmv 2.x and NuSMV 2.6+.\n\nMODULE main\nVAR\n  -- Process variable deviations (Boolean abstraction)\n  PI_4712_01_HIGH   : boolean;  -- PI-4712.01 above HH setpoint\n  PI_4712_01_LOW    : boolean;  -- PI-4712.01 below LL setpoint\n  PICSA_4712_02_HIGH   : boolean;  -- PICSA-4712.02 above HH setpoint\n  PICSA_4712_02_LOW    : boolean;  -- PICSA-4712.02 below LL setpoint\n  HS_4750_01_HIGH   : boolean;  -- HS-4750.01 above HH setpoint\n  HS_4750_01_LOW    : boolean;  -- HS-4750.01 below LL setpoint\n  TICSA_4750_03_HIGH   : boolean;  -- TICSA-4750.03 above HH setpoint\n  TICSA_4750_03_LOW    : boolean;  -- TICSA-4750.03 below LL setpoint\n\n  -- Safety function state variables\n\n  -- Global safety outputs\n  ESTOP        : boolean;\n  SAFE_STATE   : boolean;\n  MANUAL_RESET : boolean;\n\nASSIGN\n  -- Initial conditions: all safe (de-energised)\n  init(PI_4712_01_HIGH) := FALSE;\n  init(PI_4712_01_LOW)  := FALSE;\n  init(PICSA_4712_02_HIGH) := FALSE;\n  init(PICSA_4712_02_LOW)  := FALSE;\n  init(HS_4750_01_HIGH) := FALSE;\n  init(HS_4750_01_LOW)  := FALSE;\n  init(TICSA_4750_03_HIGH) := FALSE;\n  init(TICSA_4750_03_LOW)  := FALSE;\n  init(ESTOP)        := FALSE;\n  init(SAFE_STATE)   := FALSE;\n  init(MANUAL_RESET) := FALSE;\n\n  -- Transition: SAFE_STATE activated on any trip or ESTOP\n\n  -- Global safe-state transition (IEC 61511-1 §11.9)\n  -- Activated by ESTOP or any sensor deviation.\n  -- Latching: held until MANUAL_RESET and all conditions clear.\n  next(SAFE_STATE) :=\n    case\n      ESTOP : TRUE;\n      PI_4712_01_HIGH            : TRUE;\n      PI_4712_01_LOW             : TRUE;\n      PICSA_4712_02_HIGH         : TRUE;\n      PICSA_4712_02_LOW          : TRUE;\n      HS_4750_01_HIGH            : TRUE;\n      HS_4750_01_LOW             : TRUE;\n      TICSA_4750_03_HIGH         : TRUE;\n      TICSA_4750_03_LOW          : TRUE;\n      -- Reset: clear only when operator resets AND all conditions gone\n      SAFE_STATE & MANUAL_RESET &\n        !ESTOP &\n        !PI_4712_01_HIGH &\n        !PI_4712_01_LOW &\n        !PICSA_4712_02_HIGH &\n        !PICSA_4712_02_LOW &\n        !HS_4750_01_HIGH &\n        !HS_4750_01_LOW &\n        !TICSA_4750_03_HIGH &\n        !TICSA_4750_03_LOW  : FALSE;\n      TRUE : SAFE_STATE;  -- latch\n    esac;\n\n-- ── Physical-impossibility constraints (INVAR) ──────────────────────\n-- Constrains state space: same sensor cannot read HH and LL at once.\nINVAR !(PI_4712_01_HIGH & PI_4712_01_LOW);\nINVAR !(PICSA_4712_02_HIGH & PICSA_4712_02_LOW);\nINVAR !(HS_4750_01_HIGH & HS_4750_01_LOW);\nINVAR !(TICSA_4750_03_HIGH & TICSA_4750_03_LOW);\n\n-- ===== SAFETY PROPERTIES =====\n-- (No explicit safety functions — properties\n-- derived from declared sensor variables.)\n-- Reference: IEC 61508-3:2010 Table A.8\n\n-- P01  ESTOP must activate SAFE_STATE (next cycle)\nINVARSPEC (ESTOP -> next(SAFE_STATE));\n\n-- P02  PI_4712_01_HIGH must activate SAFE_STATE (next cycle)\nINVARSPEC (PI_4712_01_HIGH -> next(SAFE_STATE));\n\n-- P03  PI_4712_01_LOW must activate SAFE_STATE (next cycle)\nINVARSPEC (PI_4712_01_LOW -> next(SAFE_STATE));\n\n-- P04  PICSA_4712_02_HIGH must activate SAFE_STATE (next cycle)\nINVARSPEC (PICSA_4712_02_HIGH -> next(SAFE_STATE));\n\n-- P05  PICSA_4712_02_LOW must activate SAFE_STATE (next cycle)\nINVARSPEC (PICSA_4712_02_LOW -> next(SAFE_STATE));\n\n-- P06  HS_4750_01_HIGH must activate SAFE_STATE (next cycle)\nINVARSPEC (HS_4750_01_HIGH -> next(SAFE_STATE));\n\n-- P07  HS_4750_01_LOW must activate SAFE_STATE (next cycle)\nINVARSPEC (HS_4750_01_LOW -> next(SAFE_STATE));\n\n-- P08  TICSA_4750_03_HIGH must activate SAFE_STATE (next cycle)\nINVARSPEC (TICSA_4750_03_HIGH -> next(SAFE_STATE));\n\n-- P09  TICSA_4750_03_LOW must activate SAFE_STATE (next cycle)\nINVARSPEC (TICSA_4750_03_LOW -> next(SAFE_STATE));\n\n-- P10  HH and LL cannot be TRUE simultaneously (verified from INVAR constraint)\nINVARSPEC !(PI_4712_01_HIGH & PI_4712_01_LOW);\n\n-- P11  HH and LL cannot be TRUE simultaneously (verified from INVAR constraint)\nINVARSPEC !(PICSA_4712_02_HIGH & PICSA_4712_02_LOW);\n\n-- P12  HH and LL cannot be TRUE simultaneously (verified from INVAR constraint)\nINVARSPEC !(HS_4750_01_HIGH & HS_4750_01_LOW);\n\n-- P13  HH and LL cannot be TRUE simultaneously (verified from INVAR constraint)\nINVARSPEC !(TICSA_4750_03_HIGH & TICSA_4750_03_LOW);\n\n-- P14  SAFE_STATE latches until MANUAL_RESET (IEC 61511-1 §11.9)\nINVARSPEC (SAFE_STATE & !MANUAL_RESET -> next(SAFE_STATE));\n\n-- P15  ESTOP causes SAFE_STATE in the next scan cycle\nLTLSPEC G (ESTOP -> X SAFE_STATE);\n\n-- P16  PI_4712_01_HIGH causes SAFE_STATE in the next scan cycle\nLTLSPEC G (PI_4712_01_HIGH -> X SAFE_STATE);\n\n-- P17  PICSA_4712_02_HIGH causes SAFE_STATE in the next scan cycle\nLTLSPEC G (PICSA_4712_02_HIGH -> X SAFE_STATE);\n\n-- P18  HS_4750_01_HIGH causes SAFE_STATE in the next scan cycle\nLTLSPEC G (HS_4750_01_HIGH -> X SAFE_STATE);\n\n-- P19  SAFE_STATE is reachable from the initial state\nSPEC EF SAFE_STATE;\n\n-- Total properties: 19\n-- NOTE: P20 (no-spurious-trip in nominal conditions) was removed.\n-- A latching model retains SAFE_STATE after any trip regardless\n-- of whether conditions later clear, so that property is\n-- structurally incompatible with IEC 61511-1 §11.9 latching.\n",
+    "execution_time_s": 0.1,
+    "recommendations": [],
+    "timestamp": "2026-04-14T20:43:52.017091"
+  },
+  "io_mapping_summary": "output\\Patch_DEXPI-1\\20260414_214104\\io_mapping.csv",
+  "dt_validation": null,
+  "hitl_review": null,
+  "pipeline_version": "1.3.0",
+  "total_processing_time_seconds": 167.8
+}

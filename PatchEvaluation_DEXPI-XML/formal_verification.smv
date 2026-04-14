@@ -1,0 +1,144 @@
+-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model
+-- Source P&ID: D:\SafePLCGen\Patch Evaluation\Part A four DEXPI XML files from three repositories\DEXPI-1 DEXPI Reference P&ID (complex)\C01V04-VER.EX01.xml
+-- Vendor: codesys
+-- Safety functions: 0
+-- NOTE: Boolean abstraction — conservative over-approximation.
+-- Compatible with NuXmv 2.x and NuSMV 2.6+.
+
+MODULE main
+VAR
+  -- Process variable deviations (Boolean abstraction)
+  PI_4712_01_HIGH   : boolean;  -- PI-4712.01 above HH setpoint
+  PI_4712_01_LOW    : boolean;  -- PI-4712.01 below LL setpoint
+  PICSA_4712_02_HIGH   : boolean;  -- PICSA-4712.02 above HH setpoint
+  PICSA_4712_02_LOW    : boolean;  -- PICSA-4712.02 below LL setpoint
+  HS_4750_01_HIGH   : boolean;  -- HS-4750.01 above HH setpoint
+  HS_4750_01_LOW    : boolean;  -- HS-4750.01 below LL setpoint
+  TICSA_4750_03_HIGH   : boolean;  -- TICSA-4750.03 above HH setpoint
+  TICSA_4750_03_LOW    : boolean;  -- TICSA-4750.03 below LL setpoint
+
+  -- Safety function state variables
+
+  -- Global safety outputs
+  ESTOP        : boolean;
+  SAFE_STATE   : boolean;
+  MANUAL_RESET : boolean;
+
+ASSIGN
+  -- Initial conditions: all safe (de-energised)
+  init(PI_4712_01_HIGH) := FALSE;
+  init(PI_4712_01_LOW)  := FALSE;
+  init(PICSA_4712_02_HIGH) := FALSE;
+  init(PICSA_4712_02_LOW)  := FALSE;
+  init(HS_4750_01_HIGH) := FALSE;
+  init(HS_4750_01_LOW)  := FALSE;
+  init(TICSA_4750_03_HIGH) := FALSE;
+  init(TICSA_4750_03_LOW)  := FALSE;
+  init(ESTOP)        := FALSE;
+  init(SAFE_STATE)   := FALSE;
+  init(MANUAL_RESET) := FALSE;
+
+  -- Transition: SAFE_STATE activated on any trip or ESTOP
+
+  -- Global safe-state transition (IEC 61511-1 §11.9)
+  -- Activated by ESTOP or any sensor deviation.
+  -- Latching: held until MANUAL_RESET and all conditions clear.
+  next(SAFE_STATE) :=
+    case
+      ESTOP : TRUE;
+      PI_4712_01_HIGH            : TRUE;
+      PI_4712_01_LOW             : TRUE;
+      PICSA_4712_02_HIGH         : TRUE;
+      PICSA_4712_02_LOW          : TRUE;
+      HS_4750_01_HIGH            : TRUE;
+      HS_4750_01_LOW             : TRUE;
+      TICSA_4750_03_HIGH         : TRUE;
+      TICSA_4750_03_LOW          : TRUE;
+      -- Reset: clear only when operator resets AND all conditions gone
+      SAFE_STATE & MANUAL_RESET &
+        !ESTOP &
+        !PI_4712_01_HIGH &
+        !PI_4712_01_LOW &
+        !PICSA_4712_02_HIGH &
+        !PICSA_4712_02_LOW &
+        !HS_4750_01_HIGH &
+        !HS_4750_01_LOW &
+        !TICSA_4750_03_HIGH &
+        !TICSA_4750_03_LOW  : FALSE;
+      TRUE : SAFE_STATE;  -- latch
+    esac;
+
+-- ── Physical-impossibility constraints (INVAR) ──────────────────────
+-- Constrains state space: same sensor cannot read HH and LL at once.
+INVAR !(PI_4712_01_HIGH & PI_4712_01_LOW);
+INVAR !(PICSA_4712_02_HIGH & PICSA_4712_02_LOW);
+INVAR !(HS_4750_01_HIGH & HS_4750_01_LOW);
+INVAR !(TICSA_4750_03_HIGH & TICSA_4750_03_LOW);
+
+-- ===== SAFETY PROPERTIES =====
+-- (No explicit safety functions — properties
+-- derived from declared sensor variables.)
+-- Reference: IEC 61508-3:2010 Table A.8
+
+-- P01  ESTOP must activate SAFE_STATE (next cycle)
+INVARSPEC (ESTOP -> next(SAFE_STATE));
+
+-- P02  PI_4712_01_HIGH must activate SAFE_STATE (next cycle)
+INVARSPEC (PI_4712_01_HIGH -> next(SAFE_STATE));
+
+-- P03  PI_4712_01_LOW must activate SAFE_STATE (next cycle)
+INVARSPEC (PI_4712_01_LOW -> next(SAFE_STATE));
+
+-- P04  PICSA_4712_02_HIGH must activate SAFE_STATE (next cycle)
+INVARSPEC (PICSA_4712_02_HIGH -> next(SAFE_STATE));
+
+-- P05  PICSA_4712_02_LOW must activate SAFE_STATE (next cycle)
+INVARSPEC (PICSA_4712_02_LOW -> next(SAFE_STATE));
+
+-- P06  HS_4750_01_HIGH must activate SAFE_STATE (next cycle)
+INVARSPEC (HS_4750_01_HIGH -> next(SAFE_STATE));
+
+-- P07  HS_4750_01_LOW must activate SAFE_STATE (next cycle)
+INVARSPEC (HS_4750_01_LOW -> next(SAFE_STATE));
+
+-- P08  TICSA_4750_03_HIGH must activate SAFE_STATE (next cycle)
+INVARSPEC (TICSA_4750_03_HIGH -> next(SAFE_STATE));
+
+-- P09  TICSA_4750_03_LOW must activate SAFE_STATE (next cycle)
+INVARSPEC (TICSA_4750_03_LOW -> next(SAFE_STATE));
+
+-- P10  HH and LL cannot be TRUE simultaneously (verified from INVAR constraint)
+INVARSPEC !(PI_4712_01_HIGH & PI_4712_01_LOW);
+
+-- P11  HH and LL cannot be TRUE simultaneously (verified from INVAR constraint)
+INVARSPEC !(PICSA_4712_02_HIGH & PICSA_4712_02_LOW);
+
+-- P12  HH and LL cannot be TRUE simultaneously (verified from INVAR constraint)
+INVARSPEC !(HS_4750_01_HIGH & HS_4750_01_LOW);
+
+-- P13  HH and LL cannot be TRUE simultaneously (verified from INVAR constraint)
+INVARSPEC !(TICSA_4750_03_HIGH & TICSA_4750_03_LOW);
+
+-- P14  SAFE_STATE latches until MANUAL_RESET (IEC 61511-1 §11.9)
+INVARSPEC (SAFE_STATE & !MANUAL_RESET -> next(SAFE_STATE));
+
+-- P15  ESTOP causes SAFE_STATE in the next scan cycle
+LTLSPEC G (ESTOP -> X SAFE_STATE);
+
+-- P16  PI_4712_01_HIGH causes SAFE_STATE in the next scan cycle
+LTLSPEC G (PI_4712_01_HIGH -> X SAFE_STATE);
+
+-- P17  PICSA_4712_02_HIGH causes SAFE_STATE in the next scan cycle
+LTLSPEC G (PICSA_4712_02_HIGH -> X SAFE_STATE);
+
+-- P18  HS_4750_01_HIGH causes SAFE_STATE in the next scan cycle
+LTLSPEC G (HS_4750_01_HIGH -> X SAFE_STATE);
+
+-- P19  SAFE_STATE is reachable from the initial state
+SPEC EF SAFE_STATE;
+
+-- Total properties: 19
+-- NOTE: P20 (no-spurious-trip in nominal conditions) was removed.
+-- A latching model retains SAFE_STATE after any trip regardless
+-- of whether conditions later clear, so that property is
+-- structurally incompatible with IEC 61511-1 §11.9 latching.

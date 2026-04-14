@@ -1,0 +1,8 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+PI_4712.01_Raw,%IW0,INT,AI,PI-4712.01,Pressure indicator on pump P4712
+PICSA_4712.02_Raw,%IW2,INT,AI,PICSA-4712.02,Pressure indicator/controller/switch/alarm on H1008
+PWT_1202_Raw,%IW4,INT,AI,PWT-1202,Pressure/weight transmitter
+TICSA_4750.03_Raw,%IW6,INT,AI,TICSA-4750.03,Temperature indicator/controller/switch/alarm
+TV_4750.03_Out,%QW0,INT,AO,TV-4750.03,Temperature control valve
+HS_4750.01,%IX0.0,BOOL,DI,HS-4750.01,Hand switch on vessel T4750
+SV_104.01,%QX0.0,BOOL,DO,SV-104.01,"Solenoid valve with P=6 barg, DN=25/50"
