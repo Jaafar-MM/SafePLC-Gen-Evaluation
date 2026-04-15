@@ -1,9 +1,0 @@
-Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
-PI_4712.01_Raw,%IW0,INT,AI,PI-4712.01,Pressure indicator on pump discharge
-PICSA_4712.02_Raw,%IW2,INT,AI,PICSA-4712.02,Pressure indicator controller switch alarm associated with P
-TICSA_4750.03_Raw,%IW4,INT,AI,TICSA-4750.03,Temperature indicator controller switch alarm
-F.C._Out,%QW0,INT,AO,F.C.,Fail-closed control valve with pneumatic actuator
-F.O._Out,%QW2,INT,AO,F.O.,Fail-open control valve with pneumatic actuator
-PV_4712.02_Out,%QW4,INT,AO,PV-4712.02,Pressure control valve
-HS_4750.01,%IX0.0,BOOL,DI,HS-4750.01,Hand switch for manual control operation
-SV_104.01,%QX0.0,BOOL,DO,SV-104.01,"Solenoid valve with 6 barg pressure rating, DN=25/50"
