@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <fileHeader companyName="SafePLC-Gen" productName="SafePLC-Gen Multimodal" productVersion="1.0" creationDateTime="2026-04-15T12:55:31.768600Z"/>
+  <contentHeader name="GeneratedProgram">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="0" y="0"/>
+      </fbd>
+      <ld>
+        <scaling x="0" y="0"/>
+      </ld>
+      <sfc>
+        <scaling x="0" y="0"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="GeneratedProgram" pouType="program">
+        <interface>
+          <localVars/>
+          <localVars>
+            <variable name="PICSA_4712_02_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PI_4712_01_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PI_4712_01_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PI_4712_01_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PI_4712_01_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PI_4712_01_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PI_4712_01_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PI_4712_01_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PI_4712_01_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="PI_4712_01_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PICSA_4712_02_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="HS_4750_01_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TICSA_4750_03_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PICSA_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PICSA_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PICSA_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PICSA_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TICSA_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <ST>
+            <html:p>(* First-scan initialization *)
+IF FirstScan THEN
+    (* Initialize safe states *)
+    PV_71202_Out := 6554;
+    TV_4750_03_Out := 6554;
+    SV_104_01 := FALSE;
+    
+    (* Initialize alarm latches *)
+    PI_4712_01_HH_Latch.S1 := FALSE;
+    PI_4712_01_HH_Latch.R := FALSE;
+    PI_4712_01_LL_Latch.S1 := FALSE;
+    PI_4712_01_LL_Latch.R := FALSE;
+    
+    PICSA_4712_02_HH_Latch.S1 := FALSE;
+    PICSA_4712_02_HH_Latch.R := FALSE;
+    PICSA_4712_02_LL_Latch.S1 := FALSE;
+    PICSA_4712_02_LL_Latch.R := FALSE;
+    
+    TICSA_4750_03_HH_Latch.S1 := FALSE;
+    TICSA_4750_03_HH_Latch.R := FALSE;
+    TICSA_4750_03_LL_Latch.S1 := FALSE;
+    TICSA_4750_03_LL_Latch.R := FALSE;
+    
+    HS_4750_01_HH_Latch.S1 := FALSE;
+    HS_4750_01_HH_Latch.R := FALSE;
+    HS_4750_01_LL_Latch.S1 := FALSE;
+    HS_4750_01_LL_Latch.R := FALSE;
+    
+    FirstScan := FALSE;
+    RETURN;
+END_IF;
+
+(* Scale analog inputs *)
+PI_4712_01_Scaled := ((INT_TO_REAL(PI_4712_01_Raw) - 6554.0) / (32767.0 - 6554.0)) * 200.0 + 0.0;
+PICSA_4712_02_Scaled := ((INT_TO_REAL(PICSA_4712_02_Raw) - 6554.0) / (32767.0 - 6554.0)) * 200.0 + 0.0;
+TICSA_4750_03_Scaled := ((INT_TO_REAL(TICSA_4750_03_Raw) - 6554.0) / (32767.0 - 6554.0)) * 300.0 + 0.0;
+
+(* Scale digital input *)
+IF HS_4750_01 THEN
+    HS_4750_01_Scaled := 1.0;
+ELSE
+    HS_4750_01_Scaled := 0.0;
+END_IF;
+
+(* PI-4712.01 Four-level alarm logic *)
+IF PI_4712_01_Scaled &gt;= PI_4712_01_HH_SP THEN
+    PI_4712_01_HH_Latch.S1 := TRUE;
+ELSIF PI_4712_01_Scaled &lt;= (PI_4712_01_HH_SP - PI_4712_01_Deadband) THEN
+    PI_4712_01_HH_Latch.S1 := FALSE;
+END_IF;
+
+IF PI_4712_01_Scaled &lt;= PI_4712_01_LL_SP THEN
+    PI_4712_01_LL_Latch.S1 := TRUE;
+ELSIF PI_4712_01_Scaled &gt;= (PI_4712_01_LL_SP + PI_4712_01_Deadband) THEN
+    PI_4712_01_LL_Latch.S1 := FALSE;
+END_IF;
+
+IF PI_4712_01_Scaled &gt;= PI_4712_01_H_SP THEN
+    PI_4712_01_H := TRUE;
+ELSIF PI_4712_01_Scaled &lt;= (PI_4712_01_H_SP - PI_4712_01_Deadband) THEN
+    PI_4712_01_H := FALSE;
+END_IF;
+
+IF PI_4712_01_Scaled &lt;= PI_4712_01_L_SP THEN
+    PI_4712_01_L := TRUE;
+ELSIF PI_4712_01_Scaled &gt;= (PI_4712_01_L_SP + PI_4712_01_Deadband) THEN
+    PI_4712_01_L := FALSE;
+END_IF;
+
+(* Acknowledge and reset HH/LL latches for PI-4712.01 *)
+IF PI_4712_01_HH_Ack AND (PI_4712_01_Scaled &lt;= (PI_4712_01_HH_SP - PI_4712_01_Deadband)) THEN
+    PI_4712_01_HH_Latch.R := TRUE;
+ELSE
+    PI_4712_01_HH_Latch.R := FALSE;
+END_IF;
+
+IF PI_4712_01_LL_Ack AND (PI_4712_01_Scaled &gt;= (PI_4712_01_LL_SP + PI_4712_01_Deadband)) THEN
+    PI_4712_01_LL_Latch.R := TRUE;
+ELSE
+    PI_4712_01_LL_Latch.R := FALSE;
+END_IF;
+
+PI_4712_01_HH_Latch();
+PI_4712_01_LL_Latch();
+
+(* PICSA-4712.02 Four-level alarm logic *)
+IF PICSA_4712_02_Scaled &gt;= PICSA_4712_02_HH_SP THEN
+    PICSA_4712_02_HH_Latch.S1 := TRUE;
+ELSIF PICSA_4712_02_Scaled &lt;= (PICSA_4712_02_HH_SP - PICSA_4712_02_Deadband) THEN
+    PICSA_4712_02_HH_Latch.S1 := FALSE;
+END_IF;
+
+IF PICSA_4712_02_Scaled &lt;= PICSA_4712_02_LL_SP THEN
+    PICSA_4712_02_LL_Latch.S1 := TRUE;
+ELSIF PICSA_4712_02_Scaled &gt;= (PICSA_4712_02_LL_SP + PICSA_4712_02_Deadband) THEN
+    PICSA_4712_02_LL_Latch.S1 := FALSE;
+END_IF;
+
+IF PICSA_4712_02_Scaled &gt;= PICSA_4712_02_H_SP THEN
+    PICSA_4712_02_H := TRUE;
+ELSIF PICSA_4712_02_Scaled &lt;= (PICSA_4712_02_H_SP - PICSA_4712_02_Deadband) THEN
+    PICSA_4712_02_H := FALSE;
+END_IF;
+
+IF PICSA_4712_02_Scaled &lt;= PICSA_4712_02_L_SP THEN
+    PICSA_4712_02_L := TRUE;
+ELSIF PICSA_4712_02_Scaled &gt;= (PICSA_4712_02_L_SP + PICSA_4712_02_Deadband) THEN
+    PICSA_4712_02_L := FALSE;
+END_IF;
+
+(* Acknowledge and reset HH/LL latches for PICSA-4712.02 *)
+IF PICSA_4712_02_HH_Ack AND (PICSA_4712_02_Scaled &lt;= (PICSA_4712_02_HH_SP - PICSA_4712_02_Deadband)) THEN
+    PICSA_4712_02_HH_Latch.R := TRUE;
+ELSE
+    PICSA_4712_02_HH_Latch.R := FALSE;
+END_IF;
+
+IF PICSA_4712_02_LL_Ack AND (PICSA_4712_02_Scaled &gt;= (PICSA_4712_02_LL_SP + PICSA_4712_02_Deadband)) THEN
+    PICSA_4712_02_LL_Latch.R := TRUE;
+ELSE
+    PICSA_4712_02_LL_Latch.R := FALSE;
+END_IF;
+
+PICSA_4712_02_HH_Latch();
+PICSA_4712_02_LL_Latch();
+
+(* TICSA-4750.03 Four-level alarm logic *)
+IF TICSA_4750_03_Scaled &gt;= TICSA_4750_03_HH_SP THEN
+    TICSA_4750_03_HH_Latch.S1 := TRUE;
+ELSIF TICSA_4750_03_Scaled &lt;= (TICSA_4750_03_HH_SP - TICSA_4750_03_Deadband) THEN
+    TICSA_4750_03_HH_Latch.S1 := FALSE;
+END_IF;
+
+IF TICSA_4750_03_Scaled &lt;= TICSA_4750_03_LL_SP THEN
+    TICSA_4750_03_LL_Latch.S1 := TRUE;
+ELSIF TICSA_4750_03_Scaled &gt;= (TICSA_4750_03_LL_SP + TICSA_4750_03_Deadband) THEN
+    TICSA_4750_03_LL_Latch.S1 := FALSE;
+END_IF;
+
+IF TICSA_4750_03_Scaled &gt;= TICSA_4750_03_H_SP THEN
+    TICSA_4750_03_H := TRUE;
+ELSIF TICSA_4750_03_Scaled &lt;= (TICSA_4750_03_H_SP - TICSA_4750_03_Deadband) THEN
+    TICSA_4750_03_H := FALSE;
+END_IF;
+
+IF TICSA_4750_03_Scaled &lt;= TICSA_4750_03_L_SP THEN
+    TICSA_4750_03_L := TRUE;
+ELSIF TICSA_4750_03_Scaled &gt;= (TICSA_4750_03_L_SP + TICSA_4750_03_Deadband) THEN
+    TICSA_4750_03_L := FALSE;
+END_IF;
+
+(* Acknowledge and reset HH/LL latches for TICSA-4750.03 *)
+IF TICSA_4750_03_HH_Ack AND (TICSA_4750_03_Scaled &lt;= (TICSA_4750_03_HH_SP - TICSA_4750_03_Deadband)) THEN
+    TICSA_4750_03_HH_Latch.R := TRUE;
+ELSE
+    TICSA_4750_03_HH_Latch.R := FALSE;
+END_IF;
+
+IF TICSA_4750_03_LL_Ack AND (TICSA_4750_03_Scaled &gt;= (TICSA_4750_03_LL_SP + TICSA_4750_03_Deadband)) THEN
+    TICSA_4750_03_LL_Latch.R := TRUE;
+ELSE
+    TICSA_4750_03_LL_Latch.R := FALSE;
+END_IF;
+
+TICSA_4750_03_HH_Latch();
+TICSA_4750_03_LL_Latch();
+
+(* HS-4750.01 Four-level alarm logic *)
+IF HS_4750_01_Scaled &gt;= HS_4750_01_HH_SP THEN
+    HS_4750_01_HH_Latch.S1 := TRUE;
+ELSIF HS_4750_01_Scaled &lt;= (HS_4750_01_HH_SP - HS_4750_01_Deadband) THEN
+    HS_4750_01_HH_Latch.S1 := FALSE;
+END_IF;
+
+IF HS_4750_01_Scaled &lt;= HS_4750_01_LL_SP THEN
+    HS_4750_01_LL_Latch.S1 := TRUE;
+ELSIF HS_4750_01_Scaled &gt;= (HS_4750_01_LL_SP + HS_4750_01_Deadband) THEN
+    HS_4750_01_LL_Latch.S1 := FALSE;
+END_IF;
+
+IF HS_4750_01_Scaled &gt;= HS_4750_01_H_SP THEN
+    HS_4750_01_H := TRUE;
+ELSIF HS_4750_01_Scaled &lt;= (HS_4750_01_H_SP - HS_4750_01_Deadband) THEN
+    HS_4750_01_H := FALSE;
+END_IF;
+
+IF HS_4750_01_Scaled &lt;= HS_4750_01_L_SP THEN
+    HS_4750_01_L := TRUE;
+ELSIF HS_4750_01_Scaled &gt;= (HS_4750_01_L_SP + HS_4750_01_Deadband) THEN
+    HS_4750_01_L := FALSE;
+END_IF;
+
+(* Acknowledge and reset HH/LL latches for HS-4750.01 *)
+IF HS_4750_01_HH_Ack AND (HS_4750_01_Scaled &lt;= (HS_4750_01_HH_SP - HS_4750_01_Deadband)) THEN
+    HS_4750_01_HH_Latch.R := TRUE;
+ELSE
+    HS_4750_01_HH_Latch.R := FALSE;
+END_IF;
+
+IF HS_4750_01_LL_Ack AND (HS_4750_01_Scaled &gt;= (HS_4750_01_LL_SP + HS_4750_01_Deadband)) THEN
+    HS_4750_01_LL_Latch.R := TRUE;
+ELSE
+    HS_4750_01_LL_Latch.R := FALSE;
+END_IF;
+
+HS_4750_01_HH_Latch();
+HS_4750_01_LL_Latch();
+
+(* PICSA-4712.02 Pressure Control Loop - PI Controller *)
+PICSA_Error := PICSA_4712_02_SP - PICSA_4712_02_Scaled;
+PICSA_Integral := PICSA_Integral + (PICSA_Ki * PICSA_Error);
+
+IF PICSA_Integral &gt; 100.0 THEN
+    PICSA_Integral := 100.0;
+ELSIF PICSA_Integral &lt; 0.0 THEN
+    PICSA_Integral := 0.0;
+END_IF;
+
+PICSA_Output := (PICSA_Kp * PICSA_Error) + PICSA_Integral;
+
+IF PICSA_Output &gt; 100.0 THEN
+    PICSA_Output := 100.0;
+ELSIF PICSA_Output &lt; 0.0 THEN
+    PICSA_Output := 0.0;
+END_IF;
+
+(* TICSA-4750.03 Temperature Control Loop - PI Controller *)
+TICSA_Error := TICSA_4750_03_SP - TICSA_4750_03_Scaled;
+TICSA_Integral := TICSA_Integral + (TICSA_Ki * TICSA_Error);
+
+IF TICSA_Integral &gt; 100.0 THEN
+    TICSA_Integral := 100.0;
+ELSIF TICSA_Integral &lt; 0.0 THEN
+    TICSA_Integral := 0.0;
+END_IF;
+
+TICSA_Output := (TICSA_Kp * TICSA_Error) + TICSA_Integral;
+
+IF TICSA_Output &gt; 100.0 THEN
+    TICSA_Output := 100.0;
+ELSIF TICSA_Output &lt; 0.0 THEN
+    TICSA_Output := 0.0;
+END_IF;
+
+(* Output scaling and assignments *)
+PV_71202_Out := REAL_TO_INT(6554.0 + (PICSA_Output / 100.0) * (32767.0 - 6554.0));
+TV_4750_03_Out := REAL_TO_INT(6554.0 + (TICSA_Output / 100.0) * (32767.0 - 6554.0));
+
+(* Solenoid valve control based on hand switch *)
+SV_104_01 := HS_4750_01;
+
+(* Aggregate all alarm states for SCADA/HMI *)
+System_Alarm :=
+    PI_4712_01_HH_Latch.Q1 OR PI_4712_01_LL_Latch.Q1 OR
+    PI_4712_01_H           OR PI_4712_01_L            OR
+    PICSA_4712_02_HH_Latch.Q1 OR PICSA_4712_02_LL_Latch.Q1 OR
+    PICSA_4712_02_H           OR PICSA_4712_02_L            OR
+    TICSA_4750_03_HH_Latch.Q1 OR TICSA_4750_03_LL_Latch.Q1 OR
+    TICSA_4750_03_H           OR TICSA_4750_03_L            OR
+    HS_4750_01_HH_Latch.Q1    OR HS_4750_01_LL_Latch.Q1    OR
+    HS_4750_01_H              OR HS_4750_01_L;</html:p>
+          </ST>
+        </body>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Config0">
+        <resource name="Res0">
+          <task name="MainTask" interval="T#20ms" priority="0"/>
+          <pouInstance name="Main" typeName="GeneratedProgram"/>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+</project>

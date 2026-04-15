@@ -1,0 +1,82 @@
+════════════════════════════════════════════════════════════════
+  PIPELINE v1.3 — OUTPUT SUMMARY
+  Generated : 2026-04-15 14:03:51
+  Output dir: DEXPI-Image-1\20260415_135859
+════════════════════════════════════════════════════════════════
+  Processing time   : 292.6s
+  Components        : 18
+  Control loops     : 4
+  Safety functions  : 0
+
+  Extracted instruments (4)
+  ──────────────────────────────────────────────────────────────
+    HS-4750.01           [DI]    Hand switch for manual control operation
+    TICSA-4750.03        [AI]    Temperature indicator with control station and alarm functio
+    PI-4712.01           [AI]    Pressure indicator on pump discharge
+    PICSA-4712.02        [AI]    Pressure indicator with control station and alarm functions
+
+  Extracted equipment (5)
+  ──────────────────────────────────────────────────────────────
+    T4750                              Large vertical pressure vessel with multiple nozzles (N
+    H1007                              Shell-and-tube heat exchanger, horizontal orientation, 
+    P4711                              Centrifugal pump with suction and discharge connections
+    P4712                              Centrifugal pump with suction and discharge connections
+    H1008                              Shell-and-tube heat exchanger, horizontal orientation, 
+
+  Extracted valves (2)
+  ──────────────────────────────────────────────────────────────
+    SV-104.01            [solenoid]  Solenoid valve on line from vessel T4750, 6 barg, DN=25
+    PV-4712.02           [control]  Pressure control valve with pneumatic diaphragm actuato
+
+  Extracted control loops (4)
+  ──────────────────────────────────────────────────────────────
+    Loop 4750.01       (Hand, manual)
+    Loop 4750.03       (Temperature, indication)
+    Loop 4712.01       (Pressure, indication)
+    Loop 4712.02       (Pressure, feedback)
+
+  I/O mapping       : DEXPI-Image-1\20260415_135859\io_mapping.csv
+
+  Generated code    : 10,131 chars  |  vendor: codesys
+
+  Code validation   : FAIL  |  4/5 tiers  |  8 errors  |  29 warnings
+    [ok  ]  T1 builtin              E:0 W:0  built-in v1.0
+    [ok  ]  T2 blark                E:0 W:0  blark 0.8.3
+    [ok  ]  T3 matiec               E:0 W:0  matiec/iec2c
+    [FAIL]  T4 iec checker          E:8 W:29  iec-checker v0.4
+    [ok  ]  T5 plcopen xml          E:0 W:0  PLCopen TC6 v2.01
+
+  Safety check      : PASS  |  SIL achieved: 3  |  5/5 checks passed
+    [PASS]  variable initialisation
+    [PASS]  emergency stop handling
+    [PASS]  alarm handling
+    [PASS]  defensive programming
+    [PASS]  no unused variables
+  Recommendations:
+    ! Consider adding timeout protection for communication and process
+        operations.
+    ! Provisional SIL 2 assigned. Target SIL 3 will be granted only if
+        NuXmv/PLCverif formal verification passes all generated LTL/CTL
+        properties.
+
+  Formal verify     : PASSED  |  tool: nuxmv  |  19/19 verified
+
+  Fault diagnosis   : 21 FMEA records  |  10 critical  |  5 SDG paths
+  Critical fault modes:
+    [HS-4750.01]  fail_to_operate
+      → Safety function fails dangerously — hazard not detected
+    [SV-104.01]  fail_to_close
+      → Safety function unavailable — process hazard propagates
+    [PV-4712.02]  stuck_open
+      → Uncontrolled flow — possible flooding or overpressure downst
+    [PV-4712.02]  stuck_closed
+      → Flow stoppage — process starvation, pump dead-heading
+    [T4750]  high_pressure
+      → Structural integrity risk; PRV / PSV demand
+    [T4750]  high_level
+      → Flooding downstream equipment; pump cavitation
+    [H1007]  tube_leak
+      → Process fluid contaminates utility stream (or vice versa)
+    [P4711]  seal_failure
+      → Process fluid loss — HSE/environmental hazard
+════════════════════════════════════════════════════════════════

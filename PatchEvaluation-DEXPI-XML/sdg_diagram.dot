@@ -1,0 +1,18 @@
+digraph SDG {
+  rankdir=LR;
+  node [shape=ellipse, fontname="Arial", fontsize=10];
+  "PI-4712.01" [label="PI-4712.01\npressure", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "PICSA-4712.02" [label="PICSA-4712.02\npressure", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "TICSA-4750.03" [label="TICSA-4750.03\ntemperature", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "H1007" [label="H1007\nother", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "H1008" [label="H1008\nother", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P4711" [label="P4711\npump", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P4712" [label="P4712\nother", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "T4750" [label="T4750\ntank", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "PV4712.02" [label="PV4712.02\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "HV4750.01" [label="HV4750.01\nmanual", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "TV4750.03" [label="TV4750.03\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "PICSA-4712.02" -> "PV4712.02" [label="−", color="red", fontcolor="red"];
+  "TICSA-4750.03" -> "TV4750.03" [label="−", color="red", fontcolor="red"];
+  "HV4750.01" -> "PI-4712.01" [label="+", color="green", fontcolor="green"];
+}
