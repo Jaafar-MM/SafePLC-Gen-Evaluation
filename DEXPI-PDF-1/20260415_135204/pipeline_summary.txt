@@ -1,0 +1,84 @@
+════════════════════════════════════════════════════════════════
+  PIPELINE v1.3 — OUTPUT SUMMARY
+  Generated : 2026-04-15 13:55:31
+  Output dir: DEXPI-PDF-1\20260415_135204
+════════════════════════════════════════════════════════════════
+  Processing time   : 207.3s
+  Components        : 20
+  Control loops     : 5
+  Safety functions  : 0
+
+  Extracted instruments (4)
+  ──────────────────────────────────────────────────────────────
+    HS-4750.01           [DI]    Hand switch for manual operation
+    TICSA-4750.03        [AI]    Temperature indicator controller switch alarm
+    PI-4712.01           [AI]    Pressure indicator on pump discharge
+    PICSA-4712.02        [AI]    Pressure indicator controller switch alarm
+
+  Extracted equipment (5)
+  ──────────────────────────────────────────────────────────────
+    T4750                              Vertical pressure vessel with 8 nozzle connections (N1-
+    P4711                              Centrifugal pump with electric motor drive, suction and
+    P4712                              Centrifugal pump with electric motor drive, suction and
+    H1007                              Heat exchanger, appears to be shell-and-tube type based
+    H1008                              Heat exchanger with 4 nozzle connections (N1-N4), shell
+
+  Extracted valves (3)
+  ──────────────────────────────────────────────────────────────
+    SV-104.01            [solenoid]  Solenoid valve on vessel T4750 nozzle N5, P=6 barg, DN=
+    PV-71202             [control]  Pressure control valve with pneumatic diaphragm actuato
+    TV-4750.03           [control]  Temperature control valve with pneumatic actuator [ISA-
+
+  Extracted control loops (5)
+  ──────────────────────────────────────────────────────────────
+    Loop 4750.01       (Manual, manual)
+    Loop 4750.03       (Temperature, feedback)
+    Loop 71202         (Pressure, feedback)
+    Loop 4712.01       (Pressure, indication)
+    Loop 4712.02       (Pressure, indication)
+
+  I/O mapping       : DEXPI-PDF-1\20260415_135204\io_mapping.csv
+
+  Generated code    : 13,075 chars  |  vendor: codesys
+
+  Code validation   : PASS  |  5/5 tiers  |  0 errors  |  1 warnings
+    [ok  ]  T1 builtin              E:0 W:0  built-in v1.0
+    [ok  ]  T2 blark                E:0 W:0  blark 0.8.3
+    [ok  ]  T3 matiec               E:0 W:0  matiec/iec2c
+    [ok  ]  T4 iec checker          E:0 W:1  iec-checker v0.4
+    [ok  ]  T5 plcopen xml          E:0 W:0  PLCopen TC6 v2.01
+
+  Safety check      : PASS  |  SIL achieved: 3  |  5/5 checks passed
+    [PASS]  variable initialisation
+    [PASS]  emergency stop handling
+    [PASS]  alarm handling
+    [PASS]  defensive programming
+    [PASS]  no unused variables
+  Recommendations:
+    ! Consider adding timeout protection for communication and process
+        operations.
+    ! Provisional SIL 2 assigned. Target SIL 3 will be granted only if
+        NuXmv/PLCverif formal verification passes all generated LTL/CTL
+        properties.
+
+  Formal verify     : PASSED  |  tool: nuxmv  |  19/19 verified
+
+  Fault diagnosis   : 25 FMEA records  |  12 critical  |  3 SDG paths
+  Critical fault modes:
+    [HS-4750.01]  fail_to_operate
+      → Safety function fails dangerously — hazard not detected
+    [SV-104.01]  fail_to_close
+      → Safety function unavailable — process hazard propagates
+    [PV-71202]  stuck_open
+      → Uncontrolled flow — possible flooding or overpressure downst
+    [PV-71202]  stuck_closed
+      → Flow stoppage — process starvation, pump dead-heading
+    [TV-4750.03]  stuck_open
+      → Uncontrolled flow — possible flooding or overpressure downst
+    [TV-4750.03]  stuck_closed
+      → Flow stoppage — process starvation, pump dead-heading
+    [T4750]  high_pressure
+      → Structural integrity risk; PRV / PSV demand
+    [T4750]  high_level
+      → Flooding downstream equipment; pump cavitation
+════════════════════════════════════════════════════════════════

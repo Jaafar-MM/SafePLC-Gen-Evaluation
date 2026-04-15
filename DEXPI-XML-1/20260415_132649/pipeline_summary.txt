@@ -1,0 +1,79 @@
+════════════════════════════════════════════════════════════════
+  PIPELINE v1.3 — OUTPUT SUMMARY
+  Generated : 2026-04-15 13:28:50
+  Output dir: DEXPI-XML-1\20260415_132649
+════════════════════════════════════════════════════════════════
+  Processing time   : 120.5s
+  Components        : 35
+  Control loops     : 4
+  Safety functions  : 0
+
+  Extracted instruments (4)
+  ──────────────────────────────────────────────────────────────
+    PI-4712.01           [AI]    PI-4712.01 — Field
+    PICSA-4712.02        [AI]    PICSA-4712.02 — CentralLocation
+    HS-4750.01           [DI]    HS-4750.01 — CentralLocation
+    TICSA-4750.03        [AI]    TICSA-4750.03 — CentralLocation
+
+  Extracted equipment (5)
+  ──────────────────────────────────────────────────────────────
+    H1007                            
+    H1008                            
+    P4711                            
+    P4712                            
+    T4750                            
+
+  Extracted valves (3)
+  ──────────────────────────────────────────────────────────────
+    PV4712.02            [control]  PV4712.02
+    HV4750.01            [manual]  HV4750.01
+    TV4750.03            [control]  TV4750.03
+
+  Extracted control loops (4)
+  ──────────────────────────────────────────────────────────────
+    Loop 4712.01       (P)
+    Loop 4712.02       ()
+    Loop 4750.01       ()
+    Loop 4750.03       ()
+
+  I/O mapping       : DEXPI-XML-1\20260415_132649\io_mapping.csv
+
+  Generated code    : 9,823 chars  |  vendor: codesys
+
+  Code validation   : PASS  |  5/5 tiers  |  0 errors  |  1 warnings
+    [ok  ]  T1 builtin              E:0 W:0  built-in v1.0
+    [ok  ]  T2 blark                E:0 W:0  blark 0.8.3
+    [ok  ]  T3 matiec               E:0 W:0  matiec/iec2c
+    [ok  ]  T4 iec checker          E:0 W:1  iec-checker v0.4
+    [ok  ]  T5 plcopen xml          E:0 W:0  PLCopen TC6 v2.01
+
+  Safety check      : PASS  |  SIL achieved: 3  |  5/5 checks passed
+    [PASS]  variable initialisation
+    [PASS]  emergency stop handling
+    [PASS]  alarm handling
+    [PASS]  defensive programming
+    [PASS]  no unused variables
+  Recommendations:
+    ! Consider adding timeout protection for communication and process
+        operations.
+    ! Provisional SIL 2 assigned. Target SIL 3 will be granted only if
+        NuXmv/PLCverif formal verification passes all generated LTL/CTL
+        properties.
+
+  Formal verify     : PASSED  |  tool: nuxmv  |  19/19 verified
+
+  Fault diagnosis   : 13 FMEA records  |  6 critical  |  5 SDG paths
+  Critical fault modes:
+    [HS-4750.01]  fail_to_operate
+      → Safety function fails dangerously — hazard not detected
+    [PV4712.02]  stuck_open
+      → Uncontrolled flow — possible flooding or overpressure downst
+    [PV4712.02]  stuck_closed
+      → Flow stoppage — process starvation, pump dead-heading
+    [TV4750.03]  stuck_open
+      → Uncontrolled flow — possible flooding or overpressure downst
+    [TV4750.03]  stuck_closed
+      → Flow stoppage — process starvation, pump dead-heading
+    [P4711]  seal_failure
+      → Process fluid loss — HSE/environmental hazard
+════════════════════════════════════════════════════════════════
