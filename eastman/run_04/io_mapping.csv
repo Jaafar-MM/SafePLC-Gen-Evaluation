@@ -1,0 +1,14 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+FI_1_Raw,%IW0,INT,AI,FI-1,"Flow indicator on feed line P-65, left side of diagram"
+FI_2_Raw,%IW2,INT,AI,FI-2,"Flow indicator on line P-53/P-54, mid-section near Column 2 "
+FI_3_Raw,%IW4,INT,AI,FI-3,"Flow indicator on line P-57, near Column 3 / E-8 area"
+TI_1_Raw,%IW6,INT,AI,TI-1,"Temperature indicator, lower left of diagram"
+TI_4_Raw,%IW8,INT,AI,TI-4,Temperature indicator on feed line P-12 to Column 2
+TI_5_Raw,%IW10,INT,AI,TI-5,"Temperature indicator on line P-53, Column 2 feed/side secti"
+TI_6_Raw,%IW12,INT,AI,TI-6,Temperature indicator on line P-50 near Separator E-18
+TI_7_Raw,%IW14,INT,AI,TI-7,"Temperature indicator near E-8 / Column 3 area, right sectio"
+TI_8_Raw,%IW16,INT,AI,TI-8,"Temperature indicator near Column 3 / E-8 area, upper right "
+V_3_Out,%QW0,INT,AO,V-3,"Control valve on line P-28/P-73, globe body with diaphragm a"
+V_4_Out,%QW2,INT,AO,V-4,"Control valve on line P-74/P-12, globe body with diaphragm a"
+V_5_Out,%QW4,INT,AO,V-5,"Control valve on line P-38/P-83, globe body with diaphragm a"
+V_7_Out,%QW6,INT,AO,V-7,"Control valve on line P-19, globe body with diaphragm actuat"

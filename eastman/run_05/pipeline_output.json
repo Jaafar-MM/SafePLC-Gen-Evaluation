@@ -1,0 +1,2903 @@
+{
+  "pid_analysis": {
+    "pid_id": "e8fe9713",
+    "source_type": "image",
+    "source_file": "data\\pid_images\\eastman.png",
+    "timestamp": "2026-04-25T12:41:22.374885",
+    "equipment": [
+      {
+        "id": "EQ-001",
+        "tag": "E-4",
+        "component_type": "equipment",
+        "label": "Condenser, shell-and-tube type, horizontal orientation, multiple tube passes visible, overhead condenser service, 2 shell-side nozzles and 2 tube-side nozzles visible",
+        "description": "Condenser, shell-and-tube type, horizontal orientation, multiple tube passes visible, overhead condenser service, 2 shell-side nozzles and 2 tube-side nozzles visible",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "heat_exchanger",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-002",
+        "tag": "E-5",
+        "component_type": "equipment",
+        "label": "Decanter vessel, vertical orientation with triangular decanter symbol, liquid-liquid separation service, 3 nozzle connections visible (inlet top, two outlets)",
+        "description": "Decanter vessel, vertical orientation with triangular decanter symbol, liquid-liquid separation service, 3 nozzle connections visible (inlet top, two outlets)",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "vessel",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-003",
+        "tag": "E-7",
+        "component_type": "equipment",
+        "label": "Distillation Column 2, vertical column with internals (trays or packing implied), overhead vapour nozzle, bottoms nozzle, multiple side connections including feed inlet (P-53), temperature connection (TC-1, TI-5), level control (LC-3), bottoms (P-48), approximately 6 nozzle connections visible",
+        "description": "Distillation Column 2, vertical column with internals (trays or packing implied), overhead vapour nozzle, bottoms nozzle, multiple side connections including feed inlet (P-53), temperature connection (TC-1, TI-5), level control (LC-3), bottoms (P-48), approximately 6 nozzle connections visible",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "column",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-004",
+        "tag": "E-8",
+        "component_type": "equipment",
+        "label": "Vertical pressure vessel or column section, right-hand side of diagram, multiple nozzle connections, connected to Column 3 and condenser E-12, approximately 4 nozzle connections visible",
+        "description": "Vertical pressure vessel or column section, right-hand side of diagram, multiple nozzle connections, connected to Column 3 and condenser E-12, approximately 4 nozzle connections visible",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "vessel",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-005",
+        "tag": "E-9",
+        "component_type": "equipment",
+        "label": "Condenser, shell-and-tube type, horizontal orientation, multiple tube passes, overhead condenser service for Column 3 side, 2 shell-side and 2 tube-side nozzles visible",
+        "description": "Condenser, shell-and-tube type, horizontal orientation, multiple tube passes, overhead condenser service for Column 3 side, 2 shell-side and 2 tube-side nozzles visible",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "heat_exchanger",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-006",
+        "tag": "E-12",
+        "component_type": "equipment",
+        "label": "Condenser, shell-and-tube type, horizontal orientation, partially visible at bottom-right corner, condenser service",
+        "description": "Condenser, shell-and-tube type, horizontal orientation, partially visible at bottom-right corner, condenser service",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "heat_exchanger",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-007",
+        "tag": "E-13",
+        "component_type": "equipment",
+        "label": "Decanter vessel, vertical orientation with triangular decanter symbol, liquid-liquid separation service, 3 nozzle connections visible (inlet top, two outlets)",
+        "description": "Decanter vessel, vertical orientation with triangular decanter symbol, liquid-liquid separation service, 3 nozzle connections visible (inlet top, two outlets)",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "vessel",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-008",
+        "tag": "E-18",
+        "component_type": "equipment",
+        "label": "Separator vessel with internal cyclone or coalescer element (circular internal symbol visible), vertical orientation, pressure-controlled service (PC-2), multiple nozzle connections including top vapour outlet, liquid outlet (P-50), and inlet connections",
+        "description": "Separator vessel with internal cyclone or coalescer element (circular internal symbol visible), vertical orientation, pressure-controlled service (PC-2), multiple nozzle connections including top vapour outlet, liquid outlet (P-50), and inlet connections",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "vessel",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-009",
+        "tag": "Column 3",
+        "component_type": "equipment",
+        "label": "Distillation Column 3, vertical tall column, rightmost major column in diagram, overhead vapour line P-13, feed connections, multiple side nozzle connections including temperature indicators TI-7 and TI-8, FI-3, approximately 6 nozzle connections visible",
+        "description": "Distillation Column 3, vertical tall column, rightmost major column in diagram, overhead vapour line P-13, feed connections, multiple side nozzle connections including temperature indicators TI-7 and TI-8, FI-3, approximately 6 nozzle connections visible",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "column",
+        "nozzles": []
+      }
+    ],
+    "instruments": [
+      {
+        "id": "INST-001",
+        "tag": "FI-1",
+        "component_type": "instrument",
+        "label": "Flow indicator on feed/process line P-65 area, left side of diagram",
+        "description": "Flow indicator on feed/process line P-65 area, left side of diagram",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "F",
+        "function": "I",
+        "loop_number": "1",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-002",
+        "tag": "FI-2",
+        "component_type": "instrument",
+        "label": "Flow indicator on line P-54/P-52 area, feed to Column 2 or decanter E-13 circuit",
+        "description": "Flow indicator on line P-54/P-52 area, feed to Column 2 or decanter E-13 circuit",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "F",
+        "function": "I",
+        "loop_number": "2",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-003",
+        "tag": "FI-3",
+        "component_type": "instrument",
+        "label": "Flow indicator on line P-57 area, Column 3 section",
+        "description": "Flow indicator on line P-57 area, Column 3 section",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "F",
+        "function": "I",
+        "loop_number": "3",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-004",
+        "tag": "FC-4",
+        "component_type": "instrument",
+        "label": "Flow controller — PLC-internal PID logic, controls valve V-3 on line P-73/P-28 from decanter E-5",
+        "description": "Flow controller — PLC-internal PID logic, controls valve V-3 on line P-73/P-28 from decanter E-5",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "F",
+        "function": "C",
+        "loop_number": "4",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-005",
+        "tag": "FC-5",
+        "component_type": "instrument",
+        "label": "Flow controller — PLC-internal PID logic, controls valve V-5 on reflux/overhead line P-38/P-83 to Column 2",
+        "description": "Flow controller — PLC-internal PID logic, controls valve V-5 on reflux/overhead line P-38/P-83 to Column 2",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "F",
+        "function": "C",
+        "loop_number": "5",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-006",
+        "tag": "FC-6",
+        "component_type": "instrument",
+        "label": "Flow controller — PLC-internal PID logic, controls flow on line P-76/P-18 bottoms area, lower section of diagram",
+        "description": "Flow controller — PLC-internal PID logic, controls flow on line P-76/P-18 bottoms area, lower section of diagram",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "F",
+        "function": "C",
+        "loop_number": "6",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-007",
+        "tag": "LC-1",
+        "component_type": "instrument",
+        "label": "Level controller — PLC-internal PID logic, left side of diagram, dashed signal line P-75 area, controls level in bottom vessel or column base",
+        "description": "Level controller — PLC-internal PID logic, left side of diagram, dashed signal line P-75 area, controls level in bottom vessel or column base",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "L",
+        "function": "C",
+        "loop_number": "1",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-008",
+        "tag": "LC-2",
+        "component_type": "instrument",
+        "label": "Level controller — PLC-internal PID logic, controls level in decanter E-5, signal line P-73 to valve V-3",
+        "description": "Level controller — PLC-internal PID logic, controls level in decanter E-5, signal line P-73 to valve V-3",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "L",
+        "function": "C",
+        "loop_number": "2",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-009",
+        "tag": "LC-3",
+        "component_type": "instrument",
+        "label": "Level controller — PLC-internal PID logic, controls bottoms level in Column 2 (E-7), signal line P-75",
+        "description": "Level controller — PLC-internal PID logic, controls bottoms level in Column 2 (E-7), signal line P-75",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "L",
+        "function": "C",
+        "loop_number": "3",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-010",
+        "tag": "PC-2",
+        "component_type": "instrument",
+        "label": "Pressure controller — PLC-internal PID logic, controls pressure in separator E-18, signal line P-50 to valve V-7 via P-19",
+        "description": "Pressure controller — PLC-internal PID logic, controls pressure in separator E-18, signal line P-50 to valve V-7 via P-19",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "P",
+        "function": "C",
+        "loop_number": "2",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-011",
+        "tag": "TC-1",
+        "component_type": "instrument",
+        "label": "Temperature controller — PLC-internal PID logic, controls temperature in Column 2 (E-7), signal line P-79",
+        "description": "Temperature controller — PLC-internal PID logic, controls temperature in Column 2 (E-7), signal line P-79",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "T",
+        "function": "C",
+        "loop_number": "1",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-012",
+        "tag": "TI-1",
+        "component_type": "instrument",
+        "label": "Temperature indicator, bottom-left area of diagram",
+        "description": "Temperature indicator, bottom-left area of diagram",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "T",
+        "function": "I",
+        "loop_number": "1",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-013",
+        "tag": "TI-4",
+        "component_type": "instrument",
+        "label": "Temperature indicator on feed line to Column 2, lower left area near P-12",
+        "description": "Temperature indicator on feed line to Column 2, lower left area near P-12",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "T",
+        "function": "I",
+        "loop_number": "4",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-014",
+        "tag": "TI-5",
+        "component_type": "instrument",
+        "label": "Temperature indicator on Column 2 (E-7), line P-53 area, mid-section of column",
+        "description": "Temperature indicator on Column 2 (E-7), line P-53 area, mid-section of column",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "T",
+        "function": "I",
+        "loop_number": "5",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-015",
+        "tag": "TI-6",
+        "component_type": "instrument",
+        "label": "Temperature indicator on separator E-18 or nearby line P-47 area, lower mid section",
+        "description": "Temperature indicator on separator E-18 or nearby line P-47 area, lower mid section",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "T",
+        "function": "I",
+        "loop_number": "6",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-016",
+        "tag": "TI-7",
+        "component_type": "instrument",
+        "label": "Temperature indicator on Column 3 or vessel E-8, right side of diagram",
+        "description": "Temperature indicator on Column 3 or vessel E-8, right side of diagram",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "T",
+        "function": "I",
+        "loop_number": "7",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-017",
+        "tag": "TI-8",
+        "component_type": "instrument",
+        "label": "Temperature indicator on Column 3, upper section, right side of diagram",
+        "description": "Temperature indicator on Column 3, upper section, right side of diagram",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "T",
+        "function": "I",
+        "loop_number": "8",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      }
+    ],
+    "valves": [
+      {
+        "id": "VLV-001",
+        "tag": "V-3",
+        "component_type": "valve",
+        "label": "Control valve on line P-28/P-73 from decanter E-5 bottom outlet, globe body with diaphragm actuator, controlled by FC-4 and LC-2",
+        "description": "Control valve on line P-28/P-73 from decanter E-5 bottom outlet, globe body with diaphragm actuator, controlled by FC-4 and LC-2",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "control",
+        "fail_position": "unknown",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-002",
+        "tag": "V-4",
+        "component_type": "valve",
+        "label": "Control valve on line P-74/P-12 feed to Column 2, globe body with diaphragm actuator, associated with FC-4 loop",
+        "description": "Control valve on line P-74/P-12 feed to Column 2, globe body with diaphragm actuator, associated with FC-4 loop",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "control",
+        "fail_position": "unknown",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-003",
+        "tag": "V-5",
+        "component_type": "valve",
+        "label": "Control valve on overhead/reflux line P-38/P-83, globe body with diaphragm actuator, controlled by FC-5",
+        "description": "Control valve on overhead/reflux line P-38/P-83, globe body with diaphragm actuator, controlled by FC-5",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "control",
+        "fail_position": "unknown",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-004",
+        "tag": "V-7",
+        "component_type": "valve",
+        "label": "Control valve on line P-19 from separator E-18 vapour outlet, globe body with diaphragm actuator, controlled by PC-2",
+        "description": "Control valve on line P-19 from separator E-18 vapour outlet, globe body with diaphragm actuator, controlled by PC-2",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "control",
+        "fail_position": "unknown",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      }
+    ],
+    "piping": [
+      {
+        "id": "PIPE-001",
+        "tag": "P-10",
+        "component_type": "piping",
+        "label": "P-10",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-4 (Condenser)",
+        "to_component": "E-5 (Decanter)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-10",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-002",
+        "tag": "P-12",
+        "component_type": "piping",
+        "label": "P-12",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "V-4",
+        "to_component": "E-7 (Column 2)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-12",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-003",
+        "tag": "P-13",
+        "component_type": "piping",
+        "label": "P-13",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "Column 3 overhead",
+        "to_component": "E-9 (Condenser)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-13",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-004",
+        "tag": "P-14",
+        "component_type": "piping",
+        "label": "P-14",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-9 (Condenser)",
+        "to_component": "E-13 (Decanter)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-14",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-005",
+        "tag": "P-18",
+        "component_type": "piping",
+        "label": "P-18",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-18 (Separator) / FC-6 area",
+        "to_component": "downstream process",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-18",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-006",
+        "tag": "P-19",
+        "component_type": "piping",
+        "label": "P-19",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-18 (Separator) vapour",
+        "to_component": "V-7",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-19",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-007",
+        "tag": "P-20",
+        "component_type": "piping",
+        "label": "P-20",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-8 / Column 3 bottoms area",
+        "to_component": "E-12 (Condenser)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-20",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-008",
+        "tag": "P-28",
+        "component_type": "piping",
+        "label": "P-28",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-5 (Decanter) bottom",
+        "to_component": "V-3",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-28",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-009",
+        "tag": "P-38",
+        "component_type": "piping",
+        "label": "P-38",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-4 (Condenser) / reflux",
+        "to_component": "V-5",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-38",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-010",
+        "tag": "P-42",
+        "component_type": "piping",
+        "label": "P-42",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-4 (Condenser) outlet",
+        "to_component": "Column 2 overhead return or off-page",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-42",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-011",
+        "tag": "P-45",
+        "component_type": "piping",
+        "label": "P-45",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-8",
+        "to_component": "off-page connector (outlet)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-45",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-012",
+        "tag": "P-47",
+        "component_type": "piping",
+        "label": "P-47",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-7 (Column 2) bottoms or sump",
+        "to_component": "E-18 (Separator) area",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-47",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-013",
+        "tag": "P-48",
+        "component_type": "piping",
+        "label": "P-48",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-7 (Column 2) bottoms",
+        "to_component": "downstream / reboiler area",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-48",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-014",
+        "tag": "P-50",
+        "component_type": "piping",
+        "label": "P-50",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "PC-2 signal / E-18",
+        "to_component": "V-7 control signal path",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-50",
+        "flow_direction": "signal"
+      },
+      {
+        "id": "PIPE-015",
+        "tag": "P-52",
+        "component_type": "piping",
+        "label": "P-52",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-13 (Decanter) outlet",
+        "to_component": "Column 2 or feed area",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-52",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-016",
+        "tag": "P-53",
+        "component_type": "piping",
+        "label": "P-53",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "Feed / FI-2 area",
+        "to_component": "E-7 (Column 2) feed nozzle",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-53",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-017",
+        "tag": "P-54",
+        "component_type": "piping",
+        "label": "P-54",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-13 (Decanter)",
+        "to_component": "Column 2 or FI-2 area",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-54",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-018",
+        "tag": "P-57",
+        "component_type": "piping",
+        "label": "P-57",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "Column 3",
+        "to_component": "FI-3 / downstream",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-57",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-019",
+        "tag": "P-58",
+        "component_type": "piping",
+        "label": "P-58",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-13 (Decanter)",
+        "to_component": "Column 3 or E-8 area",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-58",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-020",
+        "tag": "P-64",
+        "component_type": "piping",
+        "label": "P-64",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "off-page / upstream",
+        "to_component": "E-5 (Decanter) inlet",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-64",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-021",
+        "tag": "P-65",
+        "component_type": "piping",
+        "label": "P-65",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "FI-1 area / upstream feed",
+        "to_component": "E-5 (Decanter) or column base",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-65",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-022",
+        "tag": "P-66",
+        "component_type": "piping",
+        "label": "P-66",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-5 (Decanter) or upstream",
+        "to_component": "V-4 / Column 2 feed",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-66",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-023",
+        "tag": "P-73",
+        "component_type": "piping",
+        "label": "P-73",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "LC-2 signal",
+        "to_component": "V-3 (control signal)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-73",
+        "flow_direction": "signal"
+      },
+      {
+        "id": "PIPE-024",
+        "tag": "P-74",
+        "component_type": "piping",
+        "label": "P-74",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "V-3 outlet",
+        "to_component": "V-4 / P-12",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-74",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-025",
+        "tag": "P-75",
+        "component_type": "piping",
+        "label": "P-75",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "LC-1 / LC-3 signal",
+        "to_component": "control valve (implied)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-75",
+        "flow_direction": "signal"
+      },
+      {
+        "id": "PIPE-026",
+        "tag": "P-76",
+        "component_type": "piping",
+        "label": "P-76",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "FC-6 / bottoms area",
+        "to_component": "downstream",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-76",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-027",
+        "tag": "P-78",
+        "component_type": "piping",
+        "label": "P-78",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "E-18 (Separator) area",
+        "to_component": "PC-2 sensing line",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-78",
+        "flow_direction": "signal"
+      },
+      {
+        "id": "PIPE-028",
+        "tag": "P-79",
+        "component_type": "piping",
+        "label": "P-79",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "TC-1 signal",
+        "to_component": "Column 2 temperature control element",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-79",
+        "flow_direction": "signal"
+      },
+      {
+        "id": "PIPE-029",
+        "tag": "P-83",
+        "component_type": "piping",
+        "label": "P-83",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "V-5 outlet",
+        "to_component": "E-7 (Column 2) overhead / reflux return",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-83",
+        "flow_direction": "forward"
+      }
+    ],
+    "control_loops": [
+      {
+        "id": "LOOP-001",
+        "loop_number": "2",
+        "loop_type": "feedback",
+        "measured_variable": "Level",
+        "controlled_variable": "",
+        "sensor_id": "LC-2",
+        "controller_id": "LC-2",
+        "actuator_id": "V-3",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-002",
+        "loop_number": "3",
+        "loop_type": "feedback",
+        "measured_variable": "Level",
+        "controlled_variable": "",
+        "sensor_id": "LC-3",
+        "controller_id": "LC-3",
+        "actuator_id": "",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-003",
+        "loop_number": "1-LC",
+        "loop_type": "feedback",
+        "measured_variable": "Level",
+        "controlled_variable": "",
+        "sensor_id": "LC-1",
+        "controller_id": "LC-1",
+        "actuator_id": "",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-004",
+        "loop_number": "4",
+        "loop_type": "feedback",
+        "measured_variable": "Flow",
+        "controlled_variable": "",
+        "sensor_id": "FI-1",
+        "controller_id": "FC-4",
+        "actuator_id": "V-4",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-005",
+        "loop_number": "5",
+        "loop_type": "feedback",
+        "measured_variable": "Flow",
+        "controlled_variable": "",
+        "sensor_id": "FI-2",
+        "controller_id": "FC-5",
+        "actuator_id": "V-5",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-006",
+        "loop_number": "6",
+        "loop_type": "feedback",
+        "measured_variable": "Flow",
+        "controlled_variable": "",
+        "sensor_id": "",
+        "controller_id": "FC-6",
+        "actuator_id": "",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-007",
+        "loop_number": "2-PC",
+        "loop_type": "feedback",
+        "measured_variable": "Pressure",
+        "controlled_variable": "",
+        "sensor_id": "PC-2",
+        "controller_id": "PC-2",
+        "actuator_id": "V-7",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-008",
+        "loop_number": "1-TC",
+        "loop_type": "feedback",
+        "measured_variable": "Temperature",
+        "controlled_variable": "",
+        "sensor_id": "TI-5",
+        "controller_id": "TC-1",
+        "actuator_id": "",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "EQ-001",
+          "component_type": "equipment",
+          "tag": "E-4",
+          "label": "Condenser, shell-and-tube type, horizontal orientation, multiple tube passes visible, overhead condenser service, 2 shell-side nozzles and 2 tube-side nozzles visible",
+          "properties": {
+            "subtype": "heat_exchanger"
+          }
+        },
+        {
+          "id": "EQ-002",
+          "component_type": "equipment",
+          "tag": "E-5",
+          "label": "Decanter vessel, vertical orientation with triangular decanter symbol, liquid-liquid separation service, 3 nozzle connections visible (inlet top, two outlets)",
+          "properties": {
+            "subtype": "vessel"
+          }
+        },
+        {
+          "id": "EQ-003",
+          "component_type": "equipment",
+          "tag": "E-7",
+          "label": "Distillation Column 2, vertical column with internals (trays or packing implied), overhead vapour nozzle, bottoms nozzle, multiple side connections including feed inlet (P-53), temperature connection (TC-1, TI-5), level control (LC-3), bottoms (P-48), approximately 6 nozzle connections visible",
+          "properties": {
+            "subtype": "column"
+          }
+        },
+        {
+          "id": "EQ-004",
+          "component_type": "equipment",
+          "tag": "E-8",
+          "label": "Vertical pressure vessel or column section, right-hand side of diagram, multiple nozzle connections, connected to Column 3 and condenser E-12, approximately 4 nozzle connections visible",
+          "properties": {
+            "subtype": "vessel"
+          }
+        },
+        {
+          "id": "EQ-005",
+          "component_type": "equipment",
+          "tag": "E-9",
+          "label": "Condenser, shell-and-tube type, horizontal orientation, multiple tube passes, overhead condenser service for Column 3 side, 2 shell-side and 2 tube-side nozzles visible",
+          "properties": {
+            "subtype": "heat_exchanger"
+          }
+        },
+        {
+          "id": "EQ-006",
+          "component_type": "equipment",
+          "tag": "E-12",
+          "label": "Condenser, shell-and-tube type, horizontal orientation, partially visible at bottom-right corner, condenser service",
+          "properties": {
+            "subtype": "heat_exchanger"
+          }
+        },
+        {
+          "id": "EQ-007",
+          "component_type": "equipment",
+          "tag": "E-13",
+          "label": "Decanter vessel, vertical orientation with triangular decanter symbol, liquid-liquid separation service, 3 nozzle connections visible (inlet top, two outlets)",
+          "properties": {
+            "subtype": "vessel"
+          }
+        },
+        {
+          "id": "EQ-008",
+          "component_type": "equipment",
+          "tag": "E-18",
+          "label": "Separator vessel with internal cyclone or coalescer element (circular internal symbol visible), vertical orientation, pressure-controlled service (PC-2), multiple nozzle connections including top vapour outlet, liquid outlet (P-50), and inlet connections",
+          "properties": {
+            "subtype": "vessel"
+          }
+        },
+        {
+          "id": "EQ-009",
+          "component_type": "equipment",
+          "tag": "Column 3",
+          "label": "Distillation Column 3, vertical tall column, rightmost major column in diagram, overhead vapour line P-13, feed connections, multiple side nozzle connections including temperature indicators TI-7 and TI-8, FI-3, approximately 6 nozzle connections visible",
+          "properties": {
+            "subtype": "column"
+          }
+        },
+        {
+          "id": "INST-001",
+          "component_type": "instrument",
+          "tag": "FI-1",
+          "label": "Flow indicator on feed/process line P-65 area, left side of diagram",
+          "properties": {
+            "measured_variable": "F",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-002",
+          "component_type": "instrument",
+          "tag": "FI-2",
+          "label": "Flow indicator on line P-54/P-52 area, feed to Column 2 or decanter E-13 circuit",
+          "properties": {
+            "measured_variable": "F",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-003",
+          "component_type": "instrument",
+          "tag": "FI-3",
+          "label": "Flow indicator on line P-57 area, Column 3 section",
+          "properties": {
+            "measured_variable": "F",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-004",
+          "component_type": "instrument",
+          "tag": "FC-4",
+          "label": "Flow controller — PLC-internal PID logic, controls valve V-3 on line P-73/P-28 from decanter E-5",
+          "properties": {
+            "measured_variable": "F",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-005",
+          "component_type": "instrument",
+          "tag": "FC-5",
+          "label": "Flow controller — PLC-internal PID logic, controls valve V-5 on reflux/overhead line P-38/P-83 to Column 2",
+          "properties": {
+            "measured_variable": "F",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-006",
+          "component_type": "instrument",
+          "tag": "FC-6",
+          "label": "Flow controller — PLC-internal PID logic, controls flow on line P-76/P-18 bottoms area, lower section of diagram",
+          "properties": {
+            "measured_variable": "F",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-007",
+          "component_type": "instrument",
+          "tag": "LC-1",
+          "label": "Level controller — PLC-internal PID logic, left side of diagram, dashed signal line P-75 area, controls level in bottom vessel or column base",
+          "properties": {
+            "measured_variable": "L",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-008",
+          "component_type": "instrument",
+          "tag": "LC-2",
+          "label": "Level controller — PLC-internal PID logic, controls level in decanter E-5, signal line P-73 to valve V-3",
+          "properties": {
+            "measured_variable": "L",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-009",
+          "component_type": "instrument",
+          "tag": "LC-3",
+          "label": "Level controller — PLC-internal PID logic, controls bottoms level in Column 2 (E-7), signal line P-75",
+          "properties": {
+            "measured_variable": "L",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-010",
+          "component_type": "instrument",
+          "tag": "PC-2",
+          "label": "Pressure controller — PLC-internal PID logic, controls pressure in separator E-18, signal line P-50 to valve V-7 via P-19",
+          "properties": {
+            "measured_variable": "P",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-011",
+          "component_type": "instrument",
+          "tag": "TC-1",
+          "label": "Temperature controller — PLC-internal PID logic, controls temperature in Column 2 (E-7), signal line P-79",
+          "properties": {
+            "measured_variable": "T",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-012",
+          "component_type": "instrument",
+          "tag": "TI-1",
+          "label": "Temperature indicator, bottom-left area of diagram",
+          "properties": {
+            "measured_variable": "T",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-013",
+          "component_type": "instrument",
+          "tag": "TI-4",
+          "label": "Temperature indicator on feed line to Column 2, lower left area near P-12",
+          "properties": {
+            "measured_variable": "T",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-014",
+          "component_type": "instrument",
+          "tag": "TI-5",
+          "label": "Temperature indicator on Column 2 (E-7), line P-53 area, mid-section of column",
+          "properties": {
+            "measured_variable": "T",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-015",
+          "component_type": "instrument",
+          "tag": "TI-6",
+          "label": "Temperature indicator on separator E-18 or nearby line P-47 area, lower mid section",
+          "properties": {
+            "measured_variable": "T",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-016",
+          "component_type": "instrument",
+          "tag": "TI-7",
+          "label": "Temperature indicator on Column 3 or vessel E-8, right side of diagram",
+          "properties": {
+            "measured_variable": "T",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-017",
+          "component_type": "instrument",
+          "tag": "TI-8",
+          "label": "Temperature indicator on Column 3, upper section, right side of diagram",
+          "properties": {
+            "measured_variable": "T",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "VLV-001",
+          "component_type": "valve",
+          "tag": "V-3",
+          "label": "Control valve on line P-28/P-73 from decanter E-5 bottom outlet, globe body with diaphragm actuator, controlled by FC-4 and LC-2",
+          "properties": {
+            "valve_type": "control",
+            "plc_io_type": "AO",
+            "fail_position": "unknown"
+          }
+        },
+        {
+          "id": "VLV-002",
+          "component_type": "valve",
+          "tag": "V-4",
+          "label": "Control valve on line P-74/P-12 feed to Column 2, globe body with diaphragm actuator, associated with FC-4 loop",
+          "properties": {
+            "valve_type": "control",
+            "plc_io_type": "AO",
+            "fail_position": "unknown"
+          }
+        },
+        {
+          "id": "VLV-003",
+          "component_type": "valve",
+          "tag": "V-5",
+          "label": "Control valve on overhead/reflux line P-38/P-83, globe body with diaphragm actuator, controlled by FC-5",
+          "properties": {
+            "valve_type": "control",
+            "plc_io_type": "AO",
+            "fail_position": "unknown"
+          }
+        },
+        {
+          "id": "VLV-004",
+          "component_type": "valve",
+          "tag": "V-7",
+          "label": "Control valve on line P-19 from separator E-18 vapour outlet, globe body with diaphragm actuator, controlled by PC-2",
+          "properties": {
+            "valve_type": "control",
+            "plc_io_type": "AO",
+            "fail_position": "unknown"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source_id": "E-4 (Condenser)",
+          "target_id": "E-5 (Decanter)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-10"
+          }
+        },
+        {
+          "source_id": "VLV-002",
+          "target_id": "E-7 (Column 2)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-12"
+          }
+        },
+        {
+          "source_id": "Column 3 overhead",
+          "target_id": "E-9 (Condenser)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-13"
+          }
+        },
+        {
+          "source_id": "E-9 (Condenser)",
+          "target_id": "E-13 (Decanter)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-14"
+          }
+        },
+        {
+          "source_id": "E-18 (Separator) / FC-6 area",
+          "target_id": "downstream process",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-18"
+          }
+        },
+        {
+          "source_id": "E-18 (Separator) vapour",
+          "target_id": "VLV-004",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-19"
+          }
+        },
+        {
+          "source_id": "E-8 / Column 3 bottoms area",
+          "target_id": "E-12 (Condenser)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-20"
+          }
+        },
+        {
+          "source_id": "E-5 (Decanter) bottom",
+          "target_id": "VLV-001",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-28"
+          }
+        },
+        {
+          "source_id": "E-4 (Condenser) / reflux",
+          "target_id": "VLV-003",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-38"
+          }
+        },
+        {
+          "source_id": "E-4 (Condenser) outlet",
+          "target_id": "Column 2 overhead return or off-page",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-42"
+          }
+        },
+        {
+          "source_id": "EQ-004",
+          "target_id": "off-page connector (outlet)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-45"
+          }
+        },
+        {
+          "source_id": "E-7 (Column 2) bottoms or sump",
+          "target_id": "E-18 (Separator) area",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-47"
+          }
+        },
+        {
+          "source_id": "E-7 (Column 2) bottoms",
+          "target_id": "downstream / reboiler area",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-48"
+          }
+        },
+        {
+          "source_id": "PC-2 signal / E-18",
+          "target_id": "V-7 control signal path",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-50"
+          }
+        },
+        {
+          "source_id": "E-13 (Decanter) outlet",
+          "target_id": "Column 2 or feed area",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-52"
+          }
+        },
+        {
+          "source_id": "Feed / FI-2 area",
+          "target_id": "E-7 (Column 2) feed nozzle",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-53"
+          }
+        },
+        {
+          "source_id": "E-13 (Decanter)",
+          "target_id": "Column 2 or FI-2 area",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-54"
+          }
+        },
+        {
+          "source_id": "EQ-009",
+          "target_id": "FI-3 / downstream",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-57"
+          }
+        },
+        {
+          "source_id": "E-13 (Decanter)",
+          "target_id": "Column 3 or E-8 area",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-58"
+          }
+        },
+        {
+          "source_id": "off-page / upstream",
+          "target_id": "E-5 (Decanter) inlet",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-64"
+          }
+        },
+        {
+          "source_id": "FI-1 area / upstream feed",
+          "target_id": "E-5 (Decanter) or column base",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-65"
+          }
+        },
+        {
+          "source_id": "E-5 (Decanter) or upstream",
+          "target_id": "V-4 / Column 2 feed",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-66"
+          }
+        },
+        {
+          "source_id": "LC-2 signal",
+          "target_id": "V-3 (control signal)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-73"
+          }
+        },
+        {
+          "source_id": "V-3 outlet",
+          "target_id": "V-4 / P-12",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-74"
+          }
+        },
+        {
+          "source_id": "LC-1 / LC-3 signal",
+          "target_id": "control valve (implied)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-75"
+          }
+        },
+        {
+          "source_id": "FC-6 / bottoms area",
+          "target_id": "downstream",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-76"
+          }
+        },
+        {
+          "source_id": "E-18 (Separator) area",
+          "target_id": "PC-2 sensing line",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-78"
+          }
+        },
+        {
+          "source_id": "TC-1 signal",
+          "target_id": "Column 2 temperature control element",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-79"
+          }
+        },
+        {
+          "source_id": "V-5 outlet",
+          "target_id": "E-7 (Column 2) overhead / reflux return",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-83"
+          }
+        },
+        {
+          "source_id": "INST-008",
+          "target_id": "INST-008",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "2"
+          }
+        },
+        {
+          "source_id": "INST-008",
+          "target_id": "VLV-001",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "2"
+          }
+        },
+        {
+          "source_id": "INST-009",
+          "target_id": "INST-009",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "3"
+          }
+        },
+        {
+          "source_id": "INST-007",
+          "target_id": "INST-007",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "1-LC"
+          }
+        },
+        {
+          "source_id": "INST-001",
+          "target_id": "INST-004",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "4"
+          }
+        },
+        {
+          "source_id": "INST-004",
+          "target_id": "VLV-002",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "4"
+          }
+        },
+        {
+          "source_id": "INST-002",
+          "target_id": "INST-005",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "5"
+          }
+        },
+        {
+          "source_id": "INST-005",
+          "target_id": "VLV-003",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "5"
+          }
+        },
+        {
+          "source_id": "INST-010",
+          "target_id": "INST-010",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "2-PC"
+          }
+        },
+        {
+          "source_id": "INST-010",
+          "target_id": "VLV-004",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "2-PC"
+          }
+        },
+        {
+          "source_id": "INST-014",
+          "target_id": "INST-011",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "1-TC"
+          }
+        }
+      ]
+    },
+    "extraction_confidence": 0.72,
+    "warnings": [
+      "VLM notes: Several observations: (1) Instrument bubbles in this P&ID show controller function letters (LC, FC, PC, TC) without separate transmitter bubbles — the controllers appear to be combined indicator-controllers typical of older P&ID style; transmitter elements may be implied. (2) Valve tags V-3, V-4, V-5, V-7 are identified from labels on the drawing; actuator symbols suggest pneumatic diaphragm type but fail positions are not explicitly annotated. (3) FI indicators (FI-1, FI-2, FI-3) are shown as simple indicator circles without transmitter designation. (4) Column 3 tag is written as text label only, no equipment number tag visible. (5) Off-page connectors are visible at P-45 (right side), P-64 (upper left), and at the top of E-4 condenser inlet. (6) Partial condenser E-12 visible at bottom right, fully cut off. (7) LC-1 appears isolated bottom-left with only dashed signal lines visible. (8) The separator E-18 has an internal circular symbol suggesting a cyclone separator or coalescing element. (9) Line numbers P-2x (partially visible right side) and other cut-off lines suggest this is a partial extract of a larger P&ID sheet. (10) No PSVs, check valves, or utility connections (steam, cooling water, instrument air) are clearly visible in this portion of the diagram.",
+      "Extraction confidence (0.72) below threshold (0.85). Consider DEXPI input for validation."
+    ],
+    "raw_vlm_output": "```json\n{\n  \"equipment\": [\n    {\n      \"tag\": \"E-4\",\n      \"subtype\": \"heat_exchanger\",\n      \"description\": \"Condenser, shell-and-tube type, horizontal orientation, multiple tube passes visible, overhead condenser service, 2 shell-side nozzles and 2 tube-side nozzles visible\"\n    },\n    {\n      \"tag\": \"E-5\",\n      \"subtype\": \"vessel\",\n      \"description\": \"Decanter vessel, vertical orientation with triangular decanter symbol, liquid-liquid separation service, 3 nozzle connections visible (inlet top, two outlets)\"\n    },\n    {\n      \"tag\": \"E-7\",\n      \"subtype\": \"column\",\n      \"description\": \"Distillation Column 2, vertical column with internals (trays or packing implied), overhead vapour nozzle, bottoms nozzle, multiple side connections including feed inlet (P-53), temperature connection (TC-1, TI-5), level control (LC-3), bottoms (P-48), approximately 6 nozzle connections visible\"\n    },\n    {\n      \"tag\": \"E-8\",\n      \"subtype\": \"vessel\",\n      \"description\": \"Vertical pressure vessel or column section, right-hand side of diagram, multiple nozzle connections, connected to Column 3 and condenser E-12, approximately 4 nozzle connections visible\"\n    },\n    {\n      \"tag\": \"E-9\",\n      \"subtype\": \"heat_exchanger\",\n      \"description\": \"Condenser, shell-and-tube type, horizontal orientation, multiple tube passes, overhead condenser service for Column 3 side, 2 shell-side and 2 tube-side nozzles visible\"\n    },\n    {\n      \"tag\": \"E-12\",\n      \"subtype\": \"heat_exchanger\",\n      \"description\": \"Condenser, shell-and-tube type, horizontal orientation, partially visible at bottom-right corner, condenser service\"\n    },\n    {\n      \"tag\": \"E-13\",\n      \"subtype\": \"vessel\",\n      \"description\": \"Decanter vessel, vertical orientation with triangular decanter symbol, liquid-liquid separation service, 3 nozzle connections visible (inlet top, two outlets)\"\n    },\n    {\n      \"tag\": \"E-18\",\n      \"subtype\": \"vessel\",\n      \"description\": \"Separator vessel with internal cyclone or coalescer element (circular internal symbol visible), vertical orientation, pressure-controlled service (PC-2), multiple nozzle connections including top vapour outlet, liquid outlet (P-50), and inlet connections\"\n    },\n    {\n      \"tag\": \"Column 3\",\n      \"subtype\": \"column\",\n      \"description\": \"Distillation Column 3, vertical tall column, rightmost major column in diagram, overhead vapour line P-13, feed connections, multiple side nozzle connections including temperature indicators TI-7 and TI-8, FI-3, approximately 6 nozzle connections visible\"\n    }\n  ],\n  \"instruments\": [\n    {\n      \"tag\": \"FI-1\",\n      \"measured_variable\": \"F\",\n      \"function\": \"I\",\n      \"loop_number\": \"1\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Flow indicator on feed/process line P-65 area, left side of diagram\"\n    },\n    {\n      \"tag\": \"FI-2\",\n      \"measured_variable\": \"F\",\n      \"function\": \"I\",\n      \"loop_number\": \"2\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Flow indicator on line P-54/P-52 area, feed to Column 2 or decanter E-13 circuit\"\n    },\n    {\n      \"tag\": \"FI-3\",\n      \"measured_variable\": \"F\",\n      \"function\": \"I\",\n      \"loop_number\": \"3\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Flow indicator on line P-57 area, Column 3 section\"\n    },\n    {\n      \"tag\": \"FC-4\",\n      \"measured_variable\": \"F\",\n      \"function\": \"C\",\n      \"loop_number\": \"4\",\n      \"plc_io_type\": null,\n      \"description\": \"Flow controller — PLC-internal PID logic, controls valve V-3 on line P-73/P-28 from decanter E-5\"\n    },\n    {\n      \"tag\": \"FC-5\",\n      \"measured_variable\": \"F\",\n      \"function\": \"C\",\n      \"loop_number\": \"5\",\n      \"plc_io_type\": null,\n      \"description\": \"Flow controller — PLC-internal PID logic, controls valve V-5 on reflux/overhead line P-38/P-83 to Column 2\"\n    },\n    {\n      \"tag\": \"FC-6\",\n      \"measured_variable\": \"F\",\n      \"function\": \"C\",\n      \"loop_number\": \"6\",\n      \"plc_io_type\": null,\n      \"description\": \"Flow controller — PLC-internal PID logic, controls flow on line P-76/P-18 bottoms area, lower section of diagram\"\n    },\n    {\n      \"tag\": \"LC-1\",\n      \"measured_variable\": \"L\",\n      \"function\": \"C\",\n      \"loop_number\": \"1\",\n      \"plc_io_type\": null,\n      \"description\": \"Level controller — PLC-internal PID logic, left side of diagram, dashed signal line P-75 area, controls level in bottom vessel or column base\"\n    },\n    {\n      \"tag\": \"LC-2\",\n      \"measured_variable\": \"L\",\n      \"function\": \"C\",\n      \"loop_number\": \"2\",\n      \"plc_io_type\": null,\n      \"description\": \"Level controller — PLC-internal PID logic, controls level in decanter E-5, signal line P-73 to valve V-3\"\n    },\n    {\n      \"tag\": \"LC-3\",\n      \"measured_variable\": \"L\",\n      \"function\": \"C\",\n      \"loop_number\": \"3\",\n      \"plc_io_type\": null,\n      \"description\": \"Level controller — PLC-internal PID logic, controls bottoms level in Column 2 (E-7), signal line P-75\"\n    },\n    {\n      \"tag\": \"PC-2\",\n      \"measured_variable\": \"P\",\n      \"function\": \"C\",\n      \"loop_number\": \"2\",\n      \"plc_io_type\": null,\n      \"description\": \"Pressure controller — PLC-internal PID logic, controls pressure in separator E-18, signal line P-50 to valve V-7 via P-19\"\n    },\n    {\n      \"tag\": \"TC-1\",\n      \"measured_variable\": \"T\",\n      \"function\": \"C\",\n      \"loop_number\": \"1\",\n      \"plc_io_type\": null,\n      \"description\": \"Temperature controller — PLC-internal PID logic, controls temperature in Column 2 (E-7), signal line P-79\"\n    },\n    {\n      \"tag\": \"TI-1\",\n      \"measured_variable\": \"T\",\n      \"function\": \"I\",\n      \"loop_number\": \"1\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature indicator, bottom-left area of diagram\"\n    },\n    {\n      \"tag\": \"TI-4\",\n      \"measured_variable\": \"T\",\n      \"function\": \"I\",\n      \"loop_number\": \"4\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature indicator on feed line to Column 2, lower left area near P-12\"\n    },\n    {\n      \"tag\": \"TI-5\",\n      \"measured_variable\": \"T\",\n      \"function\": \"I\",\n      \"loop_number\": \"5\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature indicator on Column 2 (E-7), line P-53 area, mid-section of column\"\n    },\n    {\n      \"tag\": \"TI-6\",\n      \"measured_variable\": \"T\",\n      \"function\": \"I\",\n      \"loop_number\": \"6\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature indicator on separator E-18 or nearby line P-47 area, lower mid section\"\n    },\n    {\n      \"tag\": \"TI-7\",\n      \"measured_variable\": \"T\",\n      \"function\": \"I\",\n      \"loop_number\": \"7\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature indicator on Column 3 or vessel E-8, right side of diagram\"\n    },\n    {\n      \"tag\": \"TI-8\",\n      \"measured_variable\": \"T\",\n      \"function\": \"I\",\n      \"loop_number\": \"8\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature indicator on Column 3, upper section, right side of diagram\"\n    }\n  ],\n  \"valves\": [\n    {\n      \"tag\": \"V-3\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"unknown\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Control valve on line P-28/P-73 from decanter E-5 bottom outlet, globe body with diaphragm actuator, controlled by FC-4 and LC-2\"\n    },\n    {\n      \"tag\": \"V-4\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"unknown\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Control valve on line P-74/P-12 feed to Column 2, globe body with diaphragm actuator, associated with FC-4 loop\"\n    },\n    {\n      \"tag\": \"V-5\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"unknown\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Control valve on overhead/reflux line P-38/P-83, globe body with diaphragm actuator, controlled by FC-5\"\n    },\n    {\n      \"tag\": \"V-7\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"unknown\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Control valve on line P-19 from separator E-18 vapour outlet, globe body with diaphragm actuator, controlled by PC-2\"\n    }\n  ],\n  \"piping\": [\n    {\n      \"line_number\": \"P-10\",\n      \"from_component\": \"E-4 (Condenser)\",\n      \"to_component\": \"E-5 (Decanter)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-12\",\n      \"from_component\": \"V-4\",\n      \"to_component\": \"E-7 (Column 2)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-13\",\n      \"from_component\": \"Column 3 overhead\",\n      \"to_component\": \"E-9 (Condenser)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-14\",\n      \"from_component\": \"E-9 (Condenser)\",\n      \"to_component\": \"E-13 (Decanter)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-18\",\n      \"from_component\": \"E-18 (Separator) / FC-6 area\",\n      \"to_component\": \"downstream process\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-19\",\n      \"from_component\": \"E-18 (Separator) vapour\",\n      \"to_component\": \"V-7\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-20\",\n      \"from_component\": \"E-8 / Column 3 bottoms area\",\n      \"to_component\": \"E-12 (Condenser)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-28\",\n      \"from_component\": \"E-5 (Decanter) bottom\",\n      \"to_component\": \"V-3\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-38\",\n      \"from_component\": \"E-4 (Condenser) / reflux\",\n      \"to_component\": \"V-5\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-42\",\n      \"from_component\": \"E-4 (Condenser) outlet\",\n      \"to_component\": \"Column 2 overhead return or off-page\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-45\",\n      \"from_component\": \"E-8\",\n      \"to_component\": \"off-page connector (outlet)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-47\",\n      \"from_component\": \"E-7 (Column 2) bottoms or sump\",\n      \"to_component\": \"E-18 (Separator) area\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-48\",\n      \"from_component\": \"E-7 (Column 2) bottoms\",\n      \"to_component\": \"downstream / reboiler area\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-50\",\n      \"from_component\": \"PC-2 signal / E-18\",\n      \"to_component\": \"V-7 control signal path\",\n      \"flow_direction\": \"signal\"\n    },\n    {\n      \"line_number\": \"P-52\",\n      \"from_component\": \"E-13 (Decanter) outlet\",\n      \"to_component\": \"Column 2 or feed area\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-53\",\n      \"from_component\": \"Feed / FI-2 area\",\n      \"to_component\": \"E-7 (Column 2) feed nozzle\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-54\",\n      \"from_component\": \"E-13 (Decanter)\",\n      \"to_component\": \"Column 2 or FI-2 area\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-57\",\n      \"from_component\": \"Column 3\",\n      \"to_component\": \"FI-3 / downstream\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-58\",\n      \"from_component\": \"E-13 (Decanter)\",\n      \"to_component\": \"Column 3 or E-8 area\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-64\",\n      \"from_component\": \"off-page / upstream\",\n      \"to_component\": \"E-5 (Decanter) inlet\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-65\",\n      \"from_component\": \"FI-1 area / upstream feed\",\n      \"to_component\": \"E-5 (Decanter) or column base\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-66\",\n      \"from_component\": \"E-5 (Decanter) or upstream\",\n      \"to_component\": \"V-4 / Column 2 feed\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-73\",\n      \"from_component\": \"LC-2 signal\",\n      \"to_component\": \"V-3 (control signal)\",\n      \"flow_direction\": \"signal\"\n    },\n    {\n      \"line_number\": \"P-74\",\n      \"from_component\": \"V-3 outlet\",\n      \"to_component\": \"V-4 / P-12\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-75\",\n      \"from_component\": \"LC-1 / LC-3 signal\",\n      \"to_component\": \"control valve (implied)\",\n      \"flow_direction\": \"signal\"\n    },\n    {\n      \"line_number\": \"P-76\",\n      \"from_component\": \"FC-6 / bottoms area\",\n      \"to_component\": \"downstream\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-78\",\n      \"from_component\": \"E-18 (Separator) area\",\n      \"to_component\": \"PC-2 sensing line\",\n      \"flow_direction\": \"signal\"\n    },\n    {\n      \"line_number\": \"P-79\",\n      \"from_component\": \"TC-1 signal\",\n      \"to_component\": \"Column 2 temperature control element\",\n      \"flow_direction\": \"signal\"\n    },\n    {\n      \"line_number\": \"P-83\",\n      \"from_component\": \"V-5 outlet\",\n      \"to_component\": \"E-7 (Column 2) overhead / reflux return\",\n      \"flow_direction\": \"forward\"\n    }\n  ],\n  \"control_loops\": [\n    {\n      \"loop_number\": \"2\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Level\",\n      \"sensor_tag\": \"LC-2\",\n      \"controller_tag\": \"LC-2\",\n      \"actuator_tag\": \"V-3\",\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"3\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Level\",\n      \"sensor_tag\": \"LC-3\",\n      \"controller_tag\": \"LC-3\",\n      \"actuator_tag\": null,\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"1-LC\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Level\",\n      \"sensor_tag\": \"LC-1\",\n      \"controller_tag\": \"LC-1\",\n      \"actuator_tag\": null,\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"4\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Flow\",\n      \"sensor_tag\": \"FI-1\",\n      \"controller_tag\": \"FC-4\",\n      \"actuator_tag\": \"V-4\",\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"5\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Flow\",\n      \"sensor_tag\": \"FI-2\",\n      \"controller_tag\": \"FC-5\",\n      \"actuator_tag\": \"V-5\",\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"6\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Flow\",\n      \"sensor_tag\": null,\n      \"controller_tag\": \"FC-6\",\n      \"actuator_tag\": null,\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"2-PC\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Pressure\",\n      \"sensor_tag\": \"PC-2\",\n      \"controller_tag\": \"PC-2\",\n      \"actuator_tag\": \"V-7\",\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"1-TC\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Temperature\",\n      \"sensor_tag\": \"TI-5\",\n      \"controller_tag\": \"TC-1\",\n      \"actuator_tag\": null,\n      \"is_safety_function\": false\n    }\n  ],\n  \"extraction_confidence\": 0.72,\n  \"notes\": \"Several observations: (1) Instrument bubbles in this P&ID show controller function letters (LC, FC, PC, TC) without separate transmitter bubbles — the controllers appear to be combined indicator-controllers typical of older P&ID style; transmitter elements may be implied. (2) Valve tags V-3, V-4, V-5, V-7 are identified from labels on the drawing; actuator symbols suggest pneumatic diaphragm type but fail positions are not explicitly annotated. (3) FI indicators (FI-1, FI-2, FI-3) are shown as simple indicator circles without transmitter designation. (4) Column 3 tag is written as text label only, no equipment number tag visible. (5) Off-page connectors are visible at P-45 (right side), P-64 (upper left), and at the top of E-4 condenser inlet. (6) Partial condenser E-12 visible at bottom right, fully cut off. (7) LC-1 appears isolated bottom-left with only dashed signal lines visible. (8) The separator E-18 has an internal circular symbol suggesting a cyclone separator or coalescing element. (9) Line numbers P-2x (partially visible right side) and other cut-off lines suggest this is a partial extract of a larger P&ID sheet. (10) No PSVs, check valves, or utility connections (steam, cooling water, instrument air) are clearly visible in this portion of the diagram.\"\n}\n```"
+  },
+  "generated_code": {
+    "code": "(* Generated by SafePLC-Gen Multimodal — CODESYS 3.5 *)\n(* IEC 61131-3 Structured Text *)\n(* Date: 2026-04-25T12:43:58.560340 *)\n\nPROGRAM DistillationControl\n\nVAR\n    FI_1_Raw                     AT %IW0       : INT := 0;\n    FI_2_Raw                     AT %IW2       : INT := 0;\n    FI_3_Raw                     AT %IW4       : INT := 0;\n    TI_1_Raw                     AT %IW6       : INT := 0;\n    TI_4_Raw                     AT %IW8       : INT := 0;\n    TI_5_Raw                     AT %IW10      : INT := 0;\n    TI_6_Raw                     AT %IW12      : INT := 0;\n    TI_7_Raw                     AT %IW14      : INT := 0;\n    TI_8_Raw                     AT %IW16      : INT := 0;\n    V_3_Out                      AT %QW0       : INT := 0;\n    V_4_Out                      AT %QW2       : INT := 0;\n    V_5_Out                      AT %QW4       : INT := 0;\n    V_7_Out                      AT %QW6       : INT := 0;\nEND_VAR\n\nVAR\n    FirstScan                    : BOOL := TRUE;\n\n    FI_1_Scaled                  : REAL := 0.0;\n    FI_2_Scaled                  : REAL := 0.0;\n    FI_3_Scaled                  : REAL := 0.0;\n    TI_1_Scaled                  : REAL := 0.0;\n    TI_4_Scaled                  : REAL := 0.0;\n    TI_5_Scaled                  : REAL := 0.0;\n    TI_6_Scaled                  : REAL := 0.0;\n    TI_7_Scaled                  : REAL := 0.0;\n    TI_8_Scaled                  : REAL := 0.0;\n\n    FI_1_HH_SP                   : REAL := 120.0;\n    FI_1_H_SP                    : REAL := 100.0;\n    FI_1_L_SP                    : REAL := 20.0;\n    FI_1_LL_SP                   : REAL := 10.0;\n    FI_1_Deadband                : REAL := 2.0;\n    FI_1_HH                      : BOOL := FALSE;\n    FI_1_H                       : BOOL := FALSE;\n    FI_1_L                       : BOOL := FALSE;\n    FI_1_LL                      : BOOL := FALSE;\n    FI_1_HH_Latch                : SR := (S1 := FALSE, R := FALSE);\n    FI_1_LL_Latch                : SR := (S1 := FALSE, R := FALSE);\n    FI_1_HH_Ack                  : BOOL := FALSE;\n    FI_1_LL_Ack                  : BOOL := FALSE;\n\n    FI_2_HH_SP                   : REAL := 120.0;\n    FI_2_H_SP                    : REAL := 100.0;\n    FI_2_L_SP                    : REAL := 20.0;\n    FI_2_LL_SP                   : REAL := 10.0;\n    FI_2_Deadband                : REAL := 2.0;\n    FI_2_HH                      : BOOL := FALSE;\n    FI_2_H                       : BOOL := FALSE;\n    FI_2_L                       : BOOL := FALSE;\n    FI_2_LL                      : BOOL := FALSE;\n    FI_2_HH_Latch                : SR := (S1 := FALSE, R := FALSE);\n    FI_2_LL_Latch                : SR := (S1 := FALSE, R := FALSE);\n    FI_2_HH_Ack                  : BOOL := FALSE;\n    FI_2_LL_Ack                  : BOOL := FALSE;\n\n    FI_3_HH_SP                   : REAL := 120.0;\n    FI_3_H_SP                    : REAL := 100.0;\n    FI_3_L_SP                    : REAL := 20.0;\n    FI_3_LL_SP                   : REAL := 10.0;\n    FI_3_Deadband                : REAL := 2.0;\n    FI_3_HH                      : BOOL := FALSE;\n    FI_3_H                       : BOOL := FALSE;\n    FI_3_L                       : BOOL := FALSE;\n    FI_3_LL                      : BOOL := FALSE;\n    FI_3_HH_Latch                : SR := (S1 := FALSE, R := FALSE);\n    FI_3_LL_Latch                : SR := (S1 := FALSE, R := FALSE);\n    FI_3_HH_Ack                  : BOOL := FALSE;\n    FI_3_LL_Ack                  : BOOL := FALSE;\n\n    TI_1_HH_SP                   : REAL := 120.0;\n    TI_1_H_SP                    : REAL := 110.0;\n    TI_1_L_SP                    : REAL := 40.0;\n    TI_1_LL_SP                   : REAL := 30.0;\n    TI_1_Deadband                : REAL := 1.0;\n    TI_1_HH                      : BOOL := FALSE;\n    TI_1_H                       : BOOL := FALSE;\n    TI_1_L                       : BOOL := FALSE;\n    TI_1_LL                      : BOOL := FALSE;\n    TI_1_HH_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_1_LL_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_1_HH_Ack                  : BOOL := FALSE;\n    TI_1_LL_Ack                  : BOOL := FALSE;\n\n    TI_4_HH_SP                   : REAL := 120.0;\n    TI_4_H_SP                    : REAL := 110.0;\n    TI_4_L_SP                    : REAL := 40.0;\n    TI_4_LL_SP                   : REAL := 30.0;\n    TI_4_Deadband                : REAL := 1.0;\n    TI_4_HH                      : BOOL := FALSE;\n    TI_4_H                       : BOOL := FALSE;\n    TI_4_L                       : BOOL := FALSE;\n    TI_4_LL                      : BOOL := FALSE;\n    TI_4_HH_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_4_LL_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_4_HH_Ack                  : BOOL := FALSE;\n    TI_4_LL_Ack                  : BOOL := FALSE;\n\n    TI_5_HH_SP                   : REAL := 120.0;\n    TI_5_H_SP                    : REAL := 110.0;\n    TI_5_L_SP                    : REAL := 40.0;\n    TI_5_LL_SP                   : REAL := 30.0;\n    TI_5_Deadband                : REAL := 1.0;\n    TI_5_HH                      : BOOL := FALSE;\n    TI_5_H                       : BOOL := FALSE;\n    TI_5_L                       : BOOL := FALSE;\n    TI_5_LL                      : BOOL := FALSE;\n    TI_5_HH_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_5_LL_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_5_HH_Ack                  : BOOL := FALSE;\n    TI_5_LL_Ack                  : BOOL := FALSE;\n\n    TI_6_HH_SP                   : REAL := 120.0;\n    TI_6_H_SP                    : REAL := 110.0;\n    TI_6_L_SP                    : REAL := 40.0;\n    TI_6_LL_SP                   : REAL := 30.0;\n    TI_6_Deadband                : REAL := 1.0;\n    TI_6_HH                      : BOOL := FALSE;\n    TI_6_H                       : BOOL := FALSE;\n    TI_6_L                       : BOOL := FALSE;\n    TI_6_LL                      : BOOL := FALSE;\n    TI_6_HH_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_6_LL_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_6_HH_Ack                  : BOOL := FALSE;\n    TI_6_LL_Ack                  : BOOL := FALSE;\n\n    TI_7_HH_SP                   : REAL := 120.0;\n    TI_7_H_SP                    : REAL := 110.0;\n    TI_7_L_SP                    : REAL := 40.0;\n    TI_7_LL_SP                   : REAL := 30.0;\n    TI_7_Deadband                : REAL := 1.0;\n    TI_7_HH                      : BOOL := FALSE;\n    TI_7_H                       : BOOL := FALSE;\n    TI_7_L                       : BOOL := FALSE;\n    TI_7_LL                      : BOOL := FALSE;\n    TI_7_HH_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_7_LL_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_7_HH_Ack                  : BOOL := FALSE;\n    TI_7_LL_Ack                  : BOOL := FALSE;\n\n    TI_8_HH_SP                   : REAL := 120.0;\n    TI_8_H_SP                    : REAL := 110.0;\n    TI_8_L_SP                    : REAL := 40.0;\n    TI_8_LL_SP                   : REAL := 30.0;\n    TI_8_Deadband                : REAL := 1.0;\n    TI_8_HH                      : BOOL := FALSE;\n    TI_8_H                       : BOOL := FALSE;\n    TI_8_L                       : BOOL := FALSE;\n    TI_8_LL                      : BOOL := FALSE;\n    TI_8_HH_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_8_LL_Latch                : SR := (S1 := FALSE, R := FALSE);\n    TI_8_HH_Ack                  : BOOL := FALSE;\n    TI_8_LL_Ack                  : BOOL := FALSE;\n\n    FC1_SP                       : REAL := 50.0;\n    FC1_Kp                       : REAL := 1.2;\n    FC1_Ki                       : REAL := 0.05;\n    FC1_Error                    : REAL := 0.0;\n    FC1_Integral                 : REAL := 0.0;\n    FC1_Output                   : REAL := 0.0;\n\n    FC2_SP                       : REAL := 50.0;\n    FC2_Kp                       : REAL := 1.2;\n    FC2_Ki                       : REAL := 0.05;\n    FC2_Error                    : REAL := 0.0;\n    FC2_Integral                 : REAL := 0.0;\n    FC2_Output                   : REAL := 0.0;\n\n    FC3_SP                       : REAL := 50.0;\n    FC3_Kp                       : REAL := 1.2;\n    FC3_Ki                       : REAL := 0.05;\n    FC3_Error                    : REAL := 0.0;\n    FC3_Integral                 : REAL := 0.0;\n    FC3_Output                   : REAL := 0.0;\n\n    TC1_SP                       : REAL := 80.0;\n    TC1_Kp                       : REAL := 1.0;\n    TC1_Ki                       : REAL := 0.03;\n    TC1_Error                    : REAL := 0.0;\n    TC1_Integral                 : REAL := 0.0;\n    TC1_Output                   : REAL := 0.0;\n\n    System_Alarm                 : BOOL := FALSE;\nEND_VAR\n\nIF FirstScan THEN\n    V_3_Out          := 6554;\n    V_4_Out          := 6554;\n    V_5_Out          := 6554;\n    V_7_Out          := 6554;\n    FC1_Integral     := 0.0;\n    FC2_Integral     := 0.0;\n    FC3_Integral     := 0.0;\n    TC1_Integral     := 0.0;\n    FI_1_HH_Latch(S1 := FALSE, R := FALSE);\n    FI_1_LL_Latch(S1 := FALSE, R := FALSE);\n    FI_2_HH_Latch(S1 := FALSE, R := FALSE);\n    FI_2_LL_Latch(S1 := FALSE, R := FALSE);\n    FI_3_HH_Latch(S1 := FALSE, R := FALSE);\n    FI_3_LL_Latch(S1 := FALSE, R := FALSE);\n    TI_1_HH_Latch(S1 := FALSE, R := FALSE);\n    TI_1_LL_Latch(S1 := FALSE, R := FALSE);\n    TI_4_HH_Latch(S1 := FALSE, R := FALSE);\n    TI_4_LL_Latch(S1 := FALSE, R := FALSE);\n    TI_5_HH_Latch(S1 := FALSE, R := FALSE);\n    TI_5_LL_Latch(S1 := FALSE, R := FALSE);\n    TI_6_HH_Latch(S1 := FALSE, R := FALSE);\n    TI_6_LL_Latch(S1 := FALSE, R := FALSE);\n    TI_7_HH_Latch(S1 := FALSE, R := FALSE);\n    TI_7_LL_Latch(S1 := FALSE, R := FALSE);\n    TI_8_HH_Latch(S1 := FALSE, R := FALSE);\n    TI_8_LL_Latch(S1 := FALSE, R := FALSE);\n    FirstScan        := FALSE;\n    RETURN;\nEND_IF;\n\nFI_1_Scaled := ((INT_TO_REAL(FI_1_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nFI_2_Scaled := ((INT_TO_REAL(FI_2_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nFI_3_Scaled := ((INT_TO_REAL(FI_3_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTI_1_Scaled := ((INT_TO_REAL(TI_1_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTI_4_Scaled := ((INT_TO_REAL(TI_4_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTI_5_Scaled := ((INT_TO_REAL(TI_5_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTI_6_Scaled := ((INT_TO_REAL(TI_6_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTI_7_Scaled := ((INT_TO_REAL(TI_7_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTI_8_Scaled := ((INT_TO_REAL(TI_8_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\n\nIF FI_1_Scaled >= FI_1_HH_SP THEN\n    FI_1_HH_Latch.S1 := TRUE;\nELSIF FI_1_Scaled <= (FI_1_HH_SP - FI_1_Deadband) THEN\n    FI_1_HH_Latch.S1 := FALSE;\nEND_IF;\nFI_1_HH_Latch.R := FI_1_HH_Ack AND (FI_1_Scaled < FI_1_HH_SP);\nFI_1_HH_Latch(S1 := FI_1_HH_Latch.S1, R := FI_1_HH_Latch.R);\nFI_1_HH := FI_1_HH_Latch.Q1;\n\nIF FI_1_Scaled >= FI_1_H_SP THEN\n    FI_1_H := TRUE;\nELSIF FI_1_Scaled < (FI_1_H_SP - FI_1_Deadband) THEN\n    FI_1_H := FALSE;\nEND_IF;\n\nIF FI_1_Scaled <= FI_1_LL_SP THEN\n    FI_1_LL_Latch.S1 := TRUE;\nELSIF FI_1_Scaled >= (FI_1_LL_SP + FI_1_Deadband) THEN\n    FI_1_LL_Latch.S1 := FALSE;\nEND_IF;\nFI_1_LL_Latch.R := FI_1_LL_Ack AND (FI_1_Scaled > FI_1_LL_SP);\nFI_1_LL_Latch(S1 := FI_1_LL_Latch.S1, R := FI_1_LL_Latch.R);\nFI_1_LL := FI_1_LL_Latch.Q1;\n\nIF FI_1_Scaled <= FI_1_L_SP THEN\n    FI_1_L := TRUE;\nELSIF FI_1_Scaled > (FI_1_L_SP + FI_1_Deadband) THEN\n    FI_1_L := FALSE;\nEND_IF;\n\nIF FI_2_Scaled >= FI_2_HH_SP THEN\n    FI_2_HH_Latch.S1 := TRUE;\nELSIF FI_2_Scaled <= (FI_2_HH_SP - FI_2_Deadband) THEN\n    FI_2_HH_Latch.S1 := FALSE;\nEND_IF;\nFI_2_HH_Latch.R := FI_2_HH_Ack AND (FI_2_Scaled < FI_2_HH_SP);\nFI_2_HH_Latch(S1 := FI_2_HH_Latch.S1, R := FI_2_HH_Latch.R);\nFI_2_HH := FI_2_HH_Latch.Q1;\n\nIF FI_2_Scaled >= FI_2_H_SP THEN\n    FI_2_H := TRUE;\nELSIF FI_2_Scaled < (FI_2_H_SP - FI_2_Deadband) THEN\n    FI_2_H := FALSE;\nEND_IF;\n\nIF FI_2_Scaled <= FI_2_LL_SP THEN\n    FI_2_LL_Latch.S1 := TRUE;\nELSIF FI_2_Scaled >= (FI_2_LL_SP + FI_2_Deadband) THEN\n    FI_2_LL_Latch.S1 := FALSE;\nEND_IF;\nFI_2_LL_Latch.R := FI_2_LL_Ack AND (FI_2_Scaled > FI_2_LL_SP);\nFI_2_LL_Latch(S1 := FI_2_LL_Latch.S1, R := FI_2_LL_Latch.R);\nFI_2_LL := FI_2_LL_Latch.Q1;\n\nIF FI_2_Scaled <= FI_2_L_SP THEN\n    FI_2_L := TRUE;\nELSIF FI_2_Scaled > (FI_2_L_SP + FI_2_Deadband) THEN\n    FI_2_L := FALSE;\nEND_IF;\n\nIF FI_3_Scaled >= FI_3_HH_SP THEN\n    FI_3_HH_Latch.S1 := TRUE;\nELSIF FI_3_Scaled <= (FI_3_HH_SP - FI_3_Deadband) THEN\n    FI_3_HH_Latch.S1 := FALSE;\nEND_IF;\nFI_3_HH_Latch.R := FI_3_HH_Ack AND (FI_3_Scaled < FI_3_HH_SP);\nFI_3_HH_Latch(S1 := FI_3_HH_Latch.S1, R := FI_3_HH_Latch.R);\nFI_3_HH := FI_3_HH_Latch.Q1;\n\nIF FI_3_Scaled >= FI_3_H_SP THEN\n    FI_3_H := TRUE;\nELSIF FI_3_Scaled < (FI_3_H_SP - FI_3_Deadband) THEN\n    FI_3_H := FALSE;\nEND_IF;\n\nIF FI_3_Scaled <= FI_3_LL_SP THEN\n    FI_3_LL_Latch.S1 := TRUE;\nELSIF FI_3_Scaled >= (FI_3_LL_SP + FI_3_Deadband) THEN\n    FI_3_LL_Latch.S1 := FALSE;\nEND_IF;\nFI_3_LL_Latch.R := FI_3_LL_Ack AND (FI_3_Scaled > FI_3_LL_SP);\nFI_3_LL_Latch(S1 := FI_3_LL_Latch.S1, R := FI_3_LL_Latch.R);\nFI_3_LL := FI_3_LL_Latch.Q1;\n\nIF FI_3_Scaled <= FI_3_L_SP THEN\n    FI_3_L := TRUE;\nELSIF FI_3_Scaled > (FI_3_L_SP + FI_3_Deadband) THEN\n    FI_3_L := FALSE;\nEND_IF;\n\nIF TI_1_Scaled >= TI_1_HH_SP THEN\n    TI_1_HH_Latch.S1 := TRUE;\nELSIF TI_1_Scaled <= (TI_1_HH_SP - TI_1_Deadband) THEN\n    TI_1_HH_Latch.S1 := FALSE;\nEND_IF;\nTI_1_HH_Latch.R := TI_1_HH_Ack AND (TI_1_Scaled < TI_1_HH_SP);\nTI_1_HH_Latch(S1 := TI_1_HH_Latch.S1, R := TI_1_HH_Latch.R);\nTI_1_HH := TI_1_HH_Latch.Q1;\n\nIF TI_1_Scaled >= TI_1_H_SP THEN\n    TI_1_H := TRUE;\nELSIF TI_1_Scaled < (TI_1_H_SP - TI_1_Deadband) THEN\n    TI_1_H := FALSE;\nEND_IF;\n\nIF TI_1_Scaled <= TI_1_LL_SP THEN\n    TI_1_LL_Latch.S1 := TRUE;\nELSIF TI_1_Scaled >= (TI_1_LL_SP + TI_1_Deadband) THEN\n    TI_1_LL_Latch.S1 := FALSE;\nEND_IF;\nTI_1_LL_Latch.R := TI_1_LL_Ack AND (TI_1_Scaled > TI_1_LL_SP);\nTI_1_LL_Latch(S1 := TI_1_LL_Latch.S1, R := TI_1_LL_Latch.R);\nTI_1_LL := TI_1_LL_Latch.Q1;\n\nIF TI_1_Scaled <= TI_1_L_SP THEN\n    TI_1_L := TRUE;\nELSIF TI_1_Scaled > (TI_1_L_SP + TI_1_Deadband) THEN\n    TI_1_L := FALSE;\nEND_IF;\n\nIF TI_4_Scaled >= TI_4_HH_SP THEN\n    TI_4_HH_Latch.S1 := TRUE;\nELSIF TI_4_Scaled <= (TI_4_HH_SP - TI_4_Deadband) THEN\n    TI_4_HH_Latch.S1 := FALSE;\nEND_IF;\nTI_4_HH_Latch.R := TI_4_HH_Ack AND (TI_4_Scaled < TI_4_HH_SP);\nTI_4_HH_Latch(S1 := TI_4_HH_Latch.S1, R := TI_4_HH_Latch.R);\nTI_4_HH := TI_4_HH_Latch.Q1;\n\nIF TI_4_Scaled >= TI_4_H_SP THEN\n    TI_4_H := TRUE;\nELSIF TI_4_Scaled < (TI_4_H_SP - TI_4_Deadband) THEN\n    TI_4_H := FALSE;\nEND_IF;\n\nIF TI_4_Scaled <= TI_4_LL_SP THEN\n    TI_4_LL_Latch.S1 := TRUE;\nELSIF TI_4_Scaled >= (TI_4_LL_SP + TI_4_Deadband) THEN\n    TI_4_LL_Latch.S1 := FALSE;\nEND_IF;\nTI_4_LL_Latch.R := TI_4_LL_Ack AND (TI_4_Scaled > TI_4_LL_SP);\nTI_4_LL_Latch(S1 := TI_4_LL_Latch.S1, R := TI_4_LL_Latch.R);\nTI_4_LL := TI_4_LL_Latch.Q1;\n\nIF TI_4_Scaled <= TI_4_L_SP THEN\n    TI_4_L := TRUE;\nELSIF TI_4_Scaled > (TI_4_L_SP + TI_4_Deadband) THEN\n    TI_4_L := FALSE;\nEND_IF;\n\nIF TI_5_Scaled >= TI_5_HH_SP THEN\n    TI_5_HH_Latch.S1 := TRUE;\nELSIF TI_5_Scaled <= (TI_5_HH_SP - TI_5_Deadband) THEN\n    TI_5_HH_Latch.S1 := FALSE;\nEND_IF;\nTI_5_HH_Latch.R := TI_5_HH_Ack AND (TI_5_Scaled < TI_5_HH_SP);\nTI_5_HH_Latch(S1 := TI_5_HH_Latch.S1, R := TI_5_HH_Latch.R);\nTI_5_HH := TI_5_HH_Latch.Q1;\n\nIF TI_5_Scaled >= TI_5_H_SP THEN\n    TI_5_H := TRUE;\nELSIF TI_5_Scaled < (TI_5_H_SP - TI_5_Deadband) THEN\n    TI_5_H := FALSE;\nEND_IF;\n\nIF TI_5_Scaled <= TI_5_LL_SP THEN\n    TI_5_LL_Latch.S1 := TRUE;\nELSIF TI_5_Scaled >= (TI_5_LL_SP + TI_5_Deadband) THEN\n    TI_5_LL_Latch.S1 := FALSE;\nEND_IF;\nTI_5_LL_Latch.R := TI_5_LL_Ack AND (TI_5_Scaled > TI_5_LL_SP);\nTI_5_LL_Latch(S1 := TI_5_LL_Latch.S1, R := TI_5_LL_Latch.R);\nTI_5_LL := TI_5_LL_Latch.Q1;\n\nIF TI_5_Scaled <= TI_5_L_SP THEN\n    TI_5_L := TRUE;\nELSIF TI_5_Scaled > (TI_5_L_SP + TI_5_Deadband) THEN\n    TI_5_L := FALSE;\nEND_IF;\n\nIF TI_6_Scaled >= TI_6_HH_SP THEN\n    TI_6_HH_Latch.S1 := TRUE;\nELSIF TI_6_Scaled <= (TI_6_HH_SP - TI_6_Deadband) THEN\n    TI_6_HH_Latch.S1 := FALSE;\nEND_IF;\nTI_6_HH_Latch.R := TI_6_HH_Ack AND (TI_6_Scaled < TI_6_HH_SP);\nTI_6_HH_Latch(S1 := TI_6_HH_Latch.S1, R := TI_6_HH_Latch.R);\nTI_6_HH := TI_6_HH_Latch.Q1;\n\nIF TI_6_Scaled >= TI_6_H_SP THEN\n    TI_6_H := TRUE;\nELSIF TI_6_Scaled < (TI_6_H_SP - TI_6_Deadband) THEN\n    TI_6_H := FALSE;\nEND_IF;\n\nIF TI_6_Scaled <= TI_6_LL_SP THEN\n    TI_6_LL_Latch.S1 := TRUE;\nELSIF TI_6_Scaled >= (TI_6_LL_SP + TI_6_Deadband) THEN\n    TI_6_LL_Latch.S1 := FALSE;\nEND_IF;\nTI_6_LL_Latch.R := TI_6_LL_Ack AND (TI_6_Scaled > TI_6_LL_SP);\nTI_6_LL_Latch(S1 := TI_6_LL_Latch.S1, R := TI_6_LL_Latch.R);\nTI_6_LL := TI_6_LL_Latch.Q1;\n\nIF TI_6_Scaled <= TI_6_L_SP THEN\n    TI_6_L := TRUE;\nELSIF TI_6_Scaled > (TI_6_L_SP + TI_6_Deadband) THEN\n    TI_6_L := FALSE;\nEND_IF;\n\nIF TI_7_Scaled >= TI_7_HH_SP THEN\n    TI_7_HH_Latch.S1 := TRUE;\nELSIF TI_7_Scaled <= (TI_7_HH_SP - TI_7_Deadband) THEN\n    TI_7_HH_Latch.S1 := FALSE;\nEND_IF;\nTI_7_HH_Latch.R := TI_7_HH_Ack AND (TI_7_Scaled < TI_7_HH_SP);\nTI_7_HH_Latch(S1 := TI_7_HH_Latch.S1, R := TI_7_HH_Latch.R);\nTI_7_HH := TI_7_HH_Latch.Q1;\n\nIF TI_7_Scaled >= TI_7_H_SP THEN\n    TI_7_H := TRUE;\nELSIF TI_7_Scaled < (TI_7_H_SP - TI_7_Deadband) THEN\n    TI_7_H := FALSE;\nEND_IF;\n\nIF TI_7_Scaled <= TI_7_LL_SP THEN\n    TI_7_LL_Latch.S1 := TRUE;\nELSIF TI_7_Scaled >= (TI_7_LL_SP + TI_7_Deadband) THEN\n    TI_7_LL_Latch.S1 := FALSE;\nEND_IF;\nTI_7_LL_Latch.R := TI_7_LL_Ack AND (TI_7_Scaled > TI_7_LL_SP);\nTI_7_LL_Latch(S1 := TI_7_LL_Latch.S1, R := TI_7_LL_Latch.R);\nTI_7_LL := TI_7_LL_Latch.Q1;\n\nIF TI_7_Scaled <= TI_7_L_SP THEN\n    TI_7_L := TRUE;\nELSIF TI_7_Scaled > (TI_7_L_SP + TI_7_Deadband) THEN\n    TI_7_L := FALSE;\nEND_IF;\n\nIF TI_8_Scaled >= TI_8_HH_SP THEN\n    TI_8_HH_Latch.S1 := TRUE;\nELSIF TI_8_Scaled <= (TI_8_HH_SP - TI_8_Deadband) THEN\n    TI_8_HH_Latch.S1 := FALSE;\nEND_IF;\nTI_8_HH_Latch.R := TI_8_HH_Ack AND (TI_8_Scaled < TI_8_HH_SP);\nTI_8_HH_Latch(S1 := TI_8_HH_Latch.S1, R := TI_8_HH_Latch.R);\nTI_8_HH := TI_8_HH_Latch.Q1;\n\nIF TI_8_Scaled >= TI_8_H_SP THEN\n    TI_8_H := TRUE;\nELSIF TI_8_Scaled < (TI_8_H_SP - TI_8_Deadband) THEN\n    TI_8_H := FALSE;\nEND_IF;\n\nIF TI_8_Scaled <= TI_8_LL_SP THEN\n    TI_8_LL_Latch.S1 := TRUE;\nELSIF TI_8_Scaled >= (TI_8_LL_SP + TI_8_Deadband) THEN\n    TI_8_LL_Latch.S1 := FALSE;\nEND_IF;\nTI_8_LL_Latch.R := TI_8_LL_Ack AND (TI_8_Scaled > TI_8_LL_SP);\nTI_8_LL_Latch(S1 := TI_8_LL_Latch.S1, R := TI_8_LL_Latch.R);\nTI_8_LL := TI_8_LL_Latch.Q1;\n\nIF TI_8_Scaled <= TI_8_L_SP THEN\n    TI_8_L := TRUE;\nELSIF TI_8_Scaled > (TI_8_L_SP + TI_8_Deadband) THEN\n    TI_8_L := FALSE;\nEND_IF;\n\nFC1_Error    := FC1_SP - FI_1_Scaled;\nFC1_Integral := FC1_Integral + (FC1_Ki * FC1_Error);\nIF FC1_Integral > 100.0 THEN\n    FC1_Integral := 100.0;\nELSIF FC1_Integral < 0.0 THEN\n    FC1_Integral := 0.0;\nEND_IF;\nFC1_Output := (FC1_Kp * FC1_Error) + FC1_Integral;\nIF FC1_Output > 100.0 THEN\n    FC1_Output := 100.0;\nELSIF FC1_Output < 0.0 THEN\n    FC1_Output := 0.0;\nEND_IF;\nV_3_Out := REAL_TO_INT(6554.0 + (FC1_Output / 100.0) * (32767.0 - 6554.0));\n\nFC2_Error    := FC2_SP - FI_2_Scaled;\nFC2_Integral := FC2_Integral + (FC2_Ki * FC2_Error);\nIF FC2_Integral > 100.0 THEN\n    FC2_Integral := 100.0;\nELSIF FC2_Integral < 0.0 THEN\n    FC2_Integral := 0.0;\nEND_IF;\nFC2_Output := (FC2_Kp * FC2_Error) + FC2_Integral;\nIF FC2_Output > 100.0 THEN\n    FC2_Output := 100.0;\nELSIF FC2_Output < 0.0 THEN\n    FC2_Output := 0.0;\nEND_IF;\nV_4_Out := REAL_TO_INT(6554.0 + (FC2_Output / 100.0) * (32767.0 - 6554.0));\n\nFC3_Error    := FC3_SP - FI_3_Scaled;\nFC3_Integral := FC3_Integral + (FC3_Ki * FC3_Error);\nIF FC3_Integral > 100.0 THEN\n    FC3_Integral := 100.0;\nELSIF FC3_Integral < 0.0 THEN\n    FC3_Integral := 0.0;\nEND_IF;\nFC3_Output := (FC3_Kp * FC3_Error) + FC3_Integral;\nIF FC3_Output > 100.0 THEN\n    FC3_Output := 100.0;\nELSIF FC3_Output < 0.0 THEN\n    FC3_Output := 0.0;\nEND_IF;\nV_5_Out := REAL_TO_INT(6554.0 + (FC3_Output / 100.0) * (32767.0 - 6554.0));\n\nTC1_Error    := TC1_SP - TI_4_Scaled;\nTC1_Integral := TC1_Integral + (TC1_Ki * TC1_Error);\nIF TC1_Integral > 100.0 THEN\n    TC1_Integral := 100.0;\nELSIF TC1_Integral < 0.0 THEN\n    TC1_Integral := 0.0;\nEND_IF;\nTC1_Output := (TC1_Kp * TC1_Error) + TC1_Integral;\nIF TC1_Output > 100.0 THEN\n    TC1_Output := 100.0;\nELSIF TC1_Output < 0.0 THEN\n    TC1_Output := 0.0;\nEND_IF;\nV_7_Out := REAL_TO_INT(6554.0 + (TC1_Output / 100.0) * (32767.0 - 6554.0));\n\nSystem_Alarm :=\n    FI_1_HH_Latch.Q1 OR FI_1_LL_Latch.Q1 OR FI_1_H OR FI_1_L OR\n    FI_2_HH_Latch.Q1 OR FI_2_LL_Latch.Q1 OR FI_2_H OR FI_2_L OR\n    FI_3_HH_Latch.Q1 OR FI_3_LL_Latch.Q1 OR FI_3_H OR FI_3_L OR\n    TI_1_HH_Latch.Q1 OR TI_1_LL_Latch.Q1 OR TI_1_H OR TI_1_L OR\n    TI_4_HH_Latch.Q1 OR TI_4_LL_Latch.Q1 OR TI_4_H OR TI_4_L OR\n    TI_5_HH_Latch.Q1 OR TI_5_LL_Latch.Q1 OR TI_5_H OR TI_5_L OR\n    TI_6_HH_Latch.Q1 OR TI_6_LL_Latch.Q1 OR TI_6_H OR TI_6_L OR\n    TI_7_HH_Latch.Q1 OR TI_7_LL_Latch.Q1 OR TI_7_H OR TI_7_L OR\n    TI_8_HH_Latch.Q1 OR TI_8_LL_Latch.Q1 OR TI_8_H OR TI_8_L;\n\nEND_PROGRAM",
+    "vendor": "codesys",
+    "target_loops": [
+      "2",
+      "3",
+      "1-LC",
+      "4",
+      "5",
+      "6",
+      "2-PC",
+      "1-TC"
+    ],
+    "safety_functions_included": [],
+    "generation_context": "IEC 61131-3 Standard Function Blocks — Timers, Counters, Edge Detection, Bistable. IEC 61131-3:2003 Section 2.5.2.3 defines exactly four categories of standard function blocks. ALL compliant PLC implementations must support these. Any FB not listed here (e.g., PID, SCALE, FILTER) is either vendor-specific or from an add-on library like OSCAT. Keywords: TON TOF TP timer on-delay off-delay pulse CTU CTD CTUD counter up counter down counter R_TRIG F_TRIG rising edge falling edge edge detection SR R",
+    "warnings": [],
+    "timestamp": "2026-04-25T12:43:58.567677"
+  },
+  "code_validation": {
+    "is_valid": true,
+    "total_errors": 0,
+    "total_warnings": 1,
+    "tiers_available": 5,
+    "tiers_passed": 5,
+    "tier_results": [
+      {
+        "tier": "tier1_builtin",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "built-in v1.0",
+        "execution_time_ms": 10.4,
+        "findings": []
+      },
+      {
+        "tier": "tier2_blark",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "blark 0.8.3",
+        "execution_time_ms": 4826.4,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "BLK-001",
+            "message": "ST code parsed successfully — syntax valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier3_matiec",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "matiec/iec2c",
+        "execution_time_ms": 185.8,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "MAT-001",
+            "message": "matiec compilation successful — code is valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier4_iec_checker",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 1,
+        "tool_version": "iec-checker v0.4",
+        "execution_time_ms": 19.7,
+        "findings": [
+          {
+            "severity": "warning",
+            "code": "IEC-ParserError",
+            "message": "",
+            "line": 45,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier5_plcopen_xml",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "PLCopen TC6 v2.01",
+        "execution_time_ms": 5.1,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "XML-001",
+            "message": "PLCopen XML generated successfully (34053 characters)",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      }
+    ],
+    "has_plcopen_xml": true,
+    "feedback_for_llm": "Validation PASSED — no errors found.",
+    "timestamp": "2026-04-25T12:44:03.341672"
+  },
+  "safety_check": {
+    "is_compliant": true,
+    "sil_level_achieved": 3,
+    "checks_passed": [
+      "variable_initialisation",
+      "emergency_stop_handling (no safety functions)",
+      "alarm_handling",
+      "defensive_programming",
+      "no_unused_variables"
+    ],
+    "checks_failed": [],
+    "recommendations": [
+      "Consider adding timeout protection for communication and process operations.",
+      "Provisional SIL 2 assigned. Target SIL 3 will be granted only if NuXmv/PLCverif formal verification passes all generated LTL/CTL properties."
+    ],
+    "interlock_coverage": 0.0,
+    "diagnostic_coverage": 0.0
+  },
+  "fault_diagnosis": {
+    "fault_id": "c0b3b567",
+    "symptom": "Full P&ID fault analysis (FMEA + SDG propagation)",
+    "root_causes": [
+      {
+        "component_tag": "V-4",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 2
+      },
+      {
+        "component_tag": "V-4",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 2
+      },
+      {
+        "component_tag": "V-5",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 2
+      },
+      {
+        "component_tag": "V-5",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 2
+      },
+      {
+        "component_tag": "V-3",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "V-3",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "V-7",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "V-7",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "FI-1",
+        "fault_mode": "low",
+        "system_effect": "Controller opens valve — possible overflow or runaway",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "action": "Inspect for blocked impulse line, check power supply; replace if failed",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "FI-2",
+        "fault_mode": "low",
+        "system_effect": "Controller opens valve — possible overflow or runaway",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "action": "Inspect for blocked impulse line, check power supply; replace if failed",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "FI-3",
+        "fault_mode": "low",
+        "system_effect": "Controller opens valve — possible overflow or runaway",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "action": "Inspect for blocked impulse line, check power supply; replace if failed",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TI-1",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TI-4",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TI-5",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TI-6",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TI-7",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TI-8",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "E-4",
+        "fault_mode": "tube_leak",
+        "system_effect": "Process fluid contaminates utility stream (or vice versa)",
+        "severity": "critical",
+        "detection": "Conductivity analyser on cooling water return; AT alarm",
+        "action": "Isolate and plug affected tubes; schedule re-tube at shutdown",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "E-4",
+        "fault_mode": "tube_rupture",
+        "system_effect": "High-pressure side overfills low-pressure side; PSV demand",
+        "severity": "critical",
+        "detection": "PSV on low-pressure side; DP-loss alarm",
+        "action": "Activate ESD; isolate both sides; investigate per API 521",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "E-5",
+        "fault_mode": "high_pressure",
+        "system_effect": "Structural integrity risk; PRV / PSV demand",
+        "severity": "critical",
+        "detection": "PSV-102 or rupture disc; PAH alarm",
+        "action": "Activate ESD; verify PSV lift; investigate cause after isolation",
+        "sdg_reach": 0
+      }
+    ],
+    "propagation_paths": [
+      {
+        "initiating_tag": "V-3",
+        "deviation": "no_flow",
+        "propagation_chain": [
+          "LC-2 (level ↓)"
+        ],
+        "terminal_effect": "Process flow lost — downstream starvation / upstream pressure rise.",
+        "severity": "minor"
+      },
+      {
+        "initiating_tag": "V-4",
+        "deviation": "no_flow",
+        "propagation_chain": [
+          "FI-1 (flow ↓)",
+          "FC-4 (flow ↓)"
+        ],
+        "terminal_effect": "Process flow lost — downstream starvation / upstream pressure rise.",
+        "severity": "minor"
+      },
+      {
+        "initiating_tag": "V-5",
+        "deviation": "no_flow",
+        "propagation_chain": [
+          "FI-2 (flow ↓)",
+          "FC-5 (flow ↓)"
+        ],
+        "terminal_effect": "Process flow lost — downstream starvation / upstream pressure rise.",
+        "severity": "minor"
+      },
+      {
+        "initiating_tag": "V-7",
+        "deviation": "no_flow",
+        "propagation_chain": [
+          "PC-2 (pressure ↓)"
+        ],
+        "terminal_effect": "Process flow lost — downstream starvation / upstream pressure rise.",
+        "severity": "minor"
+      }
+    ],
+    "fmea_records": [
+      {
+        "component_tag": "FI-1",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high flow reading",
+        "failure_effect_system": "Controller drives valve closed unnecessarily",
+        "detection_method": "Process cross-check with DP; NAMUR NE 107 Out-of-Spec alarm",
+        "severity": "major",
+        "recommended_action": "Inspect impulse lines; calibrate or replace transmitter"
+      },
+      {
+        "component_tag": "FI-1",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low / zero flow reading",
+        "failure_effect_system": "Controller opens valve — possible overflow or runaway",
+        "detection_method": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "severity": "critical",
+        "recommended_action": "Inspect for blocked impulse line, check power supply; replace if failed"
+      },
+      {
+        "component_tag": "FI-2",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high flow reading",
+        "failure_effect_system": "Controller drives valve closed unnecessarily",
+        "detection_method": "Process cross-check with DP; NAMUR NE 107 Out-of-Spec alarm",
+        "severity": "major",
+        "recommended_action": "Inspect impulse lines; calibrate or replace transmitter"
+      },
+      {
+        "component_tag": "FI-2",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low / zero flow reading",
+        "failure_effect_system": "Controller opens valve — possible overflow or runaway",
+        "detection_method": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "severity": "critical",
+        "recommended_action": "Inspect for blocked impulse line, check power supply; replace if failed"
+      },
+      {
+        "component_tag": "FI-3",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high flow reading",
+        "failure_effect_system": "Controller drives valve closed unnecessarily",
+        "detection_method": "Process cross-check with DP; NAMUR NE 107 Out-of-Spec alarm",
+        "severity": "major",
+        "recommended_action": "Inspect impulse lines; calibrate or replace transmitter"
+      },
+      {
+        "component_tag": "FI-3",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low / zero flow reading",
+        "failure_effect_system": "Controller opens valve — possible overflow or runaway",
+        "detection_method": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "severity": "critical",
+        "recommended_action": "Inspect for blocked impulse line, check power supply; replace if failed"
+      },
+      {
+        "component_tag": "TI-1",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TI-1",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "TI-4",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TI-4",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "TI-5",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TI-5",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "TI-6",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TI-6",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "TI-7",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TI-7",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "TI-8",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TI-8",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "V-3",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "V-3",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "V-3",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "V-3",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "V-4",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "V-4",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "V-4",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "V-4",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "V-5",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "V-5",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "V-5",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "V-5",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "V-7",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "V-7",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "V-7",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "V-7",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "E-4",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_leak",
+        "failure_effect_local": "Tube leak — cross-contamination",
+        "failure_effect_system": "Process fluid contaminates utility stream (or vice versa)",
+        "detection_method": "Conductivity analyser on cooling water return; AT alarm",
+        "severity": "critical",
+        "recommended_action": "Isolate and plug affected tubes; schedule re-tube at shutdown"
+      },
+      {
+        "component_tag": "E-4",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "fouling",
+        "failure_effect_local": "Tube-side / shell-side fouling",
+        "failure_effect_system": "Reduced heat transfer — temperature drift",
+        "detection_method": "TI outlet temperature trending; increasing DP",
+        "severity": "minor",
+        "recommended_action": "Chemical clean or mechanical descale per maintenance schedule"
+      },
+      {
+        "component_tag": "E-4",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "vapour_lock",
+        "failure_effect_local": "Vapour binding / lock in condenser",
+        "failure_effect_system": "Flooded condenser; reflux loss; column upset",
+        "detection_method": "Temperature profile anomaly; DP increase",
+        "severity": "major",
+        "recommended_action": "Purge non-condensables; check vent valve operation"
+      },
+      {
+        "component_tag": "E-4",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_rupture",
+        "failure_effect_local": "Catastrophic tube rupture",
+        "failure_effect_system": "High-pressure side overfills low-pressure side; PSV demand",
+        "detection_method": "PSV on low-pressure side; DP-loss alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; isolate both sides; investigate per API 521"
+      },
+      {
+        "component_tag": "E-5",
+        "component_type": "Vessel",
+        "fault_mode": "high_pressure",
+        "failure_effect_local": "Vessel overpressure",
+        "failure_effect_system": "Structural integrity risk; PRV / PSV demand",
+        "detection_method": "PSV-102 or rupture disc; PAH alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; verify PSV lift; investigate cause after isolation"
+      },
+      {
+        "component_tag": "E-5",
+        "component_type": "Vessel",
+        "fault_mode": "high_level",
+        "failure_effect_local": "Liquid overflow",
+        "failure_effect_system": "Flooding downstream equipment; pump cavitation",
+        "detection_method": "LSH alarm; LHH trip",
+        "severity": "critical",
+        "recommended_action": "Activate level shutdown; divert flow; inspect level instrument"
+      },
+      {
+        "component_tag": "E-5",
+        "component_type": "Vessel",
+        "fault_mode": "low_level",
+        "failure_effect_local": "Vessel runs dry",
+        "failure_effect_system": "Pump cavitation; loss of process",
+        "detection_method": "LSL alarm; LLL trip",
+        "severity": "major",
+        "recommended_action": "Reduce outflow; check inlet isolation valves"
+      },
+      {
+        "component_tag": "E-7",
+        "component_type": "Column",
+        "fault_mode": "flooding",
+        "failure_effect_local": "Column flooding",
+        "failure_effect_system": "Loss of separation; carry-over; product off-spec",
+        "detection_method": "DP trending; overhead TI rise",
+        "severity": "major",
+        "recommended_action": "Reduce feed and reflux; investigate fouling or load increase"
+      },
+      {
+        "component_tag": "E-7",
+        "component_type": "Column",
+        "fault_mode": "weeping",
+        "failure_effect_local": "Weeping / tray weeping",
+        "failure_effect_system": "Reduced tray efficiency; loss of fractionation",
+        "detection_method": "Tray-efficiency calculation; product composition",
+        "severity": "minor",
+        "recommended_action": "Increase vapour rate; review operating envelope"
+      },
+      {
+        "component_tag": "E-7",
+        "component_type": "Column",
+        "fault_mode": "dry_tray",
+        "failure_effect_local": "Dry tray from low liquid load",
+        "failure_effect_system": "Localised downcomer unsealing; poor separation",
+        "detection_method": "Tray DP trending",
+        "severity": "minor",
+        "recommended_action": "Increase reflux; review tray weir design"
+      },
+      {
+        "component_tag": "E-7",
+        "component_type": "Column",
+        "fault_mode": "foaming",
+        "failure_effect_local": "Foaming in column",
+        "failure_effect_system": "Premature flooding; carryover",
+        "detection_method": "Gamma scan; anti-foam addition log",
+        "severity": "major",
+        "recommended_action": "Inject anti-foam; investigate feed contamination"
+      },
+      {
+        "component_tag": "E-7",
+        "component_type": "Column",
+        "fault_mode": "fouling",
+        "failure_effect_local": "Internal fouling / tray plugging",
+        "failure_effect_system": "DP rise; capacity loss",
+        "detection_method": "Gamma scan during turnaround planning",
+        "severity": "minor",
+        "recommended_action": "Plan online/offline cleaning; review feed treatment"
+      },
+      {
+        "component_tag": "E-7",
+        "component_type": "Column",
+        "fault_mode": "channelling",
+        "failure_effect_local": "Liquid maldistribution / channelling",
+        "failure_effect_system": "Slip of contaminant through packing; emissions limit breach",
+        "detection_method": "Stack analyser; liquid distributor visual inspection",
+        "severity": "major",
+        "recommended_action": "Re-level distributor; consider structured-packing replacement"
+      },
+      {
+        "component_tag": "E-7",
+        "component_type": "Column",
+        "fault_mode": "packing_damage",
+        "failure_effect_local": "Packing crush / damage",
+        "failure_effect_system": "Severe DP rise or channelling; column capacity loss",
+        "detection_method": "DP step-change; turnaround inspection",
+        "severity": "major",
+        "recommended_action": "Replace packing at next shutdown; review operating upsets"
+      },
+      {
+        "component_tag": "E-7",
+        "component_type": "Column",
+        "fault_mode": "amine_degradation",
+        "failure_effect_local": "Amine solvent degradation (heat-stable salts)",
+        "failure_effect_system": "Reduced absorption capacity; corrosion on reboiler",
+        "detection_method": "Amine analyser (HSS, degradation products)",
+        "severity": "major",
+        "recommended_action": "Reclaimer service; partial solvent replacement"
+      },
+      {
+        "component_tag": "E-7",
+        "component_type": "Column",
+        "fault_mode": "regenerator_fail",
+        "failure_effect_local": "Stripper/regenerator underperformance",
+        "failure_effect_system": "Lean solvent high in acid gas; circulation issues",
+        "detection_method": "Lean loading lab test; reboiler duty",
+        "severity": "major",
+        "recommended_action": "Increase reboiler duty; verify reflux; check tray integrity"
+      },
+      {
+        "component_tag": "E-8",
+        "component_type": "Vessel",
+        "fault_mode": "high_pressure",
+        "failure_effect_local": "Vessel overpressure",
+        "failure_effect_system": "Structural integrity risk; PRV / PSV demand",
+        "detection_method": "PSV-102 or rupture disc; PAH alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; verify PSV lift; investigate cause after isolation"
+      },
+      {
+        "component_tag": "E-8",
+        "component_type": "Vessel",
+        "fault_mode": "high_level",
+        "failure_effect_local": "Liquid overflow",
+        "failure_effect_system": "Flooding downstream equipment; pump cavitation",
+        "detection_method": "LSH alarm; LHH trip",
+        "severity": "critical",
+        "recommended_action": "Activate level shutdown; divert flow; inspect level instrument"
+      },
+      {
+        "component_tag": "E-8",
+        "component_type": "Vessel",
+        "fault_mode": "low_level",
+        "failure_effect_local": "Vessel runs dry",
+        "failure_effect_system": "Pump cavitation; loss of process",
+        "detection_method": "LSL alarm; LLL trip",
+        "severity": "major",
+        "recommended_action": "Reduce outflow; check inlet isolation valves"
+      },
+      {
+        "component_tag": "E-9",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_leak",
+        "failure_effect_local": "Tube leak — cross-contamination",
+        "failure_effect_system": "Process fluid contaminates utility stream (or vice versa)",
+        "detection_method": "Conductivity analyser on cooling water return; AT alarm",
+        "severity": "critical",
+        "recommended_action": "Isolate and plug affected tubes; schedule re-tube at shutdown"
+      },
+      {
+        "component_tag": "E-9",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "fouling",
+        "failure_effect_local": "Tube-side / shell-side fouling",
+        "failure_effect_system": "Reduced heat transfer — temperature drift",
+        "detection_method": "TI outlet temperature trending; increasing DP",
+        "severity": "minor",
+        "recommended_action": "Chemical clean or mechanical descale per maintenance schedule"
+      },
+      {
+        "component_tag": "E-9",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "vapour_lock",
+        "failure_effect_local": "Vapour binding / lock in condenser",
+        "failure_effect_system": "Flooded condenser; reflux loss; column upset",
+        "detection_method": "Temperature profile anomaly; DP increase",
+        "severity": "major",
+        "recommended_action": "Purge non-condensables; check vent valve operation"
+      },
+      {
+        "component_tag": "E-9",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_rupture",
+        "failure_effect_local": "Catastrophic tube rupture",
+        "failure_effect_system": "High-pressure side overfills low-pressure side; PSV demand",
+        "detection_method": "PSV on low-pressure side; DP-loss alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; isolate both sides; investigate per API 521"
+      },
+      {
+        "component_tag": "E-12",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_leak",
+        "failure_effect_local": "Tube leak — cross-contamination",
+        "failure_effect_system": "Process fluid contaminates utility stream (or vice versa)",
+        "detection_method": "Conductivity analyser on cooling water return; AT alarm",
+        "severity": "critical",
+        "recommended_action": "Isolate and plug affected tubes; schedule re-tube at shutdown"
+      },
+      {
+        "component_tag": "E-12",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "fouling",
+        "failure_effect_local": "Tube-side / shell-side fouling",
+        "failure_effect_system": "Reduced heat transfer — temperature drift",
+        "detection_method": "TI outlet temperature trending; increasing DP",
+        "severity": "minor",
+        "recommended_action": "Chemical clean or mechanical descale per maintenance schedule"
+      },
+      {
+        "component_tag": "E-12",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "vapour_lock",
+        "failure_effect_local": "Vapour binding / lock in condenser",
+        "failure_effect_system": "Flooded condenser; reflux loss; column upset",
+        "detection_method": "Temperature profile anomaly; DP increase",
+        "severity": "major",
+        "recommended_action": "Purge non-condensables; check vent valve operation"
+      },
+      {
+        "component_tag": "E-12",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_rupture",
+        "failure_effect_local": "Catastrophic tube rupture",
+        "failure_effect_system": "High-pressure side overfills low-pressure side; PSV demand",
+        "detection_method": "PSV on low-pressure side; DP-loss alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; isolate both sides; investigate per API 521"
+      },
+      {
+        "component_tag": "E-13",
+        "component_type": "Vessel",
+        "fault_mode": "high_pressure",
+        "failure_effect_local": "Vessel overpressure",
+        "failure_effect_system": "Structural integrity risk; PRV / PSV demand",
+        "detection_method": "PSV-102 or rupture disc; PAH alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; verify PSV lift; investigate cause after isolation"
+      },
+      {
+        "component_tag": "E-13",
+        "component_type": "Vessel",
+        "fault_mode": "high_level",
+        "failure_effect_local": "Liquid overflow",
+        "failure_effect_system": "Flooding downstream equipment; pump cavitation",
+        "detection_method": "LSH alarm; LHH trip",
+        "severity": "critical",
+        "recommended_action": "Activate level shutdown; divert flow; inspect level instrument"
+      },
+      {
+        "component_tag": "E-13",
+        "component_type": "Vessel",
+        "fault_mode": "low_level",
+        "failure_effect_local": "Vessel runs dry",
+        "failure_effect_system": "Pump cavitation; loss of process",
+        "detection_method": "LSL alarm; LLL trip",
+        "severity": "major",
+        "recommended_action": "Reduce outflow; check inlet isolation valves"
+      },
+      {
+        "component_tag": "E-18",
+        "component_type": "Vessel",
+        "fault_mode": "high_pressure",
+        "failure_effect_local": "Vessel overpressure",
+        "failure_effect_system": "Structural integrity risk; PRV / PSV demand",
+        "detection_method": "PSV-102 or rupture disc; PAH alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; verify PSV lift; investigate cause after isolation"
+      },
+      {
+        "component_tag": "E-18",
+        "component_type": "Vessel",
+        "fault_mode": "high_level",
+        "failure_effect_local": "Liquid overflow",
+        "failure_effect_system": "Flooding downstream equipment; pump cavitation",
+        "detection_method": "LSH alarm; LHH trip",
+        "severity": "critical",
+        "recommended_action": "Activate level shutdown; divert flow; inspect level instrument"
+      },
+      {
+        "component_tag": "E-18",
+        "component_type": "Vessel",
+        "fault_mode": "low_level",
+        "failure_effect_local": "Vessel runs dry",
+        "failure_effect_system": "Pump cavitation; loss of process",
+        "detection_method": "LSL alarm; LLL trip",
+        "severity": "major",
+        "recommended_action": "Reduce outflow; check inlet isolation valves"
+      },
+      {
+        "component_tag": "Column 3",
+        "component_type": "Column",
+        "fault_mode": "flooding",
+        "failure_effect_local": "Column flooding",
+        "failure_effect_system": "Loss of separation; carry-over; product off-spec",
+        "detection_method": "DP trending; overhead TI rise",
+        "severity": "major",
+        "recommended_action": "Reduce feed and reflux; investigate fouling or load increase"
+      },
+      {
+        "component_tag": "Column 3",
+        "component_type": "Column",
+        "fault_mode": "weeping",
+        "failure_effect_local": "Weeping / tray weeping",
+        "failure_effect_system": "Reduced tray efficiency; loss of fractionation",
+        "detection_method": "Tray-efficiency calculation; product composition",
+        "severity": "minor",
+        "recommended_action": "Increase vapour rate; review operating envelope"
+      },
+      {
+        "component_tag": "Column 3",
+        "component_type": "Column",
+        "fault_mode": "dry_tray",
+        "failure_effect_local": "Dry tray from low liquid load",
+        "failure_effect_system": "Localised downcomer unsealing; poor separation",
+        "detection_method": "Tray DP trending",
+        "severity": "minor",
+        "recommended_action": "Increase reflux; review tray weir design"
+      },
+      {
+        "component_tag": "Column 3",
+        "component_type": "Column",
+        "fault_mode": "foaming",
+        "failure_effect_local": "Foaming in column",
+        "failure_effect_system": "Premature flooding; carryover",
+        "detection_method": "Gamma scan; anti-foam addition log",
+        "severity": "major",
+        "recommended_action": "Inject anti-foam; investigate feed contamination"
+      },
+      {
+        "component_tag": "Column 3",
+        "component_type": "Column",
+        "fault_mode": "fouling",
+        "failure_effect_local": "Internal fouling / tray plugging",
+        "failure_effect_system": "DP rise; capacity loss",
+        "detection_method": "Gamma scan during turnaround planning",
+        "severity": "minor",
+        "recommended_action": "Plan online/offline cleaning; review feed treatment"
+      },
+      {
+        "component_tag": "Column 3",
+        "component_type": "Column",
+        "fault_mode": "channelling",
+        "failure_effect_local": "Liquid maldistribution / channelling",
+        "failure_effect_system": "Slip of contaminant through packing; emissions limit breach",
+        "detection_method": "Stack analyser; liquid distributor visual inspection",
+        "severity": "major",
+        "recommended_action": "Re-level distributor; consider structured-packing replacement"
+      },
+      {
+        "component_tag": "Column 3",
+        "component_type": "Column",
+        "fault_mode": "packing_damage",
+        "failure_effect_local": "Packing crush / damage",
+        "failure_effect_system": "Severe DP rise or channelling; column capacity loss",
+        "detection_method": "DP step-change; turnaround inspection",
+        "severity": "major",
+        "recommended_action": "Replace packing at next shutdown; review operating upsets"
+      },
+      {
+        "component_tag": "Column 3",
+        "component_type": "Column",
+        "fault_mode": "amine_degradation",
+        "failure_effect_local": "Amine solvent degradation (heat-stable salts)",
+        "failure_effect_system": "Reduced absorption capacity; corrosion on reboiler",
+        "detection_method": "Amine analyser (HSS, degradation products)",
+        "severity": "major",
+        "recommended_action": "Reclaimer service; partial solvent replacement"
+      },
+      {
+        "component_tag": "Column 3",
+        "component_type": "Column",
+        "fault_mode": "regenerator_fail",
+        "failure_effect_local": "Stripper/regenerator underperformance",
+        "failure_effect_system": "Lean solvent high in acid gas; circulation issues",
+        "detection_method": "Lean loading lab test; reboiler duty",
+        "severity": "major",
+        "recommended_action": "Increase reboiler duty; verify reflux; check tray integrity"
+      }
+    ],
+    "severity": "critical",
+    "repair_procedure": "PRIORITY REPAIR ACTIONS (Critical fault modes):\nReference: IEC 61511:2016+AMD1 Clause 5.2 — Functional Safety Management\n\n  [FI-1] LOW\n    Effect  : Controller opens valve — possible overflow or runaway\n    Detect  : NAMUR NE 107 Failure alarm; low-flow interlock check\n    Action  : Inspect for blocked impulse line, check power supply; replace if failed\n\n  [TI-1] LOW\n    Effect  : Heating ramp-up — risk of overtemperature\n    Detect  : NAMUR NE 107 Failure alarm\n    Action  : Check wire continuity; replace sensor element\n\n  [V-3] STUCK_OPEN\n    Effect  : Uncontrolled flow — possible flooding or overpressure downstream\n    Detect  : Positioner feedback deviation alarm\n    Action  : Switch to manual bypass; inspect actuator diaphragm, positioner\n",
+    "affected_components": [
+      "FI-2",
+      "E-13",
+      "TI-4",
+      "E-4",
+      "Column 3",
+      "V-3",
+      "V-7",
+      "E-9",
+      "TI-5",
+      "TI-6",
+      "V-5",
+      "TI-7",
+      "E-5",
+      "TI-8",
+      "E-18",
+      "V-4",
+      "TI-1",
+      "FI-3",
+      "E-7",
+      "E-8",
+      "FI-1",
+      "E-12"
+    ],
+    "sdg_node_count": 30,
+    "sdg_edge_count": 15,
+    "timestamp": "2026-04-25T12:44:08.468402"
+  },
+  "formal_verification": {
+    "status": "passed",
+    "tool_used": "nuxmv",
+    "tool_version": "nuXmv 2.1.0",
+    "properties_generated": 54,
+    "properties_verified": 54,
+    "properties_failed": 0,
+    "properties": [],
+    "counterexamples": [],
+    "nusmv_model": "-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model\n-- Source P&ID: data\\pid_images\\eastman.png\n-- Vendor: codesys\n-- Safety functions: 0\n-- NOTE: Boolean abstraction — conservative over-approximation.\n-- Compatible with NuXmv 2.x and NuSMV 2.6+.\n\nMODULE main\nVAR\n  -- Process variable deviations (Boolean abstraction)\n  FI_1_HIGH   : boolean;  -- FI-1 above HH setpoint\n  FI_1_LOW    : boolean;  -- FI-1 below LL setpoint\n  FI_2_HIGH   : boolean;  -- FI-2 above HH setpoint\n  FI_2_LOW    : boolean;  -- FI-2 below LL setpoint\n  FI_3_HIGH   : boolean;  -- FI-3 above HH setpoint\n  FI_3_LOW    : boolean;  -- FI-3 below LL setpoint\n  FC_4_HIGH   : boolean;  -- FC-4 above HH setpoint\n  FC_4_LOW    : boolean;  -- FC-4 below LL setpoint\n  FC_5_HIGH   : boolean;  -- FC-5 above HH setpoint\n  FC_5_LOW    : boolean;  -- FC-5 below LL setpoint\n  FC_6_HIGH   : boolean;  -- FC-6 above HH setpoint\n  FC_6_LOW    : boolean;  -- FC-6 below LL setpoint\n  LC_1_HIGH   : boolean;  -- LC-1 above HH setpoint\n  LC_1_LOW    : boolean;  -- LC-1 below LL setpoint\n  LC_2_HIGH   : boolean;  -- LC-2 above HH setpoint\n  LC_2_LOW    : boolean;  -- LC-2 below LL setpoint\n  LC_3_HIGH   : boolean;  -- LC-3 above HH setpoint\n  LC_3_LOW    : boolean;  -- LC-3 below LL setpoint\n  PC_2_HIGH   : boolean;  -- PC-2 above HH setpoint\n  PC_2_LOW    : boolean;  -- PC-2 below LL setpoint\n  TC_1_HIGH   : boolean;  -- TC-1 above HH setpoint\n  TC_1_LOW    : boolean;  -- TC-1 below LL setpoint\n  TI_1_HIGH   : boolean;  -- TI-1 above HH setpoint\n  TI_1_LOW    : boolean;  -- TI-1 below LL setpoint\n  TI_4_HIGH   : boolean;  -- TI-4 above HH setpoint\n  TI_4_LOW    : boolean;  -- TI-4 below LL setpoint\n  TI_5_HIGH   : boolean;  -- TI-5 above HH setpoint\n  TI_5_LOW    : boolean;  -- TI-5 below LL setpoint\n  TI_6_HIGH   : boolean;  -- TI-6 above HH setpoint\n  TI_6_LOW    : boolean;  -- TI-6 below LL setpoint\n  TI_7_HIGH   : boolean;  -- TI-7 above HH setpoint\n  TI_7_LOW    : boolean;  -- TI-7 below LL setpoint\n  TI_8_HIGH   : boolean;  -- TI-8 above HH setpoint\n  TI_8_LOW    : boolean;  -- TI-8 below LL setpoint\n\n  -- Per-loop trip latches (stateful, SR semantics —\n  --  set on sensor deviation, clear on MANUAL_RESET with no deviation).\n\n  -- Global environment inputs (free booleans)\n  ESTOP        : boolean;\n  MANUAL_RESET : boolean;\n\nDEFINE\n  -- SAFE_STATE is combinational: same-cycle disjunction of\n  -- ESTOP and every per-loop trip latch.  Matches the ST\n  -- assignment `SAFE_STATE := ESTOP OR LOOP_<N>_TRIP OR ...`.\n  SAFE_STATE := ESTOP | FI_1_HIGH | FI_1_LOW | FI_2_HIGH | FI_2_LOW | FI_3_HIGH | FI_3_LOW | FC_4_HIGH | FC_4_LOW | FC_5_HIGH | FC_5_LOW | FC_6_HIGH | FC_6_LOW | LC_1_HIGH | LC_1_LOW | LC_2_HIGH | LC_2_LOW | LC_3_HIGH | LC_3_LOW | PC_2_HIGH | PC_2_LOW | TC_1_HIGH | TC_1_LOW | TI_1_HIGH | TI_1_LOW | TI_4_HIGH | TI_4_LOW | TI_5_HIGH | TI_5_LOW | TI_6_HIGH | TI_6_LOW | TI_7_HIGH | TI_7_LOW | TI_8_HIGH | TI_8_LOW;\n\nASSIGN\n  -- Initial conditions: all safe (de-energised)\n  init(FI_1_HIGH) := FALSE;\n  init(FI_1_LOW)  := FALSE;\n  init(FI_2_HIGH) := FALSE;\n  init(FI_2_LOW)  := FALSE;\n  init(FI_3_HIGH) := FALSE;\n  init(FI_3_LOW)  := FALSE;\n  init(FC_4_HIGH) := FALSE;\n  init(FC_4_LOW)  := FALSE;\n  init(FC_5_HIGH) := FALSE;\n  init(FC_5_LOW)  := FALSE;\n  init(FC_6_HIGH) := FALSE;\n  init(FC_6_LOW)  := FALSE;\n  init(LC_1_HIGH) := FALSE;\n  init(LC_1_LOW)  := FALSE;\n  init(LC_2_HIGH) := FALSE;\n  init(LC_2_LOW)  := FALSE;\n  init(LC_3_HIGH) := FALSE;\n  init(LC_3_LOW)  := FALSE;\n  init(PC_2_HIGH) := FALSE;\n  init(PC_2_LOW)  := FALSE;\n  init(TC_1_HIGH) := FALSE;\n  init(TC_1_LOW)  := FALSE;\n  init(TI_1_HIGH) := FALSE;\n  init(TI_1_LOW)  := FALSE;\n  init(TI_4_HIGH) := FALSE;\n  init(TI_4_LOW)  := FALSE;\n  init(TI_5_HIGH) := FALSE;\n  init(TI_5_LOW)  := FALSE;\n  init(TI_6_HIGH) := FALSE;\n  init(TI_6_LOW)  := FALSE;\n  init(TI_7_HIGH) := FALSE;\n  init(TI_7_LOW)  := FALSE;\n  init(TI_8_HIGH) := FALSE;\n  init(TI_8_LOW)  := FALSE;\n  init(ESTOP)        := FALSE;\n  init(MANUAL_RESET) := FALSE;\n\n  -- SR trip latches: set on sensor deviation, clear on\n  -- MANUAL_RESET with no current deviation, hold otherwise.\n  -- The three-case structure below is the *same* pattern\n  -- emitted by the Safety Contract scaffold in the ST\n  -- code, so the formal model and the code use identical\n  -- transition semantics per loop.\n\n-- ── Physical-impossibility constraints (INVAR) ──────────────────────\n-- Constrains state space: same sensor cannot read HH and LL at once.\nINVAR !(FI_1_HIGH & FI_1_LOW);\nINVAR !(FI_2_HIGH & FI_2_LOW);\nINVAR !(FI_3_HIGH & FI_3_LOW);\nINVAR !(FC_4_HIGH & FC_4_LOW);\nINVAR !(FC_5_HIGH & FC_5_LOW);\nINVAR !(FC_6_HIGH & FC_6_LOW);\nINVAR !(LC_1_HIGH & LC_1_LOW);\nINVAR !(LC_2_HIGH & LC_2_LOW);\nINVAR !(LC_3_HIGH & LC_3_LOW);\nINVAR !(PC_2_HIGH & PC_2_LOW);\nINVAR !(TC_1_HIGH & TC_1_LOW);\nINVAR !(TI_1_HIGH & TI_1_LOW);\nINVAR !(TI_4_HIGH & TI_4_LOW);\nINVAR !(TI_5_HIGH & TI_5_LOW);\nINVAR !(TI_6_HIGH & TI_6_LOW);\nINVAR !(TI_7_HIGH & TI_7_LOW);\nINVAR !(TI_8_HIGH & TI_8_LOW);\n\n-- ===== SAFETY PROPERTIES =====\n-- (No identified safety functions — structural\n-- invariants on the sensor-deviation abstraction.\n-- These are NOT loop-specific safety verifications.)\n-- Reference: IEC 61508-3:2010 Table A.8\n\n-- P01  ESTOP forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (ESTOP -> SAFE_STATE);\n\n-- P02  FI_1_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FI_1_HIGH -> SAFE_STATE);\n\n-- P03  FI_1_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FI_1_LOW -> SAFE_STATE);\n\n-- P04  FI_2_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FI_2_HIGH -> SAFE_STATE);\n\n-- P05  FI_2_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FI_2_LOW -> SAFE_STATE);\n\n-- P06  FI_3_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FI_3_HIGH -> SAFE_STATE);\n\n-- P07  FI_3_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FI_3_LOW -> SAFE_STATE);\n\n-- P08  FC_4_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FC_4_HIGH -> SAFE_STATE);\n\n-- P09  FC_4_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FC_4_LOW -> SAFE_STATE);\n\n-- P10  FC_5_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FC_5_HIGH -> SAFE_STATE);\n\n-- P11  FC_5_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FC_5_LOW -> SAFE_STATE);\n\n-- P12  FC_6_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FC_6_HIGH -> SAFE_STATE);\n\n-- P13  FC_6_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FC_6_LOW -> SAFE_STATE);\n\n-- P14  LC_1_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (LC_1_HIGH -> SAFE_STATE);\n\n-- P15  LC_1_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (LC_1_LOW -> SAFE_STATE);\n\n-- P16  LC_2_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (LC_2_HIGH -> SAFE_STATE);\n\n-- P17  LC_2_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (LC_2_LOW -> SAFE_STATE);\n\n-- P18  LC_3_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (LC_3_HIGH -> SAFE_STATE);\n\n-- P19  LC_3_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (LC_3_LOW -> SAFE_STATE);\n\n-- P20  PC_2_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (PC_2_HIGH -> SAFE_STATE);\n\n-- P21  PC_2_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (PC_2_LOW -> SAFE_STATE);\n\n-- P22  TC_1_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TC_1_HIGH -> SAFE_STATE);\n\n-- P23  TC_1_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TC_1_LOW -> SAFE_STATE);\n\n-- P24  TI_1_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_1_HIGH -> SAFE_STATE);\n\n-- P25  TI_1_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_1_LOW -> SAFE_STATE);\n\n-- P26  TI_4_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_4_HIGH -> SAFE_STATE);\n\n-- P27  TI_4_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_4_LOW -> SAFE_STATE);\n\n-- P28  TI_5_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_5_HIGH -> SAFE_STATE);\n\n-- P29  TI_5_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_5_LOW -> SAFE_STATE);\n\n-- P30  TI_6_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_6_HIGH -> SAFE_STATE);\n\n-- P31  TI_6_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_6_LOW -> SAFE_STATE);\n\n-- P32  TI_7_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_7_HIGH -> SAFE_STATE);\n\n-- P33  TI_7_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_7_LOW -> SAFE_STATE);\n\n-- P34  TI_8_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_8_HIGH -> SAFE_STATE);\n\n-- P35  TI_8_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (TI_8_LOW -> SAFE_STATE);\n\n-- P36  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(FI_1_HIGH & FI_1_LOW);\n\n-- P37  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(FI_2_HIGH & FI_2_LOW);\n\n-- P38  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(FI_3_HIGH & FI_3_LOW);\n\n-- P39  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(FC_4_HIGH & FC_4_LOW);\n\n-- P40  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(FC_5_HIGH & FC_5_LOW);\n\n-- P41  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(FC_6_HIGH & FC_6_LOW);\n\n-- P42  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(LC_1_HIGH & LC_1_LOW);\n\n-- P43  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(LC_2_HIGH & LC_2_LOW);\n\n-- P44  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(LC_3_HIGH & LC_3_LOW);\n\n-- P45  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(PC_2_HIGH & PC_2_LOW);\n\n-- P46  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(TC_1_HIGH & TC_1_LOW);\n\n-- P47  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(TI_1_HIGH & TI_1_LOW);\n\n-- P48  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(TI_4_HIGH & TI_4_LOW);\n\n-- P49  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(TI_5_HIGH & TI_5_LOW);\n\n-- P50  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(TI_6_HIGH & TI_6_LOW);\n\n-- P51  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(TI_7_HIGH & TI_7_LOW);\n\n-- P52  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(TI_8_HIGH & TI_8_LOW);\n\n-- P53  SAFE_STATE is reachable from the initial state\nSPEC EF SAFE_STATE;\n\n-- P54  Normal (non-safe) state is reachable\nSPEC EF !SAFE_STATE;\n\n-- Total structural invariants: 54\n-- NOTE: Without identified safety functions there is no\n-- trip latch to verify, so MANUAL_RESET_REQUIRED and\n-- RESET_CLEARS_TRIP are not applicable.  The pipeline\n-- log reports these counts as (loop-specific=0, structural=N).\n",
+    "execution_time_s": 0.05,
+    "recommendations": [],
+    "timestamp": "2026-04-25T12:44:08.459947"
+  },
+  "io_mapping_summary": "benchmark_runs\\eastman\\run_05\\io_mapping.csv",
+  "dt_validation": null,
+  "hitl_review": null,
+  "pipeline_version": "1.6.1",
+  "total_processing_time_seconds": 226.4
+}

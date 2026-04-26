@@ -1,0 +1,5 @@
+SafePLC-Gen Multimodal — Formal Safety Properties
+============================================================
+Verify manually with:  nuXmv formal_verification.smv
+Or:                    NuSMV formal_verification.smv
+

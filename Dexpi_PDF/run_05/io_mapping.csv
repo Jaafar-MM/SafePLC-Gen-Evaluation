@@ -1,0 +1,6 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+PI_4712.01_Raw,%IW0,INT,AI,PI-4712.01,Pressure indicator PI 4712.01. Local pressure gauge on pump 
+FC_VALVE_H_1007_Out,%QW0,INT,AO,FC-VALVE-H-1007,Fail-closed (F.C.) control valve on inlet to heat exchanger 
+PVA_4712.02_Out,%QW2,INT,AO,PVA-4712.02,Pressure control valve on recirculation line Q80 at upper ri
+TV_4750.03_Out,%QW4,INT,AO,TV-4750.03,Temperature control valve on utility line to/from H1008. Glo
+HS_4750.01,%IX0.0,BOOL,DI,HS-4750.01,Hand switch HS 4750.01. Located near pump P4711 / heat excha

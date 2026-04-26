@@ -1,0 +1,96 @@
+SafePLC-Gen Multimodal — Formal Safety Properties
+============================================================
+Verify manually with:  nuXmv formal_verification.smv
+Or:                    NuSMV formal_verification.smv
+
+[LOOP_4750_03_ESTOP_PRIORITY]
+  Description : Loop 4750.03: Emergency stop must force SAFE_STATE in the same scan cycle
+  Requirement : IEC 61511-1:2016 Section 10.3.4 — E-Stop override precedence
+  LTL (NuXmv) : G (ESTOP -> SAFE_STATE)
+  CTL (NuXmv) : AG (ESTOP -> SAFE_STATE)
+  PLCverif    : assert ALWAYS ESTOP => SAFE_STATE;
+
+[LOOP_4750_03_SAFE_STATE_ON_TRIP]
+  Description : Loop 4750.03: Any sensor deviation must drive SAFE_STATE within one scan
+  Requirement : IEC 61508-3:2010 Section 7.4.7 — Safe state on failure
+  LTL (NuXmv) : G ((TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> X SAFE_STATE)
+  CTL (NuXmv) : AG ((TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> AX SAFE_STATE)
+  PLCverif    : assert ALWAYS (TICSA_4750_03_HIGH | TICSA_4750_03_LOW) => NEXT(SAFE_STATE);
+
+[LOOP_4712_02_SAFE_STATE_ON_TRIP]
+  Description : Loop 4712.02: Any sensor deviation must drive SAFE_STATE within one scan
+  Requirement : IEC 61508-3:2010 Section 7.4.7 — Safe state on failure
+  LTL (NuXmv) : G ((PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> X SAFE_STATE)
+  CTL (NuXmv) : AG ((PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> AX SAFE_STATE)
+  PLCverif    : assert ALWAYS (PICSA_4712_02_HIGH | PICSA_4712_02_LOW) => NEXT(SAFE_STATE);
+
+[LOOP_104_01_SAFE_STATE_ON_TRIP]
+  Description : Loop 104.01: Any sensor deviation must drive SAFE_STATE within one scan
+  Requirement : IEC 61508-3:2010 Section 7.4.7 — Safe state on failure
+  LTL (NuXmv) : G ((SV_104_01_HIGH | SV_104_01_LOW) -> X SAFE_STATE)
+  CTL (NuXmv) : AG ((SV_104_01_HIGH | SV_104_01_LOW) -> AX SAFE_STATE)
+  PLCverif    : assert ALWAYS (SV_104_01_HIGH | SV_104_01_LOW) => NEXT(SAFE_STATE);
+
+[LOOP_4750_03_INTERLOCK_ENFORCED]
+  Description : Loop 4750.03: Process variable above safety limit raises the trip latch next scan
+  Requirement : IEC 61511-1:2016 Section 11.6.4 — SIF trip response
+  LTL (NuXmv) : G (TICSA_4750_03_HIGH -> X LOOP_4750_03_TRIP)
+  CTL (NuXmv) : AG (TICSA_4750_03_HIGH -> AX LOOP_4750_03_TRIP)
+  PLCverif    : assert ALWAYS TICSA_4750_03_HIGH => NEXT(LOOP_4750_03_TRIP);
+
+[LOOP_4712_02_INTERLOCK_ENFORCED]
+  Description : Loop 4712.02: Process variable above safety limit raises the trip latch next scan
+  Requirement : IEC 61511-1:2016 Section 11.6.4 — SIF trip response
+  LTL (NuXmv) : G (PICSA_4712_02_HIGH -> X LOOP_4712_02_TRIP)
+  CTL (NuXmv) : AG (PICSA_4712_02_HIGH -> AX LOOP_4712_02_TRIP)
+  PLCverif    : assert ALWAYS PICSA_4712_02_HIGH => NEXT(LOOP_4712_02_TRIP);
+
+[LOOP_104_01_INTERLOCK_ENFORCED]
+  Description : Loop 104.01: Process variable above safety limit raises the trip latch next scan
+  Requirement : IEC 61511-1:2016 Section 11.6.4 — SIF trip response
+  LTL (NuXmv) : G (SV_104_01_HIGH -> X LOOP_104_01_TRIP)
+  CTL (NuXmv) : AG (SV_104_01_HIGH -> AX LOOP_104_01_TRIP)
+  PLCverif    : assert ALWAYS SV_104_01_HIGH => NEXT(LOOP_104_01_TRIP);
+
+[LOOP_4750_03_MANUAL_RESET_REQUIRED]
+  Description : Loop 4750.03: Trip latch must persist in absence of manual reset
+  Requirement : IEC 61511-1:2016 Section 11.9 — Manual reset requirement
+  LTL (NuXmv) : G (LOOP_4750_03_TRIP & !MANUAL_RESET -> X LOOP_4750_03_TRIP)
+  CTL (NuXmv) : AG (LOOP_4750_03_TRIP & !MANUAL_RESET -> AX LOOP_4750_03_TRIP)
+  PLCverif    : assert ALWAYS LOOP_4750_03_TRIP & !MANUAL_RESET => NEXT(LOOP_4750_03_TRIP);
+
+[LOOP_4712_02_MANUAL_RESET_REQUIRED]
+  Description : Loop 4712.02: Trip latch must persist in absence of manual reset
+  Requirement : IEC 61511-1:2016 Section 11.9 — Manual reset requirement
+  LTL (NuXmv) : G (LOOP_4712_02_TRIP & !MANUAL_RESET -> X LOOP_4712_02_TRIP)
+  CTL (NuXmv) : AG (LOOP_4712_02_TRIP & !MANUAL_RESET -> AX LOOP_4712_02_TRIP)
+  PLCverif    : assert ALWAYS LOOP_4712_02_TRIP & !MANUAL_RESET => NEXT(LOOP_4712_02_TRIP);
+
+[LOOP_104_01_MANUAL_RESET_REQUIRED]
+  Description : Loop 104.01: Trip latch must persist in absence of manual reset
+  Requirement : IEC 61511-1:2016 Section 11.9 — Manual reset requirement
+  LTL (NuXmv) : G (LOOP_104_01_TRIP & !MANUAL_RESET -> X LOOP_104_01_TRIP)
+  CTL (NuXmv) : AG (LOOP_104_01_TRIP & !MANUAL_RESET -> AX LOOP_104_01_TRIP)
+  PLCverif    : assert ALWAYS LOOP_104_01_TRIP & !MANUAL_RESET => NEXT(LOOP_104_01_TRIP);
+
+[LOOP_4750_03_RESET_CLEARS_TRIP]
+  Description : Loop 4750.03: Trip latch clears one scan after manual reset with no deviation
+  Requirement : IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness
+  LTL (NuXmv) : G (LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> X !LOOP_4750_03_TRIP)
+  CTL (NuXmv) : AG (LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> AX !LOOP_4750_03_TRIP)
+  PLCverif    : assert ALWAYS LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) => NEXT(!LOOP_4750_03_TRIP);
+
+[LOOP_4712_02_RESET_CLEARS_TRIP]
+  Description : Loop 4712.02: Trip latch clears one scan after manual reset with no deviation
+  Requirement : IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness
+  LTL (NuXmv) : G (LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> X !LOOP_4712_02_TRIP)
+  CTL (NuXmv) : AG (LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> AX !LOOP_4712_02_TRIP)
+  PLCverif    : assert ALWAYS LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) => NEXT(!LOOP_4712_02_TRIP);
+
+[LOOP_104_01_RESET_CLEARS_TRIP]
+  Description : Loop 104.01: Trip latch clears one scan after manual reset with no deviation
+  Requirement : IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness
+  LTL (NuXmv) : G (LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) -> X !LOOP_104_01_TRIP)
+  CTL (NuXmv) : AG (LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) -> AX !LOOP_104_01_TRIP)
+  PLCverif    : assert ALWAYS LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) => NEXT(!LOOP_104_01_TRIP);
+

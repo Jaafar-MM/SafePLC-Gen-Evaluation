@@ -1,0 +1,14 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+FI_1_Raw,%IW0,INT,AI,FI-1,"Flow indicator on feed/process line P-65 area, left side of "
+FI_2_Raw,%IW2,INT,AI,FI-2,"Flow indicator on line P-54/P-52 area, feed to Column 2 or d"
+FI_3_Raw,%IW4,INT,AI,FI-3,"Flow indicator on line P-57 area, Column 3 section"
+TI_1_Raw,%IW6,INT,AI,TI-1,"Temperature indicator, bottom-left area of diagram"
+TI_4_Raw,%IW8,INT,AI,TI-4,"Temperature indicator on feed line to Column 2, lower left a"
+TI_5_Raw,%IW10,INT,AI,TI-5,"Temperature indicator on Column 2 (E-7), line P-53 area, mid"
+TI_6_Raw,%IW12,INT,AI,TI-6,Temperature indicator on separator E-18 or nearby line P-47 
+TI_7_Raw,%IW14,INT,AI,TI-7,"Temperature indicator on Column 3 or vessel E-8, right side "
+TI_8_Raw,%IW16,INT,AI,TI-8,"Temperature indicator on Column 3, upper section, right side"
+V_3_Out,%QW0,INT,AO,V-3,Control valve on line P-28/P-73 from decanter E-5 bottom out
+V_4_Out,%QW2,INT,AO,V-4,"Control valve on line P-74/P-12 feed to Column 2, globe body"
+V_5_Out,%QW4,INT,AO,V-5,"Control valve on overhead/reflux line P-38/P-83, globe body "
+V_7_Out,%QW6,INT,AO,V-7,Control valve on line P-19 from separator E-18 vapour outlet

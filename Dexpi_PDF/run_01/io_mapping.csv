@@ -1,0 +1,24 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+PI_4712.01_Raw,%IW0,INT,AI,PI-4712.01,"Pressure indicator, local, on process line at outlet of pump"
+PICSA_4712.02_Raw,%IW2,INT,AI,PICSA-4712.02,"Pressure indicator, controller, switch, and alarm — combined"
+TICSA_4750.03_Raw,%IW4,INT,AI,TICSA-4750.03,"Temperature indicator, controller, switch, and alarm — combi"
+MV_73KH12_25_Out,%QW0,INT,AO,MV-73KH12-25,"Manual isolation valve on line 73KH12-25, small-bore branch "
+MV_73KH12_50a_Out,%QW2,INT,AO,MV-73KH12-50a,"Manual isolation valve on line 73KH12-50, on pump P4712 suct"
+MV_73KH12_50b_Out,%QW4,INT,AO,MV-73KH12-50b,"Manual isolation valve on line 73KH12-50, downstream of P471"
+MV_73KH12_50c_Out,%QW6,INT,AO,MV-73KH12-50c,"Manual isolation valve on line 73KH12-50, on outlet header b"
+MV_MNb_47121_Out,%QW8,INT,AO,MV-MNb-47121,"Manual isolation valve on line MNb 47121 75HB13 80, inlet si"
+MV_MNb_47122_Out,%QW10,INT,AO,MV-MNb-47122,"Manual isolation valve on line MNb 47122 75HB13 80, discharg"
+MV_MNb_47123_Out,%QW12,INT,AO,MV-MNb-47123,"Manual isolation valve on line MNb 47123 75HB13 80, on inlet"
+MV_MNc_47124_Out,%QW14,INT,AO,MV-MNc-47124,"Manual isolation valve on line MNc 47124 75HB13 80, on lower"
+MV_MNc_47125a_Out,%QW16,INT,AO,MV-MNc-47125a,Manual isolation valve on line MNc 47125 75HB13 50 at vessel
+MV_MNc_47125b_Out,%QW18,INT,AO,MV-MNc-47125b,"Manual isolation valve on line MNc 47125 73HG12 25, DN25. On"
+MV_MNc_47126_Out,%QW20,INT,AO,MV-MNc-47126,"Manual isolation valve on line MNc 47126 75HB13 50, on outle"
+MV_MNc_47127_Out,%QW22,INT,AO,MV-MNc-47127,"Manual isolation valve on line MNc 47127 75HB13 50 Q80, on v"
+MV_QSa_47140_Out,%QW24,INT,AO,MV-QSa-47140,"Manual isolation valve on line QSa 47140 75HB13 50 Q80, on o"
+MV_QSb_47141_Out,%QW26,INT,AO,MV-QSb-47141,"Manual isolation valve on line QSb 47141 75HB13 50 Q80, para"
+MV_WKa_47130_Out,%QW28,INT,AO,MV-WKa-47130,Manual isolation valve on utility/drain line WKa 47130 75HB1
+MV_WKa_47131_Out,%QW30,INT,AO,MV-WKa-47131,Manual isolation valve on utility/drain line WKa 47131 75HB1
+PVA_4712.02_Out,%QW32,INT,AO,PVA-4712.02,"Pressure control valve, fail-closed (F.C.), pneumatic actuat"
+TV_4750.03_Out,%QW34,INT,AO,TV-4750.03,"Temperature control valve, fail-open (F.O.), pneumatic diaph"
+HS_4750.01,%IX0.0,BOOL,DI,HS-4750.01,"Hand switch / operator station (HS), locally mounted or pane"
+XV_HS_4750.01,%QX0.0,BOOL,DO,XV-HS-4750.01,"Solenoid-operated or pneumatic on/off valve, fail-closed (F."

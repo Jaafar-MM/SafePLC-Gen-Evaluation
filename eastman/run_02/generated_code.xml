@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <fileHeader companyName="SafePLC-Gen" productName="SafePLC-Gen Multimodal" productVersion="1.0" creationDateTime="2026-04-25T12:29:38.514366Z"/>
+  <contentHeader name="GeneratedProgram">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="0" y="0"/>
+      </fbd>
+      <ld>
+        <scaling x="0" y="0"/>
+      </ld>
+      <sfc>
+        <scaling x="0" y="0"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="GeneratedProgram" pouType="program">
+        <interface>
+          <localVars/>
+          <localVars>
+            <variable name="FirstScan">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_1_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_2_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_3_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_1_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_4_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_5_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_6_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_7_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_8_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_1_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_1_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_1_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_1_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_1_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_1_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_1_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_1_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="FI_1_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="FI_1_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_1_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_2_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_2_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_2_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_2_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_2_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_2_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_2_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_2_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="FI_2_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="FI_2_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_2_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_3_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_3_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_3_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_3_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_3_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FI_3_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_3_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_3_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="FI_3_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="FI_3_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FI_3_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_1_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_1_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_1_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_1_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_1_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_1_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_1_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_1_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_1_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_1_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_1_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_4_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_4_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_4_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_4_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_4_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_4_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_4_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_4_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_4_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_4_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_4_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_5_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_5_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_5_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_5_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_5_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_5_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_5_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_5_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_5_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_5_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_5_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_6_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_6_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_6_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_6_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_6_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_6_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_6_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_6_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_6_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_6_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_6_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_7_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_7_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_7_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_7_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_7_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_7_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_7_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_7_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_7_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_7_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_7_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_8_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_8_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_8_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_8_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_8_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_8_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_8_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_8_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_8_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_8_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_8_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FC_4_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_4_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_4_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_4_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_4_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_4_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_5_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_5_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_5_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_5_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_5_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_5_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_6_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_6_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_6_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_6_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_6_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FC_6_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_1_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_1_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_1_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="LC_1_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="LC_1_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_1_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_2_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_2_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_2_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_2_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="LC_2_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="LC_2_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_2_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_3_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="LC_3_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_3_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_3_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="LC_3_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="LC_3_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LC_3_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PC_2_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="PC_2_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PC_2_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PC_2_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="PC_2_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="PC_2_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="PC_2_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TC_1_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TC_1_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TC_1_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TC_1_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TC_1_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TC_1_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TC_1_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="System_Alarm">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <ST>
+            <html:p>IF FirstScan THEN
+    V_3_Out       := 6554;
+    V_4_Out       := 6554;
+    V_5_Out       := 6554;
+    V_7_Out       := 6554;
+    FC_4_Integral := 0.0;
+    FC_5_Integral := 0.0;
+    FC_6_Integral := 0.0;
+    LC_1_Integral := 0.0;
+    LC_2_Integral := 0.0;
+    LC_3_Integral := 0.0;
+    PC_2_Integral := 0.0;
+    TC_1_Integral := 0.0;
+    FirstScan     := FALSE;
+    RETURN;
+END_IF;
+
+FI_1_Scaled := ((INT_TO_REAL(FI_1_Raw) - 6554.0) / (32767.0 - 6554.0)) * 1000.0;
+FI_2_Scaled := ((INT_TO_REAL(FI_2_Raw) - 6554.0) / (32767.0 - 6554.0)) * 1000.0;
+FI_3_Scaled := ((INT_TO_REAL(FI_3_Raw) - 6554.0) / (32767.0 - 6554.0)) * 1000.0;
+TI_1_Scaled := ((INT_TO_REAL(TI_1_Raw) - 6554.0) / (32767.0 - 6554.0)) * 200.0;
+TI_4_Scaled := ((INT_TO_REAL(TI_4_Raw) - 6554.0) / (32767.0 - 6554.0)) * 200.0;
+TI_5_Scaled := ((INT_TO_REAL(TI_5_Raw) - 6554.0) / (32767.0 - 6554.0)) * 200.0;
+TI_6_Scaled := ((INT_TO_REAL(TI_6_Raw) - 6554.0) / (32767.0 - 6554.0)) * 200.0;
+TI_7_Scaled := ((INT_TO_REAL(TI_7_Raw) - 6554.0) / (32767.0 - 6554.0)) * 200.0;
+TI_8_Scaled := ((INT_TO_REAL(TI_8_Raw) - 6554.0) / (32767.0 - 6554.0)) * 200.0;
+
+LC_1_Scaled := TI_1_Scaled;
+LC_2_Scaled := TI_4_Scaled;
+LC_3_Scaled := TI_5_Scaled;
+PC_2_Scaled := TI_6_Scaled;
+
+FC_4_Error    := FC_4_SP - FI_2_Scaled;
+FC_4_Integral := FC_4_Integral + (FC_4_Ki * FC_4_Error);
+IF FC_4_Integral &gt; 100.0 THEN
+    FC_4_Integral := 100.0;
+ELSIF FC_4_Integral &lt; 0.0 THEN
+    FC_4_Integral := 0.0;
+END_IF;
+FC_4_Output := (FC_4_Kp * FC_4_Error) + FC_4_Integral;
+IF FC_4_Output &gt; 100.0 THEN
+    FC_4_Output := 100.0;
+ELSIF FC_4_Output &lt; 0.0 THEN
+    FC_4_Output := 0.0;
+END_IF;
+V_4_Out := REAL_TO_INT(6554.0 + (FC_4_Output / 100.0) * (32767.0 - 6554.0));
+
+FC_5_Error    := FC_5_SP - FI_3_Scaled;
+FC_5_Integral := FC_5_Integral + (FC_5_Ki * FC_5_Error);
+IF FC_5_Integral &gt; 100.0 THEN
+    FC_5_Integral := 100.0;
+ELSIF FC_5_Integral &lt; 0.0 THEN
+    FC_5_Integral := 0.0;
+END_IF;
+FC_5_Output := (FC_5_Kp * FC_5_Error) + FC_5_Integral;
+IF FC_5_Output &gt; 100.0 THEN
+    FC_5_Output := 100.0;
+ELSIF FC_5_Output &lt; 0.0 THEN
+    FC_5_Output := 0.0;
+END_IF;
+V_5_Out := REAL_TO_INT(6554.0 + (FC_5_Output / 100.0) * (32767.0 - 6554.0));
+
+FC_6_Error    := FC_6_SP - FI_1_Scaled;
+FC_6_Integral := FC_6_Integral + (FC_6_Ki * FC_6_Error);
+IF FC_6_Integral &gt; 100.0 THEN
+    FC_6_Integral := 100.0;
+ELSIF FC_6_Integral &lt; 0.0 THEN
+    FC_6_Integral := 0.0;
+END_IF;
+FC_6_Output := (FC_6_Kp * FC_6_Error) + FC_6_Integral;
+IF FC_6_Output &gt; 100.0 THEN
+    FC_6_Output := 100.0;
+ELSIF FC_6_Output &lt; 0.0 THEN
+    FC_6_Output := 0.0;
+END_IF;
+V_7_Out := REAL_TO_INT(6554.0 + (FC_6_Output / 100.0) * (32767.0 - 6554.0));
+
+LC_1_Error    := LC_1_SP - LC_1_Scaled;
+LC_1_Integral := LC_1_Integral + (LC_1_Ki * LC_1_Error);
+IF LC_1_Integral &gt; 100.0 THEN
+    LC_1_Integral := 100.0;
+ELSIF LC_1_Integral &lt; 0.0 THEN
+    LC_1_Integral := 0.0;
+END_IF;
+LC_1_Output := (LC_1_Kp * LC_1_Error) + LC_1_Integral;
+IF LC_1_Output &gt; 100.0 THEN
+    LC_1_Output := 100.0;
+ELSIF LC_1_Output &lt; 0.0 THEN
+    LC_1_Output := 0.0;
+END_IF;
+V_3_Out := REAL_TO_INT(6554.0 + (LC_1_Output / 100.0) * (32767.0 - 6554.0));
+
+LC_2_Error    := LC_2_SP - LC_2_Scaled;
+LC_2_Integral := LC_2_Integral + (LC_2_Ki * LC_2_Error);
+IF LC_2_Integral &gt; 100.0 THEN
+    LC_2_Integral := 100.0;
+ELSIF LC_2_Integral &lt; 0.0 THEN
+    LC_2_Integral := 0.0;
+END_IF;
+LC_2_Output := (LC_2_Kp * LC_2_Error) + LC_2_Integral;
+IF LC_2_Output &gt; 100.0 THEN
+    LC_2_Output := 100.0;
+ELSIF LC_2_Output &lt; 0.0 THEN
+    LC_2_Output := 0.0;
+END_IF;
+
+LC_3_Error    := LC_3_SP - LC_3_Scaled;
+LC_3_Integral := LC_3_Integral + (LC_3_Ki * LC_3_Error);
+IF LC_3_Integral &gt; 100.0 THEN
+    LC_3_Integral := 100.0;
+ELSIF LC_3_Integral &lt; 0.0 THEN
+    LC_3_Integral := 0.0;
+END_IF;
+LC_3_Output := (LC_3_Kp * LC_3_Error) + LC_3_Integral;
+IF LC_3_Output &gt; 100.0 THEN
+    LC_3_Output := 100.0;
+ELSIF LC_3_Output &lt; 0.0 THEN
+    LC_3_Output := 0.0;
+END_IF;
+
+PC_2_Error    := PC_2_SP - PC_2_Scaled;
+PC_2_Integral := PC_2_Integral + (PC_2_Ki * PC_2_Error);
+IF PC_2_Integral &gt; 100.0 THEN
+    PC_2_Integral := 100.0;
+ELSIF PC_2_Integral &lt; 0.0 THEN
+    PC_2_Integral := 0.0;
+END_IF;
+PC_2_Output := (PC_2_Kp * PC_2_Error) + PC_2_Integral;
+IF PC_2_Output &gt; 100.0 THEN
+    PC_2_Output := 100.0;
+ELSIF PC_2_Output &lt; 0.0 THEN
+    PC_2_Output := 0.0;
+END_IF;
+
+TC_1_Error    := TC_1_SP - TI_7_Scaled;
+TC_1_Integral := TC_1_Integral + (TC_1_Ki * TC_1_Error);
+IF TC_1_Integral &gt; 100.0 THEN
+    TC_1_Integral := 100.0;
+ELSIF TC_1_Integral &lt; 0.0 THEN
+    TC_1_Integral := 0.0;
+END_IF;
+TC_1_Output := (TC_1_Kp * TC_1_Error) + TC_1_Integral;
+IF TC_1_Output &gt; 100.0 THEN
+    TC_1_Output := 100.0;
+ELSIF TC_1_Output &lt; 0.0 THEN
+    TC_1_Output := 0.0;
+END_IF;
+
+IF FI_1_Scaled &gt;= FI_1_HH_SP THEN
+    FI_1_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF FI_1_Scaled &lt;= (FI_1_HH_SP - FI_1_Deadband) THEN
+    FI_1_HH_Latch(S1 := FALSE, R := FI_1_HH_Ack);
+END_IF;
+IF FI_1_Scaled &gt;= FI_1_H_SP THEN
+    FI_1_H := TRUE;
+ELSIF FI_1_Scaled &lt;= (FI_1_H_SP - FI_1_Deadband) THEN
+    FI_1_H := FALSE;
+END_IF;
+IF FI_1_Scaled &lt;= FI_1_L_SP THEN
+    FI_1_L := TRUE;
+ELSIF FI_1_Scaled &gt;= (FI_1_L_SP + FI_1_Deadband) THEN
+    FI_1_L := FALSE;
+END_IF;
+IF FI_1_Scaled &lt;= FI_1_LL_SP THEN
+    FI_1_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF FI_1_Scaled &gt;= (FI_1_LL_SP + FI_1_Deadband) THEN
+    FI_1_LL_Latch(S1 := FALSE, R := FI_1_LL_Ack);
+END_IF;
+
+IF FI_2_Scaled &gt;= FI_2_HH_SP THEN
+    FI_2_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF FI_2_Scaled &lt;= (FI_2_HH_SP - FI_2_Deadband) THEN
+    FI_2_HH_Latch(S1 := FALSE, R := FI_2_HH_Ack);
+END_IF;
+IF FI_2_Scaled &gt;= FI_2_H_SP THEN
+    FI_2_H := TRUE;
+ELSIF FI_2_Scaled &lt;= (FI_2_H_SP - FI_2_Deadband) THEN
+    FI_2_H := FALSE;
+END_IF;
+IF FI_2_Scaled &lt;= FI_2_L_SP THEN
+    FI_2_L := TRUE;
+ELSIF FI_2_Scaled &gt;= (FI_2_L_SP + FI_2_Deadband) THEN
+    FI_2_L := FALSE;
+END_IF;
+IF FI_2_Scaled &lt;= FI_2_LL_SP THEN
+    FI_2_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF FI_2_Scaled &gt;= (FI_2_LL_SP + FI_2_Deadband) THEN
+    FI_2_LL_Latch(S1 := FALSE, R := FI_2_LL_Ack);
+END_IF;
+
+IF FI_3_Scaled &gt;= FI_3_HH_SP THEN
+    FI_3_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF FI_3_Scaled &lt;= (FI_3_HH_SP - FI_3_Deadband) THEN
+    FI_3_HH_Latch(S1 := FALSE, R := FI_3_HH_Ack);
+END_IF;
+IF FI_3_Scaled &gt;= FI_3_H_SP THEN
+    FI_3_H := TRUE;
+ELSIF FI_3_Scaled &lt;= (FI_3_H_SP - FI_3_Deadband) THEN
+    FI_3_H := FALSE;
+END_IF;
+IF FI_3_Scaled &lt;= FI_3_L_SP THEN
+    FI_3_L := TRUE;
+ELSIF FI_3_Scaled &gt;= (FI_3_L_SP + FI_3_Deadband) THEN
+    FI_3_L := FALSE;
+END_IF;
+IF FI_3_Scaled &lt;= FI_3_LL_SP THEN
+    FI_3_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF FI_3_Scaled &gt;= (FI_3_LL_SP + FI_3_Deadband) THEN
+    FI_3_LL_Latch(S1 := FALSE, R := FI_3_LL_Ack);
+END_IF;
+
+IF TI_1_Scaled &gt;= TI_1_HH_SP THEN
+    TI_1_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_1_Scaled &lt;= (TI_1_HH_SP - TI_1_Deadband) THEN
+    TI_1_HH_Latch(S1 := FALSE, R := TI_1_HH_Ack);
+END_IF;
+IF TI_1_Scaled &gt;= TI_1_H_SP THEN
+    TI_1_H := TRUE;
+ELSIF TI_1_Scaled &lt;= (TI_1_H_SP - TI_1_Deadband) THEN
+    TI_1_H := FALSE;
+END_IF;
+IF TI_1_Scaled &lt;= TI_1_L_SP THEN
+    TI_1_L := TRUE;
+ELSIF TI_1_Scaled &gt;= (TI_1_L_SP + TI_1_Deadband) THEN
+    TI_1_L := FALSE;
+END_IF;
+IF TI_1_Scaled &lt;= TI_1_LL_SP THEN
+    TI_1_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_1_Scaled &gt;= (TI_1_LL_SP + TI_1_Deadband) THEN
+    TI_1_LL_Latch(S1 := FALSE, R := TI_1_LL_Ack);
+END_IF;
+
+IF TI_4_Scaled &gt;= TI_4_HH_SP THEN
+    TI_4_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_4_Scaled &lt;= (TI_4_HH_SP - TI_4_Deadband) THEN
+    TI_4_HH_Latch(S1 := FALSE, R := TI_4_HH_Ack);
+END_IF;
+IF TI_4_Scaled &gt;= TI_4_H_SP THEN
+    TI_4_H := TRUE;
+ELSIF TI_4_Scaled &lt;= (TI_4_H_SP - TI_4_Deadband) THEN
+    TI_4_H := FALSE;
+END_IF;
+IF TI_4_Scaled &lt;= TI_4_L_SP THEN
+    TI_4_L := TRUE;
+ELSIF TI_4_Scaled &gt;= (TI_4_L_SP + TI_4_Deadband) THEN
+    TI_4_L := FALSE;
+END_IF;
+IF TI_4_Scaled &lt;= TI_4_LL_SP THEN
+    TI_4_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_4_Scaled &gt;= (TI_4_LL_SP + TI_4_Deadband) THEN
+    TI_4_LL_Latch(S1 := FALSE, R := TI_4_LL_Ack);
+END_IF;
+
+IF TI_5_Scaled &gt;= TI_5_HH_SP THEN
+    TI_5_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_5_Scaled &lt;= (TI_5_HH_SP - TI_5_Deadband) THEN
+    TI_5_HH_Latch(S1 := FALSE, R := TI_5_HH_Ack);
+END_IF;
+IF TI_5_Scaled &gt;= TI_5_H_SP THEN
+    TI_5_H := TRUE;
+ELSIF TI_5_Scaled &lt;= (TI_5_H_SP - TI_5_Deadband) THEN
+    TI_5_H := FALSE;
+END_IF;
+IF TI_5_Scaled &lt;= TI_5_L_SP THEN
+    TI_5_L := TRUE;
+ELSIF TI_5_Scaled &gt;= (TI_5_L_SP + TI_5_Deadband) THEN
+    TI_5_L := FALSE;
+END_IF;
+IF TI_5_Scaled &lt;= TI_5_LL_SP THEN
+    TI_5_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_5_Scaled &gt;= (TI_5_LL_SP + TI_5_Deadband) THEN
+    TI_5_LL_Latch(S1 := FALSE, R := TI_5_LL_Ack);
+END_IF;
+
+IF TI_6_Scaled &gt;= TI_6_HH_SP THEN
+    TI_6_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_6_Scaled &lt;= (TI_6_HH_SP - TI_6_Deadband) THEN
+    TI_6_HH_Latch(S1 := FALSE, R := TI_6_HH_Ack);
+END_IF;
+IF TI_6_Scaled &gt;= TI_6_H_SP THEN
+    TI_6_H := TRUE;
+ELSIF TI_6_Scaled &lt;= (TI_6_H_SP - TI_6_Deadband) THEN
+    TI_6_H := FALSE;
+END_IF;
+IF TI_6_Scaled &lt;= TI_6_L_SP THEN
+    TI_6_L := TRUE;
+ELSIF TI_6_Scaled &gt;= (TI_6_L_SP + TI_6_Deadband) THEN
+    TI_6_L := FALSE;
+END_IF;
+IF TI_6_Scaled &lt;= TI_6_LL_SP THEN
+    TI_6_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_6_Scaled &gt;= (TI_6_LL_SP + TI_6_Deadband) THEN
+    TI_6_LL_Latch(S1 := FALSE, R := TI_6_LL_Ack);
+END_IF;
+
+IF TI_7_Scaled &gt;= TI_7_HH_SP THEN
+    TI_7_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_7_Scaled &lt;= (TI_7_HH_SP - TI_7_Deadband) THEN
+    TI_7_HH_Latch(S1 := FALSE, R := TI_7_HH_Ack);
+END_IF;
+IF TI_7_Scaled &gt;= TI_7_H_SP THEN
+    TI_7_H := TRUE;
+ELSIF TI_7_Scaled &lt;= (TI_7_H_SP - TI_7_Deadband) THEN
+    TI_7_H := FALSE;
+END_IF;
+IF TI_7_Scaled &lt;= TI_7_L_SP THEN
+    TI_7_L := TRUE;
+ELSIF TI_7_Scaled &gt;= (TI_7_L_SP + TI_7_Deadband) THEN
+    TI_7_L := FALSE;
+END_IF;
+IF TI_7_Scaled &lt;= TI_7_LL_SP THEN
+    TI_7_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_7_Scaled &gt;= (TI_7_LL_SP + TI_7_Deadband) THEN
+    TI_7_LL_Latch(S1 := FALSE, R := TI_7_LL_Ack);
+END_IF;
+
+IF TI_7_Scaled &gt;= TC_1_HH_SP THEN
+    TC_1_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_7_Scaled &lt;= (TC_1_HH_SP - TC_1_Deadband) THEN
+    TC_1_HH_Latch(S1 := FALSE, R := TC_1_HH_Ack);
+END_IF;
+IF TI_7_Scaled &gt;= TC_1_H_SP THEN
+    TC_1_H := TRUE;
+ELSIF TI_7_Scaled &lt;= (TC_1_H_SP - TC_1_Deadband) THEN
+    TC_1_H := FALSE;
+END_IF;
+IF TI_7_Scaled &lt;= TC_1_L_SP THEN
+    TC_1_L := TRUE;
+ELSIF TI_7_Scaled &gt;= (TC_1_L_SP + TC_1_Deadband) THEN
+    TC_1_L := FALSE;
+END_IF;
+IF TI_7_Scaled &lt;= TC_1_LL_SP THEN
+    TC_1_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_7_Scaled &gt;= (TC_1_LL_SP + TC_1_Deadband) THEN
+    TC_1_LL_Latch(S1 := FALSE, R := TC_1_LL_Ack);
+END_IF;
+
+IF TI_8_Scaled &gt;= TI_8_HH_SP THEN
+    TI_8_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_8_Scaled &lt;= (TI_8_HH_SP - TI_8_Deadband) THEN
+    TI_8_HH_Latch(S1 := FALSE, R := TI_8_HH_Ack);
+END_IF;
+IF TI_8_Scaled &gt;= TI_8_H_SP THEN
+    TI_8_H := TRUE;
+ELSIF TI_8_Scaled &lt;= (TI_8_H_SP - TI_8_Deadband) THEN
+    TI_8_H := FALSE;
+END_IF;
+IF TI_8_Scaled &lt;= TI_8_L_SP THEN
+    TI_8_L := TRUE;
+ELSIF TI_8_Scaled &gt;= (TI_8_L_SP + TI_8_Deadband) THEN
+    TI_8_L := FALSE;
+END_IF;
+IF TI_8_Scaled &lt;= TI_8_LL_SP THEN
+    TI_8_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF TI_8_Scaled &gt;= (TI_8_LL_SP + TI_8_Deadband) THEN
+    TI_8_LL_Latch(S1 := FALSE, R := TI_8_LL_Ack);
+END_IF;
+
+IF LC_1_Scaled &gt;= LC_1_HH_SP THEN
+    LC_1_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF LC_1_Scaled &lt;= (LC_1_HH_SP - LC_1_Deadband) THEN
+    LC_1_HH_Latch(S1 := FALSE, R := LC_1_HH_Ack);
+END_IF;
+IF LC_1_Scaled &gt;= LC_1_H_SP THEN
+    LC_1_H := TRUE;
+ELSIF LC_1_Scaled &lt;= (LC_1_H_SP - LC_1_Deadband) THEN
+    LC_1_H := FALSE;
+END_IF;
+IF LC_1_Scaled &lt;= LC_1_L_SP THEN
+    LC_1_L := TRUE;
+ELSIF LC_1_Scaled &gt;= (LC_1_L_SP + LC_1_Deadband) THEN
+    LC_1_L := FALSE;
+END_IF;
+IF LC_1_Scaled &lt;= LC_1_LL_SP THEN
+    LC_1_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF LC_1_Scaled &gt;= (LC_1_LL_SP + LC_1_Deadband) THEN
+    LC_1_LL_Latch(S1 := FALSE, R := LC_1_LL_Ack);
+END_IF;
+
+IF LC_2_Scaled &gt;= LC_2_HH_SP THEN
+    LC_2_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF LC_2_Scaled &lt;= (LC_2_HH_SP - LC_2_Deadband) THEN
+    LC_2_HH_Latch(S1 := FALSE, R := LC_2_HH_Ack);
+END_IF;
+IF LC_2_Scaled &gt;= LC_2_H_SP THEN
+    LC_2_H := TRUE;
+ELSIF LC_2_Scaled &lt;= (LC_2_H_SP - LC_2_Deadband) THEN
+    LC_2_H := FALSE;
+END_IF;
+IF LC_2_Scaled &lt;= LC_2_L_SP THEN
+    LC_2_L := TRUE;
+ELSIF LC_2_Scaled &gt;= (LC_2_L_SP + LC_2_Deadband) THEN
+    LC_2_L := FALSE;
+END_IF;
+IF LC_2_Scaled &lt;= LC_2_LL_SP THEN
+    LC_2_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF LC_2_Scaled &gt;= (LC_2_LL_SP + LC_2_Deadband) THEN
+    LC_2_LL_Latch(S1 := FALSE, R := LC_2_LL_Ack);
+END_IF;
+
+IF LC_3_Scaled &gt;= LC_3_HH_SP THEN
+    LC_3_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF LC_3_Scaled &lt;= (LC_3_HH_SP - LC_3_Deadband) THEN
+    LC_3_HH_Latch(S1 := FALSE, R := LC_3_HH_Ack);
+END_IF;
+IF LC_3_Scaled &gt;= LC_3_H_SP THEN
+    LC_3_H := TRUE;
+ELSIF LC_3_Scaled &lt;= (LC_3_H_SP - LC_3_Deadband) THEN
+    LC_3_H := FALSE;
+END_IF;
+IF LC_3_Scaled &lt;= LC_3_L_SP THEN
+    LC_3_L := TRUE;
+ELSIF LC_3_Scaled &gt;= (LC_3_L_SP + LC_3_Deadband) THEN
+    LC_3_L := FALSE;
+END_IF;
+IF LC_3_Scaled &lt;= LC_3_LL_SP THEN
+    LC_3_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF LC_3_Scaled &gt;= (LC_3_LL_SP + LC_3_Deadband) THEN
+    LC_3_LL_Latch(S1 := FALSE, R := LC_3_LL_Ack);
+END_IF;
+
+IF PC_2_Scaled &gt;= PC_2_HH_SP THEN
+    PC_2_HH_Latch(S1 := TRUE, R := FALSE);
+ELSIF PC_2_Scaled &lt;= (PC_2_HH_SP - PC_2_Deadband) THEN
+    PC_2_HH_Latch(S1 := FALSE, R := PC_2_HH_Ack);
+END_IF;
+IF PC_2_Scaled &gt;= PC_2_H_SP THEN
+    PC_2_H := TRUE;
+ELSIF PC_2_Scaled &lt;= (PC_2_H_SP - PC_2_Deadband) THEN
+    PC_2_H := FALSE;
+END_IF;
+IF PC_2_Scaled &lt;= PC_2_L_SP THEN
+    PC_2_L := TRUE;
+ELSIF PC_2_Scaled &gt;= (PC_2_L_SP + PC_2_Deadband) THEN
+    PC_2_L := FALSE;
+END_IF;
+IF PC_2_Scaled &lt;= PC_2_LL_SP THEN
+    PC_2_LL_Latch(S1 := TRUE, R := FALSE);
+ELSIF PC_2_Scaled &gt;= (PC_2_LL_SP + PC_2_Deadband) THEN
+    PC_2_LL_Latch(S1 := FALSE, R := PC_2_LL_Ack);
+END_IF;
+
+System_Alarm :=
+    FI_1_HH_Latch.Q1 OR FI_1_LL_Latch.Q1 OR FI_1_H OR FI_1_L OR
+    FI_2_HH_Latch.Q1 OR FI_2_LL_Latch.Q1 OR FI_2_H OR FI_2_L OR
+    FI_3_HH_Latch.Q1 OR FI_3_LL_Latch.Q1 OR FI_3_H OR FI_3_L OR
+    TI_1_HH_Latch.Q1 OR TI_1_LL_Latch.Q1 OR TI_1_H OR TI_1_L OR
+    TI_4_HH_Latch.Q1 OR TI_4_LL_Latch.Q1 OR TI_4_H OR TI_4_L OR
+    TI_5_HH_Latch.Q1 OR TI_5_LL_Latch.Q1 OR TI_5_H OR TI_5_L OR
+    TI_6_HH_Latch.Q1 OR TI_6_LL_Latch.Q1 OR TI_6_H OR TI_6_L OR
+    TI_7_HH_Latch.Q1 OR TI_7_LL_Latch.Q1 OR TI_7_H OR TI_7_L OR
+    TI_8_HH_Latch.Q1 OR TI_8_LL_Latch.Q1 OR TI_8_H OR TI_8_L OR
+    LC_1_HH_Latch.Q1 OR LC_1_LL_Latch.Q1 OR LC_1_H OR LC_1_L OR
+    LC_2_HH_Latch.Q1 OR LC_2_LL_Latch.Q1 OR LC_2_H OR LC_2_L OR
+    LC_3_HH_Latch.Q1 OR LC_3_LL_Latch.Q1 OR LC_3_H OR LC_3_L OR
+    PC_2_HH_Latch.Q1 OR PC_2_LL_Latch.Q1 OR PC_2_H OR PC_2_L OR
+    TC_1_HH_Latch.Q1 OR TC_1_LL_Latch.Q1 OR TC_1_H OR TC_1_L;</html:p>
+          </ST>
+        </body>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Config0">
+        <resource name="Res0">
+          <task name="MainTask" interval="T#20ms" priority="0"/>
+          <pouInstance name="Main" typeName="GeneratedProgram"/>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+</project>

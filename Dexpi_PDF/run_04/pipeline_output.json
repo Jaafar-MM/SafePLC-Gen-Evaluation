@@ -1,0 +1,2250 @@
+{
+  "pid_analysis": {
+    "pid_id": "764aa1f6",
+    "source_type": "image",
+    "source_file": "data\\pid_images\\Dexpi_PDF.pdf",
+    "timestamp": "2026-04-25T14:01:40.823520",
+    "equipment": [
+      {
+        "id": "EQ-001",
+        "tag": "T4750",
+        "component_type": "equipment",
+        "label": "Vertical pressure vessel, appears to be a storage/buffer tank. Visible nozzles: N1 (DN80, bottom area), N2 (DN80, lower side), N3 (DN80, lower side), N5 (DN50, mid side), N6 (DN50, upper side), N7 (DN25, top), N8 (DN800, side — likely a large manway or nozzle). Multiple side nozzles at various elevations. No visible internals (no trays or packing). Tag T4750 shown on vessel body.",
+        "description": "Vertical pressure vessel, appears to be a storage/buffer tank. Visible nozzles: N1 (DN80, bottom area), N2 (DN80, lower side), N3 (DN80, lower side), N5 (DN50, mid side), N6 (DN50, upper side), N7 (DN25, top), N8 (DN800, side — likely a large manway or nozzle). Multiple side nozzles at various elevations. No visible internals (no trays or packing). Tag T4750 shown on vessel body.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "vessel",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-002",
+        "tag": "P4711",
+        "component_type": "equipment",
+        "label": "Centrifugal pump, single-stage, with electric motor drive. Shown with standard centrifugal pump symbol (circle with impeller). Inlet nozzle N1 DN80, outlet nozzle N2 DN80. Connected to suction line MNb 47121 75HB13 80 and discharge line MNb 47122 75HB13 80.",
+        "description": "Centrifugal pump, single-stage, with electric motor drive. Shown with standard centrifugal pump symbol (circle with impeller). Inlet nozzle N1 DN80, outlet nozzle N2 DN80. Connected to suction line MNb 47121 75HB13 80 and discharge line MNb 47122 75HB13 80.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "pump",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-003",
+        "tag": "P4712",
+        "component_type": "equipment",
+        "label": "Centrifugal pump, single-stage, with electric motor drive. Shown with standard centrifugal pump symbol. Inlet nozzle N1 DN50, outlet nozzle N2 DN50. Connected to suction line 73KH12-50 and discharge line MNc 47126 75HB13 50.",
+        "description": "Centrifugal pump, single-stage, with electric motor drive. Shown with standard centrifugal pump symbol. Inlet nozzle N1 DN50, outlet nozzle N2 DN50. Connected to suction line 73KH12-50 and discharge line MNc 47126 75HB13 50.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "pump",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-004",
+        "tag": "H1007",
+        "component_type": "equipment",
+        "label": "Shell-and-tube or plate heat exchanger (shown as crossed-box symbol). Horizontal orientation. Nozzles: N1 DN80, N2 DN80, N3 DN50, N4 DN50. Connected to utility lines WKa 47130 75HB13 50 (inlet) and WKb 47131 75HB13 50 (outlet), suggesting heating/cooling medium. Process side connected to pump P4711 discharge and vessel T4750 inlet.",
+        "description": "Shell-and-tube or plate heat exchanger (shown as crossed-box symbol). Horizontal orientation. Nozzles: N1 DN80, N2 DN80, N3 DN50, N4 DN50. Connected to utility lines WKa 47130 75HB13 50 (inlet) and WKb 47131 75HB13 50 (outlet), suggesting heating/cooling medium. Process side connected to pump P4711 discharge and vessel T4750 inlet.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "heat_exchanger",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-005",
+        "tag": "H1008",
+        "component_type": "equipment",
+        "label": "Shell-and-tube or plate heat exchanger (shown as crossed-box symbol). Horizontal orientation. Nozzles: N1 DN50, N2 DN50, N3 DN50, N4 DN50. Connected on process side to vessel T4750 outlet via MNc 47126 75HB13 50 and pump P4712. Associated with temperature control loop TV4750.03 and TICSA 4750.03.",
+        "description": "Shell-and-tube or plate heat exchanger (shown as crossed-box symbol). Horizontal orientation. Nozzles: N1 DN50, N2 DN50, N3 DN50, N4 DN50. Connected on process side to vessel T4750 outlet via MNc 47126 75HB13 50 and pump P4712. Associated with temperature control loop TV4750.03 and TICSA 4750.03.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "subtype": "heat_exchanger",
+        "nozzles": []
+      }
+    ],
+    "instruments": [
+      {
+        "id": "INST-001",
+        "tag": "TICSA-4750.03",
+        "component_type": "instrument",
+        "label": "Temperature indicator, controller, switch, and alarm — composite multi-function instrument bubble. Located above vessel T4750. Connected via dashed signal line to TV4750.03 (temperature control valve on H1008 bypass/outlet) and to PICSA-4712.02 via dashed line. Ellipse/oval shape indicates shared control room or DCS function.",
+        "description": "Temperature indicator, controller, switch, and alarm — composite multi-function instrument bubble. Located above vessel T4750. Connected via dashed signal line to TV4750.03 (temperature control valve on H1008 bypass/outlet) and to PICSA-4712.02 via dashed line. Ellipse/oval shape indicates shared control room or DCS function.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "T",
+        "function": null,
+        "loop_number": "4750.03",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-002",
+        "tag": "HS-4750.01",
+        "component_type": "instrument",
+        "label": "Hand switch — operator-initiated manual control station. Located near H1007 on left side. Connected via dashed signal line to a solenoid/control element (F.C. annotated valve). Ellipse shape indicates field-mounted or panel-mounted hand switch.",
+        "description": "Hand switch — operator-initiated manual control station. Located near H1007 on left side. Connected via dashed signal line to a solenoid/control element (F.C. annotated valve). Ellipse shape indicates field-mounted or panel-mounted hand switch.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "4750.01",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-003",
+        "tag": "PI-4712.01",
+        "component_type": "instrument",
+        "label": "Pressure indicator, local gauge. Located on line between vessel T4750 outlet nozzle N5/MNc 47125 area and pump P4712 suction side / H1008 inlet. Circle symbol indicates local field indicator.",
+        "description": "Pressure indicator, local gauge. Located on line between vessel T4750 outlet nozzle N5/MNc 47125 area and pump P4712 suction side / H1008 inlet. Circle symbol indicates local field indicator.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "P",
+        "function": "I",
+        "loop_number": "4712.01",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-004",
+        "tag": "PICSA-4712.02",
+        "component_type": "instrument",
+        "label": "Pressure indicator, controller, switch, and alarm — composite multi-function instrument. Located at right side of diagram, downstream of H1008. Ellipse/oval shape indicates shared control room / DCS function. Receives dashed signal from TICSA-4750.03 (cascade or interlock). Connected to PVA4712.02 control valve.",
+        "description": "Pressure indicator, controller, switch, and alarm — composite multi-function instrument. Located at right side of diagram, downstream of H1008. Ellipse/oval shape indicates shared control room / DCS function. Receives dashed signal from TICSA-4750.03 (cascade or interlock). Connected to PVA4712.02 control valve.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "measured_variable": "P",
+        "function": null,
+        "loop_number": "4712.02",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      }
+    ],
+    "valves": [
+      {
+        "id": "VLV-001",
+        "tag": "TV-4750.03",
+        "component_type": "valve",
+        "label": "Temperature control valve associated with loop TICSA-4750.03. Located on the cooling/heating medium line to heat exchanger H1008 (right side). Annotated 'F.O.' (fail-open). Globe body with diaphragm/pneumatic actuator. Controlled by TICSA-4750.03 via dashed signal line.",
+        "description": "Temperature control valve associated with loop TICSA-4750.03. Located on the cooling/heating medium line to heat exchanger H1008 (right side). Annotated 'F.O.' (fail-open). Globe body with diaphragm/pneumatic actuator. Controlled by TICSA-4750.03 via dashed signal line. [ISA-5.1 I/O: AO]",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "control",
+        "fail_position": "open",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-002",
+        "tag": "PVA-4712.02",
+        "component_type": "valve",
+        "label": "Pressure control valve associated with loop PICSA-4712.02. Located on the outlet/recirculation line at the right side of the diagram (Q80 line). Annotated 'F.C.' (fail-closed). Globe or butterfly body with pneumatic actuator. Controlled by PICSA-4712.02.",
+        "description": "Pressure control valve associated with loop PICSA-4712.02. Located on the outlet/recirculation line at the right side of the diagram (Q80 line). Annotated 'F.C.' (fail-closed). Globe or butterfly body with pneumatic actuator. Controlled by PICSA-4712.02.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "control",
+        "fail_position": "closed",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-003",
+        "tag": "SV-104.01",
+        "component_type": "valve",
+        "label": "Safety valve (pressure relief / safety valve) on vessel T4750 outlet area / nozzle N5 line MNc 47125 75HB13 50. Annotated: SV 104.01, P = 6 barg, DN = 25/50. Set pressure 6 barg, inlet DN25, outlet DN50. Spring-loaded relief valve.",
+        "description": "Safety valve (pressure relief / safety valve) on vessel T4750 outlet area / nozzle N5 line MNc 47125 75HB13 50. Annotated: SV 104.01, P = 6 barg, DN = 25/50. Set pressure 6 barg, inlet DN25, outlet DN50. Spring-loaded relief valve.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "safety",
+        "fail_position": "closed",
+        "actuator_type": "spring",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-004",
+        "tag": "HV-FC-4750.01",
+        "component_type": "valve",
+        "label": "Control/shutdown valve near H1007, actuated by hand switch HS-4750.01. Annotated 'F.C.' (fail-closed). Solenoid or pneumatically actuated on/off valve on utility line to H1007. Connected via dashed signal line from HS-4750.01.",
+        "description": "Control/shutdown valve near H1007, actuated by hand switch HS-4750.01. Annotated 'F.C.' (fail-closed). Solenoid or pneumatically actuated on/off valve on utility line to H1007. Connected via dashed signal line from HS-4750.01.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "manual",
+        "fail_position": "closed",
+        "actuator_type": "solenoid",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-005",
+        "tag": "CV-75SA21-80",
+        "component_type": "valve",
+        "label": "Check valve on line 75SA21-80 (DN80), located on the suction/discharge side between H1007 outlet and vessel T4750 inlet (line MNc 47124 75HB13 80). Triangle symbol indicating flow direction check (non-return valve).",
+        "description": "Check valve on line 75SA21-80 (DN80), located on the suction/discharge side between H1007 outlet and vessel T4750 inlet (line MNc 47124 75HB13 80). Triangle symbol indicating flow direction check (non-return valve).",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "check",
+        "fail_position": "",
+        "actuator_type": "self-acting",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-006",
+        "tag": "ISOV-MNb-47121",
+        "component_type": "valve",
+        "label": "Manual isolation (gate/butterfly) valve on suction line MNb 47121 75HB13 80, upstream of pump P4711. Shown as bowtie/cross symbol on the suction piping.",
+        "description": "Manual isolation (gate/butterfly) valve on suction line MNb 47121 75HB13 80, upstream of pump P4711. Shown as bowtie/cross symbol on the suction piping.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "gate",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-007",
+        "tag": "ISOV-MNb-47122",
+        "component_type": "valve",
+        "label": "Manual isolation valve on discharge line MNb 47122 75HB13 80, downstream of pump P4711. Shown as bowtie symbol.",
+        "description": "Manual isolation valve on discharge line MNb 47122 75HB13 80, downstream of pump P4711. Shown as bowtie symbol.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "gate",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-008",
+        "tag": "ISOV-73KH12-50-UP",
+        "component_type": "valve",
+        "label": "Manual isolation valve on line 73KH12-50, upstream of pump P4712 suction. Shown as bowtie/block valve symbol.",
+        "description": "Manual isolation valve on line 73KH12-50, upstream of pump P4712 suction. Shown as bowtie/block valve symbol.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "gate",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-009",
+        "tag": "ISOV-73KH12-50-DN",
+        "component_type": "valve",
+        "label": "Manual isolation valve on line 73KH12-50, downstream side (between P4712 discharge and H1008 / main header). Shown as bowtie/block valve symbol.",
+        "description": "Manual isolation valve on line 73KH12-50, downstream side (between P4712 discharge and H1008 / main header). Shown as bowtie/block valve symbol.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "gate",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-010",
+        "tag": "ISOV-73KH12-25",
+        "component_type": "valve",
+        "label": "Manual isolation valve on line 73KH12-25 (DN25), on the branch line from MNc 47125 73HG12 25 area near SV 104.01 / PI-4712.01. Block valve for instrument or branch isolation.",
+        "description": "Manual isolation valve on line 73KH12-25 (DN25), on the branch line from MNc 47125 73HG12 25 area near SV 104.01 / PI-4712.01. Block valve for instrument or branch isolation.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "gate",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-011",
+        "tag": "ISOV-Q-80-outlet",
+        "component_type": "valve",
+        "label": "Manual isolation valve on outlet/recirculation line Q80 at the right side of diagram, upstream of PVA4712.02 control valve. Shown as bowtie symbol.",
+        "description": "Manual isolation valve on outlet/recirculation line Q80 at the right side of diagram, upstream of PVA4712.02 control valve. Shown as bowtie symbol.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "gate",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-012",
+        "tag": "ISOV-QSa-47140",
+        "component_type": "valve",
+        "label": "Manual isolation valve on line QSa 47140 75HB13 50 Q80 at the bottom right of the diagram. Off-page connection going right (arrow indicating outlet direction).",
+        "description": "Manual isolation valve on line QSa 47140 75HB13 50 Q80 at the bottom right of the diagram. Off-page connection going right (arrow indicating outlet direction).",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "gate",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-013",
+        "tag": "ISOV-QSb-47141",
+        "component_type": "valve",
+        "label": "Manual isolation valve on line QSb 47141 75HB13 50 Q80 at the bottom right of the diagram. Parallel to QSa line — off-page connection going right.",
+        "description": "Manual isolation valve on line QSb 47141 75HB13 50 Q80 at the bottom right of the diagram. Parallel to QSa line — off-page connection going right.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "valve_type": "gate",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      }
+    ],
+    "piping": [
+      {
+        "id": "PIPE-001",
+        "tag": "MNb 47121 75HB13 80",
+        "component_type": "piping",
+        "label": "MNb 47121 75HB13 80",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "Feed source (off-page, left arrow)",
+        "to_component": "P4711 suction N1",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "MNb 47121 75HB13 80",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-002",
+        "tag": "MNb 47122 75HB13 80",
+        "component_type": "piping",
+        "label": "MNb 47122 75HB13 80",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "P4711 discharge N2",
+        "to_component": "H1007 N1 DN80",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "MNb 47122 75HB13 80",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-003",
+        "tag": "MNb 47123 75HB13 80",
+        "component_type": "piping",
+        "label": "MNb 47123 75HB13 80",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "H1007 N2 DN80",
+        "to_component": "T4750 N1 DN80",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "MNb 47123 75HB13 80",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-004",
+        "tag": "MNc 47124 75HB13 80",
+        "component_type": "piping",
+        "label": "MNc 47124 75HB13 80",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "T4750 N2 DN80",
+        "to_component": "75SA21-80 check valve / P4712 area",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "MNc 47124 75HB13 80",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-005",
+        "tag": "75SA21-80",
+        "component_type": "piping",
+        "label": "75SA21-80",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "T4750 N2 outlet via MNc 47124",
+        "to_component": "73KH12-50 / P4712 suction",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "75SA21-80",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-006",
+        "tag": "73KH12-50",
+        "component_type": "piping",
+        "label": "73KH12-50",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "75SA21-80 / MNc 47124 outlet",
+        "to_component": "P4712 suction N1 DN50",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "73KH12-50",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-007",
+        "tag": "MNc 47125 75HB13 50",
+        "component_type": "piping",
+        "label": "MNc 47125 75HB13 50",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "T4750 N5 DN50",
+        "to_component": "SV 104.01 / MNc 47125 73HG12 25 branch",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "MNc 47125 75HB13 50",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-008",
+        "tag": "MNc 47125 73HG12 25",
+        "component_type": "piping",
+        "label": "MNc 47125 73HG12 25",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "MNc 47125 75HB13 50 branch",
+        "to_component": "PI-4712.01 / 73KH12-25 isolation",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "MNc 47125 73HG12 25",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-009",
+        "tag": "MNc 47126 75HB13 50",
+        "component_type": "piping",
+        "label": "MNc 47126 75HB13 50",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "P4712 discharge N2 DN50",
+        "to_component": "H1008 N1 DN50 / main outlet header",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "MNc 47126 75HB13 50",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-010",
+        "tag": "MNc 47127 75HB13 50 Q 80",
+        "component_type": "piping",
+        "label": "MNc 47127 75HB13 50 Q 80",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "T4750 N6 DN50",
+        "to_component": "Q80 recirculation/outlet header (right side)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "MNc 47127 75HB13 50 Q 80",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-011",
+        "tag": "66KL21-80",
+        "component_type": "piping",
+        "label": "66KL21-80",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "T4750 N2 DN80 lower connection",
+        "to_component": "MNc 47124 / process line",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "66KL21-80",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-012",
+        "tag": "WKa 47130 75HB13 50",
+        "component_type": "piping",
+        "label": "WKa 47130 75HB13 50",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "Utility supply (off-page bottom)",
+        "to_component": "H1007 utility inlet (N3 DN50)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "WKa 47130 75HB13 50",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-013",
+        "tag": "WKb 47131 75HB13 50",
+        "component_type": "piping",
+        "label": "WKb 47131 75HB13 50",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "H1007 utility outlet (N4 DN50)",
+        "to_component": "Utility return (off-page bottom)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "WKb 47131 75HB13 50",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-014",
+        "tag": "Q80 (outlet header)",
+        "component_type": "piping",
+        "label": "Q80 (outlet header)",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "PVA4712.02 / MNc 47127 area",
+        "to_component": "QSa 47140 / QSb 47141 off-page right",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "Q80 (outlet header)",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-015",
+        "tag": "QSa 47140 75HB13 50 Q80",
+        "component_type": "piping",
+        "label": "QSa 47140 75HB13 50 Q80",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "Q80 outlet header",
+        "to_component": "Off-page connector (right)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "QSa 47140 75HB13 50 Q80",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-016",
+        "tag": "QSb 47141 75HB13 50 Q80",
+        "component_type": "piping",
+        "label": "QSb 47141 75HB13 50 Q80",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "Q80 outlet header",
+        "to_component": "Off-page connector (right)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "QSb 47141 75HB13 50 Q80",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-017",
+        "tag": "T4750 N7 DN25 (top vent/instrument nozzle)",
+        "component_type": "piping",
+        "label": "T4750 N7 DN25 (top vent/instrument nozzle)",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "T4750 top nozzle N7",
+        "to_component": "TICSA-4750.03 instrument connection",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "T4750 N7 DN25 (top vent/instrument nozzle)",
+        "flow_direction": "instrument tap"
+      },
+      {
+        "id": "PIPE-018",
+        "tag": "T4750 N8 DN800",
+        "component_type": "piping",
+        "label": "T4750 N8 DN800",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "T4750 side",
+        "to_component": "Large nozzle — possibly manway or large process connection",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "T4750 N8 DN800",
+        "flow_direction": "N/A"
+      },
+      {
+        "id": "PIPE-019",
+        "tag": "73KH12-50 (suction side after P4712)",
+        "component_type": "piping",
+        "label": "73KH12-50 (suction side after P4712)",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "73KH12-50 isolation valves",
+        "to_component": "PICSA-4712.02 area / main outlet header right",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "73KH12-50 (suction side after P4712)",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-020",
+        "tag": "73KH12-25",
+        "component_type": "piping",
+        "label": "73KH12-25",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.72,
+        "from_component": "MNc 47125 73HG12 25 branch",
+        "to_component": "PI-4712.01 / instrument root valve",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "73KH12-25",
+        "flow_direction": "instrument branch"
+      }
+    ],
+    "control_loops": [
+      {
+        "id": "LOOP-001",
+        "loop_number": "4750.03",
+        "loop_type": "feedback",
+        "measured_variable": "Temperature",
+        "controlled_variable": "",
+        "sensor_id": "TICSA-4750.03",
+        "controller_id": "TICSA-4750.03",
+        "actuator_id": "TV-4750.03",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": true
+      },
+      {
+        "id": "LOOP-002",
+        "loop_number": "4712.02",
+        "loop_type": "feedback",
+        "measured_variable": "Pressure",
+        "controlled_variable": "",
+        "sensor_id": "PICSA-4712.02",
+        "controller_id": "PICSA-4712.02",
+        "actuator_id": "PVA-4712.02",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": true
+      },
+      {
+        "id": "LOOP-003",
+        "loop_number": "4712.01",
+        "loop_type": "indication_only",
+        "measured_variable": "Pressure",
+        "controlled_variable": "",
+        "sensor_id": "PI-4712.01",
+        "controller_id": "",
+        "actuator_id": "",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-004",
+        "loop_number": "4750.01",
+        "loop_type": "manual",
+        "measured_variable": "Hand",
+        "controlled_variable": "",
+        "sensor_id": "HS-4750.01",
+        "controller_id": "",
+        "actuator_id": "HV-FC-4750.01",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "SIF-VLV-003",
+        "loop_number": "104.01",
+        "loop_type": "",
+        "measured_variable": "Pressure",
+        "controlled_variable": "",
+        "sensor_id": "SV-104.01",
+        "controller_id": "",
+        "actuator_id": "SV-104.01",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": true
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "EQ-001",
+          "component_type": "equipment",
+          "tag": "T4750",
+          "label": "Vertical pressure vessel, appears to be a storage/buffer tank. Visible nozzles: N1 (DN80, bottom area), N2 (DN80, lower side), N3 (DN80, lower side), N5 (DN50, mid side), N6 (DN50, upper side), N7 (DN25, top), N8 (DN800, side — likely a large manway or nozzle). Multiple side nozzles at various elevations. No visible internals (no trays or packing). Tag T4750 shown on vessel body.",
+          "properties": {
+            "subtype": "vessel"
+          }
+        },
+        {
+          "id": "EQ-002",
+          "component_type": "equipment",
+          "tag": "P4711",
+          "label": "Centrifugal pump, single-stage, with electric motor drive. Shown with standard centrifugal pump symbol (circle with impeller). Inlet nozzle N1 DN80, outlet nozzle N2 DN80. Connected to suction line MNb 47121 75HB13 80 and discharge line MNb 47122 75HB13 80.",
+          "properties": {
+            "subtype": "pump"
+          }
+        },
+        {
+          "id": "EQ-003",
+          "component_type": "equipment",
+          "tag": "P4712",
+          "label": "Centrifugal pump, single-stage, with electric motor drive. Shown with standard centrifugal pump symbol. Inlet nozzle N1 DN50, outlet nozzle N2 DN50. Connected to suction line 73KH12-50 and discharge line MNc 47126 75HB13 50.",
+          "properties": {
+            "subtype": "pump"
+          }
+        },
+        {
+          "id": "EQ-004",
+          "component_type": "equipment",
+          "tag": "H1007",
+          "label": "Shell-and-tube or plate heat exchanger (shown as crossed-box symbol). Horizontal orientation. Nozzles: N1 DN80, N2 DN80, N3 DN50, N4 DN50. Connected to utility lines WKa 47130 75HB13 50 (inlet) and WKb 47131 75HB13 50 (outlet), suggesting heating/cooling medium. Process side connected to pump P4711 discharge and vessel T4750 inlet.",
+          "properties": {
+            "subtype": "heat_exchanger"
+          }
+        },
+        {
+          "id": "EQ-005",
+          "component_type": "equipment",
+          "tag": "H1008",
+          "label": "Shell-and-tube or plate heat exchanger (shown as crossed-box symbol). Horizontal orientation. Nozzles: N1 DN50, N2 DN50, N3 DN50, N4 DN50. Connected on process side to vessel T4750 outlet via MNc 47126 75HB13 50 and pump P4712. Associated with temperature control loop TV4750.03 and TICSA 4750.03.",
+          "properties": {
+            "subtype": "heat_exchanger"
+          }
+        },
+        {
+          "id": "INST-001",
+          "component_type": "instrument",
+          "tag": "TICSA-4750.03",
+          "label": "Temperature indicator, controller, switch, and alarm — composite multi-function instrument bubble. Located above vessel T4750. Connected via dashed signal line to TV4750.03 (temperature control valve on H1008 bypass/outlet) and to PICSA-4712.02 via dashed line. Ellipse/oval shape indicates shared control room or DCS function.",
+          "properties": {
+            "measured_variable": "T",
+            "function": "",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-002",
+          "component_type": "instrument",
+          "tag": "HS-4750.01",
+          "label": "Hand switch — operator-initiated manual control station. Located near H1007 on left side. Connected via dashed signal line to a solenoid/control element (F.C. annotated valve). Ellipse shape indicates field-mounted or panel-mounted hand switch.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-003",
+          "component_type": "instrument",
+          "tag": "PI-4712.01",
+          "label": "Pressure indicator, local gauge. Located on line between vessel T4750 outlet nozzle N5/MNc 47125 area and pump P4712 suction side / H1008 inlet. Circle symbol indicates local field indicator.",
+          "properties": {
+            "measured_variable": "P",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-004",
+          "component_type": "instrument",
+          "tag": "PICSA-4712.02",
+          "label": "Pressure indicator, controller, switch, and alarm — composite multi-function instrument. Located at right side of diagram, downstream of H1008. Ellipse/oval shape indicates shared control room / DCS function. Receives dashed signal from TICSA-4750.03 (cascade or interlock). Connected to PVA4712.02 control valve.",
+          "properties": {
+            "measured_variable": "P",
+            "function": "",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "VLV-001",
+          "component_type": "valve",
+          "tag": "TV-4750.03",
+          "label": "Temperature control valve associated with loop TICSA-4750.03. Located on the cooling/heating medium line to heat exchanger H1008 (right side). Annotated 'F.O.' (fail-open). Globe body with diaphragm/pneumatic actuator. Controlled by TICSA-4750.03 via dashed signal line.",
+          "properties": {
+            "valve_type": "control",
+            "plc_io_type": "AO",
+            "fail_position": "open"
+          }
+        },
+        {
+          "id": "VLV-002",
+          "component_type": "valve",
+          "tag": "PVA-4712.02",
+          "label": "Pressure control valve associated with loop PICSA-4712.02. Located on the outlet/recirculation line at the right side of the diagram (Q80 line). Annotated 'F.C.' (fail-closed). Globe or butterfly body with pneumatic actuator. Controlled by PICSA-4712.02.",
+          "properties": {
+            "valve_type": "control",
+            "plc_io_type": "AO",
+            "fail_position": "closed"
+          }
+        },
+        {
+          "id": "VLV-003",
+          "component_type": "valve",
+          "tag": "SV-104.01",
+          "label": "Safety valve (pressure relief / safety valve) on vessel T4750 outlet area / nozzle N5 line MNc 47125 75HB13 50. Annotated: SV 104.01, P = 6 barg, DN = 25/50. Set pressure 6 barg, inlet DN25, outlet DN50. Spring-loaded relief valve.",
+          "properties": {
+            "valve_type": "safety",
+            "plc_io_type": "",
+            "fail_position": "closed"
+          }
+        },
+        {
+          "id": "VLV-004",
+          "component_type": "valve",
+          "tag": "HV-FC-4750.01",
+          "label": "Control/shutdown valve near H1007, actuated by hand switch HS-4750.01. Annotated 'F.C.' (fail-closed). Solenoid or pneumatically actuated on/off valve on utility line to H1007. Connected via dashed signal line from HS-4750.01.",
+          "properties": {
+            "valve_type": "manual",
+            "plc_io_type": "",
+            "fail_position": "closed"
+          }
+        },
+        {
+          "id": "VLV-005",
+          "component_type": "valve",
+          "tag": "CV-75SA21-80",
+          "label": "Check valve on line 75SA21-80 (DN80), located on the suction/discharge side between H1007 outlet and vessel T4750 inlet (line MNc 47124 75HB13 80). Triangle symbol indicating flow direction check (non-return valve).",
+          "properties": {
+            "valve_type": "check",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-006",
+          "component_type": "valve",
+          "tag": "ISOV-MNb-47121",
+          "label": "Manual isolation (gate/butterfly) valve on suction line MNb 47121 75HB13 80, upstream of pump P4711. Shown as bowtie/cross symbol on the suction piping.",
+          "properties": {
+            "valve_type": "gate",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-007",
+          "component_type": "valve",
+          "tag": "ISOV-MNb-47122",
+          "label": "Manual isolation valve on discharge line MNb 47122 75HB13 80, downstream of pump P4711. Shown as bowtie symbol.",
+          "properties": {
+            "valve_type": "gate",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-008",
+          "component_type": "valve",
+          "tag": "ISOV-73KH12-50-UP",
+          "label": "Manual isolation valve on line 73KH12-50, upstream of pump P4712 suction. Shown as bowtie/block valve symbol.",
+          "properties": {
+            "valve_type": "gate",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-009",
+          "component_type": "valve",
+          "tag": "ISOV-73KH12-50-DN",
+          "label": "Manual isolation valve on line 73KH12-50, downstream side (between P4712 discharge and H1008 / main header). Shown as bowtie/block valve symbol.",
+          "properties": {
+            "valve_type": "gate",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-010",
+          "component_type": "valve",
+          "tag": "ISOV-73KH12-25",
+          "label": "Manual isolation valve on line 73KH12-25 (DN25), on the branch line from MNc 47125 73HG12 25 area near SV 104.01 / PI-4712.01. Block valve for instrument or branch isolation.",
+          "properties": {
+            "valve_type": "gate",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-011",
+          "component_type": "valve",
+          "tag": "ISOV-Q-80-outlet",
+          "label": "Manual isolation valve on outlet/recirculation line Q80 at the right side of diagram, upstream of PVA4712.02 control valve. Shown as bowtie symbol.",
+          "properties": {
+            "valve_type": "gate",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-012",
+          "component_type": "valve",
+          "tag": "ISOV-QSa-47140",
+          "label": "Manual isolation valve on line QSa 47140 75HB13 50 Q80 at the bottom right of the diagram. Off-page connection going right (arrow indicating outlet direction).",
+          "properties": {
+            "valve_type": "gate",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-013",
+          "component_type": "valve",
+          "tag": "ISOV-QSb-47141",
+          "label": "Manual isolation valve on line QSb 47141 75HB13 50 Q80 at the bottom right of the diagram. Parallel to QSa line — off-page connection going right.",
+          "properties": {
+            "valve_type": "gate",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source_id": "Feed source (off-page, left arrow)",
+          "target_id": "P4711 suction N1",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "MNb 47121 75HB13 80"
+          }
+        },
+        {
+          "source_id": "P4711 discharge N2",
+          "target_id": "H1007 N1 DN80",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "MNb 47122 75HB13 80"
+          }
+        },
+        {
+          "source_id": "H1007 N2 DN80",
+          "target_id": "T4750 N1 DN80",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "MNb 47123 75HB13 80"
+          }
+        },
+        {
+          "source_id": "T4750 N2 DN80",
+          "target_id": "75SA21-80 check valve / P4712 area",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "MNc 47124 75HB13 80"
+          }
+        },
+        {
+          "source_id": "T4750 N2 outlet via MNc 47124",
+          "target_id": "73KH12-50 / P4712 suction",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "75SA21-80"
+          }
+        },
+        {
+          "source_id": "75SA21-80 / MNc 47124 outlet",
+          "target_id": "P4712 suction N1 DN50",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "73KH12-50"
+          }
+        },
+        {
+          "source_id": "T4750 N5 DN50",
+          "target_id": "SV 104.01 / MNc 47125 73HG12 25 branch",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "MNc 47125 75HB13 50"
+          }
+        },
+        {
+          "source_id": "MNc 47125 75HB13 50 branch",
+          "target_id": "PI-4712.01 / 73KH12-25 isolation",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "MNc 47125 73HG12 25"
+          }
+        },
+        {
+          "source_id": "P4712 discharge N2 DN50",
+          "target_id": "H1008 N1 DN50 / main outlet header",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "MNc 47126 75HB13 50"
+          }
+        },
+        {
+          "source_id": "T4750 N6 DN50",
+          "target_id": "Q80 recirculation/outlet header (right side)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "MNc 47127 75HB13 50 Q 80"
+          }
+        },
+        {
+          "source_id": "T4750 N2 DN80 lower connection",
+          "target_id": "MNc 47124 / process line",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "66KL21-80"
+          }
+        },
+        {
+          "source_id": "Utility supply (off-page bottom)",
+          "target_id": "H1007 utility inlet (N3 DN50)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "WKa 47130 75HB13 50"
+          }
+        },
+        {
+          "source_id": "H1007 utility outlet (N4 DN50)",
+          "target_id": "Utility return (off-page bottom)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "WKb 47131 75HB13 50"
+          }
+        },
+        {
+          "source_id": "PVA4712.02 / MNc 47127 area",
+          "target_id": "QSa 47140 / QSb 47141 off-page right",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "Q80 (outlet header)"
+          }
+        },
+        {
+          "source_id": "Q80 outlet header",
+          "target_id": "Off-page connector (right)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "QSa 47140 75HB13 50 Q80"
+          }
+        },
+        {
+          "source_id": "Q80 outlet header",
+          "target_id": "Off-page connector (right)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "QSb 47141 75HB13 50 Q80"
+          }
+        },
+        {
+          "source_id": "T4750 top nozzle N7",
+          "target_id": "TICSA-4750.03 instrument connection",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "T4750 N7 DN25 (top vent/instrument nozzle)"
+          }
+        },
+        {
+          "source_id": "T4750 side",
+          "target_id": "Large nozzle — possibly manway or large process connection",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "T4750 N8 DN800"
+          }
+        },
+        {
+          "source_id": "73KH12-50 isolation valves",
+          "target_id": "PICSA-4712.02 area / main outlet header right",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "73KH12-50 (suction side after P4712)"
+          }
+        },
+        {
+          "source_id": "MNc 47125 73HG12 25 branch",
+          "target_id": "PI-4712.01 / instrument root valve",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "73KH12-25"
+          }
+        },
+        {
+          "source_id": "INST-001",
+          "target_id": "INST-001",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "4750.03"
+          }
+        },
+        {
+          "source_id": "INST-001",
+          "target_id": "VLV-001",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "4750.03"
+          }
+        },
+        {
+          "source_id": "INST-004",
+          "target_id": "INST-004",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "4712.02"
+          }
+        },
+        {
+          "source_id": "INST-004",
+          "target_id": "VLV-002",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "4712.02"
+          }
+        }
+      ]
+    },
+    "extraction_confidence": 0.72,
+    "warnings": [
+      "VLM notes: 1. The diagram quality is moderate — some text labels are small and partially legible. Tag numbers and line designations have been transcribed as accurately as possible from the image. 2. Composite instrument bubbles (TICSA-4750.03, PICSA-4712.02) use oval/ellipse shapes indicating DCS/shared display functions per ISA-5.1. 3. SV 104.01 is identified as a safety relief valve (P=6 barg, DN=25/50) on vessel T4750 nozzle N5 line. 4. Off-page connectors are visible: left side (feed inlet arrow), bottom (utility WKa/WKb lines), and right side (QSa, QSb outlet arrows and 73KH12-25/73KH12-50 headers). 5. N8 DN800 on T4750 is likely a large manway (800mm diameter) rather than a process nozzle. 6. The dashed blue signal line from TICSA-4750.03 to PICSA-4712.02 suggests cascade or interlock connection between temperature and pressure loops. 7. The 73KH12-50 and 73KH12-25 lines appear to be cooling water or utility headers given their numbering convention separate from process lines (MNb/MNc prefix). 8. H1007 and H1008 are identified as heat exchangers from the crossed-box symbols; their exact type (shell-and-tube vs plate) cannot be confirmed from symbol alone. 9. Pump P4711 appears to be the primary charge/feed pump; P4712 appears to be a recirculation or transfer pump. 10. Several manual isolation valves (bowtie symbols) are visible on pump suction/discharge and branch lines but not all carry visible individual tags — they have been assigned descriptive tags based on their line associations.",
+      "Extraction confidence (0.72) below threshold (0.85). Consider DEXPI input for validation.",
+      "Normalised valve tag: 'TV4750.03' → 'TV-4750.03'",
+      "Normalised valve tag: 'PVA4712.02' → 'PVA-4712.02'",
+      "Normalised valve tag: 'ISOV-MNb47121' → 'ISOV-MNb-47121'",
+      "Normalised valve tag: 'ISOV-MNb47122' → 'ISOV-MNb-47122'",
+      "Normalised valve tag: 'ISOV-Q80-outlet' → 'ISOV-Q-80-outlet'",
+      "Normalised valve tag: 'ISOV-QSa47140' → 'ISOV-QSa-47140'",
+      "Normalised valve tag: 'ISOV-QSb47141' → 'ISOV-QSb-47141'",
+      "ISA-5.1 override: valve HV-FC-4750.01 type control → manual",
+      "R7.3 safety synthesis: standalone safety loop '104.01' synthesised for valve 'SV-104.01' (type=safety, measured=Pressure)",
+      "Fix 7 total: 1 safety-function decision(s) made by deterministic ISA-5.1 / IEC 61511-1 rules, independent of VLM judgement"
+    ],
+    "raw_vlm_output": "```json\n{\n  \"equipment\": [\n    {\n      \"tag\": \"T4750\",\n      \"subtype\": \"vessel\",\n      \"description\": \"Vertical pressure vessel, appears to be a storage/buffer tank. Visible nozzles: N1 (DN80, bottom area), N2 (DN80, lower side), N3 (DN80, lower side), N5 (DN50, mid side), N6 (DN50, upper side), N7 (DN25, top), N8 (DN800, side — likely a large manway or nozzle). Multiple side nozzles at various elevations. No visible internals (no trays or packing). Tag T4750 shown on vessel body.\"\n    },\n    {\n      \"tag\": \"P4711\",\n      \"subtype\": \"pump\",\n      \"description\": \"Centrifugal pump, single-stage, with electric motor drive. Shown with standard centrifugal pump symbol (circle with impeller). Inlet nozzle N1 DN80, outlet nozzle N2 DN80. Connected to suction line MNb 47121 75HB13 80 and discharge line MNb 47122 75HB13 80.\"\n    },\n    {\n      \"tag\": \"P4712\",\n      \"subtype\": \"pump\",\n      \"description\": \"Centrifugal pump, single-stage, with electric motor drive. Shown with standard centrifugal pump symbol. Inlet nozzle N1 DN50, outlet nozzle N2 DN50. Connected to suction line 73KH12-50 and discharge line MNc 47126 75HB13 50.\"\n    },\n    {\n      \"tag\": \"H1007\",\n      \"subtype\": \"heat_exchanger\",\n      \"description\": \"Shell-and-tube or plate heat exchanger (shown as crossed-box symbol). Horizontal orientation. Nozzles: N1 DN80, N2 DN80, N3 DN50, N4 DN50. Connected to utility lines WKa 47130 75HB13 50 (inlet) and WKb 47131 75HB13 50 (outlet), suggesting heating/cooling medium. Process side connected to pump P4711 discharge and vessel T4750 inlet.\"\n    },\n    {\n      \"tag\": \"H1008\",\n      \"subtype\": \"heat_exchanger\",\n      \"description\": \"Shell-and-tube or plate heat exchanger (shown as crossed-box symbol). Horizontal orientation. Nozzles: N1 DN50, N2 DN50, N3 DN50, N4 DN50. Connected on process side to vessel T4750 outlet via MNc 47126 75HB13 50 and pump P4712. Associated with temperature control loop TV4750.03 and TICSA 4750.03.\"\n    }\n  ],\n  \"instruments\": [\n    {\n      \"tag\": \"TICSA-4750.03\",\n      \"measured_variable\": \"T\",\n      \"function\": \"ICSA\",\n      \"loop_number\": \"4750.03\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature indicator, controller, switch, and alarm — composite multi-function instrument bubble. Located above vessel T4750. Connected via dashed signal line to TV4750.03 (temperature control valve on H1008 bypass/outlet) and to PICSA-4712.02 via dashed line. Ellipse/oval shape indicates shared control room or DCS function.\"\n    },\n    {\n      \"tag\": \"HS-4750.01\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"4750.01\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Hand switch — operator-initiated manual control station. Located near H1007 on left side. Connected via dashed signal line to a solenoid/control element (F.C. annotated valve). Ellipse shape indicates field-mounted or panel-mounted hand switch.\"\n    },\n    {\n      \"tag\": \"PI-4712.01\",\n      \"measured_variable\": \"P\",\n      \"function\": \"I\",\n      \"loop_number\": \"4712.01\",\n      \"plc_io_type\": null,\n      \"description\": \"Pressure indicator, local gauge. Located on line between vessel T4750 outlet nozzle N5/MNc 47125 area and pump P4712 suction side / H1008 inlet. Circle symbol indicates local field indicator.\"\n    },\n    {\n      \"tag\": \"PICSA-4712.02\",\n      \"measured_variable\": \"P\",\n      \"function\": \"ICSA\",\n      \"loop_number\": \"4712.02\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Pressure indicator, controller, switch, and alarm — composite multi-function instrument. Located at right side of diagram, downstream of H1008. Ellipse/oval shape indicates shared control room / DCS function. Receives dashed signal from TICSA-4750.03 (cascade or interlock). Connected to PVA4712.02 control valve.\"\n    }\n  ],\n  \"valves\": [\n    {\n      \"tag\": \"TV4750.03\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"open\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Temperature control valve associated with loop TICSA-4750.03. Located on the cooling/heating medium line to heat exchanger H1008 (right side). Annotated 'F.O.' (fail-open). Globe body with diaphragm/pneumatic actuator. Controlled by TICSA-4750.03 via dashed signal line.\"\n    },\n    {\n      \"tag\": \"PVA4712.02\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"closed\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Pressure control valve associated with loop PICSA-4712.02. Located on the outlet/recirculation line at the right side of the diagram (Q80 line). Annotated 'F.C.' (fail-closed). Globe or butterfly body with pneumatic actuator. Controlled by PICSA-4712.02.\"\n    },\n    {\n      \"tag\": \"SV-104.01\",\n      \"valve_type\": \"safety\",\n      \"fail_position\": \"closed\",\n      \"actuator_type\": \"spring\",\n      \"description\": \"Safety valve (pressure relief / safety valve) on vessel T4750 outlet area / nozzle N5 line MNc 47125 75HB13 50. Annotated: SV 104.01, P = 6 barg, DN = 25/50. Set pressure 6 barg, inlet DN25, outlet DN50. Spring-loaded relief valve.\"\n    },\n    {\n      \"tag\": \"HV-FC-4750.01\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"closed\",\n      \"actuator_type\": \"solenoid\",\n      \"description\": \"Control/shutdown valve near H1007, actuated by hand switch HS-4750.01. Annotated 'F.C.' (fail-closed). Solenoid or pneumatically actuated on/off valve on utility line to H1007. Connected via dashed signal line from HS-4750.01.\"\n    },\n    {\n      \"tag\": \"CV-75SA21-80\",\n      \"valve_type\": \"check\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"self-acting\",\n      \"description\": \"Check valve on line 75SA21-80 (DN80), located on the suction/discharge side between H1007 outlet and vessel T4750 inlet (line MNc 47124 75HB13 80). Triangle symbol indicating flow direction check (non-return valve).\"\n    },\n    {\n      \"tag\": \"ISOV-MNb47121\",\n      \"valve_type\": \"gate\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Manual isolation (gate/butterfly) valve on suction line MNb 47121 75HB13 80, upstream of pump P4711. Shown as bowtie/cross symbol on the suction piping.\"\n    },\n    {\n      \"tag\": \"ISOV-MNb47122\",\n      \"valve_type\": \"gate\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Manual isolation valve on discharge line MNb 47122 75HB13 80, downstream of pump P4711. Shown as bowtie symbol.\"\n    },\n    {\n      \"tag\": \"ISOV-73KH12-50-UP\",\n      \"valve_type\": \"gate\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Manual isolation valve on line 73KH12-50, upstream of pump P4712 suction. Shown as bowtie/block valve symbol.\"\n    },\n    {\n      \"tag\": \"ISOV-73KH12-50-DN\",\n      \"valve_type\": \"gate\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Manual isolation valve on line 73KH12-50, downstream side (between P4712 discharge and H1008 / main header). Shown as bowtie/block valve symbol.\"\n    },\n    {\n      \"tag\": \"ISOV-73KH12-25\",\n      \"valve_type\": \"gate\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Manual isolation valve on line 73KH12-25 (DN25), on the branch line from MNc 47125 73HG12 25 area near SV 104.01 / PI-4712.01. Block valve for instrument or branch isolation.\"\n    },\n    {\n      \"tag\": \"ISOV-Q80-outlet\",\n      \"valve_type\": \"gate\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Manual isolation valve on outlet/recirculation line Q80 at the right side of diagram, upstream of PVA4712.02 control valve. Shown as bowtie symbol.\"\n    },\n    {\n      \"tag\": \"ISOV-QSa47140\",\n      \"valve_type\": \"gate\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Manual isolation valve on line QSa 47140 75HB13 50 Q80 at the bottom right of the diagram. Off-page connection going right (arrow indicating outlet direction).\"\n    },\n    {\n      \"tag\": \"ISOV-QSb47141\",\n      \"valve_type\": \"gate\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Manual isolation valve on line QSb 47141 75HB13 50 Q80 at the bottom right of the diagram. Parallel to QSa line — off-page connection going right.\"\n    }\n  ],\n  \"piping\": [\n    {\n      \"line_number\": \"MNb 47121 75HB13 80\",\n      \"from_component\": \"Feed source (off-page, left arrow)\",\n      \"to_component\": \"P4711 suction N1\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"MNb 47122 75HB13 80\",\n      \"from_component\": \"P4711 discharge N2\",\n      \"to_component\": \"H1007 N1 DN80\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"MNb 47123 75HB13 80\",\n      \"from_component\": \"H1007 N2 DN80\",\n      \"to_component\": \"T4750 N1 DN80\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"MNc 47124 75HB13 80\",\n      \"from_component\": \"T4750 N2 DN80\",\n      \"to_component\": \"75SA21-80 check valve / P4712 area\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"75SA21-80\",\n      \"from_component\": \"T4750 N2 outlet via MNc 47124\",\n      \"to_component\": \"73KH12-50 / P4712 suction\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"73KH12-50\",\n      \"from_component\": \"75SA21-80 / MNc 47124 outlet\",\n      \"to_component\": \"P4712 suction N1 DN50\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"MNc 47125 75HB13 50\",\n      \"from_component\": \"T4750 N5 DN50\",\n      \"to_component\": \"SV 104.01 / MNc 47125 73HG12 25 branch\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"MNc 47125 73HG12 25\",\n      \"from_component\": \"MNc 47125 75HB13 50 branch\",\n      \"to_component\": \"PI-4712.01 / 73KH12-25 isolation\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"MNc 47126 75HB13 50\",\n      \"from_component\": \"P4712 discharge N2 DN50\",\n      \"to_component\": \"H1008 N1 DN50 / main outlet header\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"MNc 47127 75HB13 50 Q 80\",\n      \"from_component\": \"T4750 N6 DN50\",\n      \"to_component\": \"Q80 recirculation/outlet header (right side)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"66KL21-80\",\n      \"from_component\": \"T4750 N2 DN80 lower connection\",\n      \"to_component\": \"MNc 47124 / process line\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"WKa 47130 75HB13 50\",\n      \"from_component\": \"Utility supply (off-page bottom)\",\n      \"to_component\": \"H1007 utility inlet (N3 DN50)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"WKb 47131 75HB13 50\",\n      \"from_component\": \"H1007 utility outlet (N4 DN50)\",\n      \"to_component\": \"Utility return (off-page bottom)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"Q80 (outlet header)\",\n      \"from_component\": \"PVA4712.02 / MNc 47127 area\",\n      \"to_component\": \"QSa 47140 / QSb 47141 off-page right\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"QSa 47140 75HB13 50 Q80\",\n      \"from_component\": \"Q80 outlet header\",\n      \"to_component\": \"Off-page connector (right)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"QSb 47141 75HB13 50 Q80\",\n      \"from_component\": \"Q80 outlet header\",\n      \"to_component\": \"Off-page connector (right)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"T4750 N7 DN25 (top vent/instrument nozzle)\",\n      \"from_component\": \"T4750 top nozzle N7\",\n      \"to_component\": \"TICSA-4750.03 instrument connection\",\n      \"flow_direction\": \"instrument tap\"\n    },\n    {\n      \"line_number\": \"T4750 N8 DN800\",\n      \"from_component\": \"T4750 side\",\n      \"to_component\": \"Large nozzle — possibly manway or large process connection\",\n      \"flow_direction\": \"N/A\"\n    },\n    {\n      \"line_number\": \"73KH12-50 (suction side after P4712)\",\n      \"from_component\": \"73KH12-50 isolation valves\",\n      \"to_component\": \"PICSA-4712.02 area / main outlet header right\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"73KH12-25\",\n      \"from_component\": \"MNc 47125 73HG12 25 branch\",\n      \"to_component\": \"PI-4712.01 / instrument root valve\",\n      \"flow_direction\": \"instrument branch\"\n    }\n  ],\n  \"control_loops\": [\n    {\n      \"loop_number\": \"4750.03\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Temperature\",\n      \"sensor_tag\": \"TICSA-4750.03\",\n      \"controller_tag\": \"TICSA-4750.03\",\n      \"actuator_tag\": \"TV4750.03\",\n      \"is_safety_function\": true,\n      \"notes\": \"TICSA includes temperature indicator, controller, switch, and alarm functions in one composite bubble. Controls TV4750.03 (F.O.) on H1008 utility/process side. Also has alarm and switch functions (safety interlock potential). Dashed signal line connects to PICSA-4712.02 suggesting cascade or interlock.\"\n    },\n    {\n      \"loop_number\": \"4712.02\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Pressure\",\n      \"sensor_tag\": \"PICSA-4712.02\",\n      \"controller_tag\": \"PICSA-4712.02\",\n      \"actuator_tag\": \"PVA4712.02\",\n      \"is_safety_function\": true,\n      \"notes\": \"PICSA includes pressure indicator, controller, switch, and alarm. Controls PVA4712.02 (F.C.) on Q80 outlet line. Receives signal from TICSA-4750.03 (possible cascade primary). Alarm and switch functions indicate safety interlock capability.\"\n    },\n    {\n      \"loop_number\": \"4712.01\",\n      \"loop_type\": \"indication_only\",\n      \"measured_variable\": \"Pressure\",\n      \"sensor_tag\": \"PI-4712.01\",\n      \"controller_tag\": null,\n      \"actuator_tag\": null,\n      \"is_safety_function\": false,\n      \"notes\": \"Local pressure indicator only, no control output.\"\n    },\n    {\n      \"loop_number\": \"4750.01\",\n      \"loop_type\": \"manual\",\n      \"measured_variable\": \"Hand\",\n      \"sensor_tag\": \"HS-4750.01\",\n      \"controller_tag\": null,\n      \"actuator_tag\": \"HV-FC-4750.01\",\n      \"is_safety_function\": false,\n      \"notes\": \"Hand switch HS-4750.01 operates a fail-closed valve (annotated F.C.) on the utility/process line to H1007. Manual operator-initiated action.\"\n    }\n  ],\n  \"extraction_confidence\": 0.72,\n  \"notes\": \"1. The diagram quality is moderate — some text labels are small and partially legible. Tag numbers and line designations have been transcribed as accurately as possible from the image. 2. Composite instrument bubbles (TICSA-4750.03, PICSA-4712.02) use oval/ellipse shapes indicating DCS/shared display functions per ISA-5.1. 3. SV 104.01 is identified as a safety relief valve (P=6 barg, DN=25/50) on vessel T4750 nozzle N5 line. 4. Off-page connectors are visible: left side (feed inlet arrow), bottom (utility WKa/WKb lines), and right side (QSa, QSb outlet arrows and 73KH12-25/73KH12-50 headers). 5. N8 DN800 on T4750 is likely a large manway (800mm diameter) rather than a process nozzle. 6. The dashed blue signal line from TICSA-4750.03 to PICSA-4712.02 suggests cascade or interlock connection between temperature and pressure loops. 7. The 73KH12-50 and 73KH12-25 lines appear to be cooling water or utility headers given their numbering convention separate from process lines (MNb/MNc prefix). 8. H1007 and H1008 are identified as heat exchangers from the crossed-box symbols; their exact type (shell-and-tube vs plate) cannot be confirmed from symbol alone. 9. Pump P4711 appears to be the primary charge/feed pump; P4712 appears to be a recirculation or transfer pump. 10. Several manual isolation valves (bowtie symbols) are visible on pump suction/discharge and branch lines but not all carry visible individual tags — they have been assigned descriptive tags based on their line associations.\"\n}\n```"
+  },
+  "generated_code": {
+    "code": "(* Generated by SafePLC-Gen Multimodal — CODESYS 3.5 *)\n(* IEC 61131-3 Structured Text *)\n(* Date: 2026-04-25T14:03:17.224847 *)\n\nPROGRAM SafePLC_Control\n\nVAR\n    TICSA_4750_03_Raw            AT %IW4       : INT := 0;\n    PICSA_4712_02_Raw            AT %IW2       : INT := 0;\n    PI_4712_01_Raw               AT %IW0       : INT := 0;\n    PVA_4712_02_Out              AT %QW0       : INT := 0;\n    TV_4750_03_Out               AT %QW2       : INT := 0;\n    HS_4750_01                   AT %IX0.0     : BOOL := FALSE;\n    ESTOP                        AT %IX0.1     : BOOL := FALSE;\n    MANUAL_RESET                 AT %IX0.2     : BOOL := FALSE;\nEND_VAR\n\nVAR\n    FirstScan                    : BOOL := TRUE;\n\n    TICSA_4750_03_Scaled         : REAL := 0.0;\n    PICSA_4712_02_Scaled         : REAL := 0.0;\n    PI_4712_01_Scaled            : REAL := 0.0;\n\n    TICSA_4750_03_HH_SP          : REAL := 120.0;\n    TICSA_4750_03_H_SP           : REAL := 110.0;\n    TICSA_4750_03_L_SP           : REAL := 20.0;\n    TICSA_4750_03_LL_SP          : REAL := 10.0;\n    TICSA_4750_03_Deadband       : REAL := 2.0;\n    TICSA_4750_03_H              : BOOL := FALSE;\n    TICSA_4750_03_L              : BOOL := FALSE;\n    TICSA_4750_03_HH             : BOOL := FALSE;\n    TICSA_4750_03_LL             : BOOL := FALSE;\n    TICSA_4750_03_HH_Latch       : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TICSA_4750_03_LL_Latch       : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TICSA_4750_03_HH_Ack         : BOOL := FALSE;\n    TICSA_4750_03_LL_Ack         : BOOL := FALSE;\n\n    PICSA_4712_02_HH_SP          : REAL := 16.0;\n    PICSA_4712_02_H_SP           : REAL := 14.0;\n    PICSA_4712_02_L_SP           : REAL := 2.0;\n    PICSA_4712_02_LL_SP          : REAL := 1.0;\n    PICSA_4712_02_Deadband       : REAL := 0.2;\n    PICSA_4712_02_H              : BOOL := FALSE;\n    PICSA_4712_02_L              : BOOL := FALSE;\n    PICSA_4712_02_HH             : BOOL := FALSE;\n    PICSA_4712_02_LL             : BOOL := FALSE;\n    PICSA_4712_02_HH_Latch       : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    PICSA_4712_02_LL_Latch       : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    PICSA_4712_02_HH_Ack         : BOOL := FALSE;\n    PICSA_4712_02_LL_Ack         : BOOL := FALSE;\n\n    PI_4712_01_HH_SP             : REAL := 18.0;\n    PI_4712_01_H_SP              : REAL := 15.0;\n    PI_4712_01_L_SP              : REAL := 1.5;\n    PI_4712_01_LL_SP             : REAL := 0.5;\n    PI_4712_01_Deadband          : REAL := 0.2;\n    PI_4712_01_H                 : BOOL := FALSE;\n    PI_4712_01_L                 : BOOL := FALSE;\n    PI_4712_01_HH                : BOOL := FALSE;\n    PI_4712_01_LL                : BOOL := FALSE;\n    PI_4712_01_HH_Latch          : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    PI_4712_01_LL_Latch          : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    PI_4712_01_HH_Ack            : BOOL := FALSE;\n    PI_4712_01_LL_Ack            : BOOL := FALSE;\n\n    TICSA_4750_03_SP             : REAL := 80.0;\n    TICSA_4750_03_Kp             : REAL := 1.2;\n    TICSA_4750_03_Ki             : REAL := 0.05;\n    TICSA_4750_03_Integral       : REAL := 0.0;\n    TICSA_4750_03_Error          : REAL := 0.0;\n    TICSA_4750_03_Output_Pct     : REAL := 0.0;\n\n    PICSA_4712_02_SP             : REAL := 8.0;\n    PICSA_4712_02_Kp             : REAL := 1.5;\n    PICSA_4712_02_Ki             : REAL := 0.08;\n    PICSA_4712_02_Integral       : REAL := 0.0;\n    PICSA_4712_02_Error          : REAL := 0.0;\n    PICSA_4712_02_Output_Pct     : REAL := 0.0;\n\n    LOOP_4750_03_TRIP            : BOOL := FALSE;\n    LOOP_4712_02_TRIP            : BOOL := FALSE;\n    LOOP_104_01_TRIP             : BOOL := FALSE;\n    SV_104_01_HH                 : BOOL := FALSE;\n    SV_104_01_LL                 : BOOL := FALSE;\n    SAFE_STATE                   : BOOL := FALSE;\n\n    SV_104_01_Out                : BOOL := FALSE;\n    HV_FC_4750_01_Out            : BOOL := FALSE;\n    CV_75SA21_80_Out             : BOOL := FALSE;\n    ISOV_MNb_47121_Out           : BOOL := FALSE;\n    ISOV_MNb_47122_Out           : BOOL := FALSE;\n    ISOV_73KH12_50_UP_Out        : BOOL := FALSE;\n    ISOV_73KH12_50_DN_Out        : BOOL := FALSE;\n    ISOV_73KH12_25_Out           : BOOL := FALSE;\n    ISOV_Q_80_outlet_Out         : BOOL := FALSE;\n    ISOV_QSa_47140_Out           : BOOL := FALSE;\n    ISOV_QSb_47141_Out           : BOOL := FALSE;\n\n    System_Alarm                 : BOOL := FALSE;\nEND_VAR\n\nIF FirstScan THEN\n    LOOP_4750_03_TRIP      := TRUE;\n    LOOP_4712_02_TRIP      := TRUE;\n    LOOP_104_01_TRIP       := TRUE;\n    SAFE_STATE             := TRUE;\n    TV_4750_03_Out         := 6554;\n    PVA_4712_02_Out        := 6554;\n    SV_104_01_Out          := FALSE;\n    HV_FC_4750_01_Out      := FALSE;\n    CV_75SA21_80_Out       := FALSE;\n    ISOV_MNb_47121_Out     := FALSE;\n    ISOV_MNb_47122_Out     := FALSE;\n    ISOV_73KH12_50_UP_Out  := FALSE;\n    ISOV_73KH12_50_DN_Out  := FALSE;\n    ISOV_73KH12_25_Out     := FALSE;\n    ISOV_Q_80_outlet_Out   := FALSE;\n    ISOV_QSa_47140_Out     := FALSE;\n    ISOV_QSb_47141_Out     := FALSE;\n    FirstScan              := FALSE;\n    RETURN;\nEND_IF;\n\nTICSA_4750_03_Scaled := ((INT_TO_REAL(TICSA_4750_03_Raw) - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nPICSA_4712_02_Scaled := ((INT_TO_REAL(PICSA_4712_02_Raw) - 6554.0) / (32767.0 - 6554.0)) * 25.0;\nPI_4712_01_Scaled    := ((INT_TO_REAL(PI_4712_01_Raw)    - 6554.0) / (32767.0 - 6554.0)) * 25.0;\n\nIF TICSA_4750_03_Scaled >= TICSA_4750_03_HH_SP THEN\n    TICSA_4750_03_HH := TRUE;\nELSIF TICSA_4750_03_Scaled <= (TICSA_4750_03_HH_SP - TICSA_4750_03_Deadband) THEN\n    TICSA_4750_03_HH := FALSE;\nEND_IF;\nTICSA_4750_03_HH_Latch(S1 := TICSA_4750_03_HH,\n                        R  := TICSA_4750_03_HH_Ack AND NOT TICSA_4750_03_HH);\n\nIF TICSA_4750_03_Scaled >= TICSA_4750_03_H_SP THEN\n    TICSA_4750_03_H := TRUE;\nELSIF TICSA_4750_03_Scaled <= (TICSA_4750_03_H_SP - TICSA_4750_03_Deadband) THEN\n    TICSA_4750_03_H := FALSE;\nEND_IF;\n\nIF TICSA_4750_03_Scaled <= TICSA_4750_03_LL_SP THEN\n    TICSA_4750_03_LL := TRUE;\nELSIF TICSA_4750_03_Scaled >= (TICSA_4750_03_LL_SP + TICSA_4750_03_Deadband) THEN\n    TICSA_4750_03_LL := FALSE;\nEND_IF;\nTICSA_4750_03_LL_Latch(S1 := TICSA_4750_03_LL,\n                        R  := TICSA_4750_03_LL_Ack AND NOT TICSA_4750_03_LL);\n\nIF TICSA_4750_03_Scaled <= TICSA_4750_03_L_SP THEN\n    TICSA_4750_03_L := TRUE;\nELSIF TICSA_4750_03_Scaled >= (TICSA_4750_03_L_SP + TICSA_4750_03_Deadband) THEN\n    TICSA_4750_03_L := FALSE;\nEND_IF;\n\nIF PICSA_4712_02_Scaled >= PICSA_4712_02_HH_SP THEN\n    PICSA_4712_02_HH := TRUE;\nELSIF PICSA_4712_02_Scaled <= (PICSA_4712_02_HH_SP - PICSA_4712_02_Deadband) THEN\n    PICSA_4712_02_HH := FALSE;\nEND_IF;\nPICSA_4712_02_HH_Latch(S1 := PICSA_4712_02_HH,\n                        R  := PICSA_4712_02_HH_Ack AND NOT PICSA_4712_02_HH);\n\nIF PICSA_4712_02_Scaled >= PICSA_4712_02_H_SP THEN\n    PICSA_4712_02_H := TRUE;\nELSIF PICSA_4712_02_Scaled <= (PICSA_4712_02_H_SP - PICSA_4712_02_Deadband) THEN\n    PICSA_4712_02_H := FALSE;\nEND_IF;\n\nIF PICSA_4712_02_Scaled <= PICSA_4712_02_LL_SP THEN\n    PICSA_4712_02_LL := TRUE;\nELSIF PICSA_4712_02_Scaled >= (PICSA_4712_02_LL_SP + PICSA_4712_02_Deadband) THEN\n    PICSA_4712_02_LL := FALSE;\nEND_IF;\nPICSA_4712_02_LL_Latch(S1 := PICSA_4712_02_LL,\n                        R  := PICSA_4712_02_LL_Ack AND NOT PICSA_4712_02_LL);\n\nIF PICSA_4712_02_Scaled <= PICSA_4712_02_L_SP THEN\n    PICSA_4712_02_L := TRUE;\nELSIF PICSA_4712_02_Scaled >= (PICSA_4712_02_L_SP + PICSA_4712_02_Deadband) THEN\n    PICSA_4712_02_L := FALSE;\nEND_IF;\n\nIF PI_4712_01_Scaled >= PI_4712_01_HH_SP THEN\n    PI_4712_01_HH := TRUE;\nELSIF PI_4712_01_Scaled <= (PI_4712_01_HH_SP - PI_4712_01_Deadband) THEN\n    PI_4712_01_HH := FALSE;\nEND_IF;\nPI_4712_01_HH_Latch(S1 := PI_4712_01_HH,\n                    R  := PI_4712_01_HH_Ack AND NOT PI_4712_01_HH);\n\nIF PI_4712_01_Scaled >= PI_4712_01_H_SP THEN\n    PI_4712_01_H := TRUE;\nELSIF PI_4712_01_Scaled <= (PI_4712_01_H_SP - PI_4712_01_Deadband) THEN\n    PI_4712_01_H := FALSE;\nEND_IF;\n\nIF PI_4712_01_Scaled <= PI_4712_01_LL_SP THEN\n    PI_4712_01_LL := TRUE;\nELSIF PI_4712_01_Scaled >= (PI_4712_01_LL_SP + PI_4712_01_Deadband) THEN\n    PI_4712_01_LL := FALSE;\nEND_IF;\nPI_4712_01_LL_Latch(S1 := PI_4712_01_LL,\n                    R  := PI_4712_01_LL_Ack AND NOT PI_4712_01_LL);\n\nIF PI_4712_01_Scaled <= PI_4712_01_L_SP THEN\n    PI_4712_01_L := TRUE;\nELSIF PI_4712_01_Scaled >= (PI_4712_01_L_SP + PI_4712_01_Deadband) THEN\n    PI_4712_01_L := FALSE;\nEND_IF;\n\nIF TICSA_4750_03_HH OR TICSA_4750_03_LL THEN\n    LOOP_4750_03_TRIP := TRUE;\nELSIF LOOP_4750_03_TRIP AND MANUAL_RESET\n      AND NOT TICSA_4750_03_HH AND NOT TICSA_4750_03_LL THEN\n    LOOP_4750_03_TRIP := FALSE;\nEND_IF;\n\nIF PICSA_4712_02_HH OR PICSA_4712_02_LL THEN\n    LOOP_4712_02_TRIP := TRUE;\nELSIF LOOP_4712_02_TRIP AND MANUAL_RESET\n      AND NOT PICSA_4712_02_HH AND NOT PICSA_4712_02_LL THEN\n    LOOP_4712_02_TRIP := FALSE;\nEND_IF;\n\nIF SV_104_01_HH OR SV_104_01_LL THEN\n    LOOP_104_01_TRIP := TRUE;\nELSIF LOOP_104_01_TRIP AND MANUAL_RESET\n      AND NOT SV_104_01_HH AND NOT SV_104_01_LL THEN\n    LOOP_104_01_TRIP := FALSE;\nEND_IF;\n\nSAFE_STATE := ESTOP OR LOOP_4750_03_TRIP OR LOOP_4712_02_TRIP OR LOOP_104_01_TRIP;\n\nIF NOT SAFE_STATE THEN\n    TICSA_4750_03_Error    := TICSA_4750_03_SP - TICSA_4750_03_Scaled;\n    TICSA_4750_03_Integral := TICSA_4750_03_Integral + (TICSA_4750_03_Ki * TICSA_4750_03_Error);\n    IF TICSA_4750_03_Integral > 100.0 THEN\n        TICSA_4750_03_Integral := 100.0;\n    ELSIF TICSA_4750_03_Integral < 0.0 THEN\n        TICSA_4750_03_Integral := 0.0;\n    END_IF;\n    TICSA_4750_03_Output_Pct := (TICSA_4750_03_Kp * TICSA_4750_03_Error) + TICSA_4750_03_Integral;\n    IF TICSA_4750_03_Output_Pct > 100.0 THEN\n        TICSA_4750_03_Output_Pct := 100.0;\n    ELSIF TICSA_4750_03_Output_Pct < 0.0 THEN\n        TICSA_4750_03_Output_Pct := 0.0;\n    END_IF;\n    TV_4750_03_Out := REAL_TO_INT(6554.0 + (TICSA_4750_03_Output_Pct / 100.0) * (32767.0 - 6554.0));\n\n    PICSA_4712_02_Error    := PICSA_4712_02_SP - PICSA_4712_02_Scaled;\n    PICSA_4712_02_Integral := PICSA_4712_02_Integral + (PICSA_4712_02_Ki * PICSA_4712_02_Error);\n    IF PICSA_4712_02_Integral > 100.0 THEN\n        PICSA_4712_02_Integral := 100.0;\n    ELSIF PICSA_4712_02_Integral < 0.0 THEN\n        PICSA_4712_02_Integral := 0.0;\n    END_IF;\n    PICSA_4712_02_Output_Pct := (PICSA_4712_02_Kp * PICSA_4712_02_Error) + PICSA_4712_02_Integral;\n    IF PICSA_4712_02_Output_Pct > 100.0 THEN\n        PICSA_4712_02_Output_Pct := 100.0;\n    ELSIF PICSA_4712_02_Output_Pct < 0.0 THEN\n        PICSA_4712_02_Output_Pct := 0.0;\n    END_IF;\n    PVA_4712_02_Out := REAL_TO_INT(6554.0 + (PICSA_4712_02_Output_Pct / 100.0) * (32767.0 - 6554.0));\n\n    SV_104_01_Out          := TRUE;\n    HV_FC_4750_01_Out      := HS_4750_01;\n    CV_75SA21_80_Out       := TRUE;\n    ISOV_MNb_47121_Out     := TRUE;\n    ISOV_MNb_47122_Out     := TRUE;\n    ISOV_73KH12_50_UP_Out  := TRUE;\n    ISOV_73KH12_50_DN_Out  := TRUE;\n    ISOV_73KH12_25_Out     := TRUE;\n    ISOV_Q_80_outlet_Out   := TRUE;\n    ISOV_QSa_47140_Out     := TRUE;\n    ISOV_QSb_47141_Out     := TRUE;\nELSE\n    TV_4750_03_Out         := 6554;\n    PVA_4712_02_Out        := 6554;\n    SV_104_01_Out          := FALSE;\n    HV_FC_4750_01_Out      := FALSE;\n    CV_75SA21_80_Out       := FALSE;\n    ISOV_MNb_47121_Out     := FALSE;\n    ISOV_MNb_47122_Out     := FALSE;\n    ISOV_73KH12_50_UP_Out  := FALSE;\n    ISOV_73KH12_50_DN_Out  := FALSE;\n    ISOV_73KH12_25_Out     := FALSE;\n    ISOV_Q_80_outlet_Out   := FALSE;\n    ISOV_QSa_47140_Out     := FALSE;\n    ISOV_QSb_47141_Out     := FALSE;\nEND_IF;\n\nSystem_Alarm :=\n    TICSA_4750_03_HH_Latch.Q1 OR TICSA_4750_03_LL_Latch.Q1 OR\n    TICSA_4750_03_HH           OR TICSA_4750_03_LL           OR\n    TICSA_4750_03_H            OR TICSA_4750_03_L            OR\n    PICSA_4712_02_HH_Latch.Q1 OR PICSA_4712_02_LL_Latch.Q1 OR\n    PICSA_4712_02_HH           OR PICSA_4712_02_LL           OR\n    PICSA_4712_02_H            OR PICSA_4712_02_L            OR\n    PI_4712_01_HH_Latch.Q1    OR PI_4712_01_LL_Latch.Q1    OR\n    PI_4712_01_HH              OR PI_4712_01_LL              OR\n    PI_4712_01_H               OR PI_4712_01_L               OR\n    LOOP_4750_03_TRIP          OR LOOP_4712_02_TRIP          OR\n    LOOP_104_01_TRIP           OR SAFE_STATE;\n\nEND_PROGRAM",
+    "vendor": "codesys",
+    "target_loops": [
+      "4750.03",
+      "4712.02",
+      "4712.01",
+      "4750.01",
+      "104.01"
+    ],
+    "safety_functions_included": [
+      "4750.03",
+      "4712.02",
+      "104.01"
+    ],
+    "generation_context": "IEC 61131-3 Standard Function Blocks — Timers, Counters, Edge Detection, Bistable. IEC 61131-3:2003 Section 2.5.2.3 defines exactly four categories of standard function blocks. ALL compliant PLC implementations must support these. Any FB not listed here (e.g., PID, SCALE, FILTER) is either vendor-specific or from an add-on library like OSCAT. Keywords: TON TOF TP timer on-delay off-delay pulse CTU CTD CTUD counter up counter down counter R_TRIG F_TRIG rising edge falling edge edge detection SR R",
+    "warnings": [],
+    "timestamp": "2026-04-25T14:03:17.230018"
+  },
+  "code_validation": {
+    "is_valid": true,
+    "total_errors": 0,
+    "total_warnings": 1,
+    "tiers_available": 5,
+    "tiers_passed": 5,
+    "tier_results": [
+      {
+        "tier": "tier1_builtin",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "built-in v1.0",
+        "execution_time_ms": 6.5,
+        "findings": []
+      },
+      {
+        "tier": "tier2_blark",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "blark 0.8.3",
+        "execution_time_ms": 2044.2,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "BLK-001",
+            "message": "ST code parsed successfully — syntax valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier3_matiec",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "matiec/iec2c",
+        "execution_time_ms": 164.0,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "MAT-001",
+            "message": "matiec compilation successful — code is valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier4_iec_checker",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 1,
+        "tool_version": "iec-checker v0.4",
+        "execution_time_ms": 20.0,
+        "findings": [
+          {
+            "severity": "warning",
+            "code": "IEC-ParserError",
+            "message": "",
+            "line": 34,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier5_plcopen_xml",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "PLCopen TC6 v2.01",
+        "execution_time_ms": 3.0,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "XML-001",
+            "message": "PLCopen XML generated successfully (19457 characters)",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      }
+    ],
+    "has_plcopen_xml": true,
+    "feedback_for_llm": "Validation PASSED — no errors found.",
+    "timestamp": "2026-04-25T14:03:19.547639"
+  },
+  "safety_check": {
+    "is_compliant": true,
+    "sil_level_achieved": 3,
+    "checks_passed": [
+      "variable_initialisation",
+      "emergency_stop_handling",
+      "interlock_completeness (100%)",
+      "alarm_handling",
+      "defensive_programming",
+      "no_unused_variables"
+    ],
+    "checks_failed": [],
+    "recommendations": [
+      "Consider adding timeout protection for communication and process operations.",
+      "Provisional SIL 2 assigned. Target SIL 3 will be granted only if NuXmv/PLCverif formal verification passes all generated LTL/CTL properties."
+    ],
+    "interlock_coverage": 1.0,
+    "diagnostic_coverage": 0.0
+  },
+  "fault_diagnosis": {
+    "fault_id": "70e9bae0",
+    "symptom": "Full P&ID fault analysis (FMEA + SDG propagation)",
+    "root_causes": [
+      {
+        "component_tag": "TV-4750.03",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "TV-4750.03",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "PVA-4712.02",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "PVA-4712.02",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "HS-4750.01",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "PI-4712.01",
+        "fault_mode": "low",
+        "system_effect": "Pressure builds undetected — overpressure hazard",
+        "severity": "critical",
+        "detection": "PSV / rupture disc as independent layer",
+        "action": "Inspect impulse line blockage; replace transmitter",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "SV-104.01",
+        "fault_mode": "fail_to_open",
+        "system_effect": "Vessel overpressure — catastrophic rupture risk",
+        "severity": "critical",
+        "detection": "Statutory proof-test per jurisdiction",
+        "action": "Replace PSV immediately; investigate cause (gumming, corrosion)",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "CV-75SA21-80",
+        "fault_mode": "stuck_open",
+        "system_effect": "Reverse flow on pump stop — potential water hammer",
+        "severity": "critical",
+        "detection": "Reverse-flow surge test; acoustic leak check",
+        "action": "Isolate and inspect; replace disc or spring",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISOV-MNb-47121",
+        "fault_mode": "disc_detached",
+        "system_effect": "Valve uncontrollable; flow unconstrained",
+        "severity": "critical",
+        "detection": "Stroke mismatch between handle and flow",
+        "action": "Isolate upstream; remove valve for rebuild",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISOV-MNb-47122",
+        "fault_mode": "disc_detached",
+        "system_effect": "Valve uncontrollable; flow unconstrained",
+        "severity": "critical",
+        "detection": "Stroke mismatch between handle and flow",
+        "action": "Isolate upstream; remove valve for rebuild",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISOV-73KH12-50-UP",
+        "fault_mode": "disc_detached",
+        "system_effect": "Valve uncontrollable; flow unconstrained",
+        "severity": "critical",
+        "detection": "Stroke mismatch between handle and flow",
+        "action": "Isolate upstream; remove valve for rebuild",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISOV-73KH12-50-DN",
+        "fault_mode": "disc_detached",
+        "system_effect": "Valve uncontrollable; flow unconstrained",
+        "severity": "critical",
+        "detection": "Stroke mismatch between handle and flow",
+        "action": "Isolate upstream; remove valve for rebuild",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISOV-73KH12-25",
+        "fault_mode": "disc_detached",
+        "system_effect": "Valve uncontrollable; flow unconstrained",
+        "severity": "critical",
+        "detection": "Stroke mismatch between handle and flow",
+        "action": "Isolate upstream; remove valve for rebuild",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISOV-Q-80-outlet",
+        "fault_mode": "disc_detached",
+        "system_effect": "Valve uncontrollable; flow unconstrained",
+        "severity": "critical",
+        "detection": "Stroke mismatch between handle and flow",
+        "action": "Isolate upstream; remove valve for rebuild",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISOV-QSa-47140",
+        "fault_mode": "disc_detached",
+        "system_effect": "Valve uncontrollable; flow unconstrained",
+        "severity": "critical",
+        "detection": "Stroke mismatch between handle and flow",
+        "action": "Isolate upstream; remove valve for rebuild",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISOV-QSb-47141",
+        "fault_mode": "disc_detached",
+        "system_effect": "Valve uncontrollable; flow unconstrained",
+        "severity": "critical",
+        "detection": "Stroke mismatch between handle and flow",
+        "action": "Isolate upstream; remove valve for rebuild",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "T4750",
+        "fault_mode": "high_pressure",
+        "system_effect": "Structural integrity risk; PRV / PSV demand",
+        "severity": "critical",
+        "detection": "PSV-102 or rupture disc; PAH alarm",
+        "action": "Activate ESD; verify PSV lift; investigate cause after isolation",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "T4750",
+        "fault_mode": "high_level",
+        "system_effect": "Flooding downstream equipment; pump cavitation",
+        "severity": "critical",
+        "detection": "LSH alarm; LHH trip",
+        "action": "Activate level shutdown; divert flow; inspect level instrument",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "P4711",
+        "fault_mode": "seal_failure",
+        "system_effect": "Process fluid loss — HSE/environmental hazard",
+        "severity": "critical",
+        "detection": "Seal pot level alarm; shaft leak detector",
+        "action": "Switch to standby pump; schedule seal replacement",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "P4712",
+        "fault_mode": "seal_failure",
+        "system_effect": "Process fluid loss — HSE/environmental hazard",
+        "severity": "critical",
+        "detection": "Seal pot level alarm; shaft leak detector",
+        "action": "Switch to standby pump; schedule seal replacement",
+        "sdg_reach": 0
+      }
+    ],
+    "propagation_paths": [
+      {
+        "initiating_tag": "TV-4750.03",
+        "deviation": "no_flow",
+        "propagation_chain": [
+          "TICSA-4750.03 (temperature ↓)"
+        ],
+        "terminal_effect": "Process flow lost — downstream starvation / upstream pressure rise.",
+        "severity": "minor"
+      },
+      {
+        "initiating_tag": "PVA-4712.02",
+        "deviation": "no_flow",
+        "propagation_chain": [
+          "PICSA-4712.02 (pressure ↓)"
+        ],
+        "terminal_effect": "Process flow lost — downstream starvation / upstream pressure rise.",
+        "severity": "minor"
+      },
+      {
+        "initiating_tag": "HV-FC-4750.01",
+        "deviation": "no_flow",
+        "propagation_chain": [
+          "HS-4750.01 (position ↓)"
+        ],
+        "terminal_effect": "Process flow lost — downstream starvation / upstream pressure rise.",
+        "severity": "minor"
+      }
+    ],
+    "fmea_records": [
+      {
+        "component_tag": "HS-4750.01",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-4750.01",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "PI-4712.01",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high pressure reading",
+        "failure_effect_system": "Pressure control acts to vent — loss of containment risk",
+        "detection_method": "Cross-check with PI; PSV set-point reference",
+        "severity": "major",
+        "recommended_action": "Check for blocked tap or condensate pot; recalibrate"
+      },
+      {
+        "component_tag": "PI-4712.01",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low pressure reading",
+        "failure_effect_system": "Pressure builds undetected — overpressure hazard",
+        "detection_method": "PSV / rupture disc as independent layer",
+        "severity": "critical",
+        "recommended_action": "Inspect impulse line blockage; replace transmitter"
+      },
+      {
+        "component_tag": "TV-4750.03",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "TV-4750.03",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "TV-4750.03",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "TV-4750.03",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "PVA-4712.02",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "PVA-4712.02",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "PVA-4712.02",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "PVA-4712.02",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "SV-104.01",
+        "component_type": "Safety Valve",
+        "fault_mode": "pop_premature",
+        "failure_effect_local": "PSV pops below set pressure",
+        "failure_effect_system": "Product loss to flare; environmental release",
+        "detection_method": "Periodic pop-test per API 576",
+        "severity": "major",
+        "recommended_action": "Re-pop test on bench; adjust spring; replace if worn"
+      },
+      {
+        "component_tag": "SV-104.01",
+        "component_type": "Safety Valve",
+        "fault_mode": "fail_to_open",
+        "failure_effect_local": "PSV fails to open at set pressure",
+        "failure_effect_system": "Vessel overpressure — catastrophic rupture risk",
+        "detection_method": "Statutory proof-test per jurisdiction",
+        "severity": "critical",
+        "recommended_action": "Replace PSV immediately; investigate cause (gumming, corrosion)"
+      },
+      {
+        "component_tag": "CV-75SA21-80",
+        "component_type": "Check Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Check valve fails to close",
+        "failure_effect_system": "Reverse flow on pump stop — potential water hammer",
+        "detection_method": "Reverse-flow surge test; acoustic leak check",
+        "severity": "critical",
+        "recommended_action": "Isolate and inspect; replace disc or spring"
+      },
+      {
+        "component_tag": "CV-75SA21-80",
+        "component_type": "Check Valve",
+        "fault_mode": "chatter",
+        "failure_effect_local": "Check valve disc chatter",
+        "failure_effect_system": "Premature mechanical wear; pressure pulsations",
+        "detection_method": "Vibration monitoring on downstream piping",
+        "severity": "minor",
+        "recommended_action": "Replace with nozzle-style check valve; re-size for service"
+      },
+      {
+        "component_tag": "ISOV-MNb-47121",
+        "component_type": "Gate Valve",
+        "fault_mode": "disc_detached",
+        "failure_effect_local": "Gate disc detached from stem",
+        "failure_effect_system": "Valve uncontrollable; flow unconstrained",
+        "detection_method": "Stroke mismatch between handle and flow",
+        "severity": "critical",
+        "recommended_action": "Isolate upstream; remove valve for rebuild"
+      },
+      {
+        "component_tag": "ISOV-MNb-47121",
+        "component_type": "Gate Valve",
+        "fault_mode": "stem_seize",
+        "failure_effect_local": "Gate valve stem seized by corrosion",
+        "failure_effect_system": "Manual operation impossible in emergency",
+        "detection_method": "Scheduled stroke test",
+        "severity": "major",
+        "recommended_action": "Apply penetrating fluid; if seized, replace valve"
+      },
+      {
+        "component_tag": "ISOV-MNb-47122",
+        "component_type": "Gate Valve",
+        "fault_mode": "disc_detached",
+        "failure_effect_local": "Gate disc detached from stem",
+        "failure_effect_system": "Valve uncontrollable; flow unconstrained",
+        "detection_method": "Stroke mismatch between handle and flow",
+        "severity": "critical",
+        "recommended_action": "Isolate upstream; remove valve for rebuild"
+      },
+      {
+        "component_tag": "ISOV-MNb-47122",
+        "component_type": "Gate Valve",
+        "fault_mode": "stem_seize",
+        "failure_effect_local": "Gate valve stem seized by corrosion",
+        "failure_effect_system": "Manual operation impossible in emergency",
+        "detection_method": "Scheduled stroke test",
+        "severity": "major",
+        "recommended_action": "Apply penetrating fluid; if seized, replace valve"
+      },
+      {
+        "component_tag": "ISOV-73KH12-50-UP",
+        "component_type": "Gate Valve",
+        "fault_mode": "disc_detached",
+        "failure_effect_local": "Gate disc detached from stem",
+        "failure_effect_system": "Valve uncontrollable; flow unconstrained",
+        "detection_method": "Stroke mismatch between handle and flow",
+        "severity": "critical",
+        "recommended_action": "Isolate upstream; remove valve for rebuild"
+      },
+      {
+        "component_tag": "ISOV-73KH12-50-UP",
+        "component_type": "Gate Valve",
+        "fault_mode": "stem_seize",
+        "failure_effect_local": "Gate valve stem seized by corrosion",
+        "failure_effect_system": "Manual operation impossible in emergency",
+        "detection_method": "Scheduled stroke test",
+        "severity": "major",
+        "recommended_action": "Apply penetrating fluid; if seized, replace valve"
+      },
+      {
+        "component_tag": "ISOV-73KH12-50-DN",
+        "component_type": "Gate Valve",
+        "fault_mode": "disc_detached",
+        "failure_effect_local": "Gate disc detached from stem",
+        "failure_effect_system": "Valve uncontrollable; flow unconstrained",
+        "detection_method": "Stroke mismatch between handle and flow",
+        "severity": "critical",
+        "recommended_action": "Isolate upstream; remove valve for rebuild"
+      },
+      {
+        "component_tag": "ISOV-73KH12-50-DN",
+        "component_type": "Gate Valve",
+        "fault_mode": "stem_seize",
+        "failure_effect_local": "Gate valve stem seized by corrosion",
+        "failure_effect_system": "Manual operation impossible in emergency",
+        "detection_method": "Scheduled stroke test",
+        "severity": "major",
+        "recommended_action": "Apply penetrating fluid; if seized, replace valve"
+      },
+      {
+        "component_tag": "ISOV-73KH12-25",
+        "component_type": "Gate Valve",
+        "fault_mode": "disc_detached",
+        "failure_effect_local": "Gate disc detached from stem",
+        "failure_effect_system": "Valve uncontrollable; flow unconstrained",
+        "detection_method": "Stroke mismatch between handle and flow",
+        "severity": "critical",
+        "recommended_action": "Isolate upstream; remove valve for rebuild"
+      },
+      {
+        "component_tag": "ISOV-73KH12-25",
+        "component_type": "Gate Valve",
+        "fault_mode": "stem_seize",
+        "failure_effect_local": "Gate valve stem seized by corrosion",
+        "failure_effect_system": "Manual operation impossible in emergency",
+        "detection_method": "Scheduled stroke test",
+        "severity": "major",
+        "recommended_action": "Apply penetrating fluid; if seized, replace valve"
+      },
+      {
+        "component_tag": "ISOV-Q-80-outlet",
+        "component_type": "Gate Valve",
+        "fault_mode": "disc_detached",
+        "failure_effect_local": "Gate disc detached from stem",
+        "failure_effect_system": "Valve uncontrollable; flow unconstrained",
+        "detection_method": "Stroke mismatch between handle and flow",
+        "severity": "critical",
+        "recommended_action": "Isolate upstream; remove valve for rebuild"
+      },
+      {
+        "component_tag": "ISOV-Q-80-outlet",
+        "component_type": "Gate Valve",
+        "fault_mode": "stem_seize",
+        "failure_effect_local": "Gate valve stem seized by corrosion",
+        "failure_effect_system": "Manual operation impossible in emergency",
+        "detection_method": "Scheduled stroke test",
+        "severity": "major",
+        "recommended_action": "Apply penetrating fluid; if seized, replace valve"
+      },
+      {
+        "component_tag": "ISOV-QSa-47140",
+        "component_type": "Gate Valve",
+        "fault_mode": "disc_detached",
+        "failure_effect_local": "Gate disc detached from stem",
+        "failure_effect_system": "Valve uncontrollable; flow unconstrained",
+        "detection_method": "Stroke mismatch between handle and flow",
+        "severity": "critical",
+        "recommended_action": "Isolate upstream; remove valve for rebuild"
+      },
+      {
+        "component_tag": "ISOV-QSa-47140",
+        "component_type": "Gate Valve",
+        "fault_mode": "stem_seize",
+        "failure_effect_local": "Gate valve stem seized by corrosion",
+        "failure_effect_system": "Manual operation impossible in emergency",
+        "detection_method": "Scheduled stroke test",
+        "severity": "major",
+        "recommended_action": "Apply penetrating fluid; if seized, replace valve"
+      },
+      {
+        "component_tag": "ISOV-QSb-47141",
+        "component_type": "Gate Valve",
+        "fault_mode": "disc_detached",
+        "failure_effect_local": "Gate disc detached from stem",
+        "failure_effect_system": "Valve uncontrollable; flow unconstrained",
+        "detection_method": "Stroke mismatch between handle and flow",
+        "severity": "critical",
+        "recommended_action": "Isolate upstream; remove valve for rebuild"
+      },
+      {
+        "component_tag": "ISOV-QSb-47141",
+        "component_type": "Gate Valve",
+        "fault_mode": "stem_seize",
+        "failure_effect_local": "Gate valve stem seized by corrosion",
+        "failure_effect_system": "Manual operation impossible in emergency",
+        "detection_method": "Scheduled stroke test",
+        "severity": "major",
+        "recommended_action": "Apply penetrating fluid; if seized, replace valve"
+      },
+      {
+        "component_tag": "T4750",
+        "component_type": "Vessel",
+        "fault_mode": "high_pressure",
+        "failure_effect_local": "Vessel overpressure",
+        "failure_effect_system": "Structural integrity risk; PRV / PSV demand",
+        "detection_method": "PSV-102 or rupture disc; PAH alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; verify PSV lift; investigate cause after isolation"
+      },
+      {
+        "component_tag": "T4750",
+        "component_type": "Vessel",
+        "fault_mode": "high_level",
+        "failure_effect_local": "Liquid overflow",
+        "failure_effect_system": "Flooding downstream equipment; pump cavitation",
+        "detection_method": "LSH alarm; LHH trip",
+        "severity": "critical",
+        "recommended_action": "Activate level shutdown; divert flow; inspect level instrument"
+      },
+      {
+        "component_tag": "T4750",
+        "component_type": "Vessel",
+        "fault_mode": "low_level",
+        "failure_effect_local": "Vessel runs dry",
+        "failure_effect_system": "Pump cavitation; loss of process",
+        "detection_method": "LSL alarm; LLL trip",
+        "severity": "major",
+        "recommended_action": "Reduce outflow; check inlet isolation valves"
+      },
+      {
+        "component_tag": "P4711",
+        "component_type": "Pump",
+        "fault_mode": "cavitation",
+        "failure_effect_local": "Pump cavitation",
+        "failure_effect_system": "Loss of head, impeller damage, vibration",
+        "detection_method": "VT-101 vibration transmitter; FIA-L low-flow alarm",
+        "severity": "major",
+        "recommended_action": "Increase suction pressure; check NPSH; reduce speed"
+      },
+      {
+        "component_tag": "P4711",
+        "component_type": "Pump",
+        "fault_mode": "seal_failure",
+        "failure_effect_local": "Mechanical seal failure",
+        "failure_effect_system": "Process fluid loss — HSE/environmental hazard",
+        "detection_method": "Seal pot level alarm; shaft leak detector",
+        "severity": "critical",
+        "recommended_action": "Switch to standby pump; schedule seal replacement"
+      },
+      {
+        "component_tag": "P4711",
+        "component_type": "Pump",
+        "fault_mode": "loss_of_prime",
+        "failure_effect_local": "Pump loses prime",
+        "failure_effect_system": "No flow — downstream starvation",
+        "detection_method": "PI-102 pressure drop; FIA-L",
+        "severity": "major",
+        "recommended_action": "Check suction valve fully open; re-prime; inspect strainer"
+      },
+      {
+        "component_tag": "P4711",
+        "component_type": "Pump",
+        "fault_mode": "bearing_wear",
+        "failure_effect_local": "Bearing wear / imminent failure",
+        "failure_effect_system": "Rising vibration, temperature; impending shaft seizure",
+        "detection_method": "Vibration trending (ISO 10816); bearing temperature RTD",
+        "severity": "major",
+        "recommended_action": "Switch to standby; schedule bearing replacement"
+      },
+      {
+        "component_tag": "P4711",
+        "component_type": "Pump",
+        "fault_mode": "motor_overload",
+        "failure_effect_local": "Motor overcurrent",
+        "failure_effect_system": "Motor winding damage; unplanned trip",
+        "detection_method": "MCC overload relay; motor-current trending",
+        "severity": "major",
+        "recommended_action": "Inspect for mechanical binding; check process DP increase"
+      },
+      {
+        "component_tag": "P4711",
+        "component_type": "Pump",
+        "fault_mode": "reverse_rotation",
+        "failure_effect_local": "Pump running backwards",
+        "failure_effect_system": "No flow delivered; impeller damage on startup",
+        "detection_method": "Phase-sequence check; discharge pressure monitoring",
+        "severity": "major",
+        "recommended_action": "Correct motor phasing; re-commission"
+      },
+      {
+        "component_tag": "P4712",
+        "component_type": "Pump",
+        "fault_mode": "cavitation",
+        "failure_effect_local": "Pump cavitation",
+        "failure_effect_system": "Loss of head, impeller damage, vibration",
+        "detection_method": "VT-101 vibration transmitter; FIA-L low-flow alarm",
+        "severity": "major",
+        "recommended_action": "Increase suction pressure; check NPSH; reduce speed"
+      },
+      {
+        "component_tag": "P4712",
+        "component_type": "Pump",
+        "fault_mode": "seal_failure",
+        "failure_effect_local": "Mechanical seal failure",
+        "failure_effect_system": "Process fluid loss — HSE/environmental hazard",
+        "detection_method": "Seal pot level alarm; shaft leak detector",
+        "severity": "critical",
+        "recommended_action": "Switch to standby pump; schedule seal replacement"
+      },
+      {
+        "component_tag": "P4712",
+        "component_type": "Pump",
+        "fault_mode": "loss_of_prime",
+        "failure_effect_local": "Pump loses prime",
+        "failure_effect_system": "No flow — downstream starvation",
+        "detection_method": "PI-102 pressure drop; FIA-L",
+        "severity": "major",
+        "recommended_action": "Check suction valve fully open; re-prime; inspect strainer"
+      },
+      {
+        "component_tag": "P4712",
+        "component_type": "Pump",
+        "fault_mode": "bearing_wear",
+        "failure_effect_local": "Bearing wear / imminent failure",
+        "failure_effect_system": "Rising vibration, temperature; impending shaft seizure",
+        "detection_method": "Vibration trending (ISO 10816); bearing temperature RTD",
+        "severity": "major",
+        "recommended_action": "Switch to standby; schedule bearing replacement"
+      },
+      {
+        "component_tag": "P4712",
+        "component_type": "Pump",
+        "fault_mode": "motor_overload",
+        "failure_effect_local": "Motor overcurrent",
+        "failure_effect_system": "Motor winding damage; unplanned trip",
+        "detection_method": "MCC overload relay; motor-current trending",
+        "severity": "major",
+        "recommended_action": "Inspect for mechanical binding; check process DP increase"
+      },
+      {
+        "component_tag": "P4712",
+        "component_type": "Pump",
+        "fault_mode": "reverse_rotation",
+        "failure_effect_local": "Pump running backwards",
+        "failure_effect_system": "No flow delivered; impeller damage on startup",
+        "detection_method": "Phase-sequence check; discharge pressure monitoring",
+        "severity": "major",
+        "recommended_action": "Correct motor phasing; re-commission"
+      },
+      {
+        "component_tag": "H1007",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_leak",
+        "failure_effect_local": "Tube leak — cross-contamination",
+        "failure_effect_system": "Process fluid contaminates utility stream (or vice versa)",
+        "detection_method": "Conductivity analyser on cooling water return; AT alarm",
+        "severity": "critical",
+        "recommended_action": "Isolate and plug affected tubes; schedule re-tube at shutdown"
+      },
+      {
+        "component_tag": "H1007",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "fouling",
+        "failure_effect_local": "Tube-side / shell-side fouling",
+        "failure_effect_system": "Reduced heat transfer — temperature drift",
+        "detection_method": "TI outlet temperature trending; increasing DP",
+        "severity": "minor",
+        "recommended_action": "Chemical clean or mechanical descale per maintenance schedule"
+      },
+      {
+        "component_tag": "H1007",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "vapour_lock",
+        "failure_effect_local": "Vapour binding / lock in condenser",
+        "failure_effect_system": "Flooded condenser; reflux loss; column upset",
+        "detection_method": "Temperature profile anomaly; DP increase",
+        "severity": "major",
+        "recommended_action": "Purge non-condensables; check vent valve operation"
+      },
+      {
+        "component_tag": "H1007",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_rupture",
+        "failure_effect_local": "Catastrophic tube rupture",
+        "failure_effect_system": "High-pressure side overfills low-pressure side; PSV demand",
+        "detection_method": "PSV on low-pressure side; DP-loss alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; isolate both sides; investigate per API 521"
+      },
+      {
+        "component_tag": "H1008",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_leak",
+        "failure_effect_local": "Tube leak — cross-contamination",
+        "failure_effect_system": "Process fluid contaminates utility stream (or vice versa)",
+        "detection_method": "Conductivity analyser on cooling water return; AT alarm",
+        "severity": "critical",
+        "recommended_action": "Isolate and plug affected tubes; schedule re-tube at shutdown"
+      },
+      {
+        "component_tag": "H1008",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "fouling",
+        "failure_effect_local": "Tube-side / shell-side fouling",
+        "failure_effect_system": "Reduced heat transfer — temperature drift",
+        "detection_method": "TI outlet temperature trending; increasing DP",
+        "severity": "minor",
+        "recommended_action": "Chemical clean or mechanical descale per maintenance schedule"
+      },
+      {
+        "component_tag": "H1008",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "vapour_lock",
+        "failure_effect_local": "Vapour binding / lock in condenser",
+        "failure_effect_system": "Flooded condenser; reflux loss; column upset",
+        "detection_method": "Temperature profile anomaly; DP increase",
+        "severity": "major",
+        "recommended_action": "Purge non-condensables; check vent valve operation"
+      },
+      {
+        "component_tag": "H1008",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_rupture",
+        "failure_effect_local": "Catastrophic tube rupture",
+        "failure_effect_system": "High-pressure side overfills low-pressure side; PSV demand",
+        "detection_method": "PSV on low-pressure side; DP-loss alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; isolate both sides; investigate per API 521"
+      }
+    ],
+    "severity": "critical",
+    "repair_procedure": "PRIORITY REPAIR ACTIONS (Critical fault modes):\nReference: IEC 61511:2016+AMD1 Clause 5.2 — Functional Safety Management\n\n  [HS-4750.01] FAIL_TO_OPERATE\n    Effect  : Safety function fails dangerously — hazard not detected\n    Detect  : SIL proof-test; PFDavg calculation\n    Action  : Immediate proof-test; replace if failed; review SIL maintenance schedule\n\n  [PI-4712.01] LOW\n    Effect  : Pressure builds undetected — overpressure hazard\n    Detect  : PSV / rupture disc as independent layer\n    Action  : Inspect impulse line blockage; replace transmitter\n\n  [TV-4750.03] STUCK_OPEN\n    Effect  : Uncontrolled flow — possible flooding or overpressure downstream\n    Detect  : Positioner feedback deviation alarm\n    Action  : Switch to manual bypass; inspect actuator diaphragm, positioner\n\n  [TV-4750.03] STUCK_CLOSED\n    Effect  : Flow stoppage — process starvation, pump dead-heading\n    Detect  : Low flow alarm (FIA-L); pump trip on low-flow protection\n    Action  : Check air supply pressure; inspect positioner; replace actuator\n\n  [SV-104.01] FAIL_TO_OPEN\n    Effect  : Vessel overpressure — catastrophic rupture risk\n    Detect  : Statutory proof-test per jurisdiction\n    Action  : Replace PSV immediately; investigate cause (gumming, corrosion)\n\n  [CV-75SA21-80] STUCK_OPEN\n    Effect  : Reverse flow on pump stop — potential water hammer\n    Detect  : Reverse-flow surge test; acoustic leak check\n    Action  : Isolate and inspect; replace disc or spring\n\n  [ISOV-MNb-47121] DISC_DETACHED\n    Effect  : Valve uncontrollable; flow unconstrained\n    Detect  : Stroke mismatch between handle and flow\n    Action  : Isolate upstream; remove valve for rebuild\n\nSAFETY INSTRUMENTED FUNCTION MAINTENANCE:\n  Per IEC 61511-1:2016 Clause 16 (Proof testing):\n  — Loop 4750.03: Verify sensor TICSA-4750.03, logic, and actuator TV-4750.03 per SIL proof-test schedule.\n  — Loop 4712.02: Verify sensor PICSA-4712.02, logic, and actuator PVA-4712.02 per SIL proof-test schedule.\n  — Loop 104.01: Verify sensor SV-104.01, logic, and actuator SV-104.01 per SIL proof-test schedule.",
+    "affected_components": [
+      "P4711",
+      "ISOV-MNb-47121",
+      "ISOV-73KH12-50-DN",
+      "PVA-4712.02",
+      "CV-75SA21-80",
+      "ISOV-73KH12-25",
+      "ISOV-Q-80-outlet",
+      "SV-104.01",
+      "P4712",
+      "H1007",
+      "H1008",
+      "PI-4712.01",
+      "TV-4750.03",
+      "HS-4750.01",
+      "ISOV-MNb-47122",
+      "ISOV-QSa-47140",
+      "ISOV-QSb-47141",
+      "ISOV-73KH12-50-UP",
+      "T4750"
+    ],
+    "sdg_node_count": 22,
+    "sdg_edge_count": 8,
+    "timestamp": "2026-04-25T14:03:21.862067"
+  },
+  "formal_verification": {
+    "status": "passed",
+    "tool_used": "nuxmv",
+    "tool_version": "nuXmv 2.1.0",
+    "properties_generated": 26,
+    "properties_verified": 26,
+    "properties_failed": 0,
+    "properties": [
+      {
+        "property_id": "LOOP_4750_03_ESTOP_PRIORITY",
+        "description": "Loop 4750.03: Emergency stop must force SAFE_STATE in the same scan cycle",
+        "nusmv_ltl": "G (ESTOP -> SAFE_STATE)",
+        "nusmv_ctl": "AG (ESTOP -> SAFE_STATE)",
+        "plcverif_spec": "assert ALWAYS ESTOP => SAFE_STATE;",
+        "source_loop": "4750.03",
+        "safety_requirement": "IEC 61511-1:2016 Section 10.3.4 — E-Stop override precedence"
+      },
+      {
+        "property_id": "LOOP_4750_03_SAFE_STATE_ON_TRIP",
+        "description": "Loop 4750.03: Any sensor deviation must drive SAFE_STATE within one scan",
+        "nusmv_ltl": "G ((TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> X SAFE_STATE)",
+        "nusmv_ctl": "AG ((TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> AX SAFE_STATE)",
+        "plcverif_spec": "assert ALWAYS (TICSA_4750_03_HIGH | TICSA_4750_03_LOW) => NEXT(SAFE_STATE);",
+        "source_loop": "4750.03",
+        "safety_requirement": "IEC 61508-3:2010 Section 7.4.7 — Safe state on failure"
+      },
+      {
+        "property_id": "LOOP_4712_02_SAFE_STATE_ON_TRIP",
+        "description": "Loop 4712.02: Any sensor deviation must drive SAFE_STATE within one scan",
+        "nusmv_ltl": "G ((PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> X SAFE_STATE)",
+        "nusmv_ctl": "AG ((PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> AX SAFE_STATE)",
+        "plcverif_spec": "assert ALWAYS (PICSA_4712_02_HIGH | PICSA_4712_02_LOW) => NEXT(SAFE_STATE);",
+        "source_loop": "4712.02",
+        "safety_requirement": "IEC 61508-3:2010 Section 7.4.7 — Safe state on failure"
+      },
+      {
+        "property_id": "LOOP_104_01_SAFE_STATE_ON_TRIP",
+        "description": "Loop 104.01: Any sensor deviation must drive SAFE_STATE within one scan",
+        "nusmv_ltl": "G ((SV_104_01_HIGH | SV_104_01_LOW) -> X SAFE_STATE)",
+        "nusmv_ctl": "AG ((SV_104_01_HIGH | SV_104_01_LOW) -> AX SAFE_STATE)",
+        "plcverif_spec": "assert ALWAYS (SV_104_01_HIGH | SV_104_01_LOW) => NEXT(SAFE_STATE);",
+        "source_loop": "104.01",
+        "safety_requirement": "IEC 61508-3:2010 Section 7.4.7 — Safe state on failure"
+      },
+      {
+        "property_id": "LOOP_4750_03_INTERLOCK_ENFORCED",
+        "description": "Loop 4750.03: Process variable above safety limit raises the trip latch next scan",
+        "nusmv_ltl": "G (TICSA_4750_03_HIGH -> X LOOP_4750_03_TRIP)",
+        "nusmv_ctl": "AG (TICSA_4750_03_HIGH -> AX LOOP_4750_03_TRIP)",
+        "plcverif_spec": "assert ALWAYS TICSA_4750_03_HIGH => NEXT(LOOP_4750_03_TRIP);",
+        "source_loop": "4750.03",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.6.4 — SIF trip response"
+      },
+      {
+        "property_id": "LOOP_4712_02_INTERLOCK_ENFORCED",
+        "description": "Loop 4712.02: Process variable above safety limit raises the trip latch next scan",
+        "nusmv_ltl": "G (PICSA_4712_02_HIGH -> X LOOP_4712_02_TRIP)",
+        "nusmv_ctl": "AG (PICSA_4712_02_HIGH -> AX LOOP_4712_02_TRIP)",
+        "plcverif_spec": "assert ALWAYS PICSA_4712_02_HIGH => NEXT(LOOP_4712_02_TRIP);",
+        "source_loop": "4712.02",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.6.4 — SIF trip response"
+      },
+      {
+        "property_id": "LOOP_104_01_INTERLOCK_ENFORCED",
+        "description": "Loop 104.01: Process variable above safety limit raises the trip latch next scan",
+        "nusmv_ltl": "G (SV_104_01_HIGH -> X LOOP_104_01_TRIP)",
+        "nusmv_ctl": "AG (SV_104_01_HIGH -> AX LOOP_104_01_TRIP)",
+        "plcverif_spec": "assert ALWAYS SV_104_01_HIGH => NEXT(LOOP_104_01_TRIP);",
+        "source_loop": "104.01",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.6.4 — SIF trip response"
+      },
+      {
+        "property_id": "LOOP_4750_03_MANUAL_RESET_REQUIRED",
+        "description": "Loop 4750.03: Trip latch must persist in absence of manual reset",
+        "nusmv_ltl": "G (LOOP_4750_03_TRIP & !MANUAL_RESET -> X LOOP_4750_03_TRIP)",
+        "nusmv_ctl": "AG (LOOP_4750_03_TRIP & !MANUAL_RESET -> AX LOOP_4750_03_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_4750_03_TRIP & !MANUAL_RESET => NEXT(LOOP_4750_03_TRIP);",
+        "source_loop": "4750.03",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset requirement"
+      },
+      {
+        "property_id": "LOOP_4712_02_MANUAL_RESET_REQUIRED",
+        "description": "Loop 4712.02: Trip latch must persist in absence of manual reset",
+        "nusmv_ltl": "G (LOOP_4712_02_TRIP & !MANUAL_RESET -> X LOOP_4712_02_TRIP)",
+        "nusmv_ctl": "AG (LOOP_4712_02_TRIP & !MANUAL_RESET -> AX LOOP_4712_02_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_4712_02_TRIP & !MANUAL_RESET => NEXT(LOOP_4712_02_TRIP);",
+        "source_loop": "4712.02",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset requirement"
+      },
+      {
+        "property_id": "LOOP_104_01_MANUAL_RESET_REQUIRED",
+        "description": "Loop 104.01: Trip latch must persist in absence of manual reset",
+        "nusmv_ltl": "G (LOOP_104_01_TRIP & !MANUAL_RESET -> X LOOP_104_01_TRIP)",
+        "nusmv_ctl": "AG (LOOP_104_01_TRIP & !MANUAL_RESET -> AX LOOP_104_01_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_104_01_TRIP & !MANUAL_RESET => NEXT(LOOP_104_01_TRIP);",
+        "source_loop": "104.01",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset requirement"
+      },
+      {
+        "property_id": "LOOP_4750_03_RESET_CLEARS_TRIP",
+        "description": "Loop 4750.03: Trip latch clears one scan after manual reset with no deviation",
+        "nusmv_ltl": "G (LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> X !LOOP_4750_03_TRIP)",
+        "nusmv_ctl": "AG (LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> AX !LOOP_4750_03_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) => NEXT(!LOOP_4750_03_TRIP);",
+        "source_loop": "4750.03",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness"
+      },
+      {
+        "property_id": "LOOP_4712_02_RESET_CLEARS_TRIP",
+        "description": "Loop 4712.02: Trip latch clears one scan after manual reset with no deviation",
+        "nusmv_ltl": "G (LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> X !LOOP_4712_02_TRIP)",
+        "nusmv_ctl": "AG (LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> AX !LOOP_4712_02_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) => NEXT(!LOOP_4712_02_TRIP);",
+        "source_loop": "4712.02",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness"
+      },
+      {
+        "property_id": "LOOP_104_01_RESET_CLEARS_TRIP",
+        "description": "Loop 104.01: Trip latch clears one scan after manual reset with no deviation",
+        "nusmv_ltl": "G (LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) -> X !LOOP_104_01_TRIP)",
+        "nusmv_ctl": "AG (LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) -> AX !LOOP_104_01_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) => NEXT(!LOOP_104_01_TRIP);",
+        "source_loop": "104.01",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness"
+      }
+    ],
+    "counterexamples": [],
+    "nusmv_model": "-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model\n-- Source P&ID: data\\pid_images\\Dexpi_PDF.pdf\n-- Vendor: codesys\n-- Safety functions: 3\n-- NOTE: Boolean abstraction — conservative over-approximation.\n-- Compatible with NuXmv 2.x and NuSMV 2.6+.\n\nMODULE main\nVAR\n  -- Process variable deviations (Boolean abstraction)\n  TICSA_4750_03_HIGH   : boolean;  -- TICSA-4750.03 above HH setpoint\n  TICSA_4750_03_LOW    : boolean;  -- TICSA-4750.03 below LL setpoint\n  HS_4750_01_HIGH   : boolean;  -- HS-4750.01 above HH setpoint\n  HS_4750_01_LOW    : boolean;  -- HS-4750.01 below LL setpoint\n  PI_4712_01_HIGH   : boolean;  -- PI-4712.01 above HH setpoint\n  PI_4712_01_LOW    : boolean;  -- PI-4712.01 below LL setpoint\n  PICSA_4712_02_HIGH   : boolean;  -- PICSA-4712.02 above HH setpoint\n  PICSA_4712_02_LOW    : boolean;  -- PICSA-4712.02 below LL setpoint\n  SV_104_01_HIGH   : boolean;  -- SV-104.01 above HH setpoint\n  SV_104_01_LOW    : boolean;  -- SV-104.01 below LL setpoint\n\n  -- Per-loop trip latches (stateful, SR semantics —\n  --  set on sensor deviation, clear on MANUAL_RESET with no deviation).\n  LOOP_4750_03_TRIP   : boolean;  -- Loop 4750.03 in trip state\n  LOOP_4712_02_TRIP   : boolean;  -- Loop 4712.02 in trip state\n  LOOP_104_01_TRIP   : boolean;  -- Loop 104.01 in trip state\n\n  -- Global environment inputs (free booleans)\n  ESTOP        : boolean;\n  MANUAL_RESET : boolean;\n\nDEFINE\n  -- SAFE_STATE is combinational: same-cycle disjunction of\n  -- ESTOP and every per-loop trip latch.  Matches the ST\n  -- assignment `SAFE_STATE := ESTOP OR LOOP_<N>_TRIP OR ...`.\n  SAFE_STATE := ESTOP | LOOP_4750_03_TRIP | LOOP_4712_02_TRIP | LOOP_104_01_TRIP;\n\nASSIGN\n  -- Initial conditions: all safe (de-energised)\n  init(TICSA_4750_03_HIGH) := FALSE;\n  init(TICSA_4750_03_LOW)  := FALSE;\n  init(HS_4750_01_HIGH) := FALSE;\n  init(HS_4750_01_LOW)  := FALSE;\n  init(PI_4712_01_HIGH) := FALSE;\n  init(PI_4712_01_LOW)  := FALSE;\n  init(PICSA_4712_02_HIGH) := FALSE;\n  init(PICSA_4712_02_LOW)  := FALSE;\n  init(SV_104_01_HIGH) := FALSE;\n  init(SV_104_01_LOW)  := FALSE;\n  init(LOOP_4750_03_TRIP) := FALSE;\n  init(LOOP_4712_02_TRIP) := FALSE;\n  init(LOOP_104_01_TRIP) := FALSE;\n  init(ESTOP)        := FALSE;\n  init(MANUAL_RESET) := FALSE;\n\n  -- SR trip latches: set on sensor deviation, clear on\n  -- MANUAL_RESET with no current deviation, hold otherwise.\n  -- The three-case structure below is the *same* pattern\n  -- emitted by the Safety Contract scaffold in the ST\n  -- code, so the formal model and the code use identical\n  -- transition semantics per loop.\n  next(LOOP_4750_03_TRIP) :=\n    case\n      TICSA_4750_03_HIGH | TICSA_4750_03_LOW                                   : TRUE;\n      LOOP_4750_03_TRIP & MANUAL_RESET & !TICSA_4750_03_HIGH & !TICSA_4750_03_LOW : FALSE;\n      TRUE                                                                 : LOOP_4750_03_TRIP;\n    esac;\n  next(LOOP_4712_02_TRIP) :=\n    case\n      PICSA_4712_02_HIGH | PICSA_4712_02_LOW                                   : TRUE;\n      LOOP_4712_02_TRIP & MANUAL_RESET & !PICSA_4712_02_HIGH & !PICSA_4712_02_LOW : FALSE;\n      TRUE                                                                 : LOOP_4712_02_TRIP;\n    esac;\n  next(LOOP_104_01_TRIP) :=\n    case\n      SV_104_01_HIGH | SV_104_01_LOW                                   : TRUE;\n      LOOP_104_01_TRIP & MANUAL_RESET & !SV_104_01_HIGH & !SV_104_01_LOW : FALSE;\n      TRUE                                                                 : LOOP_104_01_TRIP;\n    esac;\n\n-- ── Physical-impossibility constraints (INVAR) ──────────────────────\n-- Constrains state space: same sensor cannot read HH and LL at once.\nINVAR !(TICSA_4750_03_HIGH & TICSA_4750_03_LOW);\nINVAR !(HS_4750_01_HIGH & HS_4750_01_LOW);\nINVAR !(PI_4712_01_HIGH & PI_4712_01_LOW);\nINVAR !(PICSA_4712_02_HIGH & PICSA_4712_02_LOW);\nINVAR !(SV_104_01_HIGH & SV_104_01_LOW);\n\n-- ===== SAFETY PROPERTIES =====\n-- [LOOP_4750_03_ESTOP_PRIORITY]\n-- Loop 4750.03: Emergency stop must force SAFE_STATE in the same scan cycle\n-- Requirement: IEC 61511-1:2016 Section 10.3.4 — E-Stop override precedence\nLTLSPEC G (ESTOP -> SAFE_STATE)\nSPEC AG (ESTOP -> SAFE_STATE)\n\n-- [LOOP_4750_03_SAFE_STATE_ON_TRIP]\n-- Loop 4750.03: Any sensor deviation must drive SAFE_STATE within one scan\n-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure\nLTLSPEC G ((TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> X SAFE_STATE)\nSPEC AG ((TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> AX SAFE_STATE)\n\n-- [LOOP_4712_02_SAFE_STATE_ON_TRIP]\n-- Loop 4712.02: Any sensor deviation must drive SAFE_STATE within one scan\n-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure\nLTLSPEC G ((PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> X SAFE_STATE)\nSPEC AG ((PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> AX SAFE_STATE)\n\n-- [LOOP_104_01_SAFE_STATE_ON_TRIP]\n-- Loop 104.01: Any sensor deviation must drive SAFE_STATE within one scan\n-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure\nLTLSPEC G ((SV_104_01_HIGH | SV_104_01_LOW) -> X SAFE_STATE)\nSPEC AG ((SV_104_01_HIGH | SV_104_01_LOW) -> AX SAFE_STATE)\n\n-- [LOOP_4750_03_INTERLOCK_ENFORCED]\n-- Loop 4750.03: Process variable above safety limit raises the trip latch next scan\n-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response\nLTLSPEC G (TICSA_4750_03_HIGH -> X LOOP_4750_03_TRIP)\nSPEC AG (TICSA_4750_03_HIGH -> AX LOOP_4750_03_TRIP)\n\n-- [LOOP_4712_02_INTERLOCK_ENFORCED]\n-- Loop 4712.02: Process variable above safety limit raises the trip latch next scan\n-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response\nLTLSPEC G (PICSA_4712_02_HIGH -> X LOOP_4712_02_TRIP)\nSPEC AG (PICSA_4712_02_HIGH -> AX LOOP_4712_02_TRIP)\n\n-- [LOOP_104_01_INTERLOCK_ENFORCED]\n-- Loop 104.01: Process variable above safety limit raises the trip latch next scan\n-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response\nLTLSPEC G (SV_104_01_HIGH -> X LOOP_104_01_TRIP)\nSPEC AG (SV_104_01_HIGH -> AX LOOP_104_01_TRIP)\n\n-- [LOOP_4750_03_MANUAL_RESET_REQUIRED]\n-- Loop 4750.03: Trip latch must persist in absence of manual reset\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement\nLTLSPEC G (LOOP_4750_03_TRIP & !MANUAL_RESET -> X LOOP_4750_03_TRIP)\nSPEC AG (LOOP_4750_03_TRIP & !MANUAL_RESET -> AX LOOP_4750_03_TRIP)\n\n-- [LOOP_4712_02_MANUAL_RESET_REQUIRED]\n-- Loop 4712.02: Trip latch must persist in absence of manual reset\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement\nLTLSPEC G (LOOP_4712_02_TRIP & !MANUAL_RESET -> X LOOP_4712_02_TRIP)\nSPEC AG (LOOP_4712_02_TRIP & !MANUAL_RESET -> AX LOOP_4712_02_TRIP)\n\n-- [LOOP_104_01_MANUAL_RESET_REQUIRED]\n-- Loop 104.01: Trip latch must persist in absence of manual reset\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement\nLTLSPEC G (LOOP_104_01_TRIP & !MANUAL_RESET -> X LOOP_104_01_TRIP)\nSPEC AG (LOOP_104_01_TRIP & !MANUAL_RESET -> AX LOOP_104_01_TRIP)\n\n-- [LOOP_4750_03_RESET_CLEARS_TRIP]\n-- Loop 4750.03: Trip latch clears one scan after manual reset with no deviation\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness\nLTLSPEC G (LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> X !LOOP_4750_03_TRIP)\nSPEC AG (LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> AX !LOOP_4750_03_TRIP)\n\n-- [LOOP_4712_02_RESET_CLEARS_TRIP]\n-- Loop 4712.02: Trip latch clears one scan after manual reset with no deviation\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness\nLTLSPEC G (LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> X !LOOP_4712_02_TRIP)\nSPEC AG (LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> AX !LOOP_4712_02_TRIP)\n\n-- [LOOP_104_01_RESET_CLEARS_TRIP]\n-- Loop 104.01: Trip latch clears one scan after manual reset with no deviation\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness\nLTLSPEC G (LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) -> X !LOOP_104_01_TRIP)\nSPEC AG (LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) -> AX !LOOP_104_01_TRIP)\n",
+    "execution_time_s": 0.06,
+    "recommendations": [],
+    "timestamp": "2026-04-25T14:03:21.853123"
+  },
+  "io_mapping_summary": "benchmark_runs\\Dexpi_PDF\\run_04\\io_mapping.csv",
+  "dt_validation": null,
+  "hitl_review": null,
+  "pipeline_version": "1.6.1",
+  "total_processing_time_seconds": 182.6
+}

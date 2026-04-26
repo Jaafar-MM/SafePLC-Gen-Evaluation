@@ -1,0 +1,14 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+FI_1_Raw,%IW0,INT,AI,FI-1,Flow indicator on feed line P-65 entering Decanter E-5 area 
+FI_2_Raw,%IW2,INT,AI,FI-2,Flow indicator on line P-54/P-53 associated with Column 2 (E
+FI_3_Raw,%IW4,INT,AI,FI-3,Flow indicator on line P-57 associated with Column 3 inlet f
+TI_1_Raw,%IW6,INT,AI,TI-1,"Temperature indicator TI-1, local panel indicator, located a"
+TI_4_Raw,%IW8,INT,AI,TI-4,Temperature indicator TI-4 on line P-12 feed to Column 2 (E-
+TI_5_Raw,%IW10,INT,AI,TI-5,Temperature indicator TI-5 on line P-53 Column 2 side feed o
+TI_6_Raw,%IW12,INT,AI,TI-6,Temperature indicator TI-6 on line associated with Separator
+TI_7_Raw,%IW14,INT,AI,TI-7,Temperature indicator TI-7 on line P-20/P-45 area associated
+TI_8_Raw,%IW16,INT,AI,TI-8,Temperature indicator TI-8 on line P-57 associated with Colu
+V_3_Out,%QW0,INT,AO,V-3,Control valve V-3 on line P-28 from Decanter E-5 heavy phase
+V_4_Out,%QW2,INT,AO,V-4,"Control valve V-4 on line P-74/P-12 feeding Column 2 (E-7), "
+V_5_Out,%QW4,INT,AO,V-5,Control valve V-5 on line P-38/P-83 reflux return line to Co
+V_7_Out,%QW6,INT,AO,V-7,Control valve V-7 on line P-19 vent or pressure letdown from

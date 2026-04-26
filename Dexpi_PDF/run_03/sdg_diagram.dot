@@ -1,0 +1,31 @@
+digraph SDG {
+  rankdir=LR;
+  node [shape=ellipse, fontname="Arial", fontsize=10];
+  "TICSA-4750.03" [label="TICSA-4750.03\ntemperature", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "HS-4750.01" [label="HS-4750.01\nposition", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "PI-4712.01" [label="PI-4712.01\npressure", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "PICSA-4712.02" [label="PICSA-4712.02\npressure", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "T4750" [label="T4750\nvessel", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P4711" [label="P4711\npump", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P4712" [label="P4712\npump", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "H1007" [label="H1007\nheat_exchanger", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "H1008" [label="H1008\nheat_exchanger", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "TV-4750.03" [label="TV-4750.03\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "PVA-4712.02" [label="PVA-4712.02\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "SV-104.01" [label="SV-104.01\nsolenoid", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "CHECK-75SA21" [label="CHECK-75SA21\ncheck", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "CHECK-MNc-47124" [label="CHECK-MNc-47124\ncheck", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "GATE-73KH12-50-01" [label="GATE-73KH12-50-01\ngate", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "GATE-73KH12-50-02" [label="GATE-73KH12-50-02\ngate", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "GATE-73KH12-50-03" [label="GATE-73KH12-50-03\ngate", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "GATE-73KH12-25-01" [label="GATE-73KH12-25-01\ngate", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "GATE-73KH12-25-02" [label="GATE-73KH12-25-02\ngate", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "FC-VALVE-H-1007-IN" [label="FC-VALVE-H-1007-IN\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "TICSA-4750.03" -> "TICSA-4750.03" [label="+", color="green", fontcolor="green"];
+  "TICSA-4750.03" -> "TV-4750.03" [label="−", color="red", fontcolor="red"];
+  "PICSA-4712.02" -> "PICSA-4712.02" [label="+", color="green", fontcolor="green"];
+  "PICSA-4712.02" -> "PVA-4712.02" [label="−", color="red", fontcolor="red"];
+  "TV-4750.03" -> "TICSA-4750.03" [label="+", color="green", fontcolor="green"];
+  "PVA-4712.02" -> "PICSA-4712.02" [label="+", color="green", fontcolor="green"];
+  "FC-VALVE-H-1007-IN" -> "HS-4750.01" [label="+", color="green", fontcolor="green"];
+}

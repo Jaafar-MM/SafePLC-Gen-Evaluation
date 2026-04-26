@@ -1,0 +1,297 @@
+-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model
+-- Source P&ID: data\pid_images\eastman.png
+-- Vendor: codesys
+-- Safety functions: 0
+-- NOTE: Boolean abstraction — conservative over-approximation.
+-- Compatible with NuXmv 2.x and NuSMV 2.6+.
+
+MODULE main
+VAR
+  -- Process variable deviations (Boolean abstraction)
+  FI_1_HIGH   : boolean;  -- FI-1 above HH setpoint
+  FI_1_LOW    : boolean;  -- FI-1 below LL setpoint
+  FI_2_HIGH   : boolean;  -- FI-2 above HH setpoint
+  FI_2_LOW    : boolean;  -- FI-2 below LL setpoint
+  FI_3_HIGH   : boolean;  -- FI-3 above HH setpoint
+  FI_3_LOW    : boolean;  -- FI-3 below LL setpoint
+  FC_4_HIGH   : boolean;  -- FC-4 above HH setpoint
+  FC_4_LOW    : boolean;  -- FC-4 below LL setpoint
+  FC_5_HIGH   : boolean;  -- FC-5 above HH setpoint
+  FC_5_LOW    : boolean;  -- FC-5 below LL setpoint
+  FC_6_HIGH   : boolean;  -- FC-6 above HH setpoint
+  FC_6_LOW    : boolean;  -- FC-6 below LL setpoint
+  LC_1_HIGH   : boolean;  -- LC-1 above HH setpoint
+  LC_1_LOW    : boolean;  -- LC-1 below LL setpoint
+  LC_2_HIGH   : boolean;  -- LC-2 above HH setpoint
+  LC_2_LOW    : boolean;  -- LC-2 below LL setpoint
+  LC_3_HIGH   : boolean;  -- LC-3 above HH setpoint
+  LC_3_LOW    : boolean;  -- LC-3 below LL setpoint
+  PC_2_HIGH   : boolean;  -- PC-2 above HH setpoint
+  PC_2_LOW    : boolean;  -- PC-2 below LL setpoint
+  TC_1_HIGH   : boolean;  -- TC-1 above HH setpoint
+  TC_1_LOW    : boolean;  -- TC-1 below LL setpoint
+  TI_1_HIGH   : boolean;  -- TI-1 above HH setpoint
+  TI_1_LOW    : boolean;  -- TI-1 below LL setpoint
+  TI_4_HIGH   : boolean;  -- TI-4 above HH setpoint
+  TI_4_LOW    : boolean;  -- TI-4 below LL setpoint
+  TI_5_HIGH   : boolean;  -- TI-5 above HH setpoint
+  TI_5_LOW    : boolean;  -- TI-5 below LL setpoint
+  TI_6_HIGH   : boolean;  -- TI-6 above HH setpoint
+  TI_6_LOW    : boolean;  -- TI-6 below LL setpoint
+  TI_7_HIGH   : boolean;  -- TI-7 above HH setpoint
+  TI_7_LOW    : boolean;  -- TI-7 below LL setpoint
+  TI_8_HIGH   : boolean;  -- TI-8 above HH setpoint
+  TI_8_LOW    : boolean;  -- TI-8 below LL setpoint
+
+  -- Per-loop trip latches (stateful, SR semantics —
+  --  set on sensor deviation, clear on MANUAL_RESET with no deviation).
+
+  -- Global environment inputs (free booleans)
+  ESTOP        : boolean;
+  MANUAL_RESET : boolean;
+
+DEFINE
+  -- SAFE_STATE is combinational: same-cycle disjunction of
+  -- ESTOP and every per-loop trip latch.  Matches the ST
+  -- assignment `SAFE_STATE := ESTOP OR LOOP_<N>_TRIP OR ...`.
+  SAFE_STATE := ESTOP | FI_1_HIGH | FI_1_LOW | FI_2_HIGH | FI_2_LOW | FI_3_HIGH | FI_3_LOW | FC_4_HIGH | FC_4_LOW | FC_5_HIGH | FC_5_LOW | FC_6_HIGH | FC_6_LOW | LC_1_HIGH | LC_1_LOW | LC_2_HIGH | LC_2_LOW | LC_3_HIGH | LC_3_LOW | PC_2_HIGH | PC_2_LOW | TC_1_HIGH | TC_1_LOW | TI_1_HIGH | TI_1_LOW | TI_4_HIGH | TI_4_LOW | TI_5_HIGH | TI_5_LOW | TI_6_HIGH | TI_6_LOW | TI_7_HIGH | TI_7_LOW | TI_8_HIGH | TI_8_LOW;
+
+ASSIGN
+  -- Initial conditions: all safe (de-energised)
+  init(FI_1_HIGH) := FALSE;
+  init(FI_1_LOW)  := FALSE;
+  init(FI_2_HIGH) := FALSE;
+  init(FI_2_LOW)  := FALSE;
+  init(FI_3_HIGH) := FALSE;
+  init(FI_3_LOW)  := FALSE;
+  init(FC_4_HIGH) := FALSE;
+  init(FC_4_LOW)  := FALSE;
+  init(FC_5_HIGH) := FALSE;
+  init(FC_5_LOW)  := FALSE;
+  init(FC_6_HIGH) := FALSE;
+  init(FC_6_LOW)  := FALSE;
+  init(LC_1_HIGH) := FALSE;
+  init(LC_1_LOW)  := FALSE;
+  init(LC_2_HIGH) := FALSE;
+  init(LC_2_LOW)  := FALSE;
+  init(LC_3_HIGH) := FALSE;
+  init(LC_3_LOW)  := FALSE;
+  init(PC_2_HIGH) := FALSE;
+  init(PC_2_LOW)  := FALSE;
+  init(TC_1_HIGH) := FALSE;
+  init(TC_1_LOW)  := FALSE;
+  init(TI_1_HIGH) := FALSE;
+  init(TI_1_LOW)  := FALSE;
+  init(TI_4_HIGH) := FALSE;
+  init(TI_4_LOW)  := FALSE;
+  init(TI_5_HIGH) := FALSE;
+  init(TI_5_LOW)  := FALSE;
+  init(TI_6_HIGH) := FALSE;
+  init(TI_6_LOW)  := FALSE;
+  init(TI_7_HIGH) := FALSE;
+  init(TI_7_LOW)  := FALSE;
+  init(TI_8_HIGH) := FALSE;
+  init(TI_8_LOW)  := FALSE;
+  init(ESTOP)        := FALSE;
+  init(MANUAL_RESET) := FALSE;
+
+  -- SR trip latches: set on sensor deviation, clear on
+  -- MANUAL_RESET with no current deviation, hold otherwise.
+  -- The three-case structure below is the *same* pattern
+  -- emitted by the Safety Contract scaffold in the ST
+  -- code, so the formal model and the code use identical
+  -- transition semantics per loop.
+
+-- ── Physical-impossibility constraints (INVAR) ──────────────────────
+-- Constrains state space: same sensor cannot read HH and LL at once.
+INVAR !(FI_1_HIGH & FI_1_LOW);
+INVAR !(FI_2_HIGH & FI_2_LOW);
+INVAR !(FI_3_HIGH & FI_3_LOW);
+INVAR !(FC_4_HIGH & FC_4_LOW);
+INVAR !(FC_5_HIGH & FC_5_LOW);
+INVAR !(FC_6_HIGH & FC_6_LOW);
+INVAR !(LC_1_HIGH & LC_1_LOW);
+INVAR !(LC_2_HIGH & LC_2_LOW);
+INVAR !(LC_3_HIGH & LC_3_LOW);
+INVAR !(PC_2_HIGH & PC_2_LOW);
+INVAR !(TC_1_HIGH & TC_1_LOW);
+INVAR !(TI_1_HIGH & TI_1_LOW);
+INVAR !(TI_4_HIGH & TI_4_LOW);
+INVAR !(TI_5_HIGH & TI_5_LOW);
+INVAR !(TI_6_HIGH & TI_6_LOW);
+INVAR !(TI_7_HIGH & TI_7_LOW);
+INVAR !(TI_8_HIGH & TI_8_LOW);
+
+-- ===== SAFETY PROPERTIES =====
+-- (No identified safety functions — structural
+-- invariants on the sensor-deviation abstraction.
+-- These are NOT loop-specific safety verifications.)
+-- Reference: IEC 61508-3:2010 Table A.8
+
+-- P01  ESTOP forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (ESTOP -> SAFE_STATE);
+
+-- P02  FI_1_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FI_1_HIGH -> SAFE_STATE);
+
+-- P03  FI_1_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FI_1_LOW -> SAFE_STATE);
+
+-- P04  FI_2_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FI_2_HIGH -> SAFE_STATE);
+
+-- P05  FI_2_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FI_2_LOW -> SAFE_STATE);
+
+-- P06  FI_3_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FI_3_HIGH -> SAFE_STATE);
+
+-- P07  FI_3_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FI_3_LOW -> SAFE_STATE);
+
+-- P08  FC_4_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FC_4_HIGH -> SAFE_STATE);
+
+-- P09  FC_4_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FC_4_LOW -> SAFE_STATE);
+
+-- P10  FC_5_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FC_5_HIGH -> SAFE_STATE);
+
+-- P11  FC_5_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FC_5_LOW -> SAFE_STATE);
+
+-- P12  FC_6_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FC_6_HIGH -> SAFE_STATE);
+
+-- P13  FC_6_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FC_6_LOW -> SAFE_STATE);
+
+-- P14  LC_1_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (LC_1_HIGH -> SAFE_STATE);
+
+-- P15  LC_1_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (LC_1_LOW -> SAFE_STATE);
+
+-- P16  LC_2_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (LC_2_HIGH -> SAFE_STATE);
+
+-- P17  LC_2_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (LC_2_LOW -> SAFE_STATE);
+
+-- P18  LC_3_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (LC_3_HIGH -> SAFE_STATE);
+
+-- P19  LC_3_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (LC_3_LOW -> SAFE_STATE);
+
+-- P20  PC_2_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (PC_2_HIGH -> SAFE_STATE);
+
+-- P21  PC_2_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (PC_2_LOW -> SAFE_STATE);
+
+-- P22  TC_1_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TC_1_HIGH -> SAFE_STATE);
+
+-- P23  TC_1_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TC_1_LOW -> SAFE_STATE);
+
+-- P24  TI_1_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_1_HIGH -> SAFE_STATE);
+
+-- P25  TI_1_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_1_LOW -> SAFE_STATE);
+
+-- P26  TI_4_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_4_HIGH -> SAFE_STATE);
+
+-- P27  TI_4_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_4_LOW -> SAFE_STATE);
+
+-- P28  TI_5_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_5_HIGH -> SAFE_STATE);
+
+-- P29  TI_5_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_5_LOW -> SAFE_STATE);
+
+-- P30  TI_6_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_6_HIGH -> SAFE_STATE);
+
+-- P31  TI_6_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_6_LOW -> SAFE_STATE);
+
+-- P32  TI_7_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_7_HIGH -> SAFE_STATE);
+
+-- P33  TI_7_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_7_LOW -> SAFE_STATE);
+
+-- P34  TI_8_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_8_HIGH -> SAFE_STATE);
+
+-- P35  TI_8_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TI_8_LOW -> SAFE_STATE);
+
+-- P36  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(FI_1_HIGH & FI_1_LOW);
+
+-- P37  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(FI_2_HIGH & FI_2_LOW);
+
+-- P38  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(FI_3_HIGH & FI_3_LOW);
+
+-- P39  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(FC_4_HIGH & FC_4_LOW);
+
+-- P40  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(FC_5_HIGH & FC_5_LOW);
+
+-- P41  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(FC_6_HIGH & FC_6_LOW);
+
+-- P42  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(LC_1_HIGH & LC_1_LOW);
+
+-- P43  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(LC_2_HIGH & LC_2_LOW);
+
+-- P44  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(LC_3_HIGH & LC_3_LOW);
+
+-- P45  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(PC_2_HIGH & PC_2_LOW);
+
+-- P46  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(TC_1_HIGH & TC_1_LOW);
+
+-- P47  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(TI_1_HIGH & TI_1_LOW);
+
+-- P48  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(TI_4_HIGH & TI_4_LOW);
+
+-- P49  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(TI_5_HIGH & TI_5_LOW);
+
+-- P50  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(TI_6_HIGH & TI_6_LOW);
+
+-- P51  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(TI_7_HIGH & TI_7_LOW);
+
+-- P52  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(TI_8_HIGH & TI_8_LOW);
+
+-- P53  SAFE_STATE is reachable from the initial state
+SPEC EF SAFE_STATE;
+
+-- P54  Normal (non-safe) state is reachable
+SPEC EF !SAFE_STATE;
+
+-- Total structural invariants: 54
+-- NOTE: Without identified safety functions there is no
+-- trip latch to verify, so MANUAL_RESET_REQUIRED and
+-- RESET_CLEARS_TRIP are not applicable.  The pipeline
+-- log reports these counts as (loop-specific=0, structural=N).
