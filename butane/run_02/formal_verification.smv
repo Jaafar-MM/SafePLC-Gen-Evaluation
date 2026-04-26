@@ -1,0 +1,326 @@
+-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model
+-- Source P&ID: data\pid_images\butane.png
+-- Vendor: codesys
+-- Safety functions: 3
+-- NOTE: Boolean abstraction — conservative over-approximation.
+-- Compatible with NuXmv 2.x and NuSMV 2.6+.
+
+MODULE main
+VAR
+  -- Process variable deviations (Boolean abstraction)
+  TI_2909_HIGH   : boolean;  -- TI-2909 above HH setpoint
+  TI_2909_LOW    : boolean;  -- TI-2909 below LL setpoint
+  TT_2909_HIGH   : boolean;  -- TT-2909 above HH setpoint
+  TT_2909_LOW    : boolean;  -- TT-2909 below LL setpoint
+  TG_2910_HIGH   : boolean;  -- TG-2910 above HH setpoint
+  TG_2910_LOW    : boolean;  -- TG-2910 below LL setpoint
+  TY_2911_HIGH   : boolean;  -- TY-2911 above HH setpoint
+  TY_2911_LOW    : boolean;  -- TY-2911 below LL setpoint
+  TIC_2911_HIGH   : boolean;  -- TIC-2911 above HH setpoint
+  TIC_2911_LOW    : boolean;  -- TIC-2911 below LL setpoint
+  TT_2911_HIGH   : boolean;  -- TT-2911 above HH setpoint
+  TT_2911_LOW    : boolean;  -- TT-2911 below LL setpoint
+  TG_2912_HIGH   : boolean;  -- TG-2912 above HH setpoint
+  TG_2912_LOW    : boolean;  -- TG-2912 below LL setpoint
+  TT_2917_HIGH   : boolean;  -- TT-2917 above HH setpoint
+  TT_2917_LOW    : boolean;  -- TT-2917 below LL setpoint
+  TI_2917HH_HIGH   : boolean;  -- TI-2917HH above HH setpoint
+  TI_2917HH_LOW    : boolean;  -- TI-2917HH below LL setpoint
+  PSD_2917_HIGH   : boolean;  -- PSD-2917 above HH setpoint
+  PSD_2917_LOW    : boolean;  -- PSD-2917 below LL setpoint
+  HIC_2903A_HIGH   : boolean;  -- HIC-2903A above HH setpoint
+  HIC_2903A_LOW    : boolean;  -- HIC-2903A below LL setpoint
+  HY_2903A_HIGH   : boolean;  -- HY-2903A above HH setpoint
+  HY_2903A_LOW    : boolean;  -- HY-2903A below LL setpoint
+  HIC_2903B_HIGH   : boolean;  -- HIC-2903B above HH setpoint
+  HIC_2903B_LOW    : boolean;  -- HIC-2903B below LL setpoint
+  HY_2903B_HIGH   : boolean;  -- HY-2903B above HH setpoint
+  HY_2903B_LOW    : boolean;  -- HY-2903B below LL setpoint
+  VSHH_2901A_HIGH   : boolean;  -- VSHH-2901A above HH setpoint
+  VSHH_2901A_LOW    : boolean;  -- VSHH-2901A below LL setpoint
+  VSHH_2901B_HIGH   : boolean;  -- VSHH-2901B above HH setpoint
+  VSHH_2901B_LOW    : boolean;  -- VSHH-2901B below LL setpoint
+  HS_2901A_HIGH   : boolean;  -- HS-2901A above HH setpoint
+  HS_2901A_LOW    : boolean;  -- HS-2901A below LL setpoint
+  HS_2901B_HIGH   : boolean;  -- HS-2901B above HH setpoint
+  HS_2901B_LOW    : boolean;  -- HS-2901B below LL setpoint
+  VA_2901A_HIGH   : boolean;  -- VA-2901A above HH setpoint
+  VA_2901A_LOW    : boolean;  -- VA-2901A below LL setpoint
+  VA_2901B_HIGH   : boolean;  -- VA-2901B above HH setpoint
+  VA_2901B_LOW    : boolean;  -- VA-2901B below LL setpoint
+  ESD_3200_HIGH   : boolean;  -- ESD-3200 above HH setpoint
+  ESD_3200_LOW    : boolean;  -- ESD-3200 below LL setpoint
+  HS_2901A1_HIGH   : boolean;  -- HS-2901A1 above HH setpoint
+  HS_2901A1_LOW    : boolean;  -- HS-2901A1 below LL setpoint
+  HS_2901B1_HIGH   : boolean;  -- HS-2901B1 above HH setpoint
+  HS_2901B1_LOW    : boolean;  -- HS-2901B1 below LL setpoint
+  HS_2901A2_HIGH   : boolean;  -- HS-2901A2 above HH setpoint
+  HS_2901A2_LOW    : boolean;  -- HS-2901A2 below LL setpoint
+  HS_2901B2_HIGH   : boolean;  -- HS-2901B2 above HH setpoint
+  HS_2901B2_LOW    : boolean;  -- HS-2901B2 below LL setpoint
+  XI_2901A_HIGH   : boolean;  -- XI-2901A above HH setpoint
+  XI_2901A_LOW    : boolean;  -- XI-2901A below LL setpoint
+  XI_2901B_HIGH   : boolean;  -- XI-2901B above HH setpoint
+  XI_2901B_LOW    : boolean;  -- XI-2901B below LL setpoint
+  XL_2901A_HIGH   : boolean;  -- XL-2901A above HH setpoint
+  XL_2901A_LOW    : boolean;  -- XL-2901A below LL setpoint
+  XL_2901B_HIGH   : boolean;  -- XL-2901B above HH setpoint
+  XL_2901B_LOW    : boolean;  -- XL-2901B below LL setpoint
+  XA_2901A_HIGH   : boolean;  -- XA-2901A above HH setpoint
+  XA_2901A_LOW    : boolean;  -- XA-2901A below LL setpoint
+  XA_2901B_HIGH   : boolean;  -- XA-2901B above HH setpoint
+  XA_2901B_LOW    : boolean;  -- XA-2901B below LL setpoint
+  SEQ_2901A_HIGH   : boolean;  -- SEQ-2901A above HH setpoint
+  SEQ_2901A_LOW    : boolean;  -- SEQ-2901A below LL setpoint
+  SEQ_2901B_HIGH   : boolean;  -- SEQ-2901B above HH setpoint
+  SEQ_2901B_LOW    : boolean;  -- SEQ-2901B below LL setpoint
+  HS_START_STOP_A_2901A_HIGH   : boolean;  -- HS-START-STOP-A-2901A above HH setpoint
+  HS_START_STOP_A_2901A_LOW    : boolean;  -- HS-START-STOP-A-2901A below LL setpoint
+  HS_EMERGENCY_STOP_A_2901A_HIGH   : boolean;  -- HS-EMERGENCY-STOP-A-2901A above HH setpoint
+  HS_EMERGENCY_STOP_A_2901A_LOW    : boolean;  -- HS-EMERGENCY-STOP-A-2901A below LL setpoint
+  HS_START_STOP_B_2901B_HIGH   : boolean;  -- HS-START-STOP-B-2901B above HH setpoint
+  HS_START_STOP_B_2901B_LOW    : boolean;  -- HS-START-STOP-B-2901B below LL setpoint
+  HS_EMERGENCY_STOP_B_2901B_HIGH   : boolean;  -- HS-EMERGENCY-STOP-B-2901B above HH setpoint
+  HS_EMERGENCY_STOP_B_2901B_LOW    : boolean;  -- HS-EMERGENCY-STOP-B-2901B below LL setpoint
+
+  -- Per-loop trip latches (stateful, SR semantics —
+  --  set on sensor deviation, clear on MANUAL_RESET with no deviation).
+  LOOP_2917_TRIP   : boolean;  -- Loop 2917 in trip state
+  LOOP_2901A_TRIP   : boolean;  -- Loop 2901A in trip state
+  LOOP_2901B_TRIP   : boolean;  -- Loop 2901B in trip state
+
+  -- Global environment inputs (free booleans)
+  ESTOP        : boolean;
+  MANUAL_RESET : boolean;
+
+DEFINE
+  -- SAFE_STATE is combinational: same-cycle disjunction of
+  -- ESTOP and every per-loop trip latch.  Matches the ST
+  -- assignment `SAFE_STATE := ESTOP OR LOOP_<N>_TRIP OR ...`.
+  SAFE_STATE := ESTOP | LOOP_2917_TRIP | LOOP_2901A_TRIP | LOOP_2901B_TRIP;
+
+ASSIGN
+  -- Initial conditions: all safe (de-energised)
+  init(TI_2909_HIGH) := FALSE;
+  init(TI_2909_LOW)  := FALSE;
+  init(TT_2909_HIGH) := FALSE;
+  init(TT_2909_LOW)  := FALSE;
+  init(TG_2910_HIGH) := FALSE;
+  init(TG_2910_LOW)  := FALSE;
+  init(TY_2911_HIGH) := FALSE;
+  init(TY_2911_LOW)  := FALSE;
+  init(TIC_2911_HIGH) := FALSE;
+  init(TIC_2911_LOW)  := FALSE;
+  init(TT_2911_HIGH) := FALSE;
+  init(TT_2911_LOW)  := FALSE;
+  init(TG_2912_HIGH) := FALSE;
+  init(TG_2912_LOW)  := FALSE;
+  init(TT_2917_HIGH) := FALSE;
+  init(TT_2917_LOW)  := FALSE;
+  init(TI_2917HH_HIGH) := FALSE;
+  init(TI_2917HH_LOW)  := FALSE;
+  init(PSD_2917_HIGH) := FALSE;
+  init(PSD_2917_LOW)  := FALSE;
+  init(HIC_2903A_HIGH) := FALSE;
+  init(HIC_2903A_LOW)  := FALSE;
+  init(HY_2903A_HIGH) := FALSE;
+  init(HY_2903A_LOW)  := FALSE;
+  init(HIC_2903B_HIGH) := FALSE;
+  init(HIC_2903B_LOW)  := FALSE;
+  init(HY_2903B_HIGH) := FALSE;
+  init(HY_2903B_LOW)  := FALSE;
+  init(VSHH_2901A_HIGH) := FALSE;
+  init(VSHH_2901A_LOW)  := FALSE;
+  init(VSHH_2901B_HIGH) := FALSE;
+  init(VSHH_2901B_LOW)  := FALSE;
+  init(HS_2901A_HIGH) := FALSE;
+  init(HS_2901A_LOW)  := FALSE;
+  init(HS_2901B_HIGH) := FALSE;
+  init(HS_2901B_LOW)  := FALSE;
+  init(VA_2901A_HIGH) := FALSE;
+  init(VA_2901A_LOW)  := FALSE;
+  init(VA_2901B_HIGH) := FALSE;
+  init(VA_2901B_LOW)  := FALSE;
+  init(ESD_3200_HIGH) := FALSE;
+  init(ESD_3200_LOW)  := FALSE;
+  init(HS_2901A1_HIGH) := FALSE;
+  init(HS_2901A1_LOW)  := FALSE;
+  init(HS_2901B1_HIGH) := FALSE;
+  init(HS_2901B1_LOW)  := FALSE;
+  init(HS_2901A2_HIGH) := FALSE;
+  init(HS_2901A2_LOW)  := FALSE;
+  init(HS_2901B2_HIGH) := FALSE;
+  init(HS_2901B2_LOW)  := FALSE;
+  init(XI_2901A_HIGH) := FALSE;
+  init(XI_2901A_LOW)  := FALSE;
+  init(XI_2901B_HIGH) := FALSE;
+  init(XI_2901B_LOW)  := FALSE;
+  init(XL_2901A_HIGH) := FALSE;
+  init(XL_2901A_LOW)  := FALSE;
+  init(XL_2901B_HIGH) := FALSE;
+  init(XL_2901B_LOW)  := FALSE;
+  init(XA_2901A_HIGH) := FALSE;
+  init(XA_2901A_LOW)  := FALSE;
+  init(XA_2901B_HIGH) := FALSE;
+  init(XA_2901B_LOW)  := FALSE;
+  init(SEQ_2901A_HIGH) := FALSE;
+  init(SEQ_2901A_LOW)  := FALSE;
+  init(SEQ_2901B_HIGH) := FALSE;
+  init(SEQ_2901B_LOW)  := FALSE;
+  init(HS_START_STOP_A_2901A_HIGH) := FALSE;
+  init(HS_START_STOP_A_2901A_LOW)  := FALSE;
+  init(HS_EMERGENCY_STOP_A_2901A_HIGH) := FALSE;
+  init(HS_EMERGENCY_STOP_A_2901A_LOW)  := FALSE;
+  init(HS_START_STOP_B_2901B_HIGH) := FALSE;
+  init(HS_START_STOP_B_2901B_LOW)  := FALSE;
+  init(HS_EMERGENCY_STOP_B_2901B_HIGH) := FALSE;
+  init(HS_EMERGENCY_STOP_B_2901B_LOW)  := FALSE;
+  init(LOOP_2917_TRIP) := FALSE;
+  init(LOOP_2901A_TRIP) := FALSE;
+  init(LOOP_2901B_TRIP) := FALSE;
+  init(ESTOP)        := FALSE;
+  init(MANUAL_RESET) := FALSE;
+
+  -- SR trip latches: set on sensor deviation, clear on
+  -- MANUAL_RESET with no current deviation, hold otherwise.
+  -- The three-case structure below is the *same* pattern
+  -- emitted by the Safety Contract scaffold in the ST
+  -- code, so the formal model and the code use identical
+  -- transition semantics per loop.
+  next(LOOP_2917_TRIP) :=
+    case
+      TT_2917_HIGH | TT_2917_LOW                                   : TRUE;
+      LOOP_2917_TRIP & MANUAL_RESET & !TT_2917_HIGH & !TT_2917_LOW : FALSE;
+      TRUE                                                                 : LOOP_2917_TRIP;
+    esac;
+  next(LOOP_2901A_TRIP) :=
+    case
+      VSHH_2901A_HIGH | VSHH_2901A_LOW                                   : TRUE;
+      LOOP_2901A_TRIP & MANUAL_RESET & !VSHH_2901A_HIGH & !VSHH_2901A_LOW : FALSE;
+      TRUE                                                                 : LOOP_2901A_TRIP;
+    esac;
+  next(LOOP_2901B_TRIP) :=
+    case
+      VSHH_2901B_HIGH | VSHH_2901B_LOW                                   : TRUE;
+      LOOP_2901B_TRIP & MANUAL_RESET & !VSHH_2901B_HIGH & !VSHH_2901B_LOW : FALSE;
+      TRUE                                                                 : LOOP_2901B_TRIP;
+    esac;
+
+-- ── Physical-impossibility constraints (INVAR) ──────────────────────
+-- Constrains state space: same sensor cannot read HH and LL at once.
+INVAR !(TI_2909_HIGH & TI_2909_LOW);
+INVAR !(TT_2909_HIGH & TT_2909_LOW);
+INVAR !(TG_2910_HIGH & TG_2910_LOW);
+INVAR !(TY_2911_HIGH & TY_2911_LOW);
+INVAR !(TIC_2911_HIGH & TIC_2911_LOW);
+INVAR !(TT_2911_HIGH & TT_2911_LOW);
+INVAR !(TG_2912_HIGH & TG_2912_LOW);
+INVAR !(TT_2917_HIGH & TT_2917_LOW);
+INVAR !(TI_2917HH_HIGH & TI_2917HH_LOW);
+INVAR !(PSD_2917_HIGH & PSD_2917_LOW);
+INVAR !(HIC_2903A_HIGH & HIC_2903A_LOW);
+INVAR !(HY_2903A_HIGH & HY_2903A_LOW);
+INVAR !(HIC_2903B_HIGH & HIC_2903B_LOW);
+INVAR !(HY_2903B_HIGH & HY_2903B_LOW);
+INVAR !(VSHH_2901A_HIGH & VSHH_2901A_LOW);
+INVAR !(VSHH_2901B_HIGH & VSHH_2901B_LOW);
+INVAR !(HS_2901A_HIGH & HS_2901A_LOW);
+INVAR !(HS_2901B_HIGH & HS_2901B_LOW);
+INVAR !(VA_2901A_HIGH & VA_2901A_LOW);
+INVAR !(VA_2901B_HIGH & VA_2901B_LOW);
+INVAR !(ESD_3200_HIGH & ESD_3200_LOW);
+INVAR !(HS_2901A1_HIGH & HS_2901A1_LOW);
+INVAR !(HS_2901B1_HIGH & HS_2901B1_LOW);
+INVAR !(HS_2901A2_HIGH & HS_2901A2_LOW);
+INVAR !(HS_2901B2_HIGH & HS_2901B2_LOW);
+INVAR !(XI_2901A_HIGH & XI_2901A_LOW);
+INVAR !(XI_2901B_HIGH & XI_2901B_LOW);
+INVAR !(XL_2901A_HIGH & XL_2901A_LOW);
+INVAR !(XL_2901B_HIGH & XL_2901B_LOW);
+INVAR !(XA_2901A_HIGH & XA_2901A_LOW);
+INVAR !(XA_2901B_HIGH & XA_2901B_LOW);
+INVAR !(SEQ_2901A_HIGH & SEQ_2901A_LOW);
+INVAR !(SEQ_2901B_HIGH & SEQ_2901B_LOW);
+INVAR !(HS_START_STOP_A_2901A_HIGH & HS_START_STOP_A_2901A_LOW);
+INVAR !(HS_EMERGENCY_STOP_A_2901A_HIGH & HS_EMERGENCY_STOP_A_2901A_LOW);
+INVAR !(HS_START_STOP_B_2901B_HIGH & HS_START_STOP_B_2901B_LOW);
+INVAR !(HS_EMERGENCY_STOP_B_2901B_HIGH & HS_EMERGENCY_STOP_B_2901B_LOW);
+
+-- ===== SAFETY PROPERTIES =====
+-- [LOOP_2917_ESTOP_PRIORITY]
+-- Loop 2917: Emergency stop must force SAFE_STATE in the same scan cycle
+-- Requirement: IEC 61511-1:2016 Section 10.3.4 — E-Stop override precedence
+LTLSPEC G (ESTOP -> SAFE_STATE)
+SPEC AG (ESTOP -> SAFE_STATE)
+
+-- [LOOP_2917_SAFE_STATE_ON_TRIP]
+-- Loop 2917: Any sensor deviation must drive SAFE_STATE within one scan
+-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure
+LTLSPEC G ((TT_2917_HIGH | TT_2917_LOW) -> X SAFE_STATE)
+SPEC AG ((TT_2917_HIGH | TT_2917_LOW) -> AX SAFE_STATE)
+
+-- [LOOP_2901A_SAFE_STATE_ON_TRIP]
+-- Loop 2901A: Any sensor deviation must drive SAFE_STATE within one scan
+-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure
+LTLSPEC G ((VSHH_2901A_HIGH | VSHH_2901A_LOW) -> X SAFE_STATE)
+SPEC AG ((VSHH_2901A_HIGH | VSHH_2901A_LOW) -> AX SAFE_STATE)
+
+-- [LOOP_2901B_SAFE_STATE_ON_TRIP]
+-- Loop 2901B: Any sensor deviation must drive SAFE_STATE within one scan
+-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure
+LTLSPEC G ((VSHH_2901B_HIGH | VSHH_2901B_LOW) -> X SAFE_STATE)
+SPEC AG ((VSHH_2901B_HIGH | VSHH_2901B_LOW) -> AX SAFE_STATE)
+
+-- [LOOP_2917_INTERLOCK_ENFORCED]
+-- Loop 2917: Process variable above safety limit raises the trip latch next scan
+-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response
+LTLSPEC G (TT_2917_HIGH -> X LOOP_2917_TRIP)
+SPEC AG (TT_2917_HIGH -> AX LOOP_2917_TRIP)
+
+-- [LOOP_2901A_INTERLOCK_ENFORCED]
+-- Loop 2901A: Process variable above safety limit raises the trip latch next scan
+-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response
+LTLSPEC G (VSHH_2901A_HIGH -> X LOOP_2901A_TRIP)
+SPEC AG (VSHH_2901A_HIGH -> AX LOOP_2901A_TRIP)
+
+-- [LOOP_2901B_INTERLOCK_ENFORCED]
+-- Loop 2901B: Process variable above safety limit raises the trip latch next scan
+-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response
+LTLSPEC G (VSHH_2901B_HIGH -> X LOOP_2901B_TRIP)
+SPEC AG (VSHH_2901B_HIGH -> AX LOOP_2901B_TRIP)
+
+-- [LOOP_2917_MANUAL_RESET_REQUIRED]
+-- Loop 2917: Trip latch must persist in absence of manual reset
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement
+LTLSPEC G (LOOP_2917_TRIP & !MANUAL_RESET -> X LOOP_2917_TRIP)
+SPEC AG (LOOP_2917_TRIP & !MANUAL_RESET -> AX LOOP_2917_TRIP)
+
+-- [LOOP_2901A_MANUAL_RESET_REQUIRED]
+-- Loop 2901A: Trip latch must persist in absence of manual reset
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement
+LTLSPEC G (LOOP_2901A_TRIP & !MANUAL_RESET -> X LOOP_2901A_TRIP)
+SPEC AG (LOOP_2901A_TRIP & !MANUAL_RESET -> AX LOOP_2901A_TRIP)
+
+-- [LOOP_2901B_MANUAL_RESET_REQUIRED]
+-- Loop 2901B: Trip latch must persist in absence of manual reset
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement
+LTLSPEC G (LOOP_2901B_TRIP & !MANUAL_RESET -> X LOOP_2901B_TRIP)
+SPEC AG (LOOP_2901B_TRIP & !MANUAL_RESET -> AX LOOP_2901B_TRIP)
+
+-- [LOOP_2917_RESET_CLEARS_TRIP]
+-- Loop 2917: Trip latch clears one scan after manual reset with no deviation
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness
+LTLSPEC G (LOOP_2917_TRIP & MANUAL_RESET & !(TT_2917_HIGH | TT_2917_LOW) -> X !LOOP_2917_TRIP)
+SPEC AG (LOOP_2917_TRIP & MANUAL_RESET & !(TT_2917_HIGH | TT_2917_LOW) -> AX !LOOP_2917_TRIP)
+
+-- [LOOP_2901A_RESET_CLEARS_TRIP]
+-- Loop 2901A: Trip latch clears one scan after manual reset with no deviation
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness
+LTLSPEC G (LOOP_2901A_TRIP & MANUAL_RESET & !(VSHH_2901A_HIGH | VSHH_2901A_LOW) -> X !LOOP_2901A_TRIP)
+SPEC AG (LOOP_2901A_TRIP & MANUAL_RESET & !(VSHH_2901A_HIGH | VSHH_2901A_LOW) -> AX !LOOP_2901A_TRIP)
+
+-- [LOOP_2901B_RESET_CLEARS_TRIP]
+-- Loop 2901B: Trip latch clears one scan after manual reset with no deviation
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness
+LTLSPEC G (LOOP_2901B_TRIP & MANUAL_RESET & !(VSHH_2901B_HIGH | VSHH_2901B_LOW) -> X !LOOP_2901B_TRIP)
+SPEC AG (LOOP_2901B_TRIP & MANUAL_RESET & !(VSHH_2901B_HIGH | VSHH_2901B_LOW) -> AX !LOOP_2901B_TRIP)

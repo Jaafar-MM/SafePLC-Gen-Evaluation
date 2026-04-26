@@ -1,0 +1,2989 @@
+{
+  "pid_analysis": {
+    "pid_id": "3b84d121",
+    "source_type": "image",
+    "source_file": "data\\pid_images\\butane.png",
+    "timestamp": "2026-04-25T12:12:54.114889",
+    "equipment": [
+      {
+        "id": "EQ-001",
+        "tag": "E-234-009",
+        "component_type": "equipment",
+        "label": "Shell-and-tube heat exchanger (or plate/air-cooler type per symbol), horizontal orientation. Vendor package unit per NOTE 7. Shows hatched tube bundle symbol with process fluid connections on both shell sides (inlet/outlet nozzles visible on left and right). Multiple RS (restriction/spectacle) valves on process connections. Part of vendor package boundary shown by dashed box.",
+        "description": "Shell-and-tube heat exchanger (or plate/air-cooler type per symbol), horizontal orientation. Vendor package unit per NOTE 7. Shows hatched tube bundle symbol with process fluid connections on both shell sides (inlet/outlet nozzles visible on left and right). Multiple RS (restriction/spectacle) valves on process connections. Part of vendor package boundary shown by dashed box.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "subtype": "heat_exchanger",
+        "nozzles": []
+      }
+    ],
+    "instruments": [
+      {
+        "id": "INST-001",
+        "tag": "TI-2909",
+        "component_type": "instrument",
+        "label": "Temperature indicator on process inlet line, left side of exchanger area",
+        "description": "Temperature indicator on process inlet line, left side of exchanger area",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "T",
+        "function": "I",
+        "loop_number": "2909",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-002",
+        "tag": "TT-2909",
+        "component_type": "instrument",
+        "label": "Temperature transmitter on process line, left side inlet",
+        "description": "Temperature transmitter on process line, left side inlet",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "T",
+        "function": "T",
+        "loop_number": "2909",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-003",
+        "tag": "TG-2910",
+        "component_type": "instrument",
+        "label": "Temperature gauge on process line, left side inlet area",
+        "description": "Temperature gauge on process line, left side inlet area",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "T",
+        "function": null,
+        "loop_number": "2910",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-004",
+        "tag": "TY-2911",
+        "component_type": "instrument",
+        "label": "Temperature computing relay/converter, top center of diagram, connected to TIC-2911 control loop. Receives signal from TT-2917 via dashed line.",
+        "description": "Temperature computing relay/converter, top center of diagram, connected to TIC-2911 control loop. Receives signal from TT-2917 via dashed line.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "T",
+        "function": "Y",
+        "loop_number": "2911",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-005",
+        "tag": "TIC-2911",
+        "component_type": "instrument",
+        "label": "Temperature indicating controller, right side panel-mounted instrument. Designated H (high) alarm. Controls heating medium or process temperature on E-234-009 outlet.",
+        "description": "Temperature indicating controller, right side panel-mounted instrument. Designated H (high) alarm. Controls heating medium or process temperature on E-234-009 outlet.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "T",
+        "function": "C",
+        "loop_number": "2911",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-006",
+        "tag": "TT-2911",
+        "component_type": "instrument",
+        "label": "Temperature transmitter on process outlet, right side of exchanger",
+        "description": "Temperature transmitter on process outlet, right side of exchanger",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "T",
+        "function": "T",
+        "loop_number": "2911",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-007",
+        "tag": "TG-2912",
+        "component_type": "instrument",
+        "label": "Temperature gauge on process outlet line, right side",
+        "description": "Temperature gauge on process outlet line, right side",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "T",
+        "function": null,
+        "loop_number": "2912",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-008",
+        "tag": "TT-2917",
+        "component_type": "instrument",
+        "label": "Temperature transmitter on heating medium/utility inlet, far right side. Signal feeds TY-2911 and PSD-2917 logic.",
+        "description": "Temperature transmitter on heating medium/utility inlet, far right side. Signal feeds TY-2911 and PSD-2917 logic.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "T",
+        "function": "T",
+        "loop_number": "2917",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-009",
+        "tag": "TI-2917",
+        "component_type": "instrument",
+        "label": "Temperature indicator high-high (HH), far top right, associated with H-234-001 TRIP logic. Panel-mounted indicator.",
+        "description": "Temperature indicator high-high (HH), far top right, associated with H-234-001 TRIP logic. Panel-mounted indicator.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "T",
+        "function": "I",
+        "loop_number": "2917",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-010",
+        "tag": "PSD-2917",
+        "component_type": "instrument",
+        "label": "Pressure/Temperature shutdown device (PSD) on utility/heating medium side, associated with H-234-001 TRIP. Safety function — high temperature trip.",
+        "description": "Pressure/Temperature shutdown device (PSD) on utility/heating medium side, associated with H-234-001 TRIP. Safety function — high temperature trip.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "P",
+        "function": "S",
+        "loop_number": "2917",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-012",
+        "tag": "HIC-2903A",
+        "component_type": "instrument",
+        "label": "Hand indicating controller for pump/fan A speed or flow control. Panel-mounted, left side of motor control section.",
+        "description": "Hand indicating controller for pump/fan A speed or flow control. Panel-mounted, left side of motor control section.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "C",
+        "loop_number": "2903A",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-013",
+        "tag": "HY-2903A",
+        "component_type": "instrument",
+        "label": "Hand relay/signal converter for HIC-2903A output to variable speed drive A. Controls fan/blower A speed.",
+        "description": "Hand relay/signal converter for HIC-2903A output to variable speed drive A. Controls fan/blower A speed.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "Y",
+        "loop_number": "2903A",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-014",
+        "tag": "HIC-2903B",
+        "component_type": "instrument",
+        "label": "Hand indicating controller for pump/fan B speed control. Panel-mounted, right side.",
+        "description": "Hand indicating controller for pump/fan B speed control. Panel-mounted, right side.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "C",
+        "loop_number": "2903B",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-015",
+        "tag": "HY-2903B",
+        "component_type": "instrument",
+        "label": "Hand relay/signal converter for HIC-2903B output to variable speed drive B.",
+        "description": "Hand relay/signal converter for HIC-2903B output to variable speed drive B.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "Y",
+        "loop_number": "2903B",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-016",
+        "tag": "VSHH-2901A",
+        "component_type": "instrument",
+        "label": "Vibration switch high-high on fan/motor A. Safety function — triggers shutdown on high vibration. Associated with NOTE 9.",
+        "description": "Vibration switch high-high on fan/motor A. Safety function — triggers shutdown on high vibration. Associated with NOTE 9.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "V",
+        "function": "S",
+        "loop_number": "2901A",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-017",
+        "tag": "VSHH-2901B",
+        "component_type": "instrument",
+        "label": "Vibration switch high-high on fan/motor B. Safety function. Associated with NOTE 9.",
+        "description": "Vibration switch high-high on fan/motor B. Safety function. Associated with NOTE 9.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "V",
+        "function": "S",
+        "loop_number": "2901B",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-018",
+        "tag": "HS-2901A",
+        "component_type": "instrument",
+        "label": "Hand switch for motor/fan A control. Panel-mounted, left side.",
+        "description": "Hand switch for motor/fan A control. Panel-mounted, left side.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901A",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-019",
+        "tag": "HS-2901B",
+        "component_type": "instrument",
+        "label": "Hand switch for motor/fan B control. Panel-mounted, right side.",
+        "description": "Hand switch for motor/fan B control. Panel-mounted, right side.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901B",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-020",
+        "tag": "HS-2901A1",
+        "component_type": "instrument",
+        "label": "Hand switch LOCAL/REMOTE selector for motor A. Located at MCC.",
+        "description": "Hand switch LOCAL/REMOTE selector for motor A. Located at MCC.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901A",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-021",
+        "tag": "HS-2901B1",
+        "component_type": "instrument",
+        "label": "Hand switch LOCAL/REMOTE selector for motor B. Located at MCC.",
+        "description": "Hand switch LOCAL/REMOTE selector for motor B. Located at MCC.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901B",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-022",
+        "tag": "HS-2901A2",
+        "component_type": "instrument",
+        "label": "Hand switch STOP/START for motor A at MCC level.",
+        "description": "Hand switch STOP/START for motor A at MCC level.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901A",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-023",
+        "tag": "HS-2901B2",
+        "component_type": "instrument",
+        "label": "Hand switch STOP/START for motor B at MCC level.",
+        "description": "Hand switch STOP/START for motor B at MCC level.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901B",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-024",
+        "tag": "XI-2901A",
+        "component_type": "instrument",
+        "label": "Status indicator AVAILABLE for motor/fan A. Shown at MCC.",
+        "description": "Status indicator AVAILABLE for motor/fan A. Shown at MCC.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "A",
+        "function": "I",
+        "loop_number": "2901A",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-025",
+        "tag": "XI-2901B",
+        "component_type": "instrument",
+        "label": "Status indicator AVAILABLE for motor/fan B. Shown at MCC.",
+        "description": "Status indicator AVAILABLE for motor/fan B. Shown at MCC.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "A",
+        "function": "I",
+        "loop_number": "2901B",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-026",
+        "tag": "VA-2901A",
+        "component_type": "instrument",
+        "label": "Vibration alarm HH for motor/fan A. Panel alarm indicator.",
+        "description": "Vibration alarm HH for motor/fan A. Panel alarm indicator.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "V",
+        "function": "A",
+        "loop_number": "2901A",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-027",
+        "tag": "VA-2901B",
+        "component_type": "instrument",
+        "label": "Vibration alarm HH for motor/fan B. Panel alarm indicator.",
+        "description": "Vibration alarm HH for motor/fan B. Panel alarm indicator.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "V",
+        "function": "A",
+        "loop_number": "2901B",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-028",
+        "tag": "ESD-3200",
+        "component_type": "instrument",
+        "label": "Emergency shutdown device/input, appears on both motor A and motor B circuits. Safety interlock input to MCC for emergency stop.",
+        "description": "Emergency shutdown device/input, appears on both motor A and motor B circuits. Safety interlock input to MCC for emergency stop.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "I",
+        "function": "S",
+        "loop_number": "3200",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-029",
+        "tag": "XL-2901A",
+        "component_type": "instrument",
+        "label": "Status light/indicator RUNNING/STOP for motor A.",
+        "description": "Status light/indicator RUNNING/STOP for motor A.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "A",
+        "function": null,
+        "loop_number": "2901A",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-030",
+        "tag": "XL-2901B",
+        "component_type": "instrument",
+        "label": "Status light/indicator RUNNING/STOP for motor B.",
+        "description": "Status light/indicator RUNNING/STOP for motor B.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "A",
+        "function": null,
+        "loop_number": "2901B",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-031",
+        "tag": "XA-2901A",
+        "component_type": "instrument",
+        "label": "Fault alarm indicator for motor/fan A.",
+        "description": "Fault alarm indicator for motor/fan A.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "A",
+        "function": "A",
+        "loop_number": "2901A",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-032",
+        "tag": "XA-2901B",
+        "component_type": "instrument",
+        "label": "Fault alarm indicator for motor/fan B.",
+        "description": "Fault alarm indicator for motor/fan B.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "A",
+        "function": "A",
+        "loop_number": "2901B",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-033",
+        "tag": "HS-START-STOP-A-2901A",
+        "component_type": "instrument",
+        "label": "Field/local hand switch START/STOP for motor A. Associated with NOTE 4,10.",
+        "description": "Field/local hand switch START/STOP for motor A. Associated with NOTE 4,10.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901A",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-034",
+        "tag": "HS-EMERGENCY-STOP-A-2901A",
+        "component_type": "instrument",
+        "label": "Emergency stop hand switch for motor A, field-mounted circular symbol.",
+        "description": "Emergency stop hand switch for motor A, field-mounted circular symbol.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901A",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-035",
+        "tag": "HS-START-STOP-B-2901B",
+        "component_type": "instrument",
+        "label": "Field/local hand switch START/STOP for motor B. Associated with NOTE 4,10.",
+        "description": "Field/local hand switch START/STOP for motor B. Associated with NOTE 4,10.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901B",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-036",
+        "tag": "HS-EMERGENCY-STOP-B-2901B",
+        "component_type": "instrument",
+        "label": "Emergency stop hand switch for motor B, field-mounted circular symbol.",
+        "description": "Emergency stop hand switch for motor B, field-mounted circular symbol.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "S",
+        "loop_number": "2901B",
+        "plc_io_type": "DI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-037",
+        "tag": "SEQ-A-2901A",
+        "component_type": "instrument",
+        "label": "Sequence logic function block for motor A start/stop sequencing. Shown as SEQ with arrow symbol.",
+        "description": "Sequence logic function block for motor A start/stop sequencing. Shown as SEQ with arrow symbol.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "C",
+        "loop_number": "2901A",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-038",
+        "tag": "SEQ-B-2901B",
+        "component_type": "instrument",
+        "label": "Sequence logic function block for motor B start/stop sequencing.",
+        "description": "Sequence logic function block for motor B start/stop sequencing.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "measured_variable": "Z",
+        "function": "C",
+        "loop_number": "2901B",
+        "plc_io_type": null,
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      }
+    ],
+    "valves": [
+      {
+        "id": "VLV-001",
+        "tag": "KV-2904",
+        "component_type": "valve",
+        "label": "Actuated valve on inlet process line, far left. Tag KV-2904, NOTE 8. Small actuator symbol shown.",
+        "description": "Actuated valve on inlet process line, far left. Tag KV-2904, NOTE 8. Small actuator symbol shown.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "control",
+        "fail_position": "unknown",
+        "actuator_type": "pneumatic/solenoid",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-002",
+        "tag": "CSO-LEFT-1",
+        "component_type": "valve",
+        "label": "Car-sealed open (CSO) isolation valve on inlet line, left side, upstream of KV-2904",
+        "description": "Car-sealed open (CSO) isolation valve on inlet line, left side, upstream of KV-2904",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "other",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-003",
+        "tag": "CSO-Left-2",
+        "component_type": "valve",
+        "label": "Car-sealed open (CSO) isolation valve on inlet line, left side, downstream of KV-2904. Labeled NO POCKET.",
+        "description": "Car-sealed open (CSO) isolation valve on inlet line, left side, downstream of KV-2904. Labeled NO POCKET.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "other",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-004",
+        "tag": "Gate-1-LEFT",
+        "component_type": "valve",
+        "label": "Manual gate valve (1 inch) on drain/bypass line, left side. Near NOTE 2.",
+        "description": "Manual gate valve (1 inch) on drain/bypass line, left side. Near NOTE 2.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "gate",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-005",
+        "tag": "RS-INLET-TOP-LEFT",
+        "component_type": "valve",
+        "label": "Restriction spectacle blind or restriction orifice RS on top inlet to E-234-009, left side, 8-inch line",
+        "description": "Restriction spectacle blind or restriction orifice RS on top inlet to E-234-009, left side, 8-inch line",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "other",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-006",
+        "tag": "RS-INLET-BOTTOM-LEFT",
+        "component_type": "valve",
+        "label": "Restriction spectacle blind RS on bottom inlet to E-234-009, left side",
+        "description": "Restriction spectacle blind RS on bottom inlet to E-234-009, left side",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "other",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-007",
+        "tag": "RS-OUTLET-TOP-RIGHT",
+        "component_type": "valve",
+        "label": "Restriction spectacle blind RS on top outlet from E-234-009, right side, 8-inch line",
+        "description": "Restriction spectacle blind RS on top outlet from E-234-009, right side, 8-inch line",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "other",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-008",
+        "tag": "RS-OUTLET-BOTTOM-RIGHT",
+        "component_type": "valve",
+        "label": "Restriction spectacle blind RS on bottom outlet from E-234-009, right side",
+        "description": "Restriction spectacle blind RS on bottom outlet from E-234-009, right side",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "other",
+        "fail_position": "",
+        "actuator_type": "manual",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-009",
+        "tag": "CV-HY-2903A",
+        "component_type": "valve",
+        "label": "Control valve operated by HY-2903A signal, on air/fluid supply to fan/motor A assembly. Butterfly or globe body with diaphragm actuator.",
+        "description": "Control valve operated by HY-2903A signal, on air/fluid supply to fan/motor A assembly. Butterfly or globe body with diaphragm actuator.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "check",
+        "fail_position": "unknown",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-010",
+        "tag": "CV-HY-2903B",
+        "component_type": "valve",
+        "label": "Control valve operated by HY-2903B signal, on air/fluid supply to fan/motor B assembly.",
+        "description": "Control valve operated by HY-2903B signal, on air/fluid supply to fan/motor B assembly.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "check",
+        "fail_position": "unknown",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-011",
+        "tag": "CHECK-VALVE-A",
+        "component_type": "valve",
+        "label": "Check valve on fan/motor A discharge line, prevents backflow",
+        "description": "Check valve on fan/motor A discharge line, prevents backflow",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "check",
+        "fail_position": "",
+        "actuator_type": "self-actuated",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-012",
+        "tag": "CHECK-VALVE-B",
+        "component_type": "valve",
+        "label": "Check valve on fan/motor B discharge line, prevents backflow",
+        "description": "Check valve on fan/motor B discharge line, prevents backflow",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "check",
+        "fail_position": "",
+        "actuator_type": "self-actuated",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-013",
+        "tag": "NC-VALVE-RIGHT",
+        "component_type": "valve",
+        "label": "Normally closed (NC) valve on piping at bottom right, connected to P-234-03304-CD3D-1-N off-page connector. NOTE 12.",
+        "description": "Normally closed (NC) valve on piping at bottom right, connected to P-234-03304-CD3D-1-N off-page connector. NOTE 12.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "valve_type": "other",
+        "fail_position": "closed",
+        "actuator_type": "manual",
+        "sil_level": 0
+      }
+    ],
+    "piping": [
+      {
+        "id": "PIPE-001",
+        "tag": "8-inch-INLET-LEFT",
+        "component_type": "piping",
+        "label": "8-inch-INLET-LEFT",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "from_component": "Off-page source",
+        "to_component": "E-234-009 shell/tube inlet (top left)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "8-inch-INLET-LEFT",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-002",
+        "tag": "8-inch-INLET-BOTTOM-LEFT",
+        "component_type": "piping",
+        "label": "8-inch-INLET-BOTTOM-LEFT",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "from_component": "Off-page source",
+        "to_component": "E-234-009 shell/tube inlet (bottom left)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "8-inch-INLET-BOTTOM-LEFT",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-003",
+        "tag": "8-inch-OUTLET-TOP-RIGHT",
+        "component_type": "piping",
+        "label": "8-inch-OUTLET-TOP-RIGHT",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "from_component": "E-234-009 shell/tube outlet (top right)",
+        "to_component": "Off-page destination / FREE DRAINING header",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "8-inch-OUTLET-TOP-RIGHT",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-004",
+        "tag": "8-inch-OUTLET-BOTTOM-RIGHT",
+        "component_type": "piping",
+        "label": "8-inch-OUTLET-BOTTOM-RIGHT",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "from_component": "E-234-009 shell/tube outlet (bottom right)",
+        "to_component": "Off-page destination",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "8-inch-OUTLET-BOTTOM-RIGHT",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-005",
+        "tag": "P-234-03304-CD3D-1-N",
+        "component_type": "piping",
+        "label": "P-234-03304-CD3D-1-N",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "from_component": "Bottom right process connection",
+        "to_component": "Off-page connector (NOTE 12)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "P-234-03304-CD3D-1-N",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-006",
+        "tag": "F3D-CD3D-DRAIN",
+        "component_type": "piping",
+        "label": "F3D-CD3D-DRAIN",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "from_component": "E-234-009 outlet side",
+        "to_component": "F3D / CD3D drain/vent connection",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "F3D-CD3D-DRAIN",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-007",
+        "tag": "VENDOR-PACKAGE-BOUNDARY",
+        "component_type": "piping",
+        "label": "VENDOR-PACKAGE-BOUNDARY",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.78,
+        "from_component": "E-234-009 package limit",
+        "to_component": "VENDOR boundary as shown by dashed box",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "VENDOR-PACKAGE-BOUNDARY",
+        "flow_direction": "N/A"
+      }
+    ],
+    "control_loops": [
+      {
+        "id": "LOOP-001",
+        "loop_number": "2911",
+        "loop_type": "feedback",
+        "measured_variable": "Temperature",
+        "controlled_variable": "",
+        "sensor_id": "TT-2911",
+        "controller_id": "TIC-2911",
+        "actuator_id": "TY-2911",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-002",
+        "loop_number": "2917",
+        "loop_type": "safety",
+        "measured_variable": "Temperature/Pressure",
+        "controlled_variable": "",
+        "sensor_id": "TT-2917",
+        "controller_id": "",
+        "actuator_id": "PSD-2917",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": true
+      },
+      {
+        "id": "LOOP-003",
+        "loop_number": "2903A",
+        "loop_type": "feedback",
+        "measured_variable": "Hand/Speed",
+        "controlled_variable": "",
+        "sensor_id": "",
+        "controller_id": "HIC-2903A",
+        "actuator_id": "HY-2903A",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-004",
+        "loop_number": "2903B",
+        "loop_type": "feedback",
+        "measured_variable": "Hand/Speed",
+        "controlled_variable": "",
+        "sensor_id": "",
+        "controller_id": "HIC-2903B",
+        "actuator_id": "HY-2903B",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-005",
+        "loop_number": "2901A",
+        "loop_type": "safety/motor-control",
+        "measured_variable": "Vibration/Motor Status",
+        "controlled_variable": "",
+        "sensor_id": "VSHH-2901A",
+        "controller_id": "SEQ-A-2901A",
+        "actuator_id": "MCC-A",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": true
+      },
+      {
+        "id": "LOOP-006",
+        "loop_number": "2901B",
+        "loop_type": "safety/motor-control",
+        "measured_variable": "Vibration/Motor Status",
+        "controlled_variable": "",
+        "sensor_id": "VSHH-2901B",
+        "controller_id": "SEQ-B-2901B",
+        "actuator_id": "MCC-B",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": true
+      },
+      {
+        "id": "LOOP-007",
+        "loop_number": "3200",
+        "loop_type": "safety",
+        "measured_variable": "Emergency Shutdown",
+        "controlled_variable": "",
+        "sensor_id": "ESD-3200",
+        "controller_id": "",
+        "actuator_id": "MCC-A and MCC-B",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": true
+      },
+      {
+        "id": "LOOP-008",
+        "loop_number": "2909",
+        "loop_type": "indication",
+        "measured_variable": "Temperature",
+        "controlled_variable": "",
+        "sensor_id": "TT-2909",
+        "controller_id": "",
+        "actuator_id": "",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "EQ-001",
+          "component_type": "equipment",
+          "tag": "E-234-009",
+          "label": "Shell-and-tube heat exchanger (or plate/air-cooler type per symbol), horizontal orientation. Vendor package unit per NOTE 7. Shows hatched tube bundle symbol with process fluid connections on both shell sides (inlet/outlet nozzles visible on left and right). Multiple RS (restriction/spectacle) valves on process connections. Part of vendor package boundary shown by dashed box.",
+          "properties": {
+            "subtype": "heat_exchanger"
+          }
+        },
+        {
+          "id": "INST-001",
+          "component_type": "instrument",
+          "tag": "TI-2909",
+          "label": "Temperature indicator on process inlet line, left side of exchanger area",
+          "properties": {
+            "measured_variable": "T",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-002",
+          "component_type": "instrument",
+          "tag": "TT-2909",
+          "label": "Temperature transmitter on process line, left side inlet",
+          "properties": {
+            "measured_variable": "T",
+            "function": "T",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-003",
+          "component_type": "instrument",
+          "tag": "TG-2910",
+          "label": "Temperature gauge on process line, left side inlet area",
+          "properties": {
+            "measured_variable": "T",
+            "function": "",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-004",
+          "component_type": "instrument",
+          "tag": "TY-2911",
+          "label": "Temperature computing relay/converter, top center of diagram, connected to TIC-2911 control loop. Receives signal from TT-2917 via dashed line.",
+          "properties": {
+            "measured_variable": "T",
+            "function": "Y",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-005",
+          "component_type": "instrument",
+          "tag": "TIC-2911",
+          "label": "Temperature indicating controller, right side panel-mounted instrument. Designated H (high) alarm. Controls heating medium or process temperature on E-234-009 outlet.",
+          "properties": {
+            "measured_variable": "T",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-006",
+          "component_type": "instrument",
+          "tag": "TT-2911",
+          "label": "Temperature transmitter on process outlet, right side of exchanger",
+          "properties": {
+            "measured_variable": "T",
+            "function": "T",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-007",
+          "component_type": "instrument",
+          "tag": "TG-2912",
+          "label": "Temperature gauge on process outlet line, right side",
+          "properties": {
+            "measured_variable": "T",
+            "function": "",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-008",
+          "component_type": "instrument",
+          "tag": "TT-2917",
+          "label": "Temperature transmitter on heating medium/utility inlet, far right side. Signal feeds TY-2911 and PSD-2917 logic.",
+          "properties": {
+            "measured_variable": "T",
+            "function": "T",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-009",
+          "component_type": "instrument",
+          "tag": "TI-2917",
+          "label": "Temperature indicator high-high (HH), far top right, associated with H-234-001 TRIP logic. Panel-mounted indicator.",
+          "properties": {
+            "measured_variable": "T",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-010",
+          "component_type": "instrument",
+          "tag": "PSD-2917",
+          "label": "Pressure/Temperature shutdown device (PSD) on utility/heating medium side, associated with H-234-001 TRIP. Safety function — high temperature trip.",
+          "properties": {
+            "measured_variable": "P",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-012",
+          "component_type": "instrument",
+          "tag": "HIC-2903A",
+          "label": "Hand indicating controller for pump/fan A speed or flow control. Panel-mounted, left side of motor control section.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-013",
+          "component_type": "instrument",
+          "tag": "HY-2903A",
+          "label": "Hand relay/signal converter for HIC-2903A output to variable speed drive A. Controls fan/blower A speed.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "Y",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-014",
+          "component_type": "instrument",
+          "tag": "HIC-2903B",
+          "label": "Hand indicating controller for pump/fan B speed control. Panel-mounted, right side.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-015",
+          "component_type": "instrument",
+          "tag": "HY-2903B",
+          "label": "Hand relay/signal converter for HIC-2903B output to variable speed drive B.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "Y",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-016",
+          "component_type": "instrument",
+          "tag": "VSHH-2901A",
+          "label": "Vibration switch high-high on fan/motor A. Safety function — triggers shutdown on high vibration. Associated with NOTE 9.",
+          "properties": {
+            "measured_variable": "V",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-017",
+          "component_type": "instrument",
+          "tag": "VSHH-2901B",
+          "label": "Vibration switch high-high on fan/motor B. Safety function. Associated with NOTE 9.",
+          "properties": {
+            "measured_variable": "V",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-018",
+          "component_type": "instrument",
+          "tag": "HS-2901A",
+          "label": "Hand switch for motor/fan A control. Panel-mounted, left side.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-019",
+          "component_type": "instrument",
+          "tag": "HS-2901B",
+          "label": "Hand switch for motor/fan B control. Panel-mounted, right side.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-020",
+          "component_type": "instrument",
+          "tag": "HS-2901A1",
+          "label": "Hand switch LOCAL/REMOTE selector for motor A. Located at MCC.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-021",
+          "component_type": "instrument",
+          "tag": "HS-2901B1",
+          "label": "Hand switch LOCAL/REMOTE selector for motor B. Located at MCC.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-022",
+          "component_type": "instrument",
+          "tag": "HS-2901A2",
+          "label": "Hand switch STOP/START for motor A at MCC level.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-023",
+          "component_type": "instrument",
+          "tag": "HS-2901B2",
+          "label": "Hand switch STOP/START for motor B at MCC level.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-024",
+          "component_type": "instrument",
+          "tag": "XI-2901A",
+          "label": "Status indicator AVAILABLE for motor/fan A. Shown at MCC.",
+          "properties": {
+            "measured_variable": "A",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-025",
+          "component_type": "instrument",
+          "tag": "XI-2901B",
+          "label": "Status indicator AVAILABLE for motor/fan B. Shown at MCC.",
+          "properties": {
+            "measured_variable": "A",
+            "function": "I",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-026",
+          "component_type": "instrument",
+          "tag": "VA-2901A",
+          "label": "Vibration alarm HH for motor/fan A. Panel alarm indicator.",
+          "properties": {
+            "measured_variable": "V",
+            "function": "A",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-027",
+          "component_type": "instrument",
+          "tag": "VA-2901B",
+          "label": "Vibration alarm HH for motor/fan B. Panel alarm indicator.",
+          "properties": {
+            "measured_variable": "V",
+            "function": "A",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-028",
+          "component_type": "instrument",
+          "tag": "ESD-3200",
+          "label": "Emergency shutdown device/input, appears on both motor A and motor B circuits. Safety interlock input to MCC for emergency stop.",
+          "properties": {
+            "measured_variable": "I",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-029",
+          "component_type": "instrument",
+          "tag": "XL-2901A",
+          "label": "Status light/indicator RUNNING/STOP for motor A.",
+          "properties": {
+            "measured_variable": "A",
+            "function": "",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-030",
+          "component_type": "instrument",
+          "tag": "XL-2901B",
+          "label": "Status light/indicator RUNNING/STOP for motor B.",
+          "properties": {
+            "measured_variable": "A",
+            "function": "",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-031",
+          "component_type": "instrument",
+          "tag": "XA-2901A",
+          "label": "Fault alarm indicator for motor/fan A.",
+          "properties": {
+            "measured_variable": "A",
+            "function": "A",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-032",
+          "component_type": "instrument",
+          "tag": "XA-2901B",
+          "label": "Fault alarm indicator for motor/fan B.",
+          "properties": {
+            "measured_variable": "A",
+            "function": "A",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-033",
+          "component_type": "instrument",
+          "tag": "HS-START-STOP-A-2901A",
+          "label": "Field/local hand switch START/STOP for motor A. Associated with NOTE 4,10.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-034",
+          "component_type": "instrument",
+          "tag": "HS-EMERGENCY-STOP-A-2901A",
+          "label": "Emergency stop hand switch for motor A, field-mounted circular symbol.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-035",
+          "component_type": "instrument",
+          "tag": "HS-START-STOP-B-2901B",
+          "label": "Field/local hand switch START/STOP for motor B. Associated with NOTE 4,10.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-036",
+          "component_type": "instrument",
+          "tag": "HS-EMERGENCY-STOP-B-2901B",
+          "label": "Emergency stop hand switch for motor B, field-mounted circular symbol.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "S",
+            "plc_io_type": "DI"
+          }
+        },
+        {
+          "id": "INST-037",
+          "component_type": "instrument",
+          "tag": "SEQ-A-2901A",
+          "label": "Sequence logic function block for motor A start/stop sequencing. Shown as SEQ with arrow symbol.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "INST-038",
+          "component_type": "instrument",
+          "tag": "SEQ-B-2901B",
+          "label": "Sequence logic function block for motor B start/stop sequencing.",
+          "properties": {
+            "measured_variable": "Z",
+            "function": "C",
+            "plc_io_type": ""
+          }
+        },
+        {
+          "id": "VLV-001",
+          "component_type": "valve",
+          "tag": "KV-2904",
+          "label": "Actuated valve on inlet process line, far left. Tag KV-2904, NOTE 8. Small actuator symbol shown.",
+          "properties": {
+            "valve_type": "control",
+            "plc_io_type": "AO",
+            "fail_position": "unknown"
+          }
+        },
+        {
+          "id": "VLV-002",
+          "component_type": "valve",
+          "tag": "CSO-LEFT-1",
+          "label": "Car-sealed open (CSO) isolation valve on inlet line, left side, upstream of KV-2904",
+          "properties": {
+            "valve_type": "other",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-003",
+          "component_type": "valve",
+          "tag": "CSO-Left-2",
+          "label": "Car-sealed open (CSO) isolation valve on inlet line, left side, downstream of KV-2904. Labeled NO POCKET.",
+          "properties": {
+            "valve_type": "other",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-004",
+          "component_type": "valve",
+          "tag": "Gate-1-LEFT",
+          "label": "Manual gate valve (1 inch) on drain/bypass line, left side. Near NOTE 2.",
+          "properties": {
+            "valve_type": "gate",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-005",
+          "component_type": "valve",
+          "tag": "RS-INLET-TOP-LEFT",
+          "label": "Restriction spectacle blind or restriction orifice RS on top inlet to E-234-009, left side, 8-inch line",
+          "properties": {
+            "valve_type": "other",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-006",
+          "component_type": "valve",
+          "tag": "RS-INLET-BOTTOM-LEFT",
+          "label": "Restriction spectacle blind RS on bottom inlet to E-234-009, left side",
+          "properties": {
+            "valve_type": "other",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-007",
+          "component_type": "valve",
+          "tag": "RS-OUTLET-TOP-RIGHT",
+          "label": "Restriction spectacle blind RS on top outlet from E-234-009, right side, 8-inch line",
+          "properties": {
+            "valve_type": "other",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-008",
+          "component_type": "valve",
+          "tag": "RS-OUTLET-BOTTOM-RIGHT",
+          "label": "Restriction spectacle blind RS on bottom outlet from E-234-009, right side",
+          "properties": {
+            "valve_type": "other",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-009",
+          "component_type": "valve",
+          "tag": "CV-HY-2903A",
+          "label": "Control valve operated by HY-2903A signal, on air/fluid supply to fan/motor A assembly. Butterfly or globe body with diaphragm actuator.",
+          "properties": {
+            "valve_type": "check",
+            "plc_io_type": "",
+            "fail_position": "unknown"
+          }
+        },
+        {
+          "id": "VLV-010",
+          "component_type": "valve",
+          "tag": "CV-HY-2903B",
+          "label": "Control valve operated by HY-2903B signal, on air/fluid supply to fan/motor B assembly.",
+          "properties": {
+            "valve_type": "check",
+            "plc_io_type": "",
+            "fail_position": "unknown"
+          }
+        },
+        {
+          "id": "VLV-011",
+          "component_type": "valve",
+          "tag": "CHECK-VALVE-A",
+          "label": "Check valve on fan/motor A discharge line, prevents backflow",
+          "properties": {
+            "valve_type": "check",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-012",
+          "component_type": "valve",
+          "tag": "CHECK-VALVE-B",
+          "label": "Check valve on fan/motor B discharge line, prevents backflow",
+          "properties": {
+            "valve_type": "check",
+            "plc_io_type": "",
+            "fail_position": ""
+          }
+        },
+        {
+          "id": "VLV-013",
+          "component_type": "valve",
+          "tag": "NC-VALVE-RIGHT",
+          "label": "Normally closed (NC) valve on piping at bottom right, connected to P-234-03304-CD3D-1-N off-page connector. NOTE 12.",
+          "properties": {
+            "valve_type": "other",
+            "plc_io_type": "",
+            "fail_position": "closed"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source_id": "Off-page source",
+          "target_id": "E-234-009 shell/tube inlet (top left)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "8-inch-INLET-LEFT"
+          }
+        },
+        {
+          "source_id": "Off-page source",
+          "target_id": "E-234-009 shell/tube inlet (bottom left)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "8-inch-INLET-BOTTOM-LEFT"
+          }
+        },
+        {
+          "source_id": "E-234-009 shell/tube outlet (top right)",
+          "target_id": "Off-page destination / FREE DRAINING header",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "8-inch-OUTLET-TOP-RIGHT"
+          }
+        },
+        {
+          "source_id": "E-234-009 shell/tube outlet (bottom right)",
+          "target_id": "Off-page destination",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "8-inch-OUTLET-BOTTOM-RIGHT"
+          }
+        },
+        {
+          "source_id": "Bottom right process connection",
+          "target_id": "Off-page connector (NOTE 12)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "P-234-03304-CD3D-1-N"
+          }
+        },
+        {
+          "source_id": "E-234-009 outlet side",
+          "target_id": "F3D / CD3D drain/vent connection",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "F3D-CD3D-DRAIN"
+          }
+        },
+        {
+          "source_id": "E-234-009 package limit",
+          "target_id": "VENDOR boundary as shown by dashed box",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "VENDOR-PACKAGE-BOUNDARY"
+          }
+        },
+        {
+          "source_id": "INST-006",
+          "target_id": "INST-005",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "2911"
+          }
+        },
+        {
+          "source_id": "INST-005",
+          "target_id": "INST-004",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "2911"
+          }
+        },
+        {
+          "source_id": "INST-012",
+          "target_id": "INST-013",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "2903A"
+          }
+        },
+        {
+          "source_id": "INST-014",
+          "target_id": "INST-015",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "2903B"
+          }
+        },
+        {
+          "source_id": "INST-016",
+          "target_id": "INST-037",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "2901A"
+          }
+        },
+        {
+          "source_id": "INST-037",
+          "target_id": "MCC-A",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "2901A"
+          }
+        },
+        {
+          "source_id": "INST-017",
+          "target_id": "INST-038",
+          "edge_type": "SIGNALS_TO",
+          "properties": {
+            "loop": "2901B"
+          }
+        },
+        {
+          "source_id": "INST-038",
+          "target_id": "MCC-B",
+          "edge_type": "CONTROLS",
+          "properties": {
+            "loop": "2901B"
+          }
+        }
+      ]
+    },
+    "extraction_confidence": 0.78,
+    "warnings": [
+      "VLM notes: This P&ID shows a vendor package air cooler or heat exchanger E-234-009 (NOTE 7 — vendor supply) with dual motor-driven fans/blowers (A and B trains) in the lower section, each with local MCC control, LOCAL/REMOTE selection, START/STOP and EMERGENCY STOP hand switches, vibration high-high switches (VSHH-2901A/B), availability and fault indicators, and running/stop status lights. The upper section shows temperature measurement and control associated with the exchanger process streams. RS symbols (restriction spectacle blinds) are shown on all four process nozzle connections with 8-inch line designations. A spectacle blind or restriction orifice is at 0 degree orientation noted on the 8-inch lines. TY-2911 acts as a computing relay receiving input from TT-2917 and feeding TIC-2911. PSD-2917 appears to be a safety device linked to H-234-001 TRIP function on the heating medium side. KV-2904 (NOTE 8) is an actuated valve on the inlet line with CSO block valves on either side. The bottom right shows an off-page connector to line P-234-03304-CD3D-1-N per NOTE 12. F3D and CD3D designations on the right outlet side likely refer to drain and drain collection header connections. The two circular symbols at bottom centre appear to be accumulator pots or seal pots for the fan/motor assemblies. ESD-3200 appears twice (once for each motor train) suggesting a common emergency shutdown loop feeding both MCCs. Diagram quality is moderate; some small text and annotation details may be partially obscured. NOTE 4 and NOTE 10 apply to the field START/STOP switches; NOTE 9 applies to vibration switches. The VENDOR boundary dashed box encompasses E-234-009 and associated trim.",
+      "Extraction confidence (0.78) below threshold (0.85). Consider DEXPI input for validation.",
+      "Fixed tag: 'HS-START-STOP-A' → 'HS-START-STOP-A-2901A'",
+      "Fixed tag: 'HS-EMERGENCY-STOP-A' → 'HS-EMERGENCY-STOP-A-2901A'",
+      "Fixed tag: 'HS-START-STOP-B' → 'HS-START-STOP-B-2901B'",
+      "Fixed tag: 'HS-EMERGENCY-STOP-B' → 'HS-EMERGENCY-STOP-B-2901B'",
+      "Fixed tag: 'SEQ-A' → 'SEQ-A-2901A'",
+      "Fixed tag: 'SEQ-B' → 'SEQ-B-2901B'",
+      "ISA-5.1 override: valve CV-HY-2903A type control → check",
+      "ISA-5.1 override: valve CV-HY-2903B type control → check"
+    ],
+    "raw_vlm_output": "```json\n{\n  \"equipment\": [\n    {\n      \"tag\": \"E-234-009\",\n      \"subtype\": \"heat_exchanger\",\n      \"description\": \"Shell-and-tube heat exchanger (or plate/air-cooler type per symbol), horizontal orientation. Vendor package unit per NOTE 7. Shows hatched tube bundle symbol with process fluid connections on both shell sides (inlet/outlet nozzles visible on left and right). Multiple RS (restriction/spectacle) valves on process connections. Part of vendor package boundary shown by dashed box.\"\n    }\n  ],\n  \"instruments\": [\n    {\n      \"tag\": \"TI-2909\",\n      \"measured_variable\": \"T\",\n      \"function\": \"I\",\n      \"loop_number\": \"2909\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature indicator on process inlet line, left side of exchanger area\"\n    },\n    {\n      \"tag\": \"TT-2909\",\n      \"measured_variable\": \"T\",\n      \"function\": \"T\",\n      \"loop_number\": \"2909\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature transmitter on process line, left side inlet\"\n    },\n    {\n      \"tag\": \"TG-2910\",\n      \"measured_variable\": \"T\",\n      \"function\": \"G\",\n      \"loop_number\": \"2910\",\n      \"plc_io_type\": null,\n      \"description\": \"Temperature gauge on process line, left side inlet area\"\n    },\n    {\n      \"tag\": \"TY-2911\",\n      \"measured_variable\": \"T\",\n      \"function\": \"Y\",\n      \"loop_number\": \"2911\",\n      \"plc_io_type\": null,\n      \"description\": \"Temperature computing relay/converter, top center of diagram, connected to TIC-2911 control loop. Receives signal from TT-2917 via dashed line.\"\n    },\n    {\n      \"tag\": \"TIC-2911\",\n      \"measured_variable\": \"T\",\n      \"function\": \"C\",\n      \"loop_number\": \"2911\",\n      \"plc_io_type\": null,\n      \"description\": \"Temperature indicating controller, right side panel-mounted instrument. Designated H (high) alarm. Controls heating medium or process temperature on E-234-009 outlet.\"\n    },\n    {\n      \"tag\": \"TT-2911\",\n      \"measured_variable\": \"T\",\n      \"function\": \"T\",\n      \"loop_number\": \"2911\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature transmitter on process outlet, right side of exchanger\"\n    },\n    {\n      \"tag\": \"TG-2912\",\n      \"measured_variable\": \"T\",\n      \"function\": \"G\",\n      \"loop_number\": \"2912\",\n      \"plc_io_type\": null,\n      \"description\": \"Temperature gauge on process outlet line, right side\"\n    },\n    {\n      \"tag\": \"TT-2917\",\n      \"measured_variable\": \"T\",\n      \"function\": \"T\",\n      \"loop_number\": \"2917\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Temperature transmitter on heating medium/utility inlet, far right side. Signal feeds TY-2911 and PSD-2917 logic.\"\n    },\n    {\n      \"tag\": \"TI-2917\",\n      \"measured_variable\": \"T\",\n      \"function\": \"I\",\n      \"loop_number\": \"2917\",\n      \"plc_io_type\": null,\n      \"description\": \"Temperature indicator high-high (HH), far top right, associated with H-234-001 TRIP logic. Panel-mounted indicator.\"\n    },\n    {\n      \"tag\": \"PSD-2917\",\n      \"measured_variable\": \"P\",\n      \"function\": \"S\",\n      \"loop_number\": \"2917\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Pressure/Temperature shutdown device (PSD) on utility/heating medium side, associated with H-234-001 TRIP. Safety function — high temperature trip.\"\n    },\n    {\n      \"tag\": \"KV-2904\",\n      \"measured_variable\": \"K\",\n      \"function\": \"V\",\n      \"loop_number\": \"2904\",\n      \"plc_io_type\": \"AO\",\n      \"description\": \"Control/time-operated valve on inlet line, far left. Associated with NOTE 8.\"\n    },\n    {\n      \"tag\": \"HIC-2903A\",\n      \"measured_variable\": \"H\",\n      \"function\": \"C\",\n      \"loop_number\": \"2903A\",\n      \"plc_io_type\": null,\n      \"description\": \"Hand indicating controller for pump/fan A speed or flow control. Panel-mounted, left side of motor control section.\"\n    },\n    {\n      \"tag\": \"HY-2903A\",\n      \"measured_variable\": \"H\",\n      \"function\": \"Y\",\n      \"loop_number\": \"2903A\",\n      \"plc_io_type\": null,\n      \"description\": \"Hand relay/signal converter for HIC-2903A output to variable speed drive A. Controls fan/blower A speed.\"\n    },\n    {\n      \"tag\": \"HIC-2903B\",\n      \"measured_variable\": \"H\",\n      \"function\": \"C\",\n      \"loop_number\": \"2903B\",\n      \"plc_io_type\": null,\n      \"description\": \"Hand indicating controller for pump/fan B speed control. Panel-mounted, right side.\"\n    },\n    {\n      \"tag\": \"HY-2903B\",\n      \"measured_variable\": \"H\",\n      \"function\": \"Y\",\n      \"loop_number\": \"2903B\",\n      \"plc_io_type\": null,\n      \"description\": \"Hand relay/signal converter for HIC-2903B output to variable speed drive B.\"\n    },\n    {\n      \"tag\": \"VSHH-2901A\",\n      \"measured_variable\": \"V\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Vibration switch high-high on fan/motor A. Safety function — triggers shutdown on high vibration. Associated with NOTE 9.\"\n    },\n    {\n      \"tag\": \"VSHH-2901B\",\n      \"measured_variable\": \"V\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Vibration switch high-high on fan/motor B. Safety function. Associated with NOTE 9.\"\n    },\n    {\n      \"tag\": \"HS-2901A\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Hand switch for motor/fan A control. Panel-mounted, left side.\"\n    },\n    {\n      \"tag\": \"HS-2901B\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Hand switch for motor/fan B control. Panel-mounted, right side.\"\n    },\n    {\n      \"tag\": \"HS-2901A1\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Hand switch LOCAL/REMOTE selector for motor A. Located at MCC.\"\n    },\n    {\n      \"tag\": \"HS-2901B1\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Hand switch LOCAL/REMOTE selector for motor B. Located at MCC.\"\n    },\n    {\n      \"tag\": \"HS-2901A2\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Hand switch STOP/START for motor A at MCC level.\"\n    },\n    {\n      \"tag\": \"HS-2901B2\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Hand switch STOP/START for motor B at MCC level.\"\n    },\n    {\n      \"tag\": \"XI-2901A\",\n      \"measured_variable\": \"X\",\n      \"function\": \"I\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": null,\n      \"description\": \"Status indicator AVAILABLE for motor/fan A. Shown at MCC.\"\n    },\n    {\n      \"tag\": \"XI-2901B\",\n      \"measured_variable\": \"X\",\n      \"function\": \"I\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": null,\n      \"description\": \"Status indicator AVAILABLE for motor/fan B. Shown at MCC.\"\n    },\n    {\n      \"tag\": \"VA-2901A\",\n      \"measured_variable\": \"V\",\n      \"function\": \"A\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": null,\n      \"description\": \"Vibration alarm HH for motor/fan A. Panel alarm indicator.\"\n    },\n    {\n      \"tag\": \"VA-2901B\",\n      \"measured_variable\": \"V\",\n      \"function\": \"A\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": null,\n      \"description\": \"Vibration alarm HH for motor/fan B. Panel alarm indicator.\"\n    },\n    {\n      \"tag\": \"ESD-3200\",\n      \"measured_variable\": \"E\",\n      \"function\": \"S\",\n      \"loop_number\": \"3200\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Emergency shutdown device/input, appears on both motor A and motor B circuits. Safety interlock input to MCC for emergency stop.\"\n    },\n    {\n      \"tag\": \"XL-2901A\",\n      \"measured_variable\": \"X\",\n      \"function\": \"L\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": null,\n      \"description\": \"Status light/indicator RUNNING/STOP for motor A.\"\n    },\n    {\n      \"tag\": \"XL-2901B\",\n      \"measured_variable\": \"X\",\n      \"function\": \"L\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": null,\n      \"description\": \"Status light/indicator RUNNING/STOP for motor B.\"\n    },\n    {\n      \"tag\": \"XA-2901A\",\n      \"measured_variable\": \"X\",\n      \"function\": \"A\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": null,\n      \"description\": \"Fault alarm indicator for motor/fan A.\"\n    },\n    {\n      \"tag\": \"XA-2901B\",\n      \"measured_variable\": \"X\",\n      \"function\": \"A\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": null,\n      \"description\": \"Fault alarm indicator for motor/fan B.\"\n    },\n    {\n      \"tag\": \"HS-START-STOP-A\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Field/local hand switch START/STOP for motor A. Associated with NOTE 4,10.\"\n    },\n    {\n      \"tag\": \"HS-EMERGENCY-STOP-A\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Emergency stop hand switch for motor A, field-mounted circular symbol.\"\n    },\n    {\n      \"tag\": \"HS-START-STOP-B\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Field/local hand switch START/STOP for motor B. Associated with NOTE 4,10.\"\n    },\n    {\n      \"tag\": \"HS-EMERGENCY-STOP-B\",\n      \"measured_variable\": \"H\",\n      \"function\": \"S\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": \"DI\",\n      \"description\": \"Emergency stop hand switch for motor B, field-mounted circular symbol.\"\n    },\n    {\n      \"tag\": \"SEQ-A\",\n      \"measured_variable\": \"Y\",\n      \"function\": \"C\",\n      \"loop_number\": \"2901A\",\n      \"plc_io_type\": null,\n      \"description\": \"Sequence logic function block for motor A start/stop sequencing. Shown as SEQ with arrow symbol.\"\n    },\n    {\n      \"tag\": \"SEQ-B\",\n      \"measured_variable\": \"Y\",\n      \"function\": \"C\",\n      \"loop_number\": \"2901B\",\n      \"plc_io_type\": null,\n      \"description\": \"Sequence logic function block for motor B start/stop sequencing.\"\n    }\n  ],\n  \"valves\": [\n    {\n      \"tag\": \"KV-2904\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"unknown\",\n      \"actuator_type\": \"pneumatic/solenoid\",\n      \"description\": \"Actuated valve on inlet process line, far left. Tag KV-2904, NOTE 8. Small actuator symbol shown.\"\n    },\n    {\n      \"tag\": \"CSO-LEFT-1\",\n      \"valve_type\": \"isolation\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Car-sealed open (CSO) isolation valve on inlet line, left side, upstream of KV-2904\"\n    },\n    {\n      \"tag\": \"CSO-Left-2\",\n      \"valve_type\": \"isolation\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Car-sealed open (CSO) isolation valve on inlet line, left side, downstream of KV-2904. Labeled NO POCKET.\"\n    },\n    {\n      \"tag\": \"Gate-1-LEFT\",\n      \"valve_type\": \"gate\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Manual gate valve (1 inch) on drain/bypass line, left side. Near NOTE 2.\"\n    },\n    {\n      \"tag\": \"RS-INLET-TOP-LEFT\",\n      \"valve_type\": \"restriction\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Restriction spectacle blind or restriction orifice RS on top inlet to E-234-009, left side, 8-inch line\"\n    },\n    {\n      \"tag\": \"RS-INLET-BOTTOM-LEFT\",\n      \"valve_type\": \"restriction\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Restriction spectacle blind RS on bottom inlet to E-234-009, left side\"\n    },\n    {\n      \"tag\": \"RS-OUTLET-TOP-RIGHT\",\n      \"valve_type\": \"restriction\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Restriction spectacle blind RS on top outlet from E-234-009, right side, 8-inch line\"\n    },\n    {\n      \"tag\": \"RS-OUTLET-BOTTOM-RIGHT\",\n      \"valve_type\": \"restriction\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Restriction spectacle blind RS on bottom outlet from E-234-009, right side\"\n    },\n    {\n      \"tag\": \"CV-HY-2903A\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"unknown\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Control valve operated by HY-2903A signal, on air/fluid supply to fan/motor A assembly. Butterfly or globe body with diaphragm actuator.\"\n    },\n    {\n      \"tag\": \"CV-HY-2903B\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"unknown\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Control valve operated by HY-2903B signal, on air/fluid supply to fan/motor B assembly.\"\n    },\n    {\n      \"tag\": \"CHECK-VALVE-A\",\n      \"valve_type\": \"check\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"self-actuated\",\n      \"description\": \"Check valve on fan/motor A discharge line, prevents backflow\"\n    },\n    {\n      \"tag\": \"CHECK-VALVE-B\",\n      \"valve_type\": \"check\",\n      \"fail_position\": \"\",\n      \"actuator_type\": \"self-actuated\",\n      \"description\": \"Check valve on fan/motor B discharge line, prevents backflow\"\n    },\n    {\n      \"tag\": \"NC-VALVE-RIGHT\",\n      \"valve_type\": \"isolation\",\n      \"fail_position\": \"closed\",\n      \"actuator_type\": \"manual\",\n      \"description\": \"Normally closed (NC) valve on piping at bottom right, connected to P-234-03304-CD3D-1-N off-page connector. NOTE 12.\"\n    }\n  ],\n  \"piping\": [\n    {\n      \"line_number\": \"8-inch-INLET-LEFT\",\n      \"from_component\": \"Off-page source\",\n      \"to_component\": \"E-234-009 shell/tube inlet (top left)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"8-inch-INLET-BOTTOM-LEFT\",\n      \"from_component\": \"Off-page source\",\n      \"to_component\": \"E-234-009 shell/tube inlet (bottom left)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"8-inch-OUTLET-TOP-RIGHT\",\n      \"from_component\": \"E-234-009 shell/tube outlet (top right)\",\n      \"to_component\": \"Off-page destination / FREE DRAINING header\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"8-inch-OUTLET-BOTTOM-RIGHT\",\n      \"from_component\": \"E-234-009 shell/tube outlet (bottom right)\",\n      \"to_component\": \"Off-page destination\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"P-234-03304-CD3D-1-N\",\n      \"from_component\": \"Bottom right process connection\",\n      \"to_component\": \"Off-page connector (NOTE 12)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"F3D-CD3D-DRAIN\",\n      \"from_component\": \"E-234-009 outlet side\",\n      \"to_component\": \"F3D / CD3D drain/vent connection\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"VENDOR-PACKAGE-BOUNDARY\",\n      \"from_component\": \"E-234-009 package limit\",\n      \"to_component\": \"VENDOR boundary as shown by dashed box\",\n      \"flow_direction\": \"N/A\"\n    }\n  ],\n  \"control_loops\": [\n    {\n      \"loop_number\": \"2911\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Temperature\",\n      \"sensor_tag\": \"TT-2911\",\n      \"controller_tag\": \"TIC-2911\",\n      \"actuator_tag\": \"TY-2911\",\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"2917\",\n      \"loop_type\": \"safety\",\n      \"measured_variable\": \"Temperature/Pressure\",\n      \"sensor_tag\": \"TT-2917\",\n      \"controller_tag\": null,\n      \"actuator_tag\": \"PSD-2917\",\n      \"is_safety_function\": true\n    },\n    {\n      \"loop_number\": \"2903A\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Hand/Speed\",\n      \"sensor_tag\": null,\n      \"controller_tag\": \"HIC-2903A\",\n      \"actuator_tag\": \"HY-2903A\",\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"2903B\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Hand/Speed\",\n      \"sensor_tag\": null,\n      \"controller_tag\": \"HIC-2903B\",\n      \"actuator_tag\": \"HY-2903B\",\n      \"is_safety_function\": false\n    },\n    {\n      \"loop_number\": \"2901A\",\n      \"loop_type\": \"safety/motor-control\",\n      \"measured_variable\": \"Vibration/Motor Status\",\n      \"sensor_tag\": \"VSHH-2901A\",\n      \"controller_tag\": \"SEQ-A\",\n      \"actuator_tag\": \"MCC-A\",\n      \"is_safety_function\": true\n    },\n    {\n      \"loop_number\": \"2901B\",\n      \"loop_type\": \"safety/motor-control\",\n      \"measured_variable\": \"Vibration/Motor Status\",\n      \"sensor_tag\": \"VSHH-2901B\",\n      \"controller_tag\": \"SEQ-B\",\n      \"actuator_tag\": \"MCC-B\",\n      \"is_safety_function\": true\n    },\n    {\n      \"loop_number\": \"3200\",\n      \"loop_type\": \"safety\",\n      \"measured_variable\": \"Emergency Shutdown\",\n      \"sensor_tag\": \"ESD-3200\",\n      \"controller_tag\": null,\n      \"actuator_tag\": \"MCC-A and MCC-B\",\n      \"is_safety_function\": true\n    },\n    {\n      \"loop_number\": \"2909\",\n      \"loop_type\": \"indication\",\n      \"measured_variable\": \"Temperature\",\n      \"sensor_tag\": \"TT-2909\",\n      \"controller_tag\": null,\n      \"actuator_tag\": null,\n      \"is_safety_function\": false\n    }\n  ],\n  \"extraction_confidence\": 0.78,\n  \"notes\": \"This P&ID shows a vendor package air cooler or heat exchanger E-234-009 (NOTE 7 — vendor supply) with dual motor-driven fans/blowers (A and B trains) in the lower section, each with local MCC control, LOCAL/REMOTE selection, START/STOP and EMERGENCY STOP hand switches, vibration high-high switches (VSHH-2901A/B), availability and fault indicators, and running/stop status lights. The upper section shows temperature measurement and control associated with the exchanger process streams. RS symbols (restriction spectacle blinds) are shown on all four process nozzle connections with 8-inch line designations. A spectacle blind or restriction orifice is at 0 degree orientation noted on the 8-inch lines. TY-2911 acts as a computing relay receiving input from TT-2917 and feeding TIC-2911. PSD-2917 appears to be a safety device linked to H-234-001 TRIP function on the heating medium side. KV-2904 (NOTE 8) is an actuated valve on the inlet line with CSO block valves on either side. The bottom right shows an off-page connector to line P-234-03304-CD3D-1-N per NOTE 12. F3D and CD3D designations on the right outlet side likely refer to drain and drain collection header connections. The two circular symbols at bottom centre appear to be accumulator pots or seal pots for the fan/motor assemblies. ESD-3200 appears twice (once for each motor train) suggesting a common emergency shutdown loop feeding both MCCs. Diagram quality is moderate; some small text and annotation details may be partially obscured. NOTE 4 and NOTE 10 apply to the field START/STOP switches; NOTE 9 applies to vibration switches. The VENDOR boundary dashed box encompasses E-234-009 and associated trim.\"\n}\n```"
+  },
+  "generated_code": {
+    "code": "(* Generated by SafePLC-Gen Multimodal — CODESYS 3.5 *)\n(* IEC 61131-3 Structured Text *)\n(* Date: 2026-04-25T12:15:34.199960 *)\n\nPROGRAM PRG_Compressor_2901\n\nVAR\n    TI_2909_Raw                  AT %IW0       : INT := 0;\n    TI_2917_Raw                  AT %IW2       : INT := 0;\n    TT_2909_Raw                  AT %IW4       : INT := 0;\n    TT_2911_Raw                  AT %IW6       : INT := 0;\n    TT_2917_Raw                  AT %IW8       : INT := 0;\n    XI_2901A_Raw                 AT %IW10      : INT := 0;\n    XI_2901B_Raw                 AT %IW12      : INT := 0;\n    KV_2904_Out                  AT %QW0       : INT := 0;\n    ESD_3200                     AT %IX0.0     : BOOL := FALSE;\n    HS_2901A                     AT %IX0.1     : BOOL := FALSE;\n    HS_2901A1                    AT %IX0.2     : BOOL := FALSE;\n    HS_2901A2                    AT %IX0.3     : BOOL := FALSE;\n    HS_2901B                     AT %IX0.4     : BOOL := FALSE;\n    HS_2901B1                    AT %IX0.5     : BOOL := FALSE;\n    HS_2901B2                    AT %IX0.6     : BOOL := FALSE;\n    HS_EMERGENCY_STOP_A_2901A    AT %IX0.7     : BOOL := FALSE;\n    HS_EMERGENCY_STOP_B_2901B    AT %IX1.0     : BOOL := FALSE;\n    HS_START_STOP_A_2901A        AT %IX1.1     : BOOL := FALSE;\n    HS_START_STOP_B_2901B        AT %IX1.2     : BOOL := FALSE;\n    PSD_2917                     AT %IX1.3     : BOOL := FALSE;\n    VSHH_2901A                   AT %IX1.4     : BOOL := FALSE;\n    VSHH_2901B                   AT %IX1.5     : BOOL := FALSE;\n    ESTOP                        AT %IX2.0     : BOOL := FALSE;\n    MANUAL_RESET                 AT %IX2.1     : BOOL := FALSE;\n    MCC_A_Out                    AT %QX0.0     : BOOL := FALSE;\n    MCC_B_Out                    AT %QX0.1     : BOOL := FALSE;\n    PSD_2917_Out                 AT %QX0.2     : BOOL := FALSE;\n    MCC_A_and_MCC_B_Out          AT %QX0.3     : BOOL := FALSE;\nEND_VAR\n\nVAR\n    TI_2909_Scaled               : REAL := 0.0;\n    TT_2909_Scaled               : REAL := 0.0;\n    TT_2911_Scaled               : REAL := 0.0;\n    TT_2917_Scaled               : REAL := 0.0;\n    TI_2917_Scaled               : REAL := 0.0;\n    XI_2901A_Scaled              : REAL := 0.0;\n    XI_2901B_Scaled              : REAL := 0.0;\n\n    TI_2909_HH_SP                : REAL := 120.0;\n    TI_2909_H_SP                 : REAL := 110.0;\n    TI_2909_L_SP                 : REAL := 10.0;\n    TI_2909_LL_SP                : REAL := 5.0;\n    TI_2909_Deadband             : REAL := 2.0;\n    TI_2909_HH                   : BOOL := FALSE;\n    TI_2909_H                    : BOOL := FALSE;\n    TI_2909_L                    : BOOL := FALSE;\n    TI_2909_LL                   : BOOL := FALSE;\n    TI_2909_HH_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TI_2909_LL_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TI_2909_HH_Ack               : BOOL := FALSE;\n    TI_2909_LL_Ack               : BOOL := FALSE;\n\n    TT_2909_HH_SP                : REAL := 120.0;\n    TT_2909_H_SP                 : REAL := 110.0;\n    TT_2909_L_SP                 : REAL := 10.0;\n    TT_2909_LL_SP                : REAL := 5.0;\n    TT_2909_Deadband             : REAL := 2.0;\n    TT_2909_HH                   : BOOL := FALSE;\n    TT_2909_H                    : BOOL := FALSE;\n    TT_2909_L                    : BOOL := FALSE;\n    TT_2909_LL                   : BOOL := FALSE;\n    TT_2909_HH_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TT_2909_LL_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TT_2909_HH_Ack               : BOOL := FALSE;\n    TT_2909_LL_Ack               : BOOL := FALSE;\n\n    TT_2911_HH_SP                : REAL := 120.0;\n    TT_2911_H_SP                 : REAL := 110.0;\n    TT_2911_L_SP                 : REAL := 10.0;\n    TT_2911_LL_SP                : REAL := 5.0;\n    TT_2911_Deadband             : REAL := 2.0;\n    TT_2911_HH                   : BOOL := FALSE;\n    TT_2911_H                    : BOOL := FALSE;\n    TT_2911_L                    : BOOL := FALSE;\n    TT_2911_LL                   : BOOL := FALSE;\n    TT_2911_HH_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TT_2911_LL_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TT_2911_HH_Ack               : BOOL := FALSE;\n    TT_2911_LL_Ack               : BOOL := FALSE;\n\n    TIC_2911_SP                  : REAL := 60.0;\n    TIC_2911_Kp                  : REAL := 1.5;\n    TIC_2911_Ki                  : REAL := 0.05;\n    TIC_2911_Error               : REAL := 0.0;\n    TIC_2911_Integral            : REAL := 0.0;\n    TIC_2911_Output              : REAL := 0.0;\n\n    TT_2917_HH_SP                : REAL := 130.0;\n    TT_2917_H_SP                 : REAL := 120.0;\n    TT_2917_L_SP                 : REAL := 10.0;\n    TT_2917_LL_SP                : REAL := 5.0;\n    TT_2917_Deadband             : REAL := 2.0;\n    TT_2917_HH                   : BOOL := FALSE;\n    TT_2917_H                    : BOOL := FALSE;\n    TT_2917_L                    : BOOL := FALSE;\n    TT_2917_LL                   : BOOL := FALSE;\n    TT_2917_HH_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TT_2917_LL_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TT_2917_HH_Ack               : BOOL := FALSE;\n    TT_2917_LL_Ack               : BOOL := FALSE;\n\n    TI_2917_HH_SP                : REAL := 130.0;\n    TI_2917_H_SP                 : REAL := 120.0;\n    TI_2917_L_SP                 : REAL := 10.0;\n    TI_2917_LL_SP                : REAL := 5.0;\n    TI_2917_Deadband             : REAL := 2.0;\n    TI_2917_HH                   : BOOL := FALSE;\n    TI_2917_H                    : BOOL := FALSE;\n    TI_2917_L                    : BOOL := FALSE;\n    TI_2917_LL                   : BOOL := FALSE;\n    TI_2917_HH_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TI_2917_LL_Latch             : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    TI_2917_HH_Ack               : BOOL := FALSE;\n    TI_2917_LL_Ack               : BOOL := FALSE;\n\n    XI_2901A_HH_SP               : REAL := 90.0;\n    XI_2901A_H_SP                : REAL := 80.0;\n    XI_2901A_L_SP                : REAL := 10.0;\n    XI_2901A_LL_SP               : REAL := 5.0;\n    XI_2901A_Deadband            : REAL := 2.0;\n    XI_2901A_HH                  : BOOL := FALSE;\n    XI_2901A_H                   : BOOL := FALSE;\n    XI_2901A_L                   : BOOL := FALSE;\n    XI_2901A_LL                  : BOOL := FALSE;\n    XI_2901A_HH_Latch            : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    XI_2901A_LL_Latch            : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    XI_2901A_HH_Ack              : BOOL := FALSE;\n    XI_2901A_LL_Ack              : BOOL := FALSE;\n\n    XI_2901B_HH_SP               : REAL := 90.0;\n    XI_2901B_H_SP                : REAL := 80.0;\n    XI_2901B_L_SP                : REAL := 10.0;\n    XI_2901B_LL_SP               : REAL := 5.0;\n    XI_2901B_Deadband            : REAL := 2.0;\n    XI_2901B_HH                  : BOOL := FALSE;\n    XI_2901B_H                   : BOOL := FALSE;\n    XI_2901B_L                   : BOOL := FALSE;\n    XI_2901B_LL                  : BOOL := FALSE;\n    XI_2901B_HH_Latch            : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    XI_2901B_LL_Latch            : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n    XI_2901B_HH_Ack              : BOOL := FALSE;\n    XI_2901B_LL_Ack              : BOOL := FALSE;\n\n    LOOP_2917_TRIP               : BOOL := FALSE;\n    LOOP_2901A_TRIP              : BOOL := FALSE;\n    LOOP_2901B_TRIP              : BOOL := FALSE;\n    LOOP_3200_TRIP               : BOOL := FALSE;\n\n    TT_2917_HH_Trip              : BOOL := FALSE;\n    TT_2917_LL_Trip              : BOOL := FALSE;\n    VSHH_2901A_HH                : BOOL := FALSE;\n    VSHH_2901A_LL                : BOOL := FALSE;\n    VSHH_2901B_HH                : BOOL := FALSE;\n    VSHH_2901B_LL                : BOOL := FALSE;\n    ESD_3200_HH                  : BOOL := FALSE;\n    ESD_3200_LL                  : BOOL := FALSE;\n\n    SAFE_STATE                   : BOOL := FALSE;\n\n    MotorA_LocalMode             : BOOL := FALSE;\n    MotorA_StartCmd              : BOOL := FALSE;\n    MotorA_StopCmd               : BOOL := FALSE;\n    MotorA_Run                   : BOOL := FALSE;\n    MotorA_Latch                 : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n\n    MotorB_LocalMode             : BOOL := FALSE;\n    MotorB_StartCmd              : BOOL := FALSE;\n    MotorB_StopCmd               : BOOL := FALSE;\n    MotorB_Run                   : BOOL := FALSE;\n    MotorB_Latch                 : SR := (S1 := FALSE, R := FALSE, Q1 := FALSE);\n\n    StartupDelay                 : TON := (IN := FALSE, PT := T#3S);\n\n    System_Alarm                 : BOOL := FALSE;\n    FirstScan                    : BOOL := TRUE;\nEND_VAR\n\nIF FirstScan THEN\n    LOOP_2917_TRIP       := TRUE;\n    LOOP_2901A_TRIP      := TRUE;\n    LOOP_2901B_TRIP      := TRUE;\n    LOOP_3200_TRIP       := TRUE;\n    SAFE_STATE           := TRUE;\n    KV_2904_Out          := 6554;\n    MCC_A_Out            := FALSE;\n    MCC_B_Out            := FALSE;\n    PSD_2917_Out         := FALSE;\n    MCC_A_and_MCC_B_Out  := FALSE;\n    TIC_2911_Integral    := 0.0;\n    FirstScan            := FALSE;\n    RETURN;\nEND_IF;\n\nTI_2909_Scaled  := ((INT_TO_REAL(TI_2909_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTT_2909_Scaled  := ((INT_TO_REAL(TT_2909_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTT_2911_Scaled  := ((INT_TO_REAL(TT_2911_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTT_2917_Scaled  := ((INT_TO_REAL(TT_2917_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nTI_2917_Scaled  := ((INT_TO_REAL(TI_2917_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;\nXI_2901A_Scaled := ((INT_TO_REAL(XI_2901A_Raw) - 6554.0) / (32767.0 - 6554.0)) * 100.0;\nXI_2901B_Scaled := ((INT_TO_REAL(XI_2901B_Raw) - 6554.0) / (32767.0 - 6554.0)) * 100.0;\n\nTT_2917_HH_Trip := TT_2917_Scaled >= TT_2917_HH_SP;\nTT_2917_LL_Trip := TT_2917_Scaled <= TT_2917_LL_SP;\nVSHH_2901A_HH   := VSHH_2901A;\nVSHH_2901A_LL   := FALSE;\nVSHH_2901B_HH   := VSHH_2901B;\nVSHH_2901B_LL   := FALSE;\nESD_3200_HH     := ESD_3200;\nESD_3200_LL     := FALSE;\n\nIF TT_2917_HH_Trip OR TT_2917_LL_Trip OR PSD_2917 THEN\n    LOOP_2917_TRIP := TRUE;\nELSIF LOOP_2917_TRIP AND MANUAL_RESET\n      AND NOT TT_2917_HH_Trip AND NOT TT_2917_LL_Trip AND NOT PSD_2917 THEN\n    LOOP_2917_TRIP := FALSE;\nEND_IF;\n\nIF VSHH_2901A_HH OR VSHH_2901A_LL OR HS_EMERGENCY_STOP_A_2901A THEN\n    LOOP_2901A_TRIP := TRUE;\nELSIF LOOP_2901A_TRIP AND MANUAL_RESET\n      AND NOT VSHH_2901A_HH AND NOT VSHH_2901A_LL AND NOT HS_EMERGENCY_STOP_A_2901A THEN\n    LOOP_2901A_TRIP := FALSE;\nEND_IF;\n\nIF VSHH_2901B_HH OR VSHH_2901B_LL OR HS_EMERGENCY_STOP_B_2901B THEN\n    LOOP_2901B_TRIP := TRUE;\nELSIF LOOP_2901B_TRIP AND MANUAL_RESET\n      AND NOT VSHH_2901B_HH AND NOT VSHH_2901B_LL AND NOT HS_EMERGENCY_STOP_B_2901B THEN\n    LOOP_2901B_TRIP := FALSE;\nEND_IF;\n\nIF ESD_3200_HH OR ESD_3200_LL THEN\n    LOOP_3200_TRIP := TRUE;\nELSIF LOOP_3200_TRIP AND MANUAL_RESET\n      AND NOT ESD_3200_HH AND NOT ESD_3200_LL THEN\n    LOOP_3200_TRIP := FALSE;\nEND_IF;\n\nSAFE_STATE := ESTOP\n              OR LOOP_2917_TRIP\n              OR LOOP_2901A_TRIP\n              OR LOOP_2901B_TRIP\n              OR LOOP_3200_TRIP;\n\nIF NOT SAFE_STATE THEN\n    TIC_2911_Error    := TIC_2911_SP - TT_2911_Scaled;\n    TIC_2911_Integral := TIC_2911_Integral + (TIC_2911_Ki * TIC_2911_Error);\n    IF TIC_2911_Integral > 100.0 THEN\n        TIC_2911_Integral := 100.0;\n    ELSIF TIC_2911_Integral < 0.0 THEN\n        TIC_2911_Integral := 0.0;\n    END_IF;\n    TIC_2911_Output := (TIC_2911_Kp * TIC_2911_Error) + TIC_2911_Integral;\n    IF TIC_2911_Output > 100.0 THEN\n        TIC_2911_Output := 100.0;\n    ELSIF TIC_2911_Output < 0.0 THEN\n        TIC_2911_Output := 0.0;\n    END_IF;\n    KV_2904_Out := REAL_TO_INT(6554.0 + (TIC_2911_Output / 100.0) * (32767.0 - 6554.0));\n\n    MotorA_LocalMode := HS_2901A1;\n    IF MotorA_LocalMode THEN\n        MotorA_StartCmd := HS_START_STOP_A_2901A;\n        MotorA_StopCmd  := NOT HS_START_STOP_A_2901A;\n    ELSE\n        MotorA_StartCmd := HS_2901A AND HS_2901A2;\n        MotorA_StopCmd  := NOT HS_2901A2;\n    END_IF;\n    MotorA_Latch(S1 := MotorA_StartCmd, R := MotorA_StopCmd);\n    MotorA_Run := MotorA_Latch.Q1;\n\n    MotorB_LocalMode := HS_2901B1;\n    IF MotorB_LocalMode THEN\n        MotorB_StartCmd := HS_START_STOP_B_2901B;\n        MotorB_StopCmd  := NOT HS_START_STOP_B_2901B;\n    ELSE\n        MotorB_StartCmd := HS_2901B AND HS_2901B2;\n        MotorB_StopCmd  := NOT HS_2901B2;\n    END_IF;\n    MotorB_Latch(S1 := MotorB_StartCmd, R := MotorB_StopCmd);\n    MotorB_Run := MotorB_Latch.Q1;\n\n    StartupDelay(IN := MotorA_Run OR MotorB_Run, PT := T#3S);\n\n    MCC_A_Out           := MotorA_Run AND StartupDelay.Q;\n    MCC_B_Out           := MotorB_Run AND StartupDelay.Q;\n    PSD_2917_Out        := TRUE;\n    MCC_A_and_MCC_B_Out := MCC_A_Out AND MCC_B_Out;\nELSE\n    KV_2904_Out         := 6554;\n    MCC_A_Out           := FALSE;\n    MCC_B_Out           := FALSE;\n    PSD_2917_Out        := FALSE;\n    MCC_A_and_MCC_B_Out := FALSE;\n    TIC_2911_Integral   := 0.0;\nEND_IF;\n\n(* TI_2909 four-level alarms *)\nIF TI_2909_Scaled >= TI_2909_HH_SP THEN\n    TI_2909_HH_Latch.S1 := TRUE;\nELSIF TI_2909_Scaled <= (TI_2909_HH_SP - TI_2909_Deadband) THEN\n    TI_2909_HH_Latch.S1 := FALSE;\nEND_IF;\nTI_2909_HH_Latch(S1 := TI_2909_HH_Latch.S1, R := TI_2909_HH_Ack AND (TI_2909_Scaled < TI_2909_HH_SP));\nTI_2909_HH := TI_2909_HH_Latch.Q1;\nTI_2909_H  := TI_2909_Scaled >= TI_2909_H_SP AND TI_2909_Scaled < TI_2909_HH_SP;\nTI_2909_L  := TI_2909_Scaled <= TI_2909_L_SP AND TI_2909_Scaled > TI_2909_LL_SP;\nIF TI_2909_Scaled <= TI_2909_LL_SP THEN\n    TI_2909_LL_Latch.S1 := TRUE;\nELSIF TI_2909_Scaled >= (TI_2909_LL_SP + TI_2909_Deadband) THEN\n    TI_2909_LL_Latch.S1 := FALSE;\nEND_IF;\nTI_2909_LL_Latch(S1 := TI_2909_LL_Latch.S1, R := TI_2909_LL_Ack AND (TI_2909_Scaled > TI_2909_LL_SP));\nTI_2909_LL := TI_2909_LL_Latch.Q1;\n\n(* TT_2909 four-level alarms *)\nIF TT_2909_Scaled >= TT_2909_HH_SP THEN\n    TT_2909_HH_Latch.S1 := TRUE;\nELSIF TT_2909_Scaled <= (TT_2909_HH_SP - TT_2909_Deadband) THEN\n    TT_2909_HH_Latch.S1 := FALSE;\nEND_IF;\nTT_2909_HH_Latch(S1 := TT_2909_HH_Latch.S1, R := TT_2909_HH_Ack AND (TT_2909_Scaled < TT_2909_HH_SP));\nTT_2909_HH := TT_2909_HH_Latch.Q1;\nTT_2909_H  := TT_2909_Scaled >= TT_2909_H_SP AND TT_2909_Scaled < TT_2909_HH_SP;\nTT_2909_L  := TT_2909_Scaled <= TT_2909_L_SP AND TT_2909_Scaled > TT_2909_LL_SP;\nIF TT_2909_Scaled <= TT_2909_LL_SP THEN\n    TT_2909_LL_Latch.S1 := TRUE;\nELSIF TT_2909_Scaled >= (TT_2909_LL_SP + TT_2909_Deadband) THEN\n    TT_2909_LL_Latch.S1 := FALSE;\nEND_IF;\nTT_2909_LL_Latch(S1 := TT_2909_LL_Latch.S1, R := TT_2909_LL_Ack AND (TT_2909_Scaled > TT_2909_LL_SP));\nTT_2909_LL := TT_2909_LL_Latch.Q1;\n\n(* TT_2911 four-level alarms *)\nIF TT_2911_Scaled >= TT_2911_HH_SP THEN\n    TT_2911_HH_Latch.S1 := TRUE;\nELSIF TT_2911_Scaled <= (TT_2911_HH_SP - TT_2911_Deadband) THEN\n    TT_2911_HH_Latch.S1 := FALSE;\nEND_IF;\nTT_2911_HH_Latch(S1 := TT_2911_HH_Latch.S1, R := TT_2911_HH_Ack AND (TT_2911_Scaled < TT_2911_HH_SP));\nTT_2911_HH := TT_2911_HH_Latch.Q1;\nTT_2911_H  := TT_2911_Scaled >= TT_2911_H_SP AND TT_2911_Scaled < TT_2911_HH_SP;\nTT_2911_L  := TT_2911_Scaled <= TT_2911_L_SP AND TT_2911_Scaled > TT_2911_LL_SP;\nIF TT_2911_Scaled <= TT_2911_LL_SP THEN\n    TT_2911_LL_Latch.S1 := TRUE;\nELSIF TT_2911_Scaled >= (TT_2911_LL_SP + TT_2911_Deadband) THEN\n    TT_2911_LL_Latch.S1 := FALSE;\nEND_IF;\nTT_2911_LL_Latch(S1 := TT_2911_LL_Latch.S1, R := TT_2911_LL_Ack AND (TT_2911_Scaled > TT_2911_LL_SP));\nTT_2911_LL := TT_2911_LL_Latch.Q1;\n\n(* TT_2917 four-level alarms *)\nIF TT_2917_Scaled >= TT_2917_HH_SP THEN\n    TT_2917_HH_Latch.S1 := TRUE;\nELSIF TT_2917_Scaled <= (TT_2917_HH_SP - TT_2917_Deadband) THEN\n    TT_2917_HH_Latch.S1 := FALSE;\nEND_IF;\nTT_2917_HH_Latch(S1 := TT_2917_HH_Latch.S1, R := TT_2917_HH_Ack AND (TT_2917_Scaled < TT_2917_HH_SP));\nTT_2917_HH := TT_2917_HH_Latch.Q1;\nTT_2917_H  := TT_2917_Scaled >= TT_2917_H_SP AND TT_2917_Scaled < TT_2917_HH_SP;\nTT_2917_L  := TT_2917_Scaled <= TT_2917_L_SP AND TT_2917_Scaled > TT_2917_LL_SP;\nIF TT_2917_Scaled <= TT_2917_LL_SP THEN\n    TT_2917_LL_Latch.S1 := TRUE;\nELSIF TT_2917_Scaled >= (TT_2917_LL_SP + TT_2917_Deadband) THEN\n    TT_2917_LL_Latch.S1 := FALSE;\nEND_IF;\nTT_2917_LL_Latch(S1 := TT_2917_LL_Latch.S1, R := TT_2917_LL_Ack AND (TT_2917_Scaled > TT_2917_LL_SP));\nTT_2917_LL := TT_2917_LL_Latch.Q1;\n\n(* TI_2917 four-level alarms *)\nIF TI_2917_Scaled >= TI_2917_HH_SP THEN\n    TI_2917_HH_Latch.S1 := TRUE;\nELSIF TI_2917_Scaled <= (TI_2917_HH_SP - TI_2917_Deadband) THEN\n    TI_2917_HH_Latch.S1 := FALSE;\nEND_IF;\nTI_2917_HH_Latch(S1 := TI_2917_HH_Latch.S1, R := TI_2917_HH_Ack AND (TI_2917_Scaled < TI_2917_HH_SP));\nTI_2917_HH := TI_2917_HH_Latch.Q1;\nTI_2917_H  := TI_2917_Scaled >= TI_2917_H_SP AND TI_2917_Scaled < TI_2917_HH_SP;\nTI_2917_L  := TI_2917_Scaled <= TI_2917_L_SP AND TI_2917_Scaled > TI_2917_LL_SP;\nIF TI_2917_Scaled <= TI_2917_LL_SP THEN\n    TI_2917_LL_Latch.S1 := TRUE;\nELSIF TI_2917_Scaled >= (TI_2917_LL_SP + TI_2917_Deadband) THEN\n    TI_2917_LL_Latch.S1 := FALSE;\nEND_IF;\nTI_2917_LL_Latch(S1 := TI_2917_LL_Latch.S1, R := TI_2917_LL_Ack AND (TI_2917_Scaled > TI_2917_LL_SP));\nTI_2917_LL := TI_2917_LL_Latch.Q1;\n\n(* XI_2901A four-level alarms *)\nIF XI_2901A_Scaled >= XI_2901A_HH_SP THEN\n    XI_2901A_HH_Latch.S1 := TRUE;\nELSIF XI_2901A_Scaled <= (XI_2901A_HH_SP - XI_2901A_Deadband) THEN\n    XI_2901A_HH_Latch.S1 := FALSE;\nEND_IF;\nXI_2901A_HH_Latch(S1 := XI_2901A_HH_Latch.S1, R := XI_2901A_HH_Ack AND (XI_2901A_Scaled < XI_2901A_HH_SP));\nXI_2901A_HH := XI_2901A_HH_Latch.Q1;\nXI_2901A_H  := XI_2901A_Scaled >= XI_2901A_H_SP AND XI_2901A_Scaled < XI_2901A_HH_SP;\nXI_2901A_L  := XI_2901A_Scaled <= XI_2901A_L_SP AND XI_2901A_Scaled > XI_2901A_LL_SP;\nIF XI_2901A_Scaled <= XI_2901A_LL_SP THEN\n    XI_2901A_LL_Latch.S1 := TRUE;\nELSIF XI_2901A_Scaled >= (XI_2901A_LL_SP + XI_2901A_Deadband) THEN\n    XI_2901A_LL_Latch.S1 := FALSE;\nEND_IF;\nXI_2901A_LL_Latch(S1 := XI_2901A_LL_Latch.S1, R := XI_2901A_LL_Ack AND (XI_2901A_Scaled > XI_2901A_LL_SP));\nXI_2901A_LL := XI_2901A_LL_Latch.Q1;\n\n(* XI_2901B four-level alarms *)\nIF XI_2901B_Scaled >= XI_2901B_HH_SP THEN\n    XI_2901B_HH_Latch.S1 := TRUE;\nELSIF XI_2901B_Scaled <= (XI_2901B_HH_SP - XI_2901B_Deadband) THEN\n    XI_2901B_HH_Latch.S1 := FALSE;\nEND_IF;\nXI_2901B_HH_Latch(S1 := XI_2901B_HH_Latch.S1, R := XI_2901B_HH_Ack AND (XI_2901B_Scaled < XI_2901B_HH_SP));\nXI_2901B_HH := XI_2901B_HH_Latch.Q1;\nXI_2901B_H  := XI_2901B_Scaled >= XI_2901B_H_SP AND XI_2901B_Scaled < XI_2901B_HH_SP;\nXI_2901B_L  := XI_2901B_Scaled <= XI_2901B_L_SP AND XI_2901B_Scaled > XI_2901B_LL_SP;\nIF XI_2901B_Scaled <= XI_2901B_LL_SP THEN\n    XI_2901B_LL_Latch.S1 := TRUE;\nELSIF XI_2901B_Scaled >= (XI_2901B_LL_SP + XI_2901B_Deadband) THEN\n    XI_2901B_LL_Latch.S1 := FALSE;\nEND_IF;\nXI_2901B_LL_Latch(S1 := XI_2901B_LL_Latch.S1, R := XI_2901B_LL_Ack AND (XI_2901B_Scaled > XI_2901B_LL_SP));\nXI_2901B_LL := XI_2901B_LL_Latch.Q1;\n\nSystem_Alarm :=\n    TI_2909_HH_Latch.Q1 OR TI_2909_LL_Latch.Q1 OR TI_2909_H OR TI_2909_L OR\n    TT_2909_HH_Latch.Q1 OR TT_2909_LL_Latch.Q1 OR TT_2909_H OR TT_2909_L OR\n    TT_2911_HH_Latch.Q1 OR TT_2911_LL_Latch.Q1 OR TT_2911_H OR TT_2911_L OR\n    TT_2917_HH_Latch.Q1 OR TT_2917_LL_Latch.Q1 OR TT_2917_H OR TT_2917_L OR\n    TI_2917_HH_Latch.Q1 OR TI_2917_LL_Latch.Q1 OR TI_2917_H OR TI_2917_L OR\n    XI_2901A_HH_Latch.Q1 OR XI_2901A_LL_Latch.Q1 OR XI_2901A_H OR XI_2901A_L OR\n    XI_2901B_HH_Latch.Q1 OR XI_2901B_LL_Latch.Q1 OR XI_2901B_H OR XI_2901B_L OR\n    SAFE_STATE;\n\nEND_PROGRAM",
+    "vendor": "codesys",
+    "target_loops": [
+      "2911",
+      "2917",
+      "2903A",
+      "2903B",
+      "2901A",
+      "2901B",
+      "3200",
+      "2909"
+    ],
+    "safety_functions_included": [
+      "2917",
+      "2901A",
+      "2901B",
+      "3200"
+    ],
+    "generation_context": "IEC 61131-3 Standard Function Blocks — Timers, Counters, Edge Detection, Bistable. IEC 61131-3:2003 Section 2.5.2.3 defines exactly four categories of standard function blocks. ALL compliant PLC implementations must support these. Any FB not listed here (e.g., PID, SCALE, FILTER) is either vendor-specific or from an add-on library like OSCAT. Keywords: TON TOF TP timer on-delay off-delay pulse CTU CTD CTUD counter up counter down counter R_TRIG F_TRIG rising edge falling edge edge detection SR R",
+    "warnings": [],
+    "timestamp": "2026-04-25T12:15:34.206566"
+  },
+  "code_validation": {
+    "is_valid": true,
+    "total_errors": 0,
+    "total_warnings": 1,
+    "tiers_available": 5,
+    "tiers_passed": 5,
+    "tier_results": [
+      {
+        "tier": "tier1_builtin",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "built-in v1.0",
+        "execution_time_ms": 9.8,
+        "findings": []
+      },
+      {
+        "tier": "tier2_blark",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "blark 0.8.3",
+        "execution_time_ms": 3607.6,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "BLK-001",
+            "message": "ST code parsed successfully — syntax valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier3_matiec",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "matiec/iec2c",
+        "execution_time_ms": 167.2,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "MAT-001",
+            "message": "matiec compilation successful — code is valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier4_iec_checker",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 1,
+        "tool_version": "iec-checker v0.4",
+        "execution_time_ms": 22.1,
+        "findings": [
+          {
+            "severity": "warning",
+            "code": "IEC-ParserError",
+            "message": "",
+            "line": 56,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier5_plcopen_xml",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "PLCopen TC6 v2.01",
+        "execution_time_ms": 4.6,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "XML-001",
+            "message": "PLCopen XML generated successfully (30018 characters)",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      }
+    ],
+    "has_plcopen_xml": true,
+    "feedback_for_llm": "Validation PASSED — no errors found.",
+    "timestamp": "2026-04-25T12:15:37.953082"
+  },
+  "safety_check": {
+    "is_compliant": true,
+    "sil_level_achieved": 3,
+    "checks_passed": [
+      "variable_initialisation",
+      "emergency_stop_handling",
+      "interlock_completeness (100%)",
+      "alarm_handling",
+      "defensive_programming",
+      "timeout_protection",
+      "no_unused_variables"
+    ],
+    "checks_failed": [],
+    "recommendations": [
+      "Provisional SIL 2 assigned. Target SIL 3 will be granted only if NuXmv/PLCverif formal verification passes all generated LTL/CTL properties."
+    ],
+    "interlock_coverage": 1.0,
+    "diagnostic_coverage": 0.0
+  },
+  "fault_diagnosis": {
+    "fault_id": "7cfbd43e",
+    "symptom": "Full P&ID fault analysis (FMEA + SDG propagation)",
+    "root_causes": [
+      {
+        "component_tag": "TT-2911",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 2
+      },
+      {
+        "component_tag": "PSD-2917",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "VSHH-2901A",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "VSHH-2901B",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "TI-2909",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TT-2909",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TT-2917",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "TI-2917",
+        "fault_mode": "low",
+        "system_effect": "Heating ramp-up — risk of overtemperature",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm",
+        "action": "Check wire continuity; replace sensor element",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-2901A",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-2901B",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-2901A1",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-2901B1",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-2901A2",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-2901B2",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ESD-3200",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-START-STOP-A-2901A",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-EMERGENCY-STOP-A-2901A",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-START-STOP-B-2901B",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "HS-EMERGENCY-STOP-B-2901B",
+        "fault_mode": "fail_to_operate",
+        "system_effect": "Safety function fails dangerously — hazard not detected",
+        "severity": "critical",
+        "detection": "SIL proof-test; PFDavg calculation",
+        "action": "Immediate proof-test; replace if failed; review SIL maintenance schedule",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "KV-2904",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 0
+      }
+    ],
+    "propagation_paths": [
+      {
+        "initiating_tag": "TT-2911",
+        "deviation": "high",
+        "propagation_chain": [
+          "TIC-2911 (temperature ↑)",
+          "TY-2911 (temperature ↓)"
+        ],
+        "terminal_effect": "Process variable above safe operating limit — alarm/trip demand possible.",
+        "severity": "critical"
+      },
+      {
+        "initiating_tag": "TT-2911",
+        "deviation": "low",
+        "propagation_chain": [
+          "TIC-2911 (temperature ↓)",
+          "TY-2911 (temperature ↑)"
+        ],
+        "terminal_effect": "Process variable below safe operating limit — loss of control possible.",
+        "severity": "critical"
+      },
+      {
+        "initiating_tag": "PSD-2917",
+        "deviation": "high",
+        "propagation_chain": [
+          "TT-2917 (temperature ↑)"
+        ],
+        "terminal_effect": "Process variable above safe operating limit — alarm/trip demand possible.",
+        "severity": "critical"
+      },
+      {
+        "initiating_tag": "VSHH-2901A",
+        "deviation": "high",
+        "propagation_chain": [
+          "SEQ-A-2901A (position ↑)"
+        ],
+        "terminal_effect": "Process variable above safe operating limit — alarm/trip demand possible.",
+        "severity": "critical"
+      },
+      {
+        "initiating_tag": "VSHH-2901B",
+        "deviation": "high",
+        "propagation_chain": [
+          "SEQ-B-2901B (position ↑)"
+        ],
+        "terminal_effect": "Process variable above safe operating limit — alarm/trip demand possible.",
+        "severity": "critical"
+      }
+    ],
+    "fmea_records": [
+      {
+        "component_tag": "TI-2909",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TI-2909",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "TT-2909",
+        "component_type": "Instrument (T)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TT-2909",
+        "component_type": "Instrument (T)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "TT-2911",
+        "component_type": "Instrument (T)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TT-2911",
+        "component_type": "Instrument (T)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "TT-2917",
+        "component_type": "Instrument (T)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TT-2917",
+        "component_type": "Instrument (T)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "TI-2917",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high temperature reading",
+        "failure_effect_system": "Cooling/heating overreaction; potential ESD trip",
+        "detection_method": "Redundant thermocouple comparison; HH alarm check",
+        "severity": "major",
+        "recommended_action": "Check thermowell, re-calibrate; compare with backup TI"
+      },
+      {
+        "component_tag": "TI-2917",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low temperature reading",
+        "failure_effect_system": "Heating ramp-up — risk of overtemperature",
+        "detection_method": "NAMUR NE 107 Failure alarm",
+        "severity": "critical",
+        "recommended_action": "Check wire continuity; replace sensor element"
+      },
+      {
+        "component_tag": "PSD-2917",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "PSD-2917",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "VSHH-2901A",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "VSHH-2901A",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "VSHH-2901B",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "VSHH-2901B",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-2901A",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-2901A",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-2901B",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-2901B",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-2901A1",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-2901A1",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-2901B1",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-2901B1",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-2901A2",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-2901A2",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-2901B2",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-2901B2",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "XI-2901A",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high analysis reading (composition, conductivity, pH)",
+        "failure_effect_system": "Quality control trip; batch rejection",
+        "detection_method": "Grab-sample laboratory comparison; NAMUR NE 43",
+        "severity": "major",
+        "recommended_action": "Re-calibrate with certified reference; inspect sensing element"
+      },
+      {
+        "component_tag": "XI-2901A",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low analysis reading",
+        "failure_effect_system": "Under-dosing of chemicals; off-spec product",
+        "detection_method": "Redundant analyser; grab-sample verification",
+        "severity": "major",
+        "recommended_action": "Replace membrane/electrode; re-span against reference"
+      },
+      {
+        "component_tag": "XI-2901B",
+        "component_type": "Indicator (I)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high analysis reading (composition, conductivity, pH)",
+        "failure_effect_system": "Quality control trip; batch rejection",
+        "detection_method": "Grab-sample laboratory comparison; NAMUR NE 43",
+        "severity": "major",
+        "recommended_action": "Re-calibrate with certified reference; inspect sensing element"
+      },
+      {
+        "component_tag": "XI-2901B",
+        "component_type": "Indicator (I)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low analysis reading",
+        "failure_effect_system": "Under-dosing of chemicals; off-spec product",
+        "detection_method": "Redundant analyser; grab-sample verification",
+        "severity": "major",
+        "recommended_action": "Replace membrane/electrode; re-span against reference"
+      },
+      {
+        "component_tag": "ESD-3200",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "ESD-3200",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-START-STOP-A-2901A",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-START-STOP-A-2901A",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-EMERGENCY-STOP-A-2901A",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-EMERGENCY-STOP-A-2901A",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-START-STOP-B-2901B",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-START-STOP-B-2901B",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "HS-EMERGENCY-STOP-B-2901B",
+        "component_type": "Instrument (S)",
+        "fault_mode": "fail_to_operate",
+        "failure_effect_local": "Safety switch does not actuate on demand",
+        "failure_effect_system": "Safety function fails dangerously — hazard not detected",
+        "detection_method": "SIL proof-test; PFDavg calculation",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; replace if failed; review SIL maintenance schedule"
+      },
+      {
+        "component_tag": "HS-EMERGENCY-STOP-B-2901B",
+        "component_type": "Instrument (S)",
+        "fault_mode": "spurious_operation",
+        "failure_effect_local": "Switch actuates without demand (false trip)",
+        "failure_effect_system": "Nuisance shutdown",
+        "detection_method": "Trip log review; instrument calibration check",
+        "severity": "major",
+        "recommended_action": "Re-calibrate set-point; check for vibration or contamination"
+      },
+      {
+        "component_tag": "KV-2904",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "KV-2904",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "KV-2904",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "KV-2904",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "Gate-1-LEFT",
+        "component_type": "Gate Valve",
+        "fault_mode": "disc_detached",
+        "failure_effect_local": "Gate disc detached from stem",
+        "failure_effect_system": "Valve uncontrollable; flow unconstrained",
+        "detection_method": "Stroke mismatch between handle and flow",
+        "severity": "critical",
+        "recommended_action": "Isolate upstream; remove valve for rebuild"
+      },
+      {
+        "component_tag": "Gate-1-LEFT",
+        "component_type": "Gate Valve",
+        "fault_mode": "stem_seize",
+        "failure_effect_local": "Gate valve stem seized by corrosion",
+        "failure_effect_system": "Manual operation impossible in emergency",
+        "detection_method": "Scheduled stroke test",
+        "severity": "major",
+        "recommended_action": "Apply penetrating fluid; if seized, replace valve"
+      },
+      {
+        "component_tag": "CV-HY-2903A",
+        "component_type": "Check Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Check valve fails to close",
+        "failure_effect_system": "Reverse flow on pump stop — potential water hammer",
+        "detection_method": "Reverse-flow surge test; acoustic leak check",
+        "severity": "critical",
+        "recommended_action": "Isolate and inspect; replace disc or spring"
+      },
+      {
+        "component_tag": "CV-HY-2903A",
+        "component_type": "Check Valve",
+        "fault_mode": "chatter",
+        "failure_effect_local": "Check valve disc chatter",
+        "failure_effect_system": "Premature mechanical wear; pressure pulsations",
+        "detection_method": "Vibration monitoring on downstream piping",
+        "severity": "minor",
+        "recommended_action": "Replace with nozzle-style check valve; re-size for service"
+      },
+      {
+        "component_tag": "CV-HY-2903B",
+        "component_type": "Check Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Check valve fails to close",
+        "failure_effect_system": "Reverse flow on pump stop — potential water hammer",
+        "detection_method": "Reverse-flow surge test; acoustic leak check",
+        "severity": "critical",
+        "recommended_action": "Isolate and inspect; replace disc or spring"
+      },
+      {
+        "component_tag": "CV-HY-2903B",
+        "component_type": "Check Valve",
+        "fault_mode": "chatter",
+        "failure_effect_local": "Check valve disc chatter",
+        "failure_effect_system": "Premature mechanical wear; pressure pulsations",
+        "detection_method": "Vibration monitoring on downstream piping",
+        "severity": "minor",
+        "recommended_action": "Replace with nozzle-style check valve; re-size for service"
+      },
+      {
+        "component_tag": "CHECK-VALVE-A",
+        "component_type": "Check Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Check valve fails to close",
+        "failure_effect_system": "Reverse flow on pump stop — potential water hammer",
+        "detection_method": "Reverse-flow surge test; acoustic leak check",
+        "severity": "critical",
+        "recommended_action": "Isolate and inspect; replace disc or spring"
+      },
+      {
+        "component_tag": "CHECK-VALVE-A",
+        "component_type": "Check Valve",
+        "fault_mode": "chatter",
+        "failure_effect_local": "Check valve disc chatter",
+        "failure_effect_system": "Premature mechanical wear; pressure pulsations",
+        "detection_method": "Vibration monitoring on downstream piping",
+        "severity": "minor",
+        "recommended_action": "Replace with nozzle-style check valve; re-size for service"
+      },
+      {
+        "component_tag": "CHECK-VALVE-B",
+        "component_type": "Check Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Check valve fails to close",
+        "failure_effect_system": "Reverse flow on pump stop — potential water hammer",
+        "detection_method": "Reverse-flow surge test; acoustic leak check",
+        "severity": "critical",
+        "recommended_action": "Isolate and inspect; replace disc or spring"
+      },
+      {
+        "component_tag": "CHECK-VALVE-B",
+        "component_type": "Check Valve",
+        "fault_mode": "chatter",
+        "failure_effect_local": "Check valve disc chatter",
+        "failure_effect_system": "Premature mechanical wear; pressure pulsations",
+        "detection_method": "Vibration monitoring on downstream piping",
+        "severity": "minor",
+        "recommended_action": "Replace with nozzle-style check valve; re-size for service"
+      },
+      {
+        "component_tag": "E-234-009",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_leak",
+        "failure_effect_local": "Tube leak — cross-contamination",
+        "failure_effect_system": "Process fluid contaminates utility stream (or vice versa)",
+        "detection_method": "Conductivity analyser on cooling water return; AT alarm",
+        "severity": "critical",
+        "recommended_action": "Isolate and plug affected tubes; schedule re-tube at shutdown"
+      },
+      {
+        "component_tag": "E-234-009",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "fouling",
+        "failure_effect_local": "Tube-side / shell-side fouling",
+        "failure_effect_system": "Reduced heat transfer — temperature drift",
+        "detection_method": "TI outlet temperature trending; increasing DP",
+        "severity": "minor",
+        "recommended_action": "Chemical clean or mechanical descale per maintenance schedule"
+      },
+      {
+        "component_tag": "E-234-009",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "vapour_lock",
+        "failure_effect_local": "Vapour binding / lock in condenser",
+        "failure_effect_system": "Flooded condenser; reflux loss; column upset",
+        "detection_method": "Temperature profile anomaly; DP increase",
+        "severity": "major",
+        "recommended_action": "Purge non-condensables; check vent valve operation"
+      },
+      {
+        "component_tag": "E-234-009",
+        "component_type": "Heat Exchanger",
+        "fault_mode": "tube_rupture",
+        "failure_effect_local": "Catastrophic tube rupture",
+        "failure_effect_system": "High-pressure side overfills low-pressure side; PSV demand",
+        "detection_method": "PSV on low-pressure side; DP-loss alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; isolate both sides; investigate per API 521"
+      }
+    ],
+    "severity": "critical",
+    "repair_procedure": "PRIORITY REPAIR ACTIONS (Critical fault modes):\nReference: IEC 61511:2016+AMD1 Clause 5.2 — Functional Safety Management\n\n  [TI-2909] LOW\n    Effect  : Heating ramp-up — risk of overtemperature\n    Detect  : NAMUR NE 107 Failure alarm\n    Action  : Check wire continuity; replace sensor element\n\n  [PSD-2917] FAIL_TO_OPERATE\n    Effect  : Safety function fails dangerously — hazard not detected\n    Detect  : SIL proof-test; PFDavg calculation\n    Action  : Immediate proof-test; replace if failed; review SIL maintenance schedule\n\nSAFETY INSTRUMENTED FUNCTION MAINTENANCE:\n  Per IEC 61511-1:2016 Clause 16 (Proof testing):\n  — Loop 2917: Verify sensor TT-2917, logic, and actuator PSD-2917 per SIL proof-test schedule.\n  — Loop 2901A: Verify sensor VSHH-2901A, logic, and actuator MCC-A per SIL proof-test schedule.\n  — Loop 2901B: Verify sensor VSHH-2901B, logic, and actuator MCC-B per SIL proof-test schedule.\n  — Loop 3200: Verify sensor ESD-3200, logic, and actuator MCC-A and MCC-B per SIL proof-test schedule.",
+    "affected_components": [
+      "HS-2901A2",
+      "HS-2901B2",
+      "KV-2904",
+      "CV-HY-2903A",
+      "HS-2901B",
+      "XI-2901A",
+      "XI-2901B",
+      "E-234-009",
+      "CV-HY-2903B",
+      "CHECK-VALVE-B",
+      "HS-EMERGENCY-STOP-A-2901A",
+      "CHECK-VALVE-A",
+      "Gate-1-LEFT",
+      "HS-2901A",
+      "HS-EMERGENCY-STOP-B-2901B",
+      "VSHH-2901B",
+      "HS-2901B1",
+      "PSD-2917",
+      "TT-2909",
+      "TT-2917",
+      "TT-2911",
+      "ESD-3200",
+      "TI-2909",
+      "HS-START-STOP-B-2901B",
+      "TI-2917",
+      "HS-2901A1",
+      "VSHH-2901A",
+      "HS-START-STOP-A-2901A"
+    ],
+    "sdg_node_count": 51,
+    "sdg_edge_count": 8,
+    "timestamp": "2026-04-25T12:15:41.859593"
+  },
+  "formal_verification": {
+    "status": "passed",
+    "tool_used": "nuxmv",
+    "tool_version": "nuXmv 2.1.0",
+    "properties_generated": 34,
+    "properties_verified": 34,
+    "properties_failed": 0,
+    "properties": [
+      {
+        "property_id": "LOOP_2917_ESTOP_PRIORITY",
+        "description": "Loop 2917: Emergency stop must force SAFE_STATE in the same scan cycle",
+        "nusmv_ltl": "G (ESTOP -> SAFE_STATE)",
+        "nusmv_ctl": "AG (ESTOP -> SAFE_STATE)",
+        "plcverif_spec": "assert ALWAYS ESTOP => SAFE_STATE;",
+        "source_loop": "2917",
+        "safety_requirement": "IEC 61511-1:2016 Section 10.3.4 — E-Stop override precedence"
+      },
+      {
+        "property_id": "LOOP_2917_SAFE_STATE_ON_TRIP",
+        "description": "Loop 2917: Any sensor deviation must drive SAFE_STATE within one scan",
+        "nusmv_ltl": "G ((TT_2917_HIGH | TT_2917_LOW) -> X SAFE_STATE)",
+        "nusmv_ctl": "AG ((TT_2917_HIGH | TT_2917_LOW) -> AX SAFE_STATE)",
+        "plcverif_spec": "assert ALWAYS (TT_2917_HIGH | TT_2917_LOW) => NEXT(SAFE_STATE);",
+        "source_loop": "2917",
+        "safety_requirement": "IEC 61508-3:2010 Section 7.4.7 — Safe state on failure"
+      },
+      {
+        "property_id": "LOOP_2901A_SAFE_STATE_ON_TRIP",
+        "description": "Loop 2901A: Any sensor deviation must drive SAFE_STATE within one scan",
+        "nusmv_ltl": "G ((VSHH_2901A_HIGH | VSHH_2901A_LOW) -> X SAFE_STATE)",
+        "nusmv_ctl": "AG ((VSHH_2901A_HIGH | VSHH_2901A_LOW) -> AX SAFE_STATE)",
+        "plcverif_spec": "assert ALWAYS (VSHH_2901A_HIGH | VSHH_2901A_LOW) => NEXT(SAFE_STATE);",
+        "source_loop": "2901A",
+        "safety_requirement": "IEC 61508-3:2010 Section 7.4.7 — Safe state on failure"
+      },
+      {
+        "property_id": "LOOP_2901B_SAFE_STATE_ON_TRIP",
+        "description": "Loop 2901B: Any sensor deviation must drive SAFE_STATE within one scan",
+        "nusmv_ltl": "G ((VSHH_2901B_HIGH | VSHH_2901B_LOW) -> X SAFE_STATE)",
+        "nusmv_ctl": "AG ((VSHH_2901B_HIGH | VSHH_2901B_LOW) -> AX SAFE_STATE)",
+        "plcverif_spec": "assert ALWAYS (VSHH_2901B_HIGH | VSHH_2901B_LOW) => NEXT(SAFE_STATE);",
+        "source_loop": "2901B",
+        "safety_requirement": "IEC 61508-3:2010 Section 7.4.7 — Safe state on failure"
+      },
+      {
+        "property_id": "LOOP_3200_SAFE_STATE_ON_TRIP",
+        "description": "Loop 3200: Any sensor deviation must drive SAFE_STATE within one scan",
+        "nusmv_ltl": "G ((ESD_3200_HIGH | ESD_3200_LOW) -> X SAFE_STATE)",
+        "nusmv_ctl": "AG ((ESD_3200_HIGH | ESD_3200_LOW) -> AX SAFE_STATE)",
+        "plcverif_spec": "assert ALWAYS (ESD_3200_HIGH | ESD_3200_LOW) => NEXT(SAFE_STATE);",
+        "source_loop": "3200",
+        "safety_requirement": "IEC 61508-3:2010 Section 7.4.7 — Safe state on failure"
+      },
+      {
+        "property_id": "LOOP_2917_INTERLOCK_ENFORCED",
+        "description": "Loop 2917: Process variable above safety limit raises the trip latch next scan",
+        "nusmv_ltl": "G (TT_2917_HIGH -> X LOOP_2917_TRIP)",
+        "nusmv_ctl": "AG (TT_2917_HIGH -> AX LOOP_2917_TRIP)",
+        "plcverif_spec": "assert ALWAYS TT_2917_HIGH => NEXT(LOOP_2917_TRIP);",
+        "source_loop": "2917",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.6.4 — SIF trip response"
+      },
+      {
+        "property_id": "LOOP_2901A_INTERLOCK_ENFORCED",
+        "description": "Loop 2901A: Process variable above safety limit raises the trip latch next scan",
+        "nusmv_ltl": "G (VSHH_2901A_HIGH -> X LOOP_2901A_TRIP)",
+        "nusmv_ctl": "AG (VSHH_2901A_HIGH -> AX LOOP_2901A_TRIP)",
+        "plcverif_spec": "assert ALWAYS VSHH_2901A_HIGH => NEXT(LOOP_2901A_TRIP);",
+        "source_loop": "2901A",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.6.4 — SIF trip response"
+      },
+      {
+        "property_id": "LOOP_2901B_INTERLOCK_ENFORCED",
+        "description": "Loop 2901B: Process variable above safety limit raises the trip latch next scan",
+        "nusmv_ltl": "G (VSHH_2901B_HIGH -> X LOOP_2901B_TRIP)",
+        "nusmv_ctl": "AG (VSHH_2901B_HIGH -> AX LOOP_2901B_TRIP)",
+        "plcverif_spec": "assert ALWAYS VSHH_2901B_HIGH => NEXT(LOOP_2901B_TRIP);",
+        "source_loop": "2901B",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.6.4 — SIF trip response"
+      },
+      {
+        "property_id": "LOOP_3200_INTERLOCK_ENFORCED",
+        "description": "Loop 3200: Process variable above safety limit raises the trip latch next scan",
+        "nusmv_ltl": "G (ESD_3200_HIGH -> X LOOP_3200_TRIP)",
+        "nusmv_ctl": "AG (ESD_3200_HIGH -> AX LOOP_3200_TRIP)",
+        "plcverif_spec": "assert ALWAYS ESD_3200_HIGH => NEXT(LOOP_3200_TRIP);",
+        "source_loop": "3200",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.6.4 — SIF trip response"
+      },
+      {
+        "property_id": "LOOP_2917_MANUAL_RESET_REQUIRED",
+        "description": "Loop 2917: Trip latch must persist in absence of manual reset",
+        "nusmv_ltl": "G (LOOP_2917_TRIP & !MANUAL_RESET -> X LOOP_2917_TRIP)",
+        "nusmv_ctl": "AG (LOOP_2917_TRIP & !MANUAL_RESET -> AX LOOP_2917_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_2917_TRIP & !MANUAL_RESET => NEXT(LOOP_2917_TRIP);",
+        "source_loop": "2917",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset requirement"
+      },
+      {
+        "property_id": "LOOP_2901A_MANUAL_RESET_REQUIRED",
+        "description": "Loop 2901A: Trip latch must persist in absence of manual reset",
+        "nusmv_ltl": "G (LOOP_2901A_TRIP & !MANUAL_RESET -> X LOOP_2901A_TRIP)",
+        "nusmv_ctl": "AG (LOOP_2901A_TRIP & !MANUAL_RESET -> AX LOOP_2901A_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_2901A_TRIP & !MANUAL_RESET => NEXT(LOOP_2901A_TRIP);",
+        "source_loop": "2901A",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset requirement"
+      },
+      {
+        "property_id": "LOOP_2901B_MANUAL_RESET_REQUIRED",
+        "description": "Loop 2901B: Trip latch must persist in absence of manual reset",
+        "nusmv_ltl": "G (LOOP_2901B_TRIP & !MANUAL_RESET -> X LOOP_2901B_TRIP)",
+        "nusmv_ctl": "AG (LOOP_2901B_TRIP & !MANUAL_RESET -> AX LOOP_2901B_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_2901B_TRIP & !MANUAL_RESET => NEXT(LOOP_2901B_TRIP);",
+        "source_loop": "2901B",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset requirement"
+      },
+      {
+        "property_id": "LOOP_3200_MANUAL_RESET_REQUIRED",
+        "description": "Loop 3200: Trip latch must persist in absence of manual reset",
+        "nusmv_ltl": "G (LOOP_3200_TRIP & !MANUAL_RESET -> X LOOP_3200_TRIP)",
+        "nusmv_ctl": "AG (LOOP_3200_TRIP & !MANUAL_RESET -> AX LOOP_3200_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_3200_TRIP & !MANUAL_RESET => NEXT(LOOP_3200_TRIP);",
+        "source_loop": "3200",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset requirement"
+      },
+      {
+        "property_id": "LOOP_2917_RESET_CLEARS_TRIP",
+        "description": "Loop 2917: Trip latch clears one scan after manual reset with no deviation",
+        "nusmv_ltl": "G (LOOP_2917_TRIP & MANUAL_RESET & !(TT_2917_HIGH | TT_2917_LOW) -> X !LOOP_2917_TRIP)",
+        "nusmv_ctl": "AG (LOOP_2917_TRIP & MANUAL_RESET & !(TT_2917_HIGH | TT_2917_LOW) -> AX !LOOP_2917_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_2917_TRIP & MANUAL_RESET & !(TT_2917_HIGH | TT_2917_LOW) => NEXT(!LOOP_2917_TRIP);",
+        "source_loop": "2917",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness"
+      },
+      {
+        "property_id": "LOOP_2901A_RESET_CLEARS_TRIP",
+        "description": "Loop 2901A: Trip latch clears one scan after manual reset with no deviation",
+        "nusmv_ltl": "G (LOOP_2901A_TRIP & MANUAL_RESET & !(VSHH_2901A_HIGH | VSHH_2901A_LOW) -> X !LOOP_2901A_TRIP)",
+        "nusmv_ctl": "AG (LOOP_2901A_TRIP & MANUAL_RESET & !(VSHH_2901A_HIGH | VSHH_2901A_LOW) -> AX !LOOP_2901A_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_2901A_TRIP & MANUAL_RESET & !(VSHH_2901A_HIGH | VSHH_2901A_LOW) => NEXT(!LOOP_2901A_TRIP);",
+        "source_loop": "2901A",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness"
+      },
+      {
+        "property_id": "LOOP_2901B_RESET_CLEARS_TRIP",
+        "description": "Loop 2901B: Trip latch clears one scan after manual reset with no deviation",
+        "nusmv_ltl": "G (LOOP_2901B_TRIP & MANUAL_RESET & !(VSHH_2901B_HIGH | VSHH_2901B_LOW) -> X !LOOP_2901B_TRIP)",
+        "nusmv_ctl": "AG (LOOP_2901B_TRIP & MANUAL_RESET & !(VSHH_2901B_HIGH | VSHH_2901B_LOW) -> AX !LOOP_2901B_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_2901B_TRIP & MANUAL_RESET & !(VSHH_2901B_HIGH | VSHH_2901B_LOW) => NEXT(!LOOP_2901B_TRIP);",
+        "source_loop": "2901B",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness"
+      },
+      {
+        "property_id": "LOOP_3200_RESET_CLEARS_TRIP",
+        "description": "Loop 3200: Trip latch clears one scan after manual reset with no deviation",
+        "nusmv_ltl": "G (LOOP_3200_TRIP & MANUAL_RESET & !(ESD_3200_HIGH | ESD_3200_LOW) -> X !LOOP_3200_TRIP)",
+        "nusmv_ctl": "AG (LOOP_3200_TRIP & MANUAL_RESET & !(ESD_3200_HIGH | ESD_3200_LOW) -> AX !LOOP_3200_TRIP)",
+        "plcverif_spec": "assert ALWAYS LOOP_3200_TRIP & MANUAL_RESET & !(ESD_3200_HIGH | ESD_3200_LOW) => NEXT(!LOOP_3200_TRIP);",
+        "source_loop": "3200",
+        "safety_requirement": "IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness"
+      }
+    ],
+    "counterexamples": [],
+    "nusmv_model": "-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model\n-- Source P&ID: data\\pid_images\\butane.png\n-- Vendor: codesys\n-- Safety functions: 4\n-- NOTE: Boolean abstraction — conservative over-approximation.\n-- Compatible with NuXmv 2.x and NuSMV 2.6+.\n\nMODULE main\nVAR\n  -- Process variable deviations (Boolean abstraction)\n  TI_2909_HIGH   : boolean;  -- TI-2909 above HH setpoint\n  TI_2909_LOW    : boolean;  -- TI-2909 below LL setpoint\n  TT_2909_HIGH   : boolean;  -- TT-2909 above HH setpoint\n  TT_2909_LOW    : boolean;  -- TT-2909 below LL setpoint\n  TG_2910_HIGH   : boolean;  -- TG-2910 above HH setpoint\n  TG_2910_LOW    : boolean;  -- TG-2910 below LL setpoint\n  TY_2911_HIGH   : boolean;  -- TY-2911 above HH setpoint\n  TY_2911_LOW    : boolean;  -- TY-2911 below LL setpoint\n  TIC_2911_HIGH   : boolean;  -- TIC-2911 above HH setpoint\n  TIC_2911_LOW    : boolean;  -- TIC-2911 below LL setpoint\n  TT_2911_HIGH   : boolean;  -- TT-2911 above HH setpoint\n  TT_2911_LOW    : boolean;  -- TT-2911 below LL setpoint\n  TG_2912_HIGH   : boolean;  -- TG-2912 above HH setpoint\n  TG_2912_LOW    : boolean;  -- TG-2912 below LL setpoint\n  TT_2917_HIGH   : boolean;  -- TT-2917 above HH setpoint\n  TT_2917_LOW    : boolean;  -- TT-2917 below LL setpoint\n  TI_2917_HIGH   : boolean;  -- TI-2917 above HH setpoint\n  TI_2917_LOW    : boolean;  -- TI-2917 below LL setpoint\n  PSD_2917_HIGH   : boolean;  -- PSD-2917 above HH setpoint\n  PSD_2917_LOW    : boolean;  -- PSD-2917 below LL setpoint\n  HIC_2903A_HIGH   : boolean;  -- HIC-2903A above HH setpoint\n  HIC_2903A_LOW    : boolean;  -- HIC-2903A below LL setpoint\n  HY_2903A_HIGH   : boolean;  -- HY-2903A above HH setpoint\n  HY_2903A_LOW    : boolean;  -- HY-2903A below LL setpoint\n  HIC_2903B_HIGH   : boolean;  -- HIC-2903B above HH setpoint\n  HIC_2903B_LOW    : boolean;  -- HIC-2903B below LL setpoint\n  HY_2903B_HIGH   : boolean;  -- HY-2903B above HH setpoint\n  HY_2903B_LOW    : boolean;  -- HY-2903B below LL setpoint\n  VSHH_2901A_HIGH   : boolean;  -- VSHH-2901A above HH setpoint\n  VSHH_2901A_LOW    : boolean;  -- VSHH-2901A below LL setpoint\n  VSHH_2901B_HIGH   : boolean;  -- VSHH-2901B above HH setpoint\n  VSHH_2901B_LOW    : boolean;  -- VSHH-2901B below LL setpoint\n  HS_2901A_HIGH   : boolean;  -- HS-2901A above HH setpoint\n  HS_2901A_LOW    : boolean;  -- HS-2901A below LL setpoint\n  HS_2901B_HIGH   : boolean;  -- HS-2901B above HH setpoint\n  HS_2901B_LOW    : boolean;  -- HS-2901B below LL setpoint\n  HS_2901A1_HIGH   : boolean;  -- HS-2901A1 above HH setpoint\n  HS_2901A1_LOW    : boolean;  -- HS-2901A1 below LL setpoint\n  HS_2901B1_HIGH   : boolean;  -- HS-2901B1 above HH setpoint\n  HS_2901B1_LOW    : boolean;  -- HS-2901B1 below LL setpoint\n  HS_2901A2_HIGH   : boolean;  -- HS-2901A2 above HH setpoint\n  HS_2901A2_LOW    : boolean;  -- HS-2901A2 below LL setpoint\n  HS_2901B2_HIGH   : boolean;  -- HS-2901B2 above HH setpoint\n  HS_2901B2_LOW    : boolean;  -- HS-2901B2 below LL setpoint\n  XI_2901A_HIGH   : boolean;  -- XI-2901A above HH setpoint\n  XI_2901A_LOW    : boolean;  -- XI-2901A below LL setpoint\n  XI_2901B_HIGH   : boolean;  -- XI-2901B above HH setpoint\n  XI_2901B_LOW    : boolean;  -- XI-2901B below LL setpoint\n  VA_2901A_HIGH   : boolean;  -- VA-2901A above HH setpoint\n  VA_2901A_LOW    : boolean;  -- VA-2901A below LL setpoint\n  VA_2901B_HIGH   : boolean;  -- VA-2901B above HH setpoint\n  VA_2901B_LOW    : boolean;  -- VA-2901B below LL setpoint\n  ESD_3200_HIGH   : boolean;  -- ESD-3200 above HH setpoint\n  ESD_3200_LOW    : boolean;  -- ESD-3200 below LL setpoint\n  XL_2901A_HIGH   : boolean;  -- XL-2901A above HH setpoint\n  XL_2901A_LOW    : boolean;  -- XL-2901A below LL setpoint\n  XL_2901B_HIGH   : boolean;  -- XL-2901B above HH setpoint\n  XL_2901B_LOW    : boolean;  -- XL-2901B below LL setpoint\n  XA_2901A_HIGH   : boolean;  -- XA-2901A above HH setpoint\n  XA_2901A_LOW    : boolean;  -- XA-2901A below LL setpoint\n  XA_2901B_HIGH   : boolean;  -- XA-2901B above HH setpoint\n  XA_2901B_LOW    : boolean;  -- XA-2901B below LL setpoint\n  HS_START_STOP_A_2901A_HIGH   : boolean;  -- HS-START-STOP-A-2901A above HH setpoint\n  HS_START_STOP_A_2901A_LOW    : boolean;  -- HS-START-STOP-A-2901A below LL setpoint\n  HS_EMERGENCY_STOP_A_2901A_HIGH   : boolean;  -- HS-EMERGENCY-STOP-A-2901A above HH setpoint\n  HS_EMERGENCY_STOP_A_2901A_LOW    : boolean;  -- HS-EMERGENCY-STOP-A-2901A below LL setpoint\n  HS_START_STOP_B_2901B_HIGH   : boolean;  -- HS-START-STOP-B-2901B above HH setpoint\n  HS_START_STOP_B_2901B_LOW    : boolean;  -- HS-START-STOP-B-2901B below LL setpoint\n  HS_EMERGENCY_STOP_B_2901B_HIGH   : boolean;  -- HS-EMERGENCY-STOP-B-2901B above HH setpoint\n  HS_EMERGENCY_STOP_B_2901B_LOW    : boolean;  -- HS-EMERGENCY-STOP-B-2901B below LL setpoint\n  SEQ_A_2901A_HIGH   : boolean;  -- SEQ-A-2901A above HH setpoint\n  SEQ_A_2901A_LOW    : boolean;  -- SEQ-A-2901A below LL setpoint\n  SEQ_B_2901B_HIGH   : boolean;  -- SEQ-B-2901B above HH setpoint\n  SEQ_B_2901B_LOW    : boolean;  -- SEQ-B-2901B below LL setpoint\n\n  -- Per-loop trip latches (stateful, SR semantics —\n  --  set on sensor deviation, clear on MANUAL_RESET with no deviation).\n  LOOP_2917_TRIP   : boolean;  -- Loop 2917 in trip state\n  LOOP_2901A_TRIP   : boolean;  -- Loop 2901A in trip state\n  LOOP_2901B_TRIP   : boolean;  -- Loop 2901B in trip state\n  LOOP_3200_TRIP   : boolean;  -- Loop 3200 in trip state\n\n  -- Global environment inputs (free booleans)\n  ESTOP        : boolean;\n  MANUAL_RESET : boolean;\n\nDEFINE\n  -- SAFE_STATE is combinational: same-cycle disjunction of\n  -- ESTOP and every per-loop trip latch.  Matches the ST\n  -- assignment `SAFE_STATE := ESTOP OR LOOP_<N>_TRIP OR ...`.\n  SAFE_STATE := ESTOP | LOOP_2917_TRIP | LOOP_2901A_TRIP | LOOP_2901B_TRIP | LOOP_3200_TRIP;\n\nASSIGN\n  -- Initial conditions: all safe (de-energised)\n  init(TI_2909_HIGH) := FALSE;\n  init(TI_2909_LOW)  := FALSE;\n  init(TT_2909_HIGH) := FALSE;\n  init(TT_2909_LOW)  := FALSE;\n  init(TG_2910_HIGH) := FALSE;\n  init(TG_2910_LOW)  := FALSE;\n  init(TY_2911_HIGH) := FALSE;\n  init(TY_2911_LOW)  := FALSE;\n  init(TIC_2911_HIGH) := FALSE;\n  init(TIC_2911_LOW)  := FALSE;\n  init(TT_2911_HIGH) := FALSE;\n  init(TT_2911_LOW)  := FALSE;\n  init(TG_2912_HIGH) := FALSE;\n  init(TG_2912_LOW)  := FALSE;\n  init(TT_2917_HIGH) := FALSE;\n  init(TT_2917_LOW)  := FALSE;\n  init(TI_2917_HIGH) := FALSE;\n  init(TI_2917_LOW)  := FALSE;\n  init(PSD_2917_HIGH) := FALSE;\n  init(PSD_2917_LOW)  := FALSE;\n  init(HIC_2903A_HIGH) := FALSE;\n  init(HIC_2903A_LOW)  := FALSE;\n  init(HY_2903A_HIGH) := FALSE;\n  init(HY_2903A_LOW)  := FALSE;\n  init(HIC_2903B_HIGH) := FALSE;\n  init(HIC_2903B_LOW)  := FALSE;\n  init(HY_2903B_HIGH) := FALSE;\n  init(HY_2903B_LOW)  := FALSE;\n  init(VSHH_2901A_HIGH) := FALSE;\n  init(VSHH_2901A_LOW)  := FALSE;\n  init(VSHH_2901B_HIGH) := FALSE;\n  init(VSHH_2901B_LOW)  := FALSE;\n  init(HS_2901A_HIGH) := FALSE;\n  init(HS_2901A_LOW)  := FALSE;\n  init(HS_2901B_HIGH) := FALSE;\n  init(HS_2901B_LOW)  := FALSE;\n  init(HS_2901A1_HIGH) := FALSE;\n  init(HS_2901A1_LOW)  := FALSE;\n  init(HS_2901B1_HIGH) := FALSE;\n  init(HS_2901B1_LOW)  := FALSE;\n  init(HS_2901A2_HIGH) := FALSE;\n  init(HS_2901A2_LOW)  := FALSE;\n  init(HS_2901B2_HIGH) := FALSE;\n  init(HS_2901B2_LOW)  := FALSE;\n  init(XI_2901A_HIGH) := FALSE;\n  init(XI_2901A_LOW)  := FALSE;\n  init(XI_2901B_HIGH) := FALSE;\n  init(XI_2901B_LOW)  := FALSE;\n  init(VA_2901A_HIGH) := FALSE;\n  init(VA_2901A_LOW)  := FALSE;\n  init(VA_2901B_HIGH) := FALSE;\n  init(VA_2901B_LOW)  := FALSE;\n  init(ESD_3200_HIGH) := FALSE;\n  init(ESD_3200_LOW)  := FALSE;\n  init(XL_2901A_HIGH) := FALSE;\n  init(XL_2901A_LOW)  := FALSE;\n  init(XL_2901B_HIGH) := FALSE;\n  init(XL_2901B_LOW)  := FALSE;\n  init(XA_2901A_HIGH) := FALSE;\n  init(XA_2901A_LOW)  := FALSE;\n  init(XA_2901B_HIGH) := FALSE;\n  init(XA_2901B_LOW)  := FALSE;\n  init(HS_START_STOP_A_2901A_HIGH) := FALSE;\n  init(HS_START_STOP_A_2901A_LOW)  := FALSE;\n  init(HS_EMERGENCY_STOP_A_2901A_HIGH) := FALSE;\n  init(HS_EMERGENCY_STOP_A_2901A_LOW)  := FALSE;\n  init(HS_START_STOP_B_2901B_HIGH) := FALSE;\n  init(HS_START_STOP_B_2901B_LOW)  := FALSE;\n  init(HS_EMERGENCY_STOP_B_2901B_HIGH) := FALSE;\n  init(HS_EMERGENCY_STOP_B_2901B_LOW)  := FALSE;\n  init(SEQ_A_2901A_HIGH) := FALSE;\n  init(SEQ_A_2901A_LOW)  := FALSE;\n  init(SEQ_B_2901B_HIGH) := FALSE;\n  init(SEQ_B_2901B_LOW)  := FALSE;\n  init(LOOP_2917_TRIP) := FALSE;\n  init(LOOP_2901A_TRIP) := FALSE;\n  init(LOOP_2901B_TRIP) := FALSE;\n  init(LOOP_3200_TRIP) := FALSE;\n  init(ESTOP)        := FALSE;\n  init(MANUAL_RESET) := FALSE;\n\n  -- SR trip latches: set on sensor deviation, clear on\n  -- MANUAL_RESET with no current deviation, hold otherwise.\n  -- The three-case structure below is the *same* pattern\n  -- emitted by the Safety Contract scaffold in the ST\n  -- code, so the formal model and the code use identical\n  -- transition semantics per loop.\n  next(LOOP_2917_TRIP) :=\n    case\n      TT_2917_HIGH | TT_2917_LOW                                   : TRUE;\n      LOOP_2917_TRIP & MANUAL_RESET & !TT_2917_HIGH & !TT_2917_LOW : FALSE;\n      TRUE                                                                 : LOOP_2917_TRIP;\n    esac;\n  next(LOOP_2901A_TRIP) :=\n    case\n      VSHH_2901A_HIGH | VSHH_2901A_LOW                                   : TRUE;\n      LOOP_2901A_TRIP & MANUAL_RESET & !VSHH_2901A_HIGH & !VSHH_2901A_LOW : FALSE;\n      TRUE                                                                 : LOOP_2901A_TRIP;\n    esac;\n  next(LOOP_2901B_TRIP) :=\n    case\n      VSHH_2901B_HIGH | VSHH_2901B_LOW                                   : TRUE;\n      LOOP_2901B_TRIP & MANUAL_RESET & !VSHH_2901B_HIGH & !VSHH_2901B_LOW : FALSE;\n      TRUE                                                                 : LOOP_2901B_TRIP;\n    esac;\n  next(LOOP_3200_TRIP) :=\n    case\n      ESD_3200_HIGH | ESD_3200_LOW                                   : TRUE;\n      LOOP_3200_TRIP & MANUAL_RESET & !ESD_3200_HIGH & !ESD_3200_LOW : FALSE;\n      TRUE                                                                 : LOOP_3200_TRIP;\n    esac;\n\n-- ── Physical-impossibility constraints (INVAR) ──────────────────────\n-- Constrains state space: same sensor cannot read HH and LL at once.\nINVAR !(TI_2909_HIGH & TI_2909_LOW);\nINVAR !(TT_2909_HIGH & TT_2909_LOW);\nINVAR !(TG_2910_HIGH & TG_2910_LOW);\nINVAR !(TY_2911_HIGH & TY_2911_LOW);\nINVAR !(TIC_2911_HIGH & TIC_2911_LOW);\nINVAR !(TT_2911_HIGH & TT_2911_LOW);\nINVAR !(TG_2912_HIGH & TG_2912_LOW);\nINVAR !(TT_2917_HIGH & TT_2917_LOW);\nINVAR !(TI_2917_HIGH & TI_2917_LOW);\nINVAR !(PSD_2917_HIGH & PSD_2917_LOW);\nINVAR !(HIC_2903A_HIGH & HIC_2903A_LOW);\nINVAR !(HY_2903A_HIGH & HY_2903A_LOW);\nINVAR !(HIC_2903B_HIGH & HIC_2903B_LOW);\nINVAR !(HY_2903B_HIGH & HY_2903B_LOW);\nINVAR !(VSHH_2901A_HIGH & VSHH_2901A_LOW);\nINVAR !(VSHH_2901B_HIGH & VSHH_2901B_LOW);\nINVAR !(HS_2901A_HIGH & HS_2901A_LOW);\nINVAR !(HS_2901B_HIGH & HS_2901B_LOW);\nINVAR !(HS_2901A1_HIGH & HS_2901A1_LOW);\nINVAR !(HS_2901B1_HIGH & HS_2901B1_LOW);\nINVAR !(HS_2901A2_HIGH & HS_2901A2_LOW);\nINVAR !(HS_2901B2_HIGH & HS_2901B2_LOW);\nINVAR !(XI_2901A_HIGH & XI_2901A_LOW);\nINVAR !(XI_2901B_HIGH & XI_2901B_LOW);\nINVAR !(VA_2901A_HIGH & VA_2901A_LOW);\nINVAR !(VA_2901B_HIGH & VA_2901B_LOW);\nINVAR !(ESD_3200_HIGH & ESD_3200_LOW);\nINVAR !(XL_2901A_HIGH & XL_2901A_LOW);\nINVAR !(XL_2901B_HIGH & XL_2901B_LOW);\nINVAR !(XA_2901A_HIGH & XA_2901A_LOW);\nINVAR !(XA_2901B_HIGH & XA_2901B_LOW);\nINVAR !(HS_START_STOP_A_2901A_HIGH & HS_START_STOP_A_2901A_LOW);\nINVAR !(HS_EMERGENCY_STOP_A_2901A_HIGH & HS_EMERGENCY_STOP_A_2901A_LOW);\nINVAR !(HS_START_STOP_B_2901B_HIGH & HS_START_STOP_B_2901B_LOW);\nINVAR !(HS_EMERGENCY_STOP_B_2901B_HIGH & HS_EMERGENCY_STOP_B_2901B_LOW);\nINVAR !(SEQ_A_2901A_HIGH & SEQ_A_2901A_LOW);\nINVAR !(SEQ_B_2901B_HIGH & SEQ_B_2901B_LOW);\n\n-- ===== SAFETY PROPERTIES =====\n-- [LOOP_2917_ESTOP_PRIORITY]\n-- Loop 2917: Emergency stop must force SAFE_STATE in the same scan cycle\n-- Requirement: IEC 61511-1:2016 Section 10.3.4 — E-Stop override precedence\nLTLSPEC G (ESTOP -> SAFE_STATE)\nSPEC AG (ESTOP -> SAFE_STATE)\n\n-- [LOOP_2917_SAFE_STATE_ON_TRIP]\n-- Loop 2917: Any sensor deviation must drive SAFE_STATE within one scan\n-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure\nLTLSPEC G ((TT_2917_HIGH | TT_2917_LOW) -> X SAFE_STATE)\nSPEC AG ((TT_2917_HIGH | TT_2917_LOW) -> AX SAFE_STATE)\n\n-- [LOOP_2901A_SAFE_STATE_ON_TRIP]\n-- Loop 2901A: Any sensor deviation must drive SAFE_STATE within one scan\n-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure\nLTLSPEC G ((VSHH_2901A_HIGH | VSHH_2901A_LOW) -> X SAFE_STATE)\nSPEC AG ((VSHH_2901A_HIGH | VSHH_2901A_LOW) -> AX SAFE_STATE)\n\n-- [LOOP_2901B_SAFE_STATE_ON_TRIP]\n-- Loop 2901B: Any sensor deviation must drive SAFE_STATE within one scan\n-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure\nLTLSPEC G ((VSHH_2901B_HIGH | VSHH_2901B_LOW) -> X SAFE_STATE)\nSPEC AG ((VSHH_2901B_HIGH | VSHH_2901B_LOW) -> AX SAFE_STATE)\n\n-- [LOOP_3200_SAFE_STATE_ON_TRIP]\n-- Loop 3200: Any sensor deviation must drive SAFE_STATE within one scan\n-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure\nLTLSPEC G ((ESD_3200_HIGH | ESD_3200_LOW) -> X SAFE_STATE)\nSPEC AG ((ESD_3200_HIGH | ESD_3200_LOW) -> AX SAFE_STATE)\n\n-- [LOOP_2917_INTERLOCK_ENFORCED]\n-- Loop 2917: Process variable above safety limit raises the trip latch next scan\n-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response\nLTLSPEC G (TT_2917_HIGH -> X LOOP_2917_TRIP)\nSPEC AG (TT_2917_HIGH -> AX LOOP_2917_TRIP)\n\n-- [LOOP_2901A_INTERLOCK_ENFORCED]\n-- Loop 2901A: Process variable above safety limit raises the trip latch next scan\n-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response\nLTLSPEC G (VSHH_2901A_HIGH -> X LOOP_2901A_TRIP)\nSPEC AG (VSHH_2901A_HIGH -> AX LOOP_2901A_TRIP)\n\n-- [LOOP_2901B_INTERLOCK_ENFORCED]\n-- Loop 2901B: Process variable above safety limit raises the trip latch next scan\n-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response\nLTLSPEC G (VSHH_2901B_HIGH -> X LOOP_2901B_TRIP)\nSPEC AG (VSHH_2901B_HIGH -> AX LOOP_2901B_TRIP)\n\n-- [LOOP_3200_INTERLOCK_ENFORCED]\n-- Loop 3200: Process variable above safety limit raises the trip latch next scan\n-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response\nLTLSPEC G (ESD_3200_HIGH -> X LOOP_3200_TRIP)\nSPEC AG (ESD_3200_HIGH -> AX LOOP_3200_TRIP)\n\n-- [LOOP_2917_MANUAL_RESET_REQUIRED]\n-- Loop 2917: Trip latch must persist in absence of manual reset\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement\nLTLSPEC G (LOOP_2917_TRIP & !MANUAL_RESET -> X LOOP_2917_TRIP)\nSPEC AG (LOOP_2917_TRIP & !MANUAL_RESET -> AX LOOP_2917_TRIP)\n\n-- [LOOP_2901A_MANUAL_RESET_REQUIRED]\n-- Loop 2901A: Trip latch must persist in absence of manual reset\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement\nLTLSPEC G (LOOP_2901A_TRIP & !MANUAL_RESET -> X LOOP_2901A_TRIP)\nSPEC AG (LOOP_2901A_TRIP & !MANUAL_RESET -> AX LOOP_2901A_TRIP)\n\n-- [LOOP_2901B_MANUAL_RESET_REQUIRED]\n-- Loop 2901B: Trip latch must persist in absence of manual reset\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement\nLTLSPEC G (LOOP_2901B_TRIP & !MANUAL_RESET -> X LOOP_2901B_TRIP)\nSPEC AG (LOOP_2901B_TRIP & !MANUAL_RESET -> AX LOOP_2901B_TRIP)\n\n-- [LOOP_3200_MANUAL_RESET_REQUIRED]\n-- Loop 3200: Trip latch must persist in absence of manual reset\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement\nLTLSPEC G (LOOP_3200_TRIP & !MANUAL_RESET -> X LOOP_3200_TRIP)\nSPEC AG (LOOP_3200_TRIP & !MANUAL_RESET -> AX LOOP_3200_TRIP)\n\n-- [LOOP_2917_RESET_CLEARS_TRIP]\n-- Loop 2917: Trip latch clears one scan after manual reset with no deviation\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness\nLTLSPEC G (LOOP_2917_TRIP & MANUAL_RESET & !(TT_2917_HIGH | TT_2917_LOW) -> X !LOOP_2917_TRIP)\nSPEC AG (LOOP_2917_TRIP & MANUAL_RESET & !(TT_2917_HIGH | TT_2917_LOW) -> AX !LOOP_2917_TRIP)\n\n-- [LOOP_2901A_RESET_CLEARS_TRIP]\n-- Loop 2901A: Trip latch clears one scan after manual reset with no deviation\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness\nLTLSPEC G (LOOP_2901A_TRIP & MANUAL_RESET & !(VSHH_2901A_HIGH | VSHH_2901A_LOW) -> X !LOOP_2901A_TRIP)\nSPEC AG (LOOP_2901A_TRIP & MANUAL_RESET & !(VSHH_2901A_HIGH | VSHH_2901A_LOW) -> AX !LOOP_2901A_TRIP)\n\n-- [LOOP_2901B_RESET_CLEARS_TRIP]\n-- Loop 2901B: Trip latch clears one scan after manual reset with no deviation\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness\nLTLSPEC G (LOOP_2901B_TRIP & MANUAL_RESET & !(VSHH_2901B_HIGH | VSHH_2901B_LOW) -> X !LOOP_2901B_TRIP)\nSPEC AG (LOOP_2901B_TRIP & MANUAL_RESET & !(VSHH_2901B_HIGH | VSHH_2901B_LOW) -> AX !LOOP_2901B_TRIP)\n\n-- [LOOP_3200_RESET_CLEARS_TRIP]\n-- Loop 3200: Trip latch clears one scan after manual reset with no deviation\n-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness\nLTLSPEC G (LOOP_3200_TRIP & MANUAL_RESET & !(ESD_3200_HIGH | ESD_3200_LOW) -> X !LOOP_3200_TRIP)\nSPEC AG (LOOP_3200_TRIP & MANUAL_RESET & !(ESD_3200_HIGH | ESD_3200_LOW) -> AX !LOOP_3200_TRIP)\n",
+    "execution_time_s": 0.07,
+    "recommendations": [],
+    "timestamp": "2026-04-25T12:15:41.855686"
+  },
+  "io_mapping_summary": "benchmark_runs\\butane\\run_04\\io_mapping.csv",
+  "dt_validation": null,
+  "hitl_review": null,
+  "pipeline_version": "1.6.1",
+  "total_processing_time_seconds": 250.2
+}

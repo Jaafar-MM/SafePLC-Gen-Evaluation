@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <fileHeader companyName="SafePLC-Gen" productName="SafePLC-Gen Multimodal" productVersion="1.0" creationDateTime="2026-04-25T12:15:41.761626Z"/>
+  <contentHeader name="GeneratedProgram">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="0" y="0"/>
+      </fbd>
+      <ld>
+        <scaling x="0" y="0"/>
+      </ld>
+      <sfc>
+        <scaling x="0" y="0"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="GeneratedProgram" pouType="program">
+        <interface>
+          <localVars/>
+          <localVars>
+            <variable name="TI_2909_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_2909_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_2909_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2909_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TT_2909_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TT_2909_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2909_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TT_2911_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TT_2911_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2911_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TIC_2911_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TIC_2911_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TIC_2911_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TIC_2911_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TIC_2911_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TIC_2911_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TT_2917_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TT_2917_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_2917_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="TI_2917_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TI_2917_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901A_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XI_2901B_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LOOP_2917_TRIP">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LOOP_2901A_TRIP">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LOOP_2901B_TRIP">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="LOOP_3200_TRIP">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_HH_Trip">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="TT_2917_LL_Trip">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="VSHH_2901A_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="VSHH_2901A_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="VSHH_2901B_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="VSHH_2901B_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="ESD_3200_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="ESD_3200_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="SAFE_STATE">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MotorA_LocalMode">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MotorA_StartCmd">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MotorA_StopCmd">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MotorA_Run">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MotorA_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="MotorB_LocalMode">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MotorB_StartCmd">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MotorB_StopCmd">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MotorB_Run">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="MotorB_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="StartupDelay">
+              <type>
+                <derived name="TON"/>
+              </type>
+            </variable>
+            <variable name="System_Alarm">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FirstScan">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <ST>
+            <html:p>IF FirstScan THEN
+    LOOP_2917_TRIP       := TRUE;
+    LOOP_2901A_TRIP      := TRUE;
+    LOOP_2901B_TRIP      := TRUE;
+    LOOP_3200_TRIP       := TRUE;
+    SAFE_STATE           := TRUE;
+    KV_2904_Out          := 6554;
+    MCC_A_Out            := FALSE;
+    MCC_B_Out            := FALSE;
+    PSD_2917_Out         := FALSE;
+    MCC_A_and_MCC_B_Out  := FALSE;
+    TIC_2911_Integral    := 0.0;
+    FirstScan            := FALSE;
+    RETURN;
+END_IF;
+
+TI_2909_Scaled  := ((INT_TO_REAL(TI_2909_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;
+TT_2909_Scaled  := ((INT_TO_REAL(TT_2909_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;
+TT_2911_Scaled  := ((INT_TO_REAL(TT_2911_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;
+TT_2917_Scaled  := ((INT_TO_REAL(TT_2917_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;
+TI_2917_Scaled  := ((INT_TO_REAL(TI_2917_Raw)  - 6554.0) / (32767.0 - 6554.0)) * 150.0;
+XI_2901A_Scaled := ((INT_TO_REAL(XI_2901A_Raw) - 6554.0) / (32767.0 - 6554.0)) * 100.0;
+XI_2901B_Scaled := ((INT_TO_REAL(XI_2901B_Raw) - 6554.0) / (32767.0 - 6554.0)) * 100.0;
+
+TT_2917_HH_Trip := TT_2917_Scaled &gt;= TT_2917_HH_SP;
+TT_2917_LL_Trip := TT_2917_Scaled &lt;= TT_2917_LL_SP;
+VSHH_2901A_HH   := VSHH_2901A;
+VSHH_2901A_LL   := FALSE;
+VSHH_2901B_HH   := VSHH_2901B;
+VSHH_2901B_LL   := FALSE;
+ESD_3200_HH     := ESD_3200;
+ESD_3200_LL     := FALSE;
+
+IF TT_2917_HH_Trip OR TT_2917_LL_Trip OR PSD_2917 THEN
+    LOOP_2917_TRIP := TRUE;
+ELSIF LOOP_2917_TRIP AND MANUAL_RESET
+      AND NOT TT_2917_HH_Trip AND NOT TT_2917_LL_Trip AND NOT PSD_2917 THEN
+    LOOP_2917_TRIP := FALSE;
+END_IF;
+
+IF VSHH_2901A_HH OR VSHH_2901A_LL OR HS_EMERGENCY_STOP_A_2901A THEN
+    LOOP_2901A_TRIP := TRUE;
+ELSIF LOOP_2901A_TRIP AND MANUAL_RESET
+      AND NOT VSHH_2901A_HH AND NOT VSHH_2901A_LL AND NOT HS_EMERGENCY_STOP_A_2901A THEN
+    LOOP_2901A_TRIP := FALSE;
+END_IF;
+
+IF VSHH_2901B_HH OR VSHH_2901B_LL OR HS_EMERGENCY_STOP_B_2901B THEN
+    LOOP_2901B_TRIP := TRUE;
+ELSIF LOOP_2901B_TRIP AND MANUAL_RESET
+      AND NOT VSHH_2901B_HH AND NOT VSHH_2901B_LL AND NOT HS_EMERGENCY_STOP_B_2901B THEN
+    LOOP_2901B_TRIP := FALSE;
+END_IF;
+
+IF ESD_3200_HH OR ESD_3200_LL THEN
+    LOOP_3200_TRIP := TRUE;
+ELSIF LOOP_3200_TRIP AND MANUAL_RESET
+      AND NOT ESD_3200_HH AND NOT ESD_3200_LL THEN
+    LOOP_3200_TRIP := FALSE;
+END_IF;
+
+SAFE_STATE := ESTOP
+              OR LOOP_2917_TRIP
+              OR LOOP_2901A_TRIP
+              OR LOOP_2901B_TRIP
+              OR LOOP_3200_TRIP;
+
+IF NOT SAFE_STATE THEN
+    TIC_2911_Error    := TIC_2911_SP - TT_2911_Scaled;
+    TIC_2911_Integral := TIC_2911_Integral + (TIC_2911_Ki * TIC_2911_Error);
+    IF TIC_2911_Integral &gt; 100.0 THEN
+        TIC_2911_Integral := 100.0;
+    ELSIF TIC_2911_Integral &lt; 0.0 THEN
+        TIC_2911_Integral := 0.0;
+    END_IF;
+    TIC_2911_Output := (TIC_2911_Kp * TIC_2911_Error) + TIC_2911_Integral;
+    IF TIC_2911_Output &gt; 100.0 THEN
+        TIC_2911_Output := 100.0;
+    ELSIF TIC_2911_Output &lt; 0.0 THEN
+        TIC_2911_Output := 0.0;
+    END_IF;
+    KV_2904_Out := REAL_TO_INT(6554.0 + (TIC_2911_Output / 100.0) * (32767.0 - 6554.0));
+
+    MotorA_LocalMode := HS_2901A1;
+    IF MotorA_LocalMode THEN
+        MotorA_StartCmd := HS_START_STOP_A_2901A;
+        MotorA_StopCmd  := NOT HS_START_STOP_A_2901A;
+    ELSE
+        MotorA_StartCmd := HS_2901A AND HS_2901A2;
+        MotorA_StopCmd  := NOT HS_2901A2;
+    END_IF;
+    MotorA_Latch(S1 := MotorA_StartCmd, R := MotorA_StopCmd);
+    MotorA_Run := MotorA_Latch.Q1;
+
+    MotorB_LocalMode := HS_2901B1;
+    IF MotorB_LocalMode THEN
+        MotorB_StartCmd := HS_START_STOP_B_2901B;
+        MotorB_StopCmd  := NOT HS_START_STOP_B_2901B;
+    ELSE
+        MotorB_StartCmd := HS_2901B AND HS_2901B2;
+        MotorB_StopCmd  := NOT HS_2901B2;
+    END_IF;
+    MotorB_Latch(S1 := MotorB_StartCmd, R := MotorB_StopCmd);
+    MotorB_Run := MotorB_Latch.Q1;
+
+    StartupDelay(IN := MotorA_Run OR MotorB_Run, PT := T#3S);
+
+    MCC_A_Out           := MotorA_Run AND StartupDelay.Q;
+    MCC_B_Out           := MotorB_Run AND StartupDelay.Q;
+    PSD_2917_Out        := TRUE;
+    MCC_A_and_MCC_B_Out := MCC_A_Out AND MCC_B_Out;
+ELSE
+    KV_2904_Out         := 6554;
+    MCC_A_Out           := FALSE;
+    MCC_B_Out           := FALSE;
+    PSD_2917_Out        := FALSE;
+    MCC_A_and_MCC_B_Out := FALSE;
+    TIC_2911_Integral   := 0.0;
+END_IF;
+
+(* TI_2909 four-level alarms *)
+IF TI_2909_Scaled &gt;= TI_2909_HH_SP THEN
+    TI_2909_HH_Latch.S1 := TRUE;
+ELSIF TI_2909_Scaled &lt;= (TI_2909_HH_SP - TI_2909_Deadband) THEN
+    TI_2909_HH_Latch.S1 := FALSE;
+END_IF;
+TI_2909_HH_Latch(S1 := TI_2909_HH_Latch.S1, R := TI_2909_HH_Ack AND (TI_2909_Scaled &lt; TI_2909_HH_SP));
+TI_2909_HH := TI_2909_HH_Latch.Q1;
+TI_2909_H  := TI_2909_Scaled &gt;= TI_2909_H_SP AND TI_2909_Scaled &lt; TI_2909_HH_SP;
+TI_2909_L  := TI_2909_Scaled &lt;= TI_2909_L_SP AND TI_2909_Scaled &gt; TI_2909_LL_SP;
+IF TI_2909_Scaled &lt;= TI_2909_LL_SP THEN
+    TI_2909_LL_Latch.S1 := TRUE;
+ELSIF TI_2909_Scaled &gt;= (TI_2909_LL_SP + TI_2909_Deadband) THEN
+    TI_2909_LL_Latch.S1 := FALSE;
+END_IF;
+TI_2909_LL_Latch(S1 := TI_2909_LL_Latch.S1, R := TI_2909_LL_Ack AND (TI_2909_Scaled &gt; TI_2909_LL_SP));
+TI_2909_LL := TI_2909_LL_Latch.Q1;
+
+(* TT_2909 four-level alarms *)
+IF TT_2909_Scaled &gt;= TT_2909_HH_SP THEN
+    TT_2909_HH_Latch.S1 := TRUE;
+ELSIF TT_2909_Scaled &lt;= (TT_2909_HH_SP - TT_2909_Deadband) THEN
+    TT_2909_HH_Latch.S1 := FALSE;
+END_IF;
+TT_2909_HH_Latch(S1 := TT_2909_HH_Latch.S1, R := TT_2909_HH_Ack AND (TT_2909_Scaled &lt; TT_2909_HH_SP));
+TT_2909_HH := TT_2909_HH_Latch.Q1;
+TT_2909_H  := TT_2909_Scaled &gt;= TT_2909_H_SP AND TT_2909_Scaled &lt; TT_2909_HH_SP;
+TT_2909_L  := TT_2909_Scaled &lt;= TT_2909_L_SP AND TT_2909_Scaled &gt; TT_2909_LL_SP;
+IF TT_2909_Scaled &lt;= TT_2909_LL_SP THEN
+    TT_2909_LL_Latch.S1 := TRUE;
+ELSIF TT_2909_Scaled &gt;= (TT_2909_LL_SP + TT_2909_Deadband) THEN
+    TT_2909_LL_Latch.S1 := FALSE;
+END_IF;
+TT_2909_LL_Latch(S1 := TT_2909_LL_Latch.S1, R := TT_2909_LL_Ack AND (TT_2909_Scaled &gt; TT_2909_LL_SP));
+TT_2909_LL := TT_2909_LL_Latch.Q1;
+
+(* TT_2911 four-level alarms *)
+IF TT_2911_Scaled &gt;= TT_2911_HH_SP THEN
+    TT_2911_HH_Latch.S1 := TRUE;
+ELSIF TT_2911_Scaled &lt;= (TT_2911_HH_SP - TT_2911_Deadband) THEN
+    TT_2911_HH_Latch.S1 := FALSE;
+END_IF;
+TT_2911_HH_Latch(S1 := TT_2911_HH_Latch.S1, R := TT_2911_HH_Ack AND (TT_2911_Scaled &lt; TT_2911_HH_SP));
+TT_2911_HH := TT_2911_HH_Latch.Q1;
+TT_2911_H  := TT_2911_Scaled &gt;= TT_2911_H_SP AND TT_2911_Scaled &lt; TT_2911_HH_SP;
+TT_2911_L  := TT_2911_Scaled &lt;= TT_2911_L_SP AND TT_2911_Scaled &gt; TT_2911_LL_SP;
+IF TT_2911_Scaled &lt;= TT_2911_LL_SP THEN
+    TT_2911_LL_Latch.S1 := TRUE;
+ELSIF TT_2911_Scaled &gt;= (TT_2911_LL_SP + TT_2911_Deadband) THEN
+    TT_2911_LL_Latch.S1 := FALSE;
+END_IF;
+TT_2911_LL_Latch(S1 := TT_2911_LL_Latch.S1, R := TT_2911_LL_Ack AND (TT_2911_Scaled &gt; TT_2911_LL_SP));
+TT_2911_LL := TT_2911_LL_Latch.Q1;
+
+(* TT_2917 four-level alarms *)
+IF TT_2917_Scaled &gt;= TT_2917_HH_SP THEN
+    TT_2917_HH_Latch.S1 := TRUE;
+ELSIF TT_2917_Scaled &lt;= (TT_2917_HH_SP - TT_2917_Deadband) THEN
+    TT_2917_HH_Latch.S1 := FALSE;
+END_IF;
+TT_2917_HH_Latch(S1 := TT_2917_HH_Latch.S1, R := TT_2917_HH_Ack AND (TT_2917_Scaled &lt; TT_2917_HH_SP));
+TT_2917_HH := TT_2917_HH_Latch.Q1;
+TT_2917_H  := TT_2917_Scaled &gt;= TT_2917_H_SP AND TT_2917_Scaled &lt; TT_2917_HH_SP;
+TT_2917_L  := TT_2917_Scaled &lt;= TT_2917_L_SP AND TT_2917_Scaled &gt; TT_2917_LL_SP;
+IF TT_2917_Scaled &lt;= TT_2917_LL_SP THEN
+    TT_2917_LL_Latch.S1 := TRUE;
+ELSIF TT_2917_Scaled &gt;= (TT_2917_LL_SP + TT_2917_Deadband) THEN
+    TT_2917_LL_Latch.S1 := FALSE;
+END_IF;
+TT_2917_LL_Latch(S1 := TT_2917_LL_Latch.S1, R := TT_2917_LL_Ack AND (TT_2917_Scaled &gt; TT_2917_LL_SP));
+TT_2917_LL := TT_2917_LL_Latch.Q1;
+
+(* TI_2917 four-level alarms *)
+IF TI_2917_Scaled &gt;= TI_2917_HH_SP THEN
+    TI_2917_HH_Latch.S1 := TRUE;
+ELSIF TI_2917_Scaled &lt;= (TI_2917_HH_SP - TI_2917_Deadband) THEN
+    TI_2917_HH_Latch.S1 := FALSE;
+END_IF;
+TI_2917_HH_Latch(S1 := TI_2917_HH_Latch.S1, R := TI_2917_HH_Ack AND (TI_2917_Scaled &lt; TI_2917_HH_SP));
+TI_2917_HH := TI_2917_HH_Latch.Q1;
+TI_2917_H  := TI_2917_Scaled &gt;= TI_2917_H_SP AND TI_2917_Scaled &lt; TI_2917_HH_SP;
+TI_2917_L  := TI_2917_Scaled &lt;= TI_2917_L_SP AND TI_2917_Scaled &gt; TI_2917_LL_SP;
+IF TI_2917_Scaled &lt;= TI_2917_LL_SP THEN
+    TI_2917_LL_Latch.S1 := TRUE;
+ELSIF TI_2917_Scaled &gt;= (TI_2917_LL_SP + TI_2917_Deadband) THEN
+    TI_2917_LL_Latch.S1 := FALSE;
+END_IF;
+TI_2917_LL_Latch(S1 := TI_2917_LL_Latch.S1, R := TI_2917_LL_Ack AND (TI_2917_Scaled &gt; TI_2917_LL_SP));
+TI_2917_LL := TI_2917_LL_Latch.Q1;
+
+(* XI_2901A four-level alarms *)
+IF XI_2901A_Scaled &gt;= XI_2901A_HH_SP THEN
+    XI_2901A_HH_Latch.S1 := TRUE;
+ELSIF XI_2901A_Scaled &lt;= (XI_2901A_HH_SP - XI_2901A_Deadband) THEN
+    XI_2901A_HH_Latch.S1 := FALSE;
+END_IF;
+XI_2901A_HH_Latch(S1 := XI_2901A_HH_Latch.S1, R := XI_2901A_HH_Ack AND (XI_2901A_Scaled &lt; XI_2901A_HH_SP));
+XI_2901A_HH := XI_2901A_HH_Latch.Q1;
+XI_2901A_H  := XI_2901A_Scaled &gt;= XI_2901A_H_SP AND XI_2901A_Scaled &lt; XI_2901A_HH_SP;
+XI_2901A_L  := XI_2901A_Scaled &lt;= XI_2901A_L_SP AND XI_2901A_Scaled &gt; XI_2901A_LL_SP;
+IF XI_2901A_Scaled &lt;= XI_2901A_LL_SP THEN
+    XI_2901A_LL_Latch.S1 := TRUE;
+ELSIF XI_2901A_Scaled &gt;= (XI_2901A_LL_SP + XI_2901A_Deadband) THEN
+    XI_2901A_LL_Latch.S1 := FALSE;
+END_IF;
+XI_2901A_LL_Latch(S1 := XI_2901A_LL_Latch.S1, R := XI_2901A_LL_Ack AND (XI_2901A_Scaled &gt; XI_2901A_LL_SP));
+XI_2901A_LL := XI_2901A_LL_Latch.Q1;
+
+(* XI_2901B four-level alarms *)
+IF XI_2901B_Scaled &gt;= XI_2901B_HH_SP THEN
+    XI_2901B_HH_Latch.S1 := TRUE;
+ELSIF XI_2901B_Scaled &lt;= (XI_2901B_HH_SP - XI_2901B_Deadband) THEN
+    XI_2901B_HH_Latch.S1 := FALSE;
+END_IF;
+XI_2901B_HH_Latch(S1 := XI_2901B_HH_Latch.S1, R := XI_2901B_HH_Ack AND (XI_2901B_Scaled &lt; XI_2901B_HH_SP));
+XI_2901B_HH := XI_2901B_HH_Latch.Q1;
+XI_2901B_H  := XI_2901B_Scaled &gt;= XI_2901B_H_SP AND XI_2901B_Scaled &lt; XI_2901B_HH_SP;
+XI_2901B_L  := XI_2901B_Scaled &lt;= XI_2901B_L_SP AND XI_2901B_Scaled &gt; XI_2901B_LL_SP;
+IF XI_2901B_Scaled &lt;= XI_2901B_LL_SP THEN
+    XI_2901B_LL_Latch.S1 := TRUE;
+ELSIF XI_2901B_Scaled &gt;= (XI_2901B_LL_SP + XI_2901B_Deadband) THEN
+    XI_2901B_LL_Latch.S1 := FALSE;
+END_IF;
+XI_2901B_LL_Latch(S1 := XI_2901B_LL_Latch.S1, R := XI_2901B_LL_Ack AND (XI_2901B_Scaled &gt; XI_2901B_LL_SP));
+XI_2901B_LL := XI_2901B_LL_Latch.Q1;
+
+System_Alarm :=
+    TI_2909_HH_Latch.Q1 OR TI_2909_LL_Latch.Q1 OR TI_2909_H OR TI_2909_L OR
+    TT_2909_HH_Latch.Q1 OR TT_2909_LL_Latch.Q1 OR TT_2909_H OR TT_2909_L OR
+    TT_2911_HH_Latch.Q1 OR TT_2911_LL_Latch.Q1 OR TT_2911_H OR TT_2911_L OR
+    TT_2917_HH_Latch.Q1 OR TT_2917_LL_Latch.Q1 OR TT_2917_H OR TT_2917_L OR
+    TI_2917_HH_Latch.Q1 OR TI_2917_LL_Latch.Q1 OR TI_2917_H OR TI_2917_L OR
+    XI_2901A_HH_Latch.Q1 OR XI_2901A_LL_Latch.Q1 OR XI_2901A_H OR XI_2901A_L OR
+    XI_2901B_HH_Latch.Q1 OR XI_2901B_LL_Latch.Q1 OR XI_2901B_H OR XI_2901B_L OR
+    SAFE_STATE;</html:p>
+          </ST>
+        </body>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Config0">
+        <resource name="Res0">
+          <task name="MainTask" interval="T#20ms" priority="0"/>
+          <pouInstance name="Main" typeName="GeneratedProgram"/>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+</project>
