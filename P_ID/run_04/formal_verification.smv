@@ -1,0 +1,87 @@
+-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model
+-- Source P&ID: data\pid_images\P_ID.png
+-- Vendor: codesys
+-- Safety functions: 0
+-- NOTE: Boolean abstraction — conservative over-approximation.
+-- Compatible with NuXmv 2.x and NuSMV 2.6+.
+
+MODULE main
+VAR
+  -- Process variable deviations (Boolean abstraction)
+  FT_10_HIGH   : boolean;  -- FT-10 above HH setpoint
+  FT_10_LOW    : boolean;  -- FT-10 below LL setpoint
+  FT_11_HIGH   : boolean;  -- FT-11 above HH setpoint
+  FT_11_LOW    : boolean;  -- FT-11 below LL setpoint
+
+  -- Per-loop trip latches (stateful, SR semantics —
+  --  set on sensor deviation, clear on MANUAL_RESET with no deviation).
+
+  -- Global environment inputs (free booleans)
+  ESTOP        : boolean;
+  MANUAL_RESET : boolean;
+
+DEFINE
+  -- SAFE_STATE is combinational: same-cycle disjunction of
+  -- ESTOP and every per-loop trip latch.  Matches the ST
+  -- assignment `SAFE_STATE := ESTOP OR LOOP_<N>_TRIP OR ...`.
+  SAFE_STATE := ESTOP | FT_10_HIGH | FT_10_LOW | FT_11_HIGH | FT_11_LOW;
+
+ASSIGN
+  -- Initial conditions: all safe (de-energised)
+  init(FT_10_HIGH) := FALSE;
+  init(FT_10_LOW)  := FALSE;
+  init(FT_11_HIGH) := FALSE;
+  init(FT_11_LOW)  := FALSE;
+  init(ESTOP)        := FALSE;
+  init(MANUAL_RESET) := FALSE;
+
+  -- SR trip latches: set on sensor deviation, clear on
+  -- MANUAL_RESET with no current deviation, hold otherwise.
+  -- The three-case structure below is the *same* pattern
+  -- emitted by the Safety Contract scaffold in the ST
+  -- code, so the formal model and the code use identical
+  -- transition semantics per loop.
+
+-- ── Physical-impossibility constraints (INVAR) ──────────────────────
+-- Constrains state space: same sensor cannot read HH and LL at once.
+INVAR !(FT_10_HIGH & FT_10_LOW);
+INVAR !(FT_11_HIGH & FT_11_LOW);
+
+-- ===== SAFETY PROPERTIES =====
+-- (No identified safety functions — structural
+-- invariants on the sensor-deviation abstraction.
+-- These are NOT loop-specific safety verifications.)
+-- Reference: IEC 61508-3:2010 Table A.8
+
+-- P01  ESTOP forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (ESTOP -> SAFE_STATE);
+
+-- P02  FT_10_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FT_10_HIGH -> SAFE_STATE);
+
+-- P03  FT_10_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FT_10_LOW -> SAFE_STATE);
+
+-- P04  FT_11_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FT_11_HIGH -> SAFE_STATE);
+
+-- P05  FT_11_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (FT_11_LOW -> SAFE_STATE);
+
+-- P06  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(FT_10_HIGH & FT_10_LOW);
+
+-- P07  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(FT_11_HIGH & FT_11_LOW);
+
+-- P08  SAFE_STATE is reachable from the initial state
+SPEC EF SAFE_STATE;
+
+-- P09  Normal (non-safe) state is reachable
+SPEC EF !SAFE_STATE;
+
+-- Total structural invariants: 9
+-- NOTE: Without identified safety functions there is no
+-- trip latch to verify, so MANUAL_RESET_REQUIRED and
+-- RESET_CLEARS_TRIP are not applicable.  The pipeline
+-- log reports these counts as (loop-specific=0, structural=N).

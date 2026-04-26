@@ -1,0 +1,7 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+FT_10_Raw,%IW0,INT,AI,FT-10,"Flow transmitter on upper feed line (P-201 branch), upstream"
+FT_11_Raw,%IW2,INT,AI,FT-11,"Flow transmitter on lower feed line (P-504 branch), upstream"
+Fv_3_3040_Out,%QW0,INT,AO,Fv-3-3040,Flow control valve on upper feed line (P-201 branch) to Mixe
+Fv_3_3041_Out,%QW2,INT,AO,Fv-3-3041,Flow control valve on lower feed line (P-504 branch) to Mixe
+ISA_SV_3040,%QX0.0,BOOL,DO,ISA-SV-3040,Instrument air supply isolation/solenoid valve on the ISA li
+ISA_SV_3041,%QX0.1,BOOL,DO,ISA-SV-3041,Instrument air supply isolation/solenoid valve on the ISA li

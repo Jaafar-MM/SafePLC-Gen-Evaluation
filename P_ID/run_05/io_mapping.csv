@@ -1,0 +1,5 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+FT_10_Raw,%IW0,INT,AI,FT-10,Flow transmitter on upper process line between vessel V-001 
+FT_11_Raw,%IW2,INT,AI,FT-11,Flow transmitter on lower process line between vessel V-002 
+Fv_3_3040_Out,%QW0,INT,AO,Fv-3-3040,"Flow control valve on upper feed line (from P-201 side), pne"
+Fv_3_3041_Out,%QW2,INT,AO,Fv-3-3041,"Flow control valve on lower feed line (from P-504 side), pne"

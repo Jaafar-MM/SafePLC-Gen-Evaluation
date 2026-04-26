@@ -1,0 +1,26 @@
+digraph SDG {
+  rankdir=LR;
+  node [shape=ellipse, fontname="Arial", fontsize=10];
+  "FT-10" [label="FT-10\nflow", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "FT-11" [label="FT-11\nflow", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P-201" [label="P-201\npump", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P-504" [label="P-504\npump", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "VES-01" [label="VES-01\nvessel", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "STR-01" [label="STR-01\nfilter", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "VES-02" [label="VES-02\nvessel", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "STR-02" [label="STR-02\nfilter", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "M-08" [label="M-08\nmixer", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "R-102" [label="R-102\nreactor", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "Fv-3-3040" [label="Fv-3-3040\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "Fv-3-3041" [label="Fv-3-3041\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "ISA-UV-01" [label="ISA-UV-01\nother", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "ISA-UV-02" [label="ISA-UV-02\nother", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "VES-01" -> "STR-01" [label="+", color="green", fontcolor="green"];
+  "STR-01" -> "Fv-3-3040" [label="+", color="green", fontcolor="green"];
+  "VES-02" -> "STR-02" [label="+", color="green", fontcolor="green"];
+  "STR-02" -> "Fv-3-3041" [label="+", color="green", fontcolor="green"];
+  "Fv-3-3040" -> "FT-10" [label="+", color="green", fontcolor="green"];
+  "Fv-3-3040" -> "M-08" [label="+", color="green", fontcolor="green"];
+  "Fv-3-3041" -> "FT-11" [label="+", color="green", fontcolor="green"];
+  "Fv-3-3041" -> "M-08" [label="+", color="green", fontcolor="green"];
+}

@@ -1,0 +1,20 @@
+digraph SDG {
+  rankdir=LR;
+  node [shape=ellipse, fontname="Arial", fontsize=10];
+  "FT-10" [label="FT-10\nflow", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "FT-11" [label="FT-11\nflow", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P-201" [label="P-201\npump", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P-504" [label="P-504\npump", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "FILTER-001" [label="FILTER-001\nfilter", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "FILTER-002" [label="FILTER-002\nfilter", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "M-08" [label="M-08\nmixer", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "R-102" [label="R-102\nreactor", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "Fv-3-3040" [label="Fv-3-3040\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "Fv-3-3041" [label="Fv-3-3041\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "ISA-VALVE-001" [label="ISA-VALVE-001\nother", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "ISA-VALVE-002" [label="ISA-VALVE-002\nother", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "CHECK-001" [label="CHECK-001\ncheck", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "CHECK-002" [label="CHECK-002\ncheck", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "Fv-3-3040" -> "FT-10" [label="+", color="green", fontcolor="green"];
+  "Fv-3-3041" -> "FT-11" [label="+", color="green", fontcolor="green"];
+}

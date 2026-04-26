@@ -1,0 +1,5 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+FT_10_Raw,%IW0,INT,AI,FT-10,"Flow transmitter on upper process line, measuring flow upstr"
+FT_11_Raw,%IW2,INT,AI,FT-11,"Flow transmitter on lower process line, measuring flow upstr"
+Fv_3_3040_Out,%QW0,INT,AO,Fv-3-3040,"Flow control valve on upper process line, tag Fv-3-3040. Glo"
+Fv_3_3041_Out,%QW2,INT,AO,Fv-3-3041,"Flow control valve on lower process line, tag Fv-3-3041. Glo"

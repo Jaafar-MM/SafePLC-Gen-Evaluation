@@ -1,0 +1,7 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+FT_10_Raw,%IW0,INT,AI,FT-10,"Flow transmitter on upper process line, measures flow upstre"
+FT_11_Raw,%IW2,INT,AI,FT-11,"Flow transmitter on lower process line, measures flow upstre"
+Fv_3_3040_Out,%QW0,INT,AO,Fv-3-3040,Flow control valve on upper process line; globe/ball body wi
+Fv_3_3041_Out,%QW2,INT,AO,Fv-3-3041,Flow control valve on lower process line; globe/ball body wi
+XV_ISA_001,%QX0.0,BOOL,DO,XV-ISA-001,Instrument air supply isolation/regulating valve on ISA line
+XV_ISA_002,%QX0.1,BOOL,DO,XV-ISA-002,Instrument air supply isolation/regulating valve on ISA line

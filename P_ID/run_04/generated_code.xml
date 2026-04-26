@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <fileHeader companyName="SafePLC-Gen" productName="SafePLC-Gen Multimodal" productVersion="1.0" creationDateTime="2026-04-25T12:50:25.280605Z"/>
+  <contentHeader name="GeneratedProgram">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="0" y="0"/>
+      </fbd>
+      <ld>
+        <scaling x="0" y="0"/>
+      </ld>
+      <sfc>
+        <scaling x="0" y="0"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="GeneratedProgram" pouType="program">
+        <interface>
+          <localVars/>
+          <localVars>
+            <variable name="FirstScan">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_10_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_11_Scaled">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_10_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_11_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_10_EU_Min">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_10_EU_Span">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_11_EU_Min">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_11_EU_Span">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_10_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_10_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_10_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_10_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_10_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_11_HH_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_11_H_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_11_L_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_11_LL_SP">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_11_Deadband">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FT_10_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_10_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_10_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_10_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_11_HH">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_11_H">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_11_L">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_11_LL">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_10_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="FT_11_HH_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="FT_11_LL_Latch">
+              <type>
+                <derived name="SR"/>
+              </type>
+            </variable>
+            <variable name="FT_10_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_10_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_11_HH_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FT_11_LL_Ack">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="FIC_10_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FIC_10_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FIC_10_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FIC_10_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FIC_10_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FIC_11_Error">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FIC_11_Integral">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FIC_11_Output">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FIC_11_Kp">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="FIC_11_Ki">
+              <type>
+                <REAL/>
+              </type>
+            </variable>
+            <variable name="XV_ISA_001_Cmd">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="XV_ISA_002_Cmd">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="System_Alarm">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <ST>
+            <html:p>IF FirstScan THEN
+    Fv_3_3040_Out   := 6554;
+    Fv_3_3041_Out   := 6554;
+    XV_ISA_001      := FALSE;
+    XV_ISA_002      := FALSE;
+    FIC_10_Integral := 0.0;
+    FIC_11_Integral := 0.0;
+    (* Ensure latches start in known de-energised state *)
+    FT_10_HH_Latch(S1 := FALSE, R := TRUE);
+    FT_10_LL_Latch(S1 := FALSE, R := TRUE);
+    FT_11_HH_Latch(S1 := FALSE, R := TRUE);
+    FT_11_LL_Latch(S1 := FALSE, R := TRUE);
+    FirstScan       := FALSE;
+    RETURN;
+END_IF;
+
+FT_10_Scaled := ((INT_TO_REAL(FT_10_Raw) - 6554.0) / (32767.0 - 6554.0)) * FT_10_EU_Span + FT_10_EU_Min;
+FT_11_Scaled := ((INT_TO_REAL(FT_11_Raw) - 6554.0) / (32767.0 - 6554.0)) * FT_11_EU_Span + FT_11_EU_Min;
+
+IF FT_10_Scaled &gt;= FT_10_HH_SP THEN
+    FT_10_HH := TRUE;
+ELSIF FT_10_Scaled &lt;= (FT_10_HH_SP - FT_10_Deadband) THEN
+    FT_10_HH := FALSE;
+END_IF;
+
+IF FT_10_Scaled &gt;= FT_10_H_SP THEN
+    FT_10_H := TRUE;
+ELSIF FT_10_Scaled &lt;= (FT_10_H_SP - FT_10_Deadband) THEN
+    FT_10_H := FALSE;
+END_IF;
+
+IF FT_10_Scaled &lt;= FT_10_L_SP THEN
+    FT_10_L := TRUE;
+ELSIF FT_10_Scaled &gt;= (FT_10_L_SP + FT_10_Deadband) THEN
+    FT_10_L := FALSE;
+END_IF;
+
+IF FT_10_Scaled &lt;= FT_10_LL_SP THEN
+    FT_10_LL := TRUE;
+ELSIF FT_10_Scaled &gt;= (FT_10_LL_SP + FT_10_Deadband) THEN
+    FT_10_LL := FALSE;
+END_IF;
+
+FT_10_HH_Latch(S1 := FT_10_HH,
+               R  := (FT_10_HH_Ack AND NOT FT_10_HH));
+
+FT_10_LL_Latch(S1 := FT_10_LL,
+               R  := (FT_10_LL_Ack AND NOT FT_10_LL));
+
+IF FT_11_Scaled &gt;= FT_11_HH_SP THEN
+    FT_11_HH := TRUE;
+ELSIF FT_11_Scaled &lt;= (FT_11_HH_SP - FT_11_Deadband) THEN
+    FT_11_HH := FALSE;
+END_IF;
+
+IF FT_11_Scaled &gt;= FT_11_H_SP THEN
+    FT_11_H := TRUE;
+ELSIF FT_11_Scaled &lt;= (FT_11_H_SP - FT_11_Deadband) THEN
+    FT_11_H := FALSE;
+END_IF;
+
+IF FT_11_Scaled &lt;= FT_11_L_SP THEN
+    FT_11_L := TRUE;
+ELSIF FT_11_Scaled &gt;= (FT_11_L_SP + FT_11_Deadband) THEN
+    FT_11_L := FALSE;
+END_IF;
+
+IF FT_11_Scaled &lt;= FT_11_LL_SP THEN
+    FT_11_LL := TRUE;
+ELSIF FT_11_Scaled &gt;= (FT_11_LL_SP + FT_11_Deadband) THEN
+    FT_11_LL := FALSE;
+END_IF;
+
+FT_11_HH_Latch(S1 := FT_11_HH,
+               R  := (FT_11_HH_Ack AND NOT FT_11_HH));
+
+FT_11_LL_Latch(S1 := FT_11_LL,
+               R  := (FT_11_LL_Ack AND NOT FT_11_LL));
+
+FIC_10_Error    := FT_10_SP - FT_10_Scaled;
+FIC_10_Integral := FIC_10_Integral + (FIC_10_Ki * FIC_10_Error);
+IF FIC_10_Integral &gt; 100.0 THEN
+    FIC_10_Integral := 100.0;
+ELSIF FIC_10_Integral &lt; 0.0 THEN
+    FIC_10_Integral := 0.0;
+END_IF;
+FIC_10_Output := (FIC_10_Kp * FIC_10_Error) + FIC_10_Integral;
+IF FIC_10_Output &gt; 100.0 THEN
+    FIC_10_Output := 100.0;
+ELSIF FIC_10_Output &lt; 0.0 THEN
+    FIC_10_Output := 0.0;
+END_IF;
+Fv_3_3040_Out := REAL_TO_INT(6554.0 + (FIC_10_Output / 100.0) * (32767.0 - 6554.0));
+
+FIC_11_Error    := FT_11_SP - FT_11_Scaled;
+FIC_11_Integral := FIC_11_Integral + (FIC_11_Ki * FIC_11_Error);
+IF FIC_11_Integral &gt; 100.0 THEN
+    FIC_11_Integral := 100.0;
+ELSIF FIC_11_Integral &lt; 0.0 THEN
+    FIC_11_Integral := 0.0;
+END_IF;
+FIC_11_Output := (FIC_11_Kp * FIC_11_Error) + FIC_11_Integral;
+IF FIC_11_Output &gt; 100.0 THEN
+    FIC_11_Output := 100.0;
+ELSIF FIC_11_Output &lt; 0.0 THEN
+    FIC_11_Output := 0.0;
+END_IF;
+Fv_3_3041_Out := REAL_TO_INT(6554.0 + (FIC_11_Output / 100.0) * (32767.0 - 6554.0));
+
+(* Instrument air isolation valves — open when no HH or LL alarm latched *)
+XV_ISA_001_Cmd := NOT (FT_10_HH_Latch.Q1 OR FT_10_LL_Latch.Q1 OR FT_11_HH_Latch.Q1 OR FT_11_LL_Latch.Q1);
+XV_ISA_002_Cmd := XV_ISA_001_Cmd;
+XV_ISA_001     := XV_ISA_001_Cmd;
+XV_ISA_002     := XV_ISA_002_Cmd;
+
+System_Alarm :=
+    FT_10_HH_Latch.Q1 OR FT_10_LL_Latch.Q1 OR
+    FT_10_H            OR FT_10_L            OR
+    FT_11_HH_Latch.Q1 OR FT_11_LL_Latch.Q1 OR
+    FT_11_H            OR FT_11_L;</html:p>
+          </ST>
+        </body>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Config0">
+        <resource name="Res0">
+          <task name="MainTask" interval="T#20ms" priority="0"/>
+          <pouInstance name="Main" typeName="GeneratedProgram"/>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+</project>

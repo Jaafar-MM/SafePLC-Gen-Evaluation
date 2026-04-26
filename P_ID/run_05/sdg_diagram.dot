@@ -1,0 +1,22 @@
+digraph SDG {
+  rankdir=LR;
+  node [shape=ellipse, fontname="Arial", fontsize=10];
+  "FT-10" [label="FT-10\nflow", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "FT-11" [label="FT-11\nflow", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "V-001" [label="V-001\nvessel", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "V-002" [label="V-002\nvessel", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "M-08" [label="M-08\nmixer", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "R-102" [label="R-102\nreactor", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "Fv-3-3040" [label="Fv-3-3040\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "Fv-3-3041" [label="Fv-3-3041\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "ISA-SV-001" [label="ISA-SV-001\nother", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "ISA-SV-002" [label="ISA-SV-002\nother", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "CV-3040-BLK" [label="CV-3040-BLK\ncheck", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "CV-3041-BLK" [label="CV-3041-BLK\ncheck", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "V-001" -> "Fv-3-3040" [label="+", color="green", fontcolor="green"];
+  "V-002" -> "Fv-3-3041" [label="+", color="green", fontcolor="green"];
+  "Fv-3-3040" -> "FT-10" [label="+", color="green", fontcolor="green"];
+  "Fv-3-3040" -> "M-08" [label="+", color="green", fontcolor="green"];
+  "Fv-3-3041" -> "FT-11" [label="+", color="green", fontcolor="green"];
+  "Fv-3-3041" -> "M-08" [label="+", color="green", fontcolor="green"];
+}

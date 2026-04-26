@@ -1,0 +1,1304 @@
+{
+  "pid_analysis": {
+    "pid_id": "d1be7673",
+    "source_type": "image",
+    "source_file": "data\\pid_images\\P_ID.png",
+    "timestamp": "2026-04-25T12:47:50.058592",
+    "equipment": [
+      {
+        "id": "EQ-001",
+        "tag": "V-201A",
+        "component_type": "equipment",
+        "label": "Vertical pressure vessel (surge drum or filter vessel) with horizontal cylindrical body, upstream of control valve Fv-3-3040, fed from Transfer Pump P-201. Visible nozzles: inlet (left), outlet (right).",
+        "description": "Vertical pressure vessel (surge drum or filter vessel) with horizontal cylindrical body, upstream of control valve Fv-3-3040, fed from Transfer Pump P-201. Visible nozzles: inlet (left), outlet (right).",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "subtype": "vessel",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-002",
+        "tag": "V-504A",
+        "component_type": "equipment",
+        "label": "Vertical pressure vessel (surge drum or filter vessel) with horizontal cylindrical body, upstream of control valve Fv-3-3041, fed from Transfer Pump P-504. Visible nozzles: inlet (left), outlet (right).",
+        "description": "Vertical pressure vessel (surge drum or filter vessel) with horizontal cylindrical body, upstream of control valve Fv-3-3041, fed from Transfer Pump P-504. Visible nozzles: inlet (left), outlet (right).",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "subtype": "vessel",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-003",
+        "tag": "M-08",
+        "component_type": "equipment",
+        "label": "Static or dynamic mixer, rectangular symbol, combining streams from the two feed trains (P-201 and P-504 branches). Inlet on left, outlet on right leading to Reactor R-102.",
+        "description": "Static or dynamic mixer, rectangular symbol, combining streams from the two feed trains (P-201 and P-504 branches). Inlet on left, outlet on right leading to Reactor R-102.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "subtype": "mixer",
+        "nozzles": []
+      },
+      {
+        "id": "EQ-004",
+        "tag": "R-102",
+        "component_type": "equipment",
+        "label": "Reactor (off-page destination), referenced by off-page connector arrow labelled 'To Reactor R-102' on the right side of the diagram. Crosshatched cylindrical symbol shown as destination vessel.",
+        "description": "Reactor (off-page destination), referenced by off-page connector arrow labelled 'To Reactor R-102' on the right side of the diagram. Crosshatched cylindrical symbol shown as destination vessel.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "subtype": "reactor",
+        "nozzles": []
+      }
+    ],
+    "instruments": [
+      {
+        "id": "INST-001",
+        "tag": "FT-10",
+        "component_type": "instrument",
+        "label": "Flow transmitter on upper feed line (P-201 branch), upstream of control valve Fv-3-3040. Circle symbol labelled 'FT 10'.",
+        "description": "Flow transmitter on upper feed line (P-201 branch), upstream of control valve Fv-3-3040. Circle symbol labelled 'FT 10'.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "measured_variable": "F",
+        "function": "T",
+        "loop_number": "10",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      },
+      {
+        "id": "INST-002",
+        "tag": "FT-11",
+        "component_type": "instrument",
+        "label": "Flow transmitter on lower feed line (P-504 branch), upstream of control valve Fv-3-3041. Circle symbol labelled 'FT 11'.",
+        "description": "Flow transmitter on lower feed line (P-504 branch), upstream of control valve Fv-3-3041. Circle symbol labelled 'FT 11'.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "measured_variable": "F",
+        "function": "T",
+        "loop_number": "11",
+        "plc_io_type": "AI",
+        "range_min": null,
+        "range_max": null,
+        "engineering_unit": "",
+        "sil_level": 0
+      }
+    ],
+    "valves": [
+      {
+        "id": "VLV-001",
+        "tag": "Fv-3-3040",
+        "component_type": "valve",
+        "label": "Flow control valve on upper feed line (P-201 branch) to Mixer M-08. Globe-body control valve with pneumatic diaphragm actuator. Instrument air supply (ISA) connected to actuator from above. Tag label 'Fv-3-3040' shown on drawing. Associated with FT-10.",
+        "description": "Flow control valve on upper feed line (P-201 branch) to Mixer M-08. Globe-body control valve with pneumatic diaphragm actuator. Instrument air supply (ISA) connected to actuator from above. Tag label 'Fv-3-3040' shown on drawing. Associated with FT-10. [ISA-5.1 I/O: AO]",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "valve_type": "control",
+        "fail_position": "closed",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-002",
+        "tag": "Fv-3-3041",
+        "component_type": "valve",
+        "label": "Flow control valve on lower feed line (P-504 branch) to Mixer M-08. Globe-body control valve with pneumatic diaphragm actuator. Instrument air supply (ISA) connected to actuator from above. Tag label 'Fv-3-3041' shown on drawing. Associated with FT-11.",
+        "description": "Flow control valve on lower feed line (P-504 branch) to Mixer M-08. Globe-body control valve with pneumatic diaphragm actuator. Instrument air supply (ISA) connected to actuator from above. Tag label 'Fv-3-3041' shown on drawing. Associated with FT-11. [ISA-5.1 I/O: AO]",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "valve_type": "control",
+        "fail_position": "closed",
+        "actuator_type": "pneumatic",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-003",
+        "tag": "ISA-SV-3040",
+        "component_type": "valve",
+        "label": "Instrument air supply isolation/solenoid valve on the ISA line feeding actuator of Fv-3-3040. Butterfly/ball symbol with actuator, arrow indicating flow direction toward Fv-3-3040 actuator.",
+        "description": "Instrument air supply isolation/solenoid valve on the ISA line feeding actuator of Fv-3-3040. Butterfly/ball symbol with actuator, arrow indicating flow direction toward Fv-3-3040 actuator.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "valve_type": "solenoid",
+        "fail_position": "closed",
+        "actuator_type": "solenoid",
+        "sil_level": 0
+      },
+      {
+        "id": "VLV-004",
+        "tag": "ISA-SV-3041",
+        "component_type": "valve",
+        "label": "Instrument air supply isolation/solenoid valve on the ISA line feeding actuator of Fv-3-3041. Butterfly/ball symbol with actuator, arrow indicating flow direction toward Fv-3-3041 actuator.",
+        "description": "Instrument air supply isolation/solenoid valve on the ISA line feeding actuator of Fv-3-3041. Butterfly/ball symbol with actuator, arrow indicating flow direction toward Fv-3-3041 actuator.",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "valve_type": "solenoid",
+        "fail_position": "closed",
+        "actuator_type": "solenoid",
+        "sil_level": 0
+      }
+    ],
+    "piping": [
+      {
+        "id": "PIPE-001",
+        "tag": "LINE-3040-UP",
+        "component_type": "piping",
+        "label": "LINE-3040-UP",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "Transfer Pump P-201 (off-page, left)",
+        "to_component": "V-201A inlet",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "LINE-3040-UP",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-002",
+        "tag": "LINE-3040-MID",
+        "component_type": "piping",
+        "label": "LINE-3040-MID",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "V-201A outlet",
+        "to_component": "Fv-3-3040 (control valve)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "LINE-3040-MID",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-003",
+        "tag": "LINE-3040-DN",
+        "component_type": "piping",
+        "label": "LINE-3040-DN",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "Fv-3-3040 (control valve)",
+        "to_component": "Mixer M-08 inlet (upper)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "LINE-3040-DN",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-004",
+        "tag": "LINE-3041-UP",
+        "component_type": "piping",
+        "label": "LINE-3041-UP",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "Transfer Pump P-504 (off-page, left)",
+        "to_component": "V-504A inlet",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "LINE-3041-UP",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-005",
+        "tag": "LINE-3041-MID",
+        "component_type": "piping",
+        "label": "LINE-3041-MID",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "V-504A outlet",
+        "to_component": "Fv-3-3041 (control valve)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "LINE-3041-MID",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-006",
+        "tag": "LINE-3041-DN",
+        "component_type": "piping",
+        "label": "LINE-3041-DN",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "Fv-3-3041 (control valve)",
+        "to_component": "Mixer M-08 inlet (lower)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "LINE-3041-DN",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-007",
+        "tag": "LINE-MIX-OUT",
+        "component_type": "piping",
+        "label": "LINE-MIX-OUT",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "Mixer M-08 outlet",
+        "to_component": "Reactor R-102 (off-page, right)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "LINE-MIX-OUT",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-008",
+        "tag": "ISA-LINE-3040",
+        "component_type": "piping",
+        "label": "ISA-LINE-3040",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "ISA header (Instrument Air Supply, upper)",
+        "to_component": "Fv-3-3040 actuator via ISA-SV-3040",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "ISA-LINE-3040",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-009",
+        "tag": "ISA-LINE-3041",
+        "component_type": "piping",
+        "label": "ISA-LINE-3041",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "ISA header (Instrument Air Supply, lower)",
+        "to_component": "Fv-3-3041 actuator via ISA-SV-3041",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "ISA-LINE-3041",
+        "flow_direction": "forward"
+      },
+      {
+        "id": "PIPE-010",
+        "tag": "SAMPLE-LINE-01",
+        "component_type": "piping",
+        "label": "SAMPLE-LINE-01",
+        "description": "",
+        "bbox": null,
+        "properties": {},
+        "confidence": 0.82,
+        "from_component": "Mixer M-08 outlet line",
+        "to_component": "Sample Point S (hexagonal symbol)",
+        "nominal_size": "",
+        "material": "",
+        "insulation": "",
+        "line_number": "SAMPLE-LINE-01",
+        "flow_direction": "branch"
+      }
+    ],
+    "control_loops": [
+      {
+        "id": "LOOP-001",
+        "loop_number": "10",
+        "loop_type": "feedback",
+        "measured_variable": "Flow",
+        "controlled_variable": "",
+        "sensor_id": "FT-10",
+        "controller_id": "",
+        "actuator_id": "Fv-3-3040",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      },
+      {
+        "id": "LOOP-002",
+        "loop_number": "11",
+        "loop_type": "feedback",
+        "measured_variable": "Flow",
+        "controlled_variable": "",
+        "sensor_id": "FT-11",
+        "controller_id": "",
+        "actuator_id": "Fv-3-3041",
+        "setpoint": null,
+        "engineering_unit": "",
+        "sil_level": 0,
+        "is_safety_function": false
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "id": "EQ-001",
+          "component_type": "equipment",
+          "tag": "V-201A",
+          "label": "Vertical pressure vessel (surge drum or filter vessel) with horizontal cylindrical body, upstream of control valve Fv-3-3040, fed from Transfer Pump P-201. Visible nozzles: inlet (left), outlet (right).",
+          "properties": {
+            "subtype": "vessel"
+          }
+        },
+        {
+          "id": "EQ-002",
+          "component_type": "equipment",
+          "tag": "V-504A",
+          "label": "Vertical pressure vessel (surge drum or filter vessel) with horizontal cylindrical body, upstream of control valve Fv-3-3041, fed from Transfer Pump P-504. Visible nozzles: inlet (left), outlet (right).",
+          "properties": {
+            "subtype": "vessel"
+          }
+        },
+        {
+          "id": "EQ-003",
+          "component_type": "equipment",
+          "tag": "M-08",
+          "label": "Static or dynamic mixer, rectangular symbol, combining streams from the two feed trains (P-201 and P-504 branches). Inlet on left, outlet on right leading to Reactor R-102.",
+          "properties": {
+            "subtype": "mixer"
+          }
+        },
+        {
+          "id": "EQ-004",
+          "component_type": "equipment",
+          "tag": "R-102",
+          "label": "Reactor (off-page destination), referenced by off-page connector arrow labelled 'To Reactor R-102' on the right side of the diagram. Crosshatched cylindrical symbol shown as destination vessel.",
+          "properties": {
+            "subtype": "reactor"
+          }
+        },
+        {
+          "id": "INST-001",
+          "component_type": "instrument",
+          "tag": "FT-10",
+          "label": "Flow transmitter on upper feed line (P-201 branch), upstream of control valve Fv-3-3040. Circle symbol labelled 'FT 10'.",
+          "properties": {
+            "measured_variable": "F",
+            "function": "T",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "INST-002",
+          "component_type": "instrument",
+          "tag": "FT-11",
+          "label": "Flow transmitter on lower feed line (P-504 branch), upstream of control valve Fv-3-3041. Circle symbol labelled 'FT 11'.",
+          "properties": {
+            "measured_variable": "F",
+            "function": "T",
+            "plc_io_type": "AI"
+          }
+        },
+        {
+          "id": "VLV-001",
+          "component_type": "valve",
+          "tag": "Fv-3-3040",
+          "label": "Flow control valve on upper feed line (P-201 branch) to Mixer M-08. Globe-body control valve with pneumatic diaphragm actuator. Instrument air supply (ISA) connected to actuator from above. Tag label 'Fv-3-3040' shown on drawing. Associated with FT-10.",
+          "properties": {
+            "valve_type": "control",
+            "plc_io_type": "AO",
+            "fail_position": "closed"
+          }
+        },
+        {
+          "id": "VLV-002",
+          "component_type": "valve",
+          "tag": "Fv-3-3041",
+          "label": "Flow control valve on lower feed line (P-504 branch) to Mixer M-08. Globe-body control valve with pneumatic diaphragm actuator. Instrument air supply (ISA) connected to actuator from above. Tag label 'Fv-3-3041' shown on drawing. Associated with FT-11.",
+          "properties": {
+            "valve_type": "control",
+            "plc_io_type": "AO",
+            "fail_position": "closed"
+          }
+        },
+        {
+          "id": "VLV-003",
+          "component_type": "valve",
+          "tag": "ISA-SV-3040",
+          "label": "Instrument air supply isolation/solenoid valve on the ISA line feeding actuator of Fv-3-3040. Butterfly/ball symbol with actuator, arrow indicating flow direction toward Fv-3-3040 actuator.",
+          "properties": {
+            "valve_type": "solenoid",
+            "plc_io_type": "DO",
+            "fail_position": "closed"
+          }
+        },
+        {
+          "id": "VLV-004",
+          "component_type": "valve",
+          "tag": "ISA-SV-3041",
+          "label": "Instrument air supply isolation/solenoid valve on the ISA line feeding actuator of Fv-3-3041. Butterfly/ball symbol with actuator, arrow indicating flow direction toward Fv-3-3041 actuator.",
+          "properties": {
+            "valve_type": "solenoid",
+            "plc_io_type": "DO",
+            "fail_position": "closed"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source_id": "Transfer Pump P-201 (off-page, left)",
+          "target_id": "V-201A inlet",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "LINE-3040-UP"
+          }
+        },
+        {
+          "source_id": "V-201A outlet",
+          "target_id": "Fv-3-3040 (control valve)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "LINE-3040-MID"
+          }
+        },
+        {
+          "source_id": "Fv-3-3040 (control valve)",
+          "target_id": "Mixer M-08 inlet (upper)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "LINE-3040-DN"
+          }
+        },
+        {
+          "source_id": "Transfer Pump P-504 (off-page, left)",
+          "target_id": "V-504A inlet",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "LINE-3041-UP"
+          }
+        },
+        {
+          "source_id": "V-504A outlet",
+          "target_id": "Fv-3-3041 (control valve)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "LINE-3041-MID"
+          }
+        },
+        {
+          "source_id": "Fv-3-3041 (control valve)",
+          "target_id": "Mixer M-08 inlet (lower)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "LINE-3041-DN"
+          }
+        },
+        {
+          "source_id": "Mixer M-08 outlet",
+          "target_id": "Reactor R-102 (off-page, right)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "LINE-MIX-OUT"
+          }
+        },
+        {
+          "source_id": "ISA header (Instrument Air Supply, upper)",
+          "target_id": "Fv-3-3040 actuator via ISA-SV-3040",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "ISA-LINE-3040"
+          }
+        },
+        {
+          "source_id": "ISA header (Instrument Air Supply, lower)",
+          "target_id": "Fv-3-3041 actuator via ISA-SV-3041",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "ISA-LINE-3041"
+          }
+        },
+        {
+          "source_id": "Mixer M-08 outlet line",
+          "target_id": "Sample Point S (hexagonal symbol)",
+          "edge_type": "CONNECTED_TO",
+          "properties": {
+            "line_number": "SAMPLE-LINE-01"
+          }
+        }
+      ]
+    },
+    "extraction_confidence": 0.82,
+    "warnings": [
+      "VLM notes: 1) The drawing is a schematic P&ID created in Visual Paradigm Online and is relatively clear at the shown resolution. 2) Two parallel feed trains (from P-201 and P-504) each pass through a vessel/filter, a flow transmitter, and a pneumatic control valve before joining at Mixer M-08. 3) Both control valves (Fv-3-3040 and Fv-3-3041) receive instrument air from separate ISA headers via solenoid/isolation valves shown with actuator symbols and directional arrows. 4) No explicit controller bubbles (FC) are drawn; controllers are implied as PLC-internal logic. 5) A sample point (hexagonal 'S' symbol) is shown on the outlet line from M-08 near the off-page connector 'To Reactor R-102'. 6) The vessels upstream of each control valve appear as horizontal cylindrical bodies with dished ends — consistent with filter housings, coalescer vessels, or surge drums; no internals detail is visible at this resolution. 7) Off-page connectors: left side references 'From Transfer Pump P-201' and 'From Transfer Pump P-504'; right side references 'To Reactor R-102'. 8) Fail positions of Fv-3-3040 and Fv-3-3041 are inferred as fail-closed (FC) based on the pneumatic diaphragm actuator with instrument air supply — typical for feed control valves — but are not explicitly annotated on the drawing. 9) No PSVs, level instruments, temperature instruments, or emergency shutdown valves are visible on this P&ID sheet.",
+      "Extraction confidence (0.82) below threshold (0.85). Consider DEXPI input for validation."
+    ],
+    "raw_vlm_output": "```json\n{\n  \"equipment\": [\n    {\n      \"tag\": \"V-201A\",\n      \"subtype\": \"vessel\",\n      \"description\": \"Vertical pressure vessel (surge drum or filter vessel) with horizontal cylindrical body, upstream of control valve Fv-3-3040, fed from Transfer Pump P-201. Visible nozzles: inlet (left), outlet (right).\"\n    },\n    {\n      \"tag\": \"V-504A\",\n      \"subtype\": \"vessel\",\n      \"description\": \"Vertical pressure vessel (surge drum or filter vessel) with horizontal cylindrical body, upstream of control valve Fv-3-3041, fed from Transfer Pump P-504. Visible nozzles: inlet (left), outlet (right).\"\n    },\n    {\n      \"tag\": \"M-08\",\n      \"subtype\": \"mixer\",\n      \"description\": \"Static or dynamic mixer, rectangular symbol, combining streams from the two feed trains (P-201 and P-504 branches). Inlet on left, outlet on right leading to Reactor R-102.\"\n    },\n    {\n      \"tag\": \"R-102\",\n      \"subtype\": \"reactor\",\n      \"description\": \"Reactor (off-page destination), referenced by off-page connector arrow labelled 'To Reactor R-102' on the right side of the diagram. Crosshatched cylindrical symbol shown as destination vessel.\"\n    }\n  ],\n  \"instruments\": [\n    {\n      \"tag\": \"FT-10\",\n      \"measured_variable\": \"F\",\n      \"function\": \"T\",\n      \"loop_number\": \"10\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Flow transmitter on upper feed line (P-201 branch), upstream of control valve Fv-3-3040. Circle symbol labelled 'FT 10'.\"\n    },\n    {\n      \"tag\": \"FT-11\",\n      \"measured_variable\": \"F\",\n      \"function\": \"T\",\n      \"loop_number\": \"11\",\n      \"plc_io_type\": \"AI\",\n      \"description\": \"Flow transmitter on lower feed line (P-504 branch), upstream of control valve Fv-3-3041. Circle symbol labelled 'FT 11'.\"\n    }\n  ],\n  \"valves\": [\n    {\n      \"tag\": \"Fv-3-3040\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"closed\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Flow control valve on upper feed line (P-201 branch) to Mixer M-08. Globe-body control valve with pneumatic diaphragm actuator. Instrument air supply (ISA) connected to actuator from above. Tag label 'Fv-3-3040' shown on drawing. Associated with FT-10.\"\n    },\n    {\n      \"tag\": \"Fv-3-3041\",\n      \"valve_type\": \"control\",\n      \"fail_position\": \"closed\",\n      \"actuator_type\": \"pneumatic\",\n      \"description\": \"Flow control valve on lower feed line (P-504 branch) to Mixer M-08. Globe-body control valve with pneumatic diaphragm actuator. Instrument air supply (ISA) connected to actuator from above. Tag label 'Fv-3-3041' shown on drawing. Associated with FT-11.\"\n    },\n    {\n      \"tag\": \"ISA-SV-3040\",\n      \"valve_type\": \"solenoid\",\n      \"fail_position\": \"closed\",\n      \"actuator_type\": \"solenoid\",\n      \"description\": \"Instrument air supply isolation/solenoid valve on the ISA line feeding actuator of Fv-3-3040. Butterfly/ball symbol with actuator, arrow indicating flow direction toward Fv-3-3040 actuator.\"\n    },\n    {\n      \"tag\": \"ISA-SV-3041\",\n      \"valve_type\": \"solenoid\",\n      \"fail_position\": \"closed\",\n      \"actuator_type\": \"solenoid\",\n      \"description\": \"Instrument air supply isolation/solenoid valve on the ISA line feeding actuator of Fv-3-3041. Butterfly/ball symbol with actuator, arrow indicating flow direction toward Fv-3-3041 actuator.\"\n    }\n  ],\n  \"piping\": [\n    {\n      \"line_number\": \"LINE-3040-UP\",\n      \"from_component\": \"Transfer Pump P-201 (off-page, left)\",\n      \"to_component\": \"V-201A inlet\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"LINE-3040-MID\",\n      \"from_component\": \"V-201A outlet\",\n      \"to_component\": \"Fv-3-3040 (control valve)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"LINE-3040-DN\",\n      \"from_component\": \"Fv-3-3040 (control valve)\",\n      \"to_component\": \"Mixer M-08 inlet (upper)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"LINE-3041-UP\",\n      \"from_component\": \"Transfer Pump P-504 (off-page, left)\",\n      \"to_component\": \"V-504A inlet\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"LINE-3041-MID\",\n      \"from_component\": \"V-504A outlet\",\n      \"to_component\": \"Fv-3-3041 (control valve)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"LINE-3041-DN\",\n      \"from_component\": \"Fv-3-3041 (control valve)\",\n      \"to_component\": \"Mixer M-08 inlet (lower)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"LINE-MIX-OUT\",\n      \"from_component\": \"Mixer M-08 outlet\",\n      \"to_component\": \"Reactor R-102 (off-page, right)\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"ISA-LINE-3040\",\n      \"from_component\": \"ISA header (Instrument Air Supply, upper)\",\n      \"to_component\": \"Fv-3-3040 actuator via ISA-SV-3040\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"ISA-LINE-3041\",\n      \"from_component\": \"ISA header (Instrument Air Supply, lower)\",\n      \"to_component\": \"Fv-3-3041 actuator via ISA-SV-3041\",\n      \"flow_direction\": \"forward\"\n    },\n    {\n      \"line_number\": \"SAMPLE-LINE-01\",\n      \"from_component\": \"Mixer M-08 outlet line\",\n      \"to_component\": \"Sample Point S (hexagonal symbol)\",\n      \"flow_direction\": \"branch\"\n    }\n  ],\n  \"control_loops\": [\n    {\n      \"loop_number\": \"10\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Flow\",\n      \"sensor_tag\": \"FT-10\",\n      \"controller_tag\": null,\n      \"actuator_tag\": \"Fv-3-3040\",\n      \"is_safety_function\": false,\n      \"notes\": \"Flow control loop on P-201 feed branch. Controller is PLC-internal (no controller bubble visible on drawing). FT-10 signal feeds PLC which positions Fv-3-3040 via ISA supply.\"\n    },\n    {\n      \"loop_number\": \"11\",\n      \"loop_type\": \"feedback\",\n      \"measured_variable\": \"Flow\",\n      \"sensor_tag\": \"FT-11\",\n      \"controller_tag\": null,\n      \"actuator_tag\": \"Fv-3-3041\",\n      \"is_safety_function\": false,\n      \"notes\": \"Flow control loop on P-504 feed branch. Controller is PLC-internal (no controller bubble visible on drawing). FT-11 signal feeds PLC which positions Fv-3-3041 via ISA supply.\"\n    }\n  ],\n  \"extraction_confidence\": 0.82,\n  \"notes\": \"1) The drawing is a schematic P&ID created in Visual Paradigm Online and is relatively clear at the shown resolution. 2) Two parallel feed trains (from P-201 and P-504) each pass through a vessel/filter, a flow transmitter, and a pneumatic control valve before joining at Mixer M-08. 3) Both control valves (Fv-3-3040 and Fv-3-3041) receive instrument air from separate ISA headers via solenoid/isolation valves shown with actuator symbols and directional arrows. 4) No explicit controller bubbles (FC) are drawn; controllers are implied as PLC-internal logic. 5) A sample point (hexagonal 'S' symbol) is shown on the outlet line from M-08 near the off-page connector 'To Reactor R-102'. 6) The vessels upstream of each control valve appear as horizontal cylindrical bodies with dished ends — consistent with filter housings, coalescer vessels, or surge drums; no internals detail is visible at this resolution. 7) Off-page connectors: left side references 'From Transfer Pump P-201' and 'From Transfer Pump P-504'; right side references 'To Reactor R-102'. 8) Fail positions of Fv-3-3040 and Fv-3-3041 are inferred as fail-closed (FC) based on the pneumatic diaphragm actuator with instrument air supply — typical for feed control valves — but are not explicitly annotated on the drawing. 9) No PSVs, level instruments, temperature instruments, or emergency shutdown valves are visible on this P&ID sheet.\"\n}\n```"
+  },
+  "generated_code": {
+    "code": "(* Generated by SafePLC-Gen Multimodal — CODESYS 3.5 *)\n(* IEC 61131-3 Structured Text *)\n(* Date: 2026-04-25T12:48:40.086466 *)\n\nPROGRAM FlowControl\n\nVAR\n    FT_10_Raw                    AT %IW0       : INT := 0;\n    FT_11_Raw                    AT %IW2       : INT := 0;\n    Fv_3_3040_Out                AT %QW0       : INT := 0;\n    Fv_3_3041_Out                AT %QW2       : INT := 0;\n    ISA_SV_3040                  AT %QX0.0     : BOOL := FALSE;\n    ISA_SV_3041                  AT %QX0.1     : BOOL := FALSE;\nEND_VAR\n\nVAR\n    FirstScan                    : BOOL := TRUE;\n\n    FT_10_Scaled                 : REAL := 0.0;\n    FT_11_Scaled                 : REAL := 0.0;\n\n    FT_10_SP                     : REAL := 50.0;\n    FT_11_SP                     : REAL := 50.0;\n\n    FT_10_HH_SP                  : REAL := 90.0;\n    FT_10_H_SP                   : REAL := 80.0;\n    FT_10_L_SP                   : REAL := 20.0;\n    FT_10_LL_SP                  : REAL := 10.0;\n    FT_10_Deadband               : REAL := 2.0;\n\n    FT_11_HH_SP                  : REAL := 90.0;\n    FT_11_H_SP                   : REAL := 80.0;\n    FT_11_L_SP                   : REAL := 20.0;\n    FT_11_LL_SP                  : REAL := 10.0;\n    FT_11_Deadband               : REAL := 2.0;\n\n    FT_10_H                      : BOOL := FALSE;\n    FT_10_L                      : BOOL := FALSE;\n    FT_10_HH_Active              : BOOL := FALSE;\n    FT_10_LL_Active              : BOOL := FALSE;\n    FT_10_HH_Ack                 : BOOL := FALSE;\n    FT_10_LL_Ack                 : BOOL := FALSE;\n\n    FT_11_H                      : BOOL := FALSE;\n    FT_11_L                      : BOOL := FALSE;\n    FT_11_HH_Active              : BOOL := FALSE;\n    FT_11_LL_Active              : BOOL := FALSE;\n    FT_11_HH_Ack                 : BOOL := FALSE;\n    FT_11_LL_Ack                 : BOOL := FALSE;\n\n    FIC_10_Error                 : REAL := 0.0;\n    FIC_10_Integral              : REAL := 0.0;\n    FIC_10_Output                : REAL := 0.0;\n    FIC_10_Kp                    : REAL := 1.2;\n    FIC_10_Ki                    : REAL := 0.05;\n\n    FIC_11_Error                 : REAL := 0.0;\n    FIC_11_Integral              : REAL := 0.0;\n    FIC_11_Output                : REAL := 0.0;\n    FIC_11_Kp                    : REAL := 1.2;\n    FIC_11_Ki                    : REAL := 0.05;\n\n    System_Alarm                 : BOOL := FALSE;\nEND_VAR\n\nIF FirstScan THEN\n    FT_10_Scaled      := 0.0;\n    FT_11_Scaled      := 0.0;\n    FIC_10_Integral   := 0.0;\n    FIC_11_Integral   := 0.0;\n    FIC_10_Output     := 0.0;\n    FIC_11_Output     := 0.0;\n    FT_10_HH_Active   := FALSE;\n    FT_10_LL_Active   := FALSE;\n    FT_11_HH_Active   := FALSE;\n    FT_11_LL_Active   := FALSE;\n    Fv_3_3040_Out     := 6554;\n    Fv_3_3041_Out     := 6554;\n    ISA_SV_3040       := FALSE;\n    ISA_SV_3041       := FALSE;\n    FirstScan         := FALSE;\n    RETURN;\nEND_IF;\n\nFT_10_Scaled := ((INT_TO_REAL(FT_10_Raw) - 6554.0) / (32767.0 - 6554.0)) * 100.0;\nFT_11_Scaled := ((INT_TO_REAL(FT_11_Raw) - 6554.0) / (32767.0 - 6554.0)) * 100.0;\n\n(* FT-10 HH latch: set when above HH_SP, clear only on ack AND value returned below threshold *)\nIF FT_10_Scaled >= FT_10_HH_SP THEN\n    FT_10_HH_Active := TRUE;\nELSIF FT_10_HH_Ack AND (FT_10_Scaled <= (FT_10_HH_SP - FT_10_Deadband)) THEN\n    FT_10_HH_Active := FALSE;\nEND_IF;\n\n(* FT-10 H alarm with deadband *)\nIF FT_10_Scaled >= FT_10_H_SP THEN\n    FT_10_H := TRUE;\nELSIF FT_10_Scaled <= (FT_10_H_SP - FT_10_Deadband) THEN\n    FT_10_H := FALSE;\nEND_IF;\n\n(* FT-10 L alarm with deadband *)\nIF FT_10_Scaled <= FT_10_L_SP THEN\n    FT_10_L := TRUE;\nELSIF FT_10_Scaled >= (FT_10_L_SP + FT_10_Deadband) THEN\n    FT_10_L := FALSE;\nEND_IF;\n\n(* FT-10 LL latch: set when below LL_SP, clear only on ack AND value returned above threshold *)\nIF FT_10_Scaled <= FT_10_LL_SP THEN\n    FT_10_LL_Active := TRUE;\nELSIF FT_10_LL_Ack AND (FT_10_Scaled >= (FT_10_LL_SP + FT_10_Deadband)) THEN\n    FT_10_LL_Active := FALSE;\nEND_IF;\n\n(* FT-11 HH latch *)\nIF FT_11_Scaled >= FT_11_HH_SP THEN\n    FT_11_HH_Active := TRUE;\nELSIF FT_11_HH_Ack AND (FT_11_Scaled <= (FT_11_HH_SP - FT_11_Deadband)) THEN\n    FT_11_HH_Active := FALSE;\nEND_IF;\n\n(* FT-11 H alarm with deadband *)\nIF FT_11_Scaled >= FT_11_H_SP THEN\n    FT_11_H := TRUE;\nELSIF FT_11_Scaled <= (FT_11_H_SP - FT_11_Deadband) THEN\n    FT_11_H := FALSE;\nEND_IF;\n\n(* FT-11 L alarm with deadband *)\nIF FT_11_Scaled <= FT_11_L_SP THEN\n    FT_11_L := TRUE;\nELSIF FT_11_Scaled >= (FT_11_L_SP + FT_11_Deadband) THEN\n    FT_11_L := FALSE;\nEND_IF;\n\n(* FT-11 LL latch *)\nIF FT_11_Scaled <= FT_11_LL_SP THEN\n    FT_11_LL_Active := TRUE;\nELSIF FT_11_LL_Ack AND (FT_11_Scaled >= (FT_11_LL_SP + FT_11_Deadband)) THEN\n    FT_11_LL_Active := FALSE;\nEND_IF;\n\n(* FIC-10 PI controller for upper feed line *)\nFIC_10_Error    := FT_10_SP - FT_10_Scaled;\nFIC_10_Integral := FIC_10_Integral + (FIC_10_Ki * FIC_10_Error);\nIF FIC_10_Integral > 100.0 THEN\n    FIC_10_Integral := 100.0;\nELSIF FIC_10_Integral < 0.0 THEN\n    FIC_10_Integral := 0.0;\nEND_IF;\nFIC_10_Output := (FIC_10_Kp * FIC_10_Error) + FIC_10_Integral;\nIF FIC_10_Output > 100.0 THEN\n    FIC_10_Output := 100.0;\nELSIF FIC_10_Output < 0.0 THEN\n    FIC_10_Output := 0.0;\nEND_IF;\nFv_3_3040_Out := REAL_TO_INT(6554.0 + (FIC_10_Output / 100.0) * (32767.0 - 6554.0));\n\n(* Instrument air solenoid open only when no HH or LL alarm active on upper line *)\nISA_SV_3040 := NOT FT_10_HH_Active AND NOT FT_10_LL_Active;\n\n(* FIC-11 PI controller for lower feed line *)\nFIC_11_Error    := FT_11_SP - FT_11_Scaled;\nFIC_11_Integral := FIC_11_Integral + (FIC_11_Ki * FIC_11_Error);\nIF FIC_11_Integral > 100.0 THEN\n    FIC_11_Integral := 100.0;\nELSIF FIC_11_Integral < 0.0 THEN\n    FIC_11_Integral := 0.0;\nEND_IF;\nFIC_11_Output := (FIC_11_Kp * FIC_11_Error) + FIC_11_Integral;\nIF FIC_11_Output > 100.0 THEN\n    FIC_11_Output := 100.0;\nELSIF FIC_11_Output < 0.0 THEN\n    FIC_11_Output := 0.0;\nEND_IF;\nFv_3_3041_Out := REAL_TO_INT(6554.0 + (FIC_11_Output / 100.0) * (32767.0 - 6554.0));\n\n(* Instrument air solenoid open only when no HH or LL alarm active on lower line *)\nISA_SV_3041 := NOT FT_11_HH_Active AND NOT FT_11_LL_Active;\n\n(* Aggregate all alarm states for SCADA/HMI *)\nSystem_Alarm :=\n    FT_10_HH_Active OR FT_10_LL_Active OR FT_10_H OR FT_10_L OR\n    FT_11_HH_Active OR FT_11_LL_Active OR FT_11_H OR FT_11_L;\n\nEND_PROGRAM",
+    "vendor": "codesys",
+    "target_loops": [
+      "10",
+      "11"
+    ],
+    "safety_functions_included": [],
+    "generation_context": "IEC 61131-3 Standard Function Blocks — Timers, Counters, Edge Detection, Bistable. IEC 61131-3:2003 Section 2.5.2.3 defines exactly four categories of standard function blocks. ALL compliant PLC implementations must support these. Any FB not listed here (e.g., PID, SCALE, FILTER) is either vendor-specific or from an add-on library like OSCAT. Keywords: TON TOF TP timer on-delay off-delay pulse CTU CTD CTUD counter up counter down counter R_TRIG F_TRIG rising edge falling edge edge detection SR R",
+    "warnings": [],
+    "timestamp": "2026-04-25T12:48:40.088643"
+  },
+  "code_validation": {
+    "is_valid": true,
+    "total_errors": 0,
+    "total_warnings": 15,
+    "tiers_available": 5,
+    "tiers_passed": 5,
+    "tier_results": [
+      {
+        "tier": "tier1_builtin",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "built-in v1.0",
+        "execution_time_ms": 3.0,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "SYN-006",
+            "message": "Division by 'HMI' without visible zero-check",
+            "line": null,
+            "suggestion": "Add guard: IF HMI <> 0.0 THEN ... END_IF"
+          }
+        ]
+      },
+      {
+        "tier": "tier2_blark",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "blark 0.8.3",
+        "execution_time_ms": 1126.9,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "BLK-001",
+            "message": "ST code parsed successfully — syntax valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier3_matiec",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "matiec/iec2c",
+        "execution_time_ms": 166.4,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "MAT-001",
+            "message": "matiec compilation successful — code is valid",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier4_iec_checker",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 15,
+        "tool_version": "iec-checker v0.4",
+        "execution_time_ms": 22.2,
+        "findings": [
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-CP9",
+            "message": "Code is too complex (97 McCabe complexity)",
+            "line": 0,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-CP9",
+            "message": "Code is too complex (107 statements)",
+            "line": 0,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 172,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 166,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 153,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 147,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 138,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 131,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 124,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 117,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 110,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 103,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 96,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 89,
+            "suggestion": ""
+          },
+          {
+            "severity": "warning",
+            "code": "IEC-PLCOPEN-L17",
+            "message": "Each IF instruction should have an ELSE clause",
+            "line": 66,
+            "suggestion": ""
+          }
+        ]
+      },
+      {
+        "tier": "tier5_plcopen_xml",
+        "available": true,
+        "passed": true,
+        "error_count": 0,
+        "warning_count": 0,
+        "tool_version": "PLCopen TC6 v2.01",
+        "execution_time_ms": 1.8,
+        "findings": [
+          {
+            "severity": "info",
+            "code": "XML-001",
+            "message": "PLCopen XML generated successfully (10319 characters)",
+            "line": null,
+            "suggestion": ""
+          }
+        ]
+      }
+    ],
+    "has_plcopen_xml": true,
+    "feedback_for_llm": "Validation PASSED — no errors found.",
+    "timestamp": "2026-04-25T12:48:41.532687"
+  },
+  "safety_check": {
+    "is_compliant": true,
+    "sil_level_achieved": 3,
+    "checks_passed": [
+      "variable_initialisation",
+      "emergency_stop_handling (no safety functions)",
+      "alarm_handling",
+      "defensive_programming",
+      "no_unused_variables"
+    ],
+    "checks_failed": [],
+    "recommendations": [
+      "Consider adding timeout protection for communication and process operations.",
+      "Provisional SIL 2 assigned. Target SIL 3 will be granted only if NuXmv/PLCverif formal verification passes all generated LTL/CTL properties."
+    ],
+    "interlock_coverage": 0.0,
+    "diagnostic_coverage": 0.0
+  },
+  "fault_diagnosis": {
+    "fault_id": "3eee476d",
+    "symptom": "Full P&ID fault analysis (FMEA + SDG propagation)",
+    "root_causes": [
+      {
+        "component_tag": "Fv-3-3040",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "Fv-3-3040",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "Fv-3-3041",
+        "fault_mode": "stuck_open",
+        "system_effect": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "severity": "critical",
+        "detection": "Positioner feedback deviation alarm",
+        "action": "Switch to manual bypass; inspect actuator diaphragm, positioner",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "Fv-3-3041",
+        "fault_mode": "stuck_closed",
+        "system_effect": "Flow stoppage — process starvation, pump dead-heading",
+        "severity": "critical",
+        "detection": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "action": "Check air supply pressure; inspect positioner; replace actuator",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "FT-10",
+        "fault_mode": "low",
+        "system_effect": "Controller opens valve — possible overflow or runaway",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "action": "Inspect for blocked impulse line, check power supply; replace if failed",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "FT-11",
+        "fault_mode": "low",
+        "system_effect": "Controller opens valve — possible overflow or runaway",
+        "severity": "critical",
+        "detection": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "action": "Inspect for blocked impulse line, check power supply; replace if failed",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISA-SV-3040",
+        "fault_mode": "fail_to_close",
+        "system_effect": "Safety function unavailable — process hazard propagates",
+        "severity": "critical",
+        "detection": "Partial stroke test (PST); SIL proof-test schedule",
+        "action": "Immediate proof-test; check coil continuity and air supply",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "ISA-SV-3041",
+        "fault_mode": "fail_to_close",
+        "system_effect": "Safety function unavailable — process hazard propagates",
+        "severity": "critical",
+        "detection": "Partial stroke test (PST); SIL proof-test schedule",
+        "action": "Immediate proof-test; check coil continuity and air supply",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "V-201A",
+        "fault_mode": "high_pressure",
+        "system_effect": "Structural integrity risk; PRV / PSV demand",
+        "severity": "critical",
+        "detection": "PSV-102 or rupture disc; PAH alarm",
+        "action": "Activate ESD; verify PSV lift; investigate cause after isolation",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "V-201A",
+        "fault_mode": "high_level",
+        "system_effect": "Flooding downstream equipment; pump cavitation",
+        "severity": "critical",
+        "detection": "LSH alarm; LHH trip",
+        "action": "Activate level shutdown; divert flow; inspect level instrument",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "V-504A",
+        "fault_mode": "high_pressure",
+        "system_effect": "Structural integrity risk; PRV / PSV demand",
+        "severity": "critical",
+        "detection": "PSV-102 or rupture disc; PAH alarm",
+        "action": "Activate ESD; verify PSV lift; investigate cause after isolation",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "V-504A",
+        "fault_mode": "high_level",
+        "system_effect": "Flooding downstream equipment; pump cavitation",
+        "severity": "critical",
+        "detection": "LSH alarm; LHH trip",
+        "action": "Activate level shutdown; divert flow; inspect level instrument",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "R-102",
+        "fault_mode": "thermal_runaway",
+        "system_effect": "Temperature/pressure spike; loss of containment; fire/explosion",
+        "severity": "critical",
+        "detection": "Redundant TI with 2oo3 voting; dump / quench / inhibitor system",
+        "action": "Activate emergency dump/quench; isolate reactants; follow CCPS guidelines",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "R-102",
+        "fault_mode": "agitator_fail",
+        "system_effect": "Loss of mixing — localised hot-spot or runaway",
+        "severity": "critical",
+        "detection": "Motor-current trending; shaft-speed monitor",
+        "action": "Immediate cooling; dump contents; inspect shaft seal and bearings",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "Fv-3-3040",
+        "fault_mode": "fail_as_is",
+        "system_effect": "Loss of control — process drifts from setpoint",
+        "severity": "major",
+        "detection": "Controller output deviation alarm",
+        "action": "Check valve positioner signal; inspect packing / gland",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "Fv-3-3040",
+        "fault_mode": "external_leak",
+        "system_effect": "Fugitive emission — HSE hazard if toxic/flammable",
+        "severity": "major",
+        "detection": "Periodic leak check per API 624; FID / gas detector",
+        "action": "Tighten packing; replace stem packing at next shutdown",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "Fv-3-3041",
+        "fault_mode": "fail_as_is",
+        "system_effect": "Loss of control — process drifts from setpoint",
+        "severity": "major",
+        "detection": "Controller output deviation alarm",
+        "action": "Check valve positioner signal; inspect packing / gland",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "Fv-3-3041",
+        "fault_mode": "external_leak",
+        "system_effect": "Fugitive emission — HSE hazard if toxic/flammable",
+        "severity": "major",
+        "detection": "Periodic leak check per API 624; FID / gas detector",
+        "action": "Tighten packing; replace stem packing at next shutdown",
+        "sdg_reach": 1
+      },
+      {
+        "component_tag": "FT-10",
+        "fault_mode": "high",
+        "system_effect": "Controller drives valve closed unnecessarily",
+        "severity": "major",
+        "detection": "Process cross-check with DP; NAMUR NE 107 Out-of-Spec alarm",
+        "action": "Inspect impulse lines; calibrate or replace transmitter",
+        "sdg_reach": 0
+      },
+      {
+        "component_tag": "FT-11",
+        "fault_mode": "high",
+        "system_effect": "Controller drives valve closed unnecessarily",
+        "severity": "major",
+        "detection": "Process cross-check with DP; NAMUR NE 107 Out-of-Spec alarm",
+        "action": "Inspect impulse lines; calibrate or replace transmitter",
+        "sdg_reach": 0
+      }
+    ],
+    "propagation_paths": [
+      {
+        "initiating_tag": "Fv-3-3040",
+        "deviation": "no_flow",
+        "propagation_chain": [
+          "FT-10 (flow ↓)"
+        ],
+        "terminal_effect": "Process flow lost — downstream starvation / upstream pressure rise.",
+        "severity": "minor"
+      },
+      {
+        "initiating_tag": "Fv-3-3041",
+        "deviation": "no_flow",
+        "propagation_chain": [
+          "FT-11 (flow ↓)"
+        ],
+        "terminal_effect": "Process flow lost — downstream starvation / upstream pressure rise.",
+        "severity": "minor"
+      }
+    ],
+    "fmea_records": [
+      {
+        "component_tag": "FT-10",
+        "component_type": "Instrument (T)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high flow reading",
+        "failure_effect_system": "Controller drives valve closed unnecessarily",
+        "detection_method": "Process cross-check with DP; NAMUR NE 107 Out-of-Spec alarm",
+        "severity": "major",
+        "recommended_action": "Inspect impulse lines; calibrate or replace transmitter"
+      },
+      {
+        "component_tag": "FT-10",
+        "component_type": "Instrument (T)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low / zero flow reading",
+        "failure_effect_system": "Controller opens valve — possible overflow or runaway",
+        "detection_method": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "severity": "critical",
+        "recommended_action": "Inspect for blocked impulse line, check power supply; replace if failed"
+      },
+      {
+        "component_tag": "FT-11",
+        "component_type": "Instrument (T)",
+        "fault_mode": "high",
+        "failure_effect_local": "False high flow reading",
+        "failure_effect_system": "Controller drives valve closed unnecessarily",
+        "detection_method": "Process cross-check with DP; NAMUR NE 107 Out-of-Spec alarm",
+        "severity": "major",
+        "recommended_action": "Inspect impulse lines; calibrate or replace transmitter"
+      },
+      {
+        "component_tag": "FT-11",
+        "component_type": "Instrument (T)",
+        "fault_mode": "low",
+        "failure_effect_local": "False low / zero flow reading",
+        "failure_effect_system": "Controller opens valve — possible overflow or runaway",
+        "detection_method": "NAMUR NE 107 Failure alarm; low-flow interlock check",
+        "severity": "critical",
+        "recommended_action": "Inspect for blocked impulse line, check power supply; replace if failed"
+      },
+      {
+        "component_tag": "Fv-3-3040",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "Fv-3-3040",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "Fv-3-3040",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "Fv-3-3040",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "Fv-3-3041",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_open",
+        "failure_effect_local": "Valve unable to close",
+        "failure_effect_system": "Uncontrolled flow — possible flooding or overpressure downstream",
+        "detection_method": "Positioner feedback deviation alarm",
+        "severity": "critical",
+        "recommended_action": "Switch to manual bypass; inspect actuator diaphragm, positioner"
+      },
+      {
+        "component_tag": "Fv-3-3041",
+        "component_type": "Control Valve",
+        "fault_mode": "stuck_closed",
+        "failure_effect_local": "Valve unable to open",
+        "failure_effect_system": "Flow stoppage — process starvation, pump dead-heading",
+        "detection_method": "Low flow alarm (FIA-L); pump trip on low-flow protection",
+        "severity": "critical",
+        "recommended_action": "Check air supply pressure; inspect positioner; replace actuator"
+      },
+      {
+        "component_tag": "Fv-3-3041",
+        "component_type": "Control Valve",
+        "fault_mode": "fail_as_is",
+        "failure_effect_local": "Valve frozen at last position",
+        "failure_effect_system": "Loss of control — process drifts from setpoint",
+        "detection_method": "Controller output deviation alarm",
+        "severity": "major",
+        "recommended_action": "Check valve positioner signal; inspect packing / gland"
+      },
+      {
+        "component_tag": "Fv-3-3041",
+        "component_type": "Control Valve",
+        "fault_mode": "external_leak",
+        "failure_effect_local": "Stem packing leak",
+        "failure_effect_system": "Fugitive emission — HSE hazard if toxic/flammable",
+        "detection_method": "Periodic leak check per API 624; FID / gas detector",
+        "severity": "major",
+        "recommended_action": "Tighten packing; replace stem packing at next shutdown"
+      },
+      {
+        "component_tag": "ISA-SV-3040",
+        "component_type": "Solenoid Valve",
+        "fault_mode": "fail_to_close",
+        "failure_effect_local": "ESD valve does not close on demand",
+        "failure_effect_system": "Safety function unavailable — process hazard propagates",
+        "detection_method": "Partial stroke test (PST); SIL proof-test schedule",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; check coil continuity and air supply"
+      },
+      {
+        "component_tag": "ISA-SV-3040",
+        "component_type": "Solenoid Valve",
+        "fault_mode": "spurious_trip",
+        "failure_effect_local": "Valve closes without demand",
+        "failure_effect_system": "Nuisance shutdown — production loss",
+        "detection_method": "Spurious trip log; review MTTR",
+        "severity": "major",
+        "recommended_action": "Check for voltage spike / EMI on coil; review wiring"
+      },
+      {
+        "component_tag": "ISA-SV-3041",
+        "component_type": "Solenoid Valve",
+        "fault_mode": "fail_to_close",
+        "failure_effect_local": "ESD valve does not close on demand",
+        "failure_effect_system": "Safety function unavailable — process hazard propagates",
+        "detection_method": "Partial stroke test (PST); SIL proof-test schedule",
+        "severity": "critical",
+        "recommended_action": "Immediate proof-test; check coil continuity and air supply"
+      },
+      {
+        "component_tag": "ISA-SV-3041",
+        "component_type": "Solenoid Valve",
+        "fault_mode": "spurious_trip",
+        "failure_effect_local": "Valve closes without demand",
+        "failure_effect_system": "Nuisance shutdown — production loss",
+        "detection_method": "Spurious trip log; review MTTR",
+        "severity": "major",
+        "recommended_action": "Check for voltage spike / EMI on coil; review wiring"
+      },
+      {
+        "component_tag": "V-201A",
+        "component_type": "Vessel",
+        "fault_mode": "high_pressure",
+        "failure_effect_local": "Vessel overpressure",
+        "failure_effect_system": "Structural integrity risk; PRV / PSV demand",
+        "detection_method": "PSV-102 or rupture disc; PAH alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; verify PSV lift; investigate cause after isolation"
+      },
+      {
+        "component_tag": "V-201A",
+        "component_type": "Vessel",
+        "fault_mode": "high_level",
+        "failure_effect_local": "Liquid overflow",
+        "failure_effect_system": "Flooding downstream equipment; pump cavitation",
+        "detection_method": "LSH alarm; LHH trip",
+        "severity": "critical",
+        "recommended_action": "Activate level shutdown; divert flow; inspect level instrument"
+      },
+      {
+        "component_tag": "V-201A",
+        "component_type": "Vessel",
+        "fault_mode": "low_level",
+        "failure_effect_local": "Vessel runs dry",
+        "failure_effect_system": "Pump cavitation; loss of process",
+        "detection_method": "LSL alarm; LLL trip",
+        "severity": "major",
+        "recommended_action": "Reduce outflow; check inlet isolation valves"
+      },
+      {
+        "component_tag": "V-504A",
+        "component_type": "Vessel",
+        "fault_mode": "high_pressure",
+        "failure_effect_local": "Vessel overpressure",
+        "failure_effect_system": "Structural integrity risk; PRV / PSV demand",
+        "detection_method": "PSV-102 or rupture disc; PAH alarm",
+        "severity": "critical",
+        "recommended_action": "Activate ESD; verify PSV lift; investigate cause after isolation"
+      },
+      {
+        "component_tag": "V-504A",
+        "component_type": "Vessel",
+        "fault_mode": "high_level",
+        "failure_effect_local": "Liquid overflow",
+        "failure_effect_system": "Flooding downstream equipment; pump cavitation",
+        "detection_method": "LSH alarm; LHH trip",
+        "severity": "critical",
+        "recommended_action": "Activate level shutdown; divert flow; inspect level instrument"
+      },
+      {
+        "component_tag": "V-504A",
+        "component_type": "Vessel",
+        "fault_mode": "low_level",
+        "failure_effect_local": "Vessel runs dry",
+        "failure_effect_system": "Pump cavitation; loss of process",
+        "detection_method": "LSL alarm; LLL trip",
+        "severity": "major",
+        "recommended_action": "Reduce outflow; check inlet isolation valves"
+      },
+      {
+        "component_tag": "M-08",
+        "component_type": "Mixer",
+        "fault_mode": "shaft_seal_leak",
+        "failure_effect_local": "Agitator shaft seal leak",
+        "failure_effect_system": "Loss of containment; fugitive emission",
+        "detection_method": "Seal-pot level alarm; visual inspection",
+        "severity": "major",
+        "recommended_action": "Switch to spare; replace mechanical seal"
+      },
+      {
+        "component_tag": "M-08",
+        "component_type": "Mixer",
+        "fault_mode": "imbalance",
+        "failure_effect_local": "Rotational imbalance (blade damage)",
+        "failure_effect_system": "Excessive vibration; bearing failure imminent",
+        "detection_method": "VT-trending; motor-current anomaly",
+        "severity": "major",
+        "recommended_action": "Stop unit; inspect impeller for erosion / blade loss"
+      },
+      {
+        "component_tag": "R-102",
+        "component_type": "Reactor",
+        "fault_mode": "thermal_runaway",
+        "failure_effect_local": "Exothermic runaway reaction",
+        "failure_effect_system": "Temperature/pressure spike; loss of containment; fire/explosion",
+        "detection_method": "Redundant TI with 2oo3 voting; dump / quench / inhibitor system",
+        "severity": "critical",
+        "recommended_action": "Activate emergency dump/quench; isolate reactants; follow CCPS guidelines"
+      },
+      {
+        "component_tag": "R-102",
+        "component_type": "Reactor",
+        "fault_mode": "catalyst_poisoning",
+        "failure_effect_local": "Catalyst poisoning / deactivation",
+        "failure_effect_system": "Loss of yield; increased feed to meet target; higher temp needed",
+        "detection_method": "Product-purity analyser trending; temperature-rise-per-pass",
+        "severity": "major",
+        "recommended_action": "Feed-spec review; plan catalyst change-out"
+      },
+      {
+        "component_tag": "R-102",
+        "component_type": "Reactor",
+        "fault_mode": "coking",
+        "failure_effect_local": "Coke / polymer formation",
+        "failure_effect_system": "DP rise; hot-spots; channelling",
+        "detection_method": "DP-cell trending; skin-TC array",
+        "severity": "major",
+        "recommended_action": "Plan decoke / regeneration; review feed composition"
+      },
+      {
+        "component_tag": "R-102",
+        "component_type": "Reactor",
+        "fault_mode": "agitator_fail",
+        "failure_effect_local": "Agitator failure in stirred-tank reactor",
+        "failure_effect_system": "Loss of mixing — localised hot-spot or runaway",
+        "detection_method": "Motor-current trending; shaft-speed monitor",
+        "severity": "critical",
+        "recommended_action": "Immediate cooling; dump contents; inspect shaft seal and bearings"
+      }
+    ],
+    "severity": "critical",
+    "repair_procedure": "PRIORITY REPAIR ACTIONS (Critical fault modes):\nReference: IEC 61511:2016+AMD1 Clause 5.2 — Functional Safety Management\n\n  [FT-10] LOW\n    Effect  : Controller opens valve — possible overflow or runaway\n    Detect  : NAMUR NE 107 Failure alarm; low-flow interlock check\n    Action  : Inspect for blocked impulse line, check power supply; replace if failed\n\n  [Fv-3-3040] STUCK_OPEN\n    Effect  : Uncontrolled flow — possible flooding or overpressure downstream\n    Detect  : Positioner feedback deviation alarm\n    Action  : Switch to manual bypass; inspect actuator diaphragm, positioner\n\n  [Fv-3-3040] STUCK_CLOSED\n    Effect  : Flow stoppage — process starvation, pump dead-heading\n    Detect  : Low flow alarm (FIA-L); pump trip on low-flow protection\n    Action  : Check air supply pressure; inspect positioner; replace actuator\n\n  [ISA-SV-3040] FAIL_TO_CLOSE\n    Effect  : Safety function unavailable — process hazard propagates\n    Detect  : Partial stroke test (PST); SIL proof-test schedule\n    Action  : Immediate proof-test; check coil continuity and air supply\n\n  [V-201A] HIGH_PRESSURE\n    Effect  : Structural integrity risk; PRV / PSV demand\n    Detect  : PSV-102 or rupture disc; PAH alarm\n    Action  : Activate ESD; verify PSV lift; investigate cause after isolation\n\n  [V-201A] HIGH_LEVEL\n    Effect  : Flooding downstream equipment; pump cavitation\n    Detect  : LSH alarm; LHH trip\n    Action  : Activate level shutdown; divert flow; inspect level instrument\n",
+    "affected_components": [
+      "FT-10",
+      "FT-11",
+      "V-201A",
+      "Fv-3-3040",
+      "ISA-SV-3041",
+      "R-102",
+      "ISA-SV-3040",
+      "V-504A",
+      "Fv-3-3041",
+      "M-08"
+    ],
+    "sdg_node_count": 10,
+    "sdg_edge_count": 2,
+    "timestamp": "2026-04-25T12:48:42.906589"
+  },
+  "formal_verification": {
+    "status": "passed",
+    "tool_used": "nuxmv",
+    "tool_version": "nuXmv 2.1.0",
+    "properties_generated": 9,
+    "properties_verified": 9,
+    "properties_failed": 0,
+    "properties": [],
+    "counterexamples": [],
+    "nusmv_model": "-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model\n-- Source P&ID: data\\pid_images\\P_ID.png\n-- Vendor: codesys\n-- Safety functions: 0\n-- NOTE: Boolean abstraction — conservative over-approximation.\n-- Compatible with NuXmv 2.x and NuSMV 2.6+.\n\nMODULE main\nVAR\n  -- Process variable deviations (Boolean abstraction)\n  FT_10_HIGH   : boolean;  -- FT-10 above HH setpoint\n  FT_10_LOW    : boolean;  -- FT-10 below LL setpoint\n  FT_11_HIGH   : boolean;  -- FT-11 above HH setpoint\n  FT_11_LOW    : boolean;  -- FT-11 below LL setpoint\n\n  -- Per-loop trip latches (stateful, SR semantics —\n  --  set on sensor deviation, clear on MANUAL_RESET with no deviation).\n\n  -- Global environment inputs (free booleans)\n  ESTOP        : boolean;\n  MANUAL_RESET : boolean;\n\nDEFINE\n  -- SAFE_STATE is combinational: same-cycle disjunction of\n  -- ESTOP and every per-loop trip latch.  Matches the ST\n  -- assignment `SAFE_STATE := ESTOP OR LOOP_<N>_TRIP OR ...`.\n  SAFE_STATE := ESTOP | FT_10_HIGH | FT_10_LOW | FT_11_HIGH | FT_11_LOW;\n\nASSIGN\n  -- Initial conditions: all safe (de-energised)\n  init(FT_10_HIGH) := FALSE;\n  init(FT_10_LOW)  := FALSE;\n  init(FT_11_HIGH) := FALSE;\n  init(FT_11_LOW)  := FALSE;\n  init(ESTOP)        := FALSE;\n  init(MANUAL_RESET) := FALSE;\n\n  -- SR trip latches: set on sensor deviation, clear on\n  -- MANUAL_RESET with no current deviation, hold otherwise.\n  -- The three-case structure below is the *same* pattern\n  -- emitted by the Safety Contract scaffold in the ST\n  -- code, so the formal model and the code use identical\n  -- transition semantics per loop.\n\n-- ── Physical-impossibility constraints (INVAR) ──────────────────────\n-- Constrains state space: same sensor cannot read HH and LL at once.\nINVAR !(FT_10_HIGH & FT_10_LOW);\nINVAR !(FT_11_HIGH & FT_11_LOW);\n\n-- ===== SAFETY PROPERTIES =====\n-- (No identified safety functions — structural\n-- invariants on the sensor-deviation abstraction.\n-- These are NOT loop-specific safety verifications.)\n-- Reference: IEC 61508-3:2010 Table A.8\n\n-- P01  ESTOP forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (ESTOP -> SAFE_STATE);\n\n-- P02  FT_10_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FT_10_HIGH -> SAFE_STATE);\n\n-- P03  FT_10_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FT_10_LOW -> SAFE_STATE);\n\n-- P04  FT_11_HIGH forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FT_11_HIGH -> SAFE_STATE);\n\n-- P05  FT_11_LOW forces SAFE_STATE (same cycle, from DEFINE)\nINVARSPEC (FT_11_LOW -> SAFE_STATE);\n\n-- P06  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(FT_10_HIGH & FT_10_LOW);\n\n-- P07  HH and LL cannot be TRUE simultaneously (from INVAR constraint)\nINVARSPEC !(FT_11_HIGH & FT_11_LOW);\n\n-- P08  SAFE_STATE is reachable from the initial state\nSPEC EF SAFE_STATE;\n\n-- P09  Normal (non-safe) state is reachable\nSPEC EF !SAFE_STATE;\n\n-- Total structural invariants: 9\n-- NOTE: Without identified safety functions there is no\n-- trip latch to verify, so MANUAL_RESET_REQUIRED and\n-- RESET_CLEARS_TRIP are not applicable.  The pipeline\n-- log reports these counts as (loop-specific=0, structural=N).\n",
+    "execution_time_s": 0.05,
+    "recommendations": [],
+    "timestamp": "2026-04-25T12:48:42.903046"
+  },
+  "io_mapping_summary": "benchmark_runs\\P_ID\\run_03\\io_mapping.csv",
+  "dt_validation": null,
+  "hitl_review": null,
+  "pipeline_version": "1.6.1",
+  "total_processing_time_seconds": 88.2
+}
