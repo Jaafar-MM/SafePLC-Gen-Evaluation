@@ -1,0 +1,8 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+PI_4712.01_Raw,%IW0,INT,AI,PI-4712.01,Pressure indicator (local gauge) on line associated with hea
+PICSA_4712.02_Raw,%IW2,INT,AI,PICSA-4712.02,Pressure indicating controller with safety alarm (ICSA = Ind
+TICSA_4750.03_Raw,%IW4,INT,AI,TICSA-4750.03,Temperature indicating controller with safety alarm function
+PVA_4712.02_Out,%QW0,INT,AO,PVA-4712.02,Pressure control valve (PVA - pressure valve with alarm) on 
+TV_4750.03_Out,%QW2,INT,AO,TV-4750.03,Temperature control valve on utility (heating/cooling medium
+HS_4750.01,%IX0.0,BOOL,DI,HS-4750.01,Hand switch / selector switch (HS) located in green ellipse 
+XV_MNc_47124,%QX0.0,BOOL,DO,XV-MNc-47124,Check valve (non-return) on line MNc 47124 75HB13 80 at 80/5

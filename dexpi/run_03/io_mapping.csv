@@ -1,0 +1,8 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+PI_4712.01_Raw,%IW0,INT,AI,PI-4712.01,Pressure indicator (local gauge) located on the discharge si
+PICSA_4712.02_Raw,%IW2,INT,AI,PICSA-4712.02,"Pressure indicator, controller, switch, and alarm — combined"
+TICSA_4750.03_Raw,%IW4,INT,AI,TICSA-4750.03,"Temperature indicator, controller, switch, and alarm — combi"
+FC_HV_H_1007_inlet_Out,%QW0,INT,AO,FC-HV-H-1007-inlet,Fail-closed on/off valve (F.C. annotation) on the line betwe
+PVA_4712.02_Out,%QW2,INT,AO,PVA-4712.02,Pressure control valve on recirculation/bypass line near Q80
+TV_4750.03_Out,%QW4,INT,AO,TV-4750.03,Temperature control valve on service/utility line associated
+HS_4750.01,%IX0.0,BOOL,DI,HS-4750.01,Hand switch (operator pushbutton/selector) located near heat

@@ -1,0 +1,115 @@
+-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model
+-- Source P&ID: data\pid_images\C01V04-VER.EX01.xml
+-- Vendor: codesys
+-- Safety functions: 0
+-- NOTE: Boolean abstraction — conservative over-approximation.
+-- Compatible with NuXmv 2.x and NuSMV 2.6+.
+
+MODULE main
+VAR
+  -- Process variable deviations (Boolean abstraction)
+  PI_4712_01_HIGH   : boolean;  -- PI-4712.01 above HH setpoint
+  PI_4712_01_LOW    : boolean;  -- PI-4712.01 below LL setpoint
+  PICSA_4712_02_HIGH   : boolean;  -- PICSA-4712.02 above HH setpoint
+  PICSA_4712_02_LOW    : boolean;  -- PICSA-4712.02 below LL setpoint
+  HS_4750_01_HIGH   : boolean;  -- HS-4750.01 above HH setpoint
+  HS_4750_01_LOW    : boolean;  -- HS-4750.01 below LL setpoint
+  TICSA_4750_03_HIGH   : boolean;  -- TICSA-4750.03 above HH setpoint
+  TICSA_4750_03_LOW    : boolean;  -- TICSA-4750.03 below LL setpoint
+
+  -- Per-loop trip latches (stateful, SR semantics —
+  --  set on sensor deviation, clear on MANUAL_RESET with no deviation).
+
+  -- Global environment inputs (free booleans)
+  ESTOP        : boolean;
+  MANUAL_RESET : boolean;
+
+DEFINE
+  -- SAFE_STATE is combinational: same-cycle disjunction of
+  -- ESTOP and every per-loop trip latch.  Matches the ST
+  -- assignment `SAFE_STATE := ESTOP OR LOOP_<N>_TRIP OR ...`.
+  SAFE_STATE := ESTOP | PI_4712_01_HIGH | PI_4712_01_LOW | PICSA_4712_02_HIGH | PICSA_4712_02_LOW | HS_4750_01_HIGH | HS_4750_01_LOW | TICSA_4750_03_HIGH | TICSA_4750_03_LOW;
+
+ASSIGN
+  -- Initial conditions: all safe (de-energised)
+  init(PI_4712_01_HIGH) := FALSE;
+  init(PI_4712_01_LOW)  := FALSE;
+  init(PICSA_4712_02_HIGH) := FALSE;
+  init(PICSA_4712_02_LOW)  := FALSE;
+  init(HS_4750_01_HIGH) := FALSE;
+  init(HS_4750_01_LOW)  := FALSE;
+  init(TICSA_4750_03_HIGH) := FALSE;
+  init(TICSA_4750_03_LOW)  := FALSE;
+  init(ESTOP)        := FALSE;
+  init(MANUAL_RESET) := FALSE;
+
+  -- SR trip latches: set on sensor deviation, clear on
+  -- MANUAL_RESET with no current deviation, hold otherwise.
+  -- The three-case structure below is the *same* pattern
+  -- emitted by the Safety Contract scaffold in the ST
+  -- code, so the formal model and the code use identical
+  -- transition semantics per loop.
+
+-- ── Physical-impossibility constraints (INVAR) ──────────────────────
+-- Constrains state space: same sensor cannot read HH and LL at once.
+INVAR !(PI_4712_01_HIGH & PI_4712_01_LOW);
+INVAR !(PICSA_4712_02_HIGH & PICSA_4712_02_LOW);
+INVAR !(HS_4750_01_HIGH & HS_4750_01_LOW);
+INVAR !(TICSA_4750_03_HIGH & TICSA_4750_03_LOW);
+
+-- ===== SAFETY PROPERTIES =====
+-- (No identified safety functions — structural
+-- invariants on the sensor-deviation abstraction.
+-- These are NOT loop-specific safety verifications.)
+-- Reference: IEC 61508-3:2010 Table A.8
+
+-- P01  ESTOP forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (ESTOP -> SAFE_STATE);
+
+-- P02  PI_4712_01_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (PI_4712_01_HIGH -> SAFE_STATE);
+
+-- P03  PI_4712_01_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (PI_4712_01_LOW -> SAFE_STATE);
+
+-- P04  PICSA_4712_02_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (PICSA_4712_02_HIGH -> SAFE_STATE);
+
+-- P05  PICSA_4712_02_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (PICSA_4712_02_LOW -> SAFE_STATE);
+
+-- P06  HS_4750_01_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (HS_4750_01_HIGH -> SAFE_STATE);
+
+-- P07  HS_4750_01_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (HS_4750_01_LOW -> SAFE_STATE);
+
+-- P08  TICSA_4750_03_HIGH forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TICSA_4750_03_HIGH -> SAFE_STATE);
+
+-- P09  TICSA_4750_03_LOW forces SAFE_STATE (same cycle, from DEFINE)
+INVARSPEC (TICSA_4750_03_LOW -> SAFE_STATE);
+
+-- P10  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(PI_4712_01_HIGH & PI_4712_01_LOW);
+
+-- P11  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(PICSA_4712_02_HIGH & PICSA_4712_02_LOW);
+
+-- P12  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(HS_4750_01_HIGH & HS_4750_01_LOW);
+
+-- P13  HH and LL cannot be TRUE simultaneously (from INVAR constraint)
+INVARSPEC !(TICSA_4750_03_HIGH & TICSA_4750_03_LOW);
+
+-- P14  SAFE_STATE is reachable from the initial state
+SPEC EF SAFE_STATE;
+
+-- P15  Normal (non-safe) state is reachable
+SPEC EF !SAFE_STATE;
+
+-- Total structural invariants: 15
+-- NOTE: Without identified safety functions there is no
+-- trip latch to verify, so MANUAL_RESET_REQUIRED and
+-- RESET_CLEARS_TRIP are not applicable.  The pipeline
+-- log reports these counts as (loop-specific=0, structural=N).

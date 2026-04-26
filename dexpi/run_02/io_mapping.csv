@@ -1,0 +1,9 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+PI_4712.01_Raw,%IW0,INT,AI,PI-4712.01,"Pressure indicator, local gauge. Located on the discharge si"
+MV_FC_HS_4750_Out,%QW0,INT,AO,MV-FC-HS-4750,Control valve (F.C. — fail-closed) on line between HS-4750.0
+MV_H_1007_N1_INLET_Out,%QW2,INT,AO,MV-H-1007-N1-INLET,Manual isolation/block valve on inlet to heat exchanger H100
+MV_H_1007_N4_OUTLET_Out,%QW4,INT,AO,MV-H-1007-N4-OUTLET,Manual isolation/block valve on outlet of heat exchanger H10
+PVA_4712.02_Out,%QW6,INT,AO,PVA-4712.02,Pressure control valve on outlet line Q80. Part of PICSA-471
+TV_4750.03_Out,%QW8,INT,AO,TV-4750.03,"Temperature control valve, fail-open (F.O. label visible). G"
+HS_4750.01,%IX0.0,BOOL,DI,HS-4750.01,Hand switch / operator station. Located near H1007 exchanger
+XV_75SA21_80,%QX0.0,BOOL,DO,XV-75SA21-80,Actuated on/off valve on line 75SA21-80 (80mm). Located on v

@@ -1,0 +1,8 @@
+Variable Name,Address,Data Type,I/O Type,ISA Tag,Description
+PI_4712.01_Raw,%IW0,INT,AI,PI-4712.01,Pressure indicator (local gauge) on discharge of P4712 / inl
+PICSA_4712.02_Raw,%IW2,INT,AI,PICSA-4712.02,"Pressure Indicator, Controller, Switch with Alarm. Located d"
+TICSA_4750.03_Raw,%IW4,INT,AI,TICSA-4750.03,"Temperature Indicator, Controller, Switch with Alarm on vess"
+PV_4712.02_Out,%QW0,INT,AO,PV-4712.02,"Pressure control valve, globe body with pneumatic diaphragm "
+TV_4750.03_Out,%QW2,INT,AO,TV-4750.03,"Temperature control valve, globe body with pneumatic diaphra"
+HS_4750.01,%IX0.0,BOOL,DI,HS-4750.01,Hand switch (operator pushbutton/selector) associated with s
+XV_4750.01,%QX0.0,BOOL,DO,XV-4750.01,Solenoid-operated on/off valve on T4750 inlet line MNb 47123

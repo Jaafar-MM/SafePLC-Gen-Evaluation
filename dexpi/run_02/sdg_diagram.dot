@@ -1,0 +1,34 @@
+digraph SDG {
+  rankdir=LR;
+  node [shape=ellipse, fontname="Arial", fontsize=10];
+  "TICSA-4750.03" [label="TICSA-4750.03\ntemperature", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "HS-4750.01" [label="HS-4750.01\nposition", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "PI-4712.01" [label="PI-4712.01\npressure", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "PICSA-4712.02" [label="PICSA-4712.02\npressure", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "T4750" [label="T4750\nvessel", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P4711" [label="P4711\npump", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "P4712" [label="P4712\npump", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "H1007" [label="H1007\nheat_exchanger", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "H1008" [label="H1008\nheat_exchanger", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "TV-4750.03" [label="TV-4750.03\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "PVA-4712.02" [label="PVA-4712.02\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "SV-104.01" [label="SV-104.01\nsafety", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "XV-75SA21-80" [label="XV-75SA21-80\nsolenoid", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "CV-66KL21-80" [label="CV-66KL21-80\ncheck", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "MV-H-1007-N1-INLET" [label="MV-H-1007-N1-INLET\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "MV-H-1007-N4-OUTLET" [label="MV-H-1007-N4-OUTLET\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "MV-FC-HS-4750" [label="MV-FC-HS-4750\ncontrol", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "BV-73KH12-25-1" [label="BV-73KH12-25-1\nmanual", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "BV-73KH12-25-2" [label="BV-73KH12-25-2\nmanual", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "BV-73KH12-50-1" [label="BV-73KH12-50-1\nmanual", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "BV-73KH12-50-2" [label="BV-73KH12-50-2\nmanual", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "BV-MNc-47125-1" [label="BV-MNc-47125-1\nmanual", color="steelblue", style="filled", fillcolor="#cce5ff"];
+  "TICSA-4750.03" -> "TICSA-4750.03" [label="+", color="green", fontcolor="green"];
+  "TICSA-4750.03" -> "TV-4750.03" [label="−", color="red", fontcolor="red"];
+  "PICSA-4712.02" -> "PICSA-4712.02" [label="+", color="green", fontcolor="green"];
+  "PICSA-4712.02" -> "PVA-4712.02" [label="−", color="red", fontcolor="red"];
+  "TV-4750.03" -> "TICSA-4750.03" [label="+", color="green", fontcolor="green"];
+  "PVA-4712.02" -> "PICSA-4712.02" [label="+", color="green", fontcolor="green"];
+  "SV-104.01" -> "SV-104.01" [label="+", color="green", fontcolor="green"];
+  "MV-FC-HS-4750" -> "HS-4750.01" [label="+", color="green", fontcolor="green"];
+}

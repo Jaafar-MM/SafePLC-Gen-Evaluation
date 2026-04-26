@@ -1,0 +1,166 @@
+-- SafePLC-Gen Multimodal — NuXmv/NuSMV Safety Model
+-- Source P&ID: data\pid_images\dexpi.pdf
+-- Vendor: codesys
+-- Safety functions: 3
+-- NOTE: Boolean abstraction — conservative over-approximation.
+-- Compatible with NuXmv 2.x and NuSMV 2.6+.
+
+MODULE main
+VAR
+  -- Process variable deviations (Boolean abstraction)
+  TICSA_4750_03_HIGH   : boolean;  -- TICSA-4750.03 above HH setpoint
+  TICSA_4750_03_LOW    : boolean;  -- TICSA-4750.03 below LL setpoint
+  HS_4750_01_HIGH   : boolean;  -- HS-4750.01 above HH setpoint
+  HS_4750_01_LOW    : boolean;  -- HS-4750.01 below LL setpoint
+  PI_4712_01_HIGH   : boolean;  -- PI-4712.01 above HH setpoint
+  PI_4712_01_LOW    : boolean;  -- PI-4712.01 below LL setpoint
+  PICSA_4712_02_HIGH   : boolean;  -- PICSA-4712.02 above HH setpoint
+  PICSA_4712_02_LOW    : boolean;  -- PICSA-4712.02 below LL setpoint
+  SV_104_01_HIGH   : boolean;  -- SV-104.01 above HH setpoint
+  SV_104_01_LOW    : boolean;  -- SV-104.01 below LL setpoint
+
+  -- Per-loop trip latches (stateful, SR semantics —
+  --  set on sensor deviation, clear on MANUAL_RESET with no deviation).
+  LOOP_4750_03_TRIP   : boolean;  -- Loop 4750.03 in trip state
+  LOOP_4712_02_TRIP   : boolean;  -- Loop 4712.02 in trip state
+  LOOP_104_01_TRIP   : boolean;  -- Loop 104.01 in trip state
+
+  -- Global environment inputs (free booleans)
+  ESTOP        : boolean;
+  MANUAL_RESET : boolean;
+
+DEFINE
+  -- SAFE_STATE is combinational: same-cycle disjunction of
+  -- ESTOP and every per-loop trip latch.  Matches the ST
+  -- assignment `SAFE_STATE := ESTOP OR LOOP_<N>_TRIP OR ...`.
+  SAFE_STATE := ESTOP | LOOP_4750_03_TRIP | LOOP_4712_02_TRIP | LOOP_104_01_TRIP;
+
+ASSIGN
+  -- Initial conditions: all safe (de-energised)
+  init(TICSA_4750_03_HIGH) := FALSE;
+  init(TICSA_4750_03_LOW)  := FALSE;
+  init(HS_4750_01_HIGH) := FALSE;
+  init(HS_4750_01_LOW)  := FALSE;
+  init(PI_4712_01_HIGH) := FALSE;
+  init(PI_4712_01_LOW)  := FALSE;
+  init(PICSA_4712_02_HIGH) := FALSE;
+  init(PICSA_4712_02_LOW)  := FALSE;
+  init(SV_104_01_HIGH) := FALSE;
+  init(SV_104_01_LOW)  := FALSE;
+  init(LOOP_4750_03_TRIP) := FALSE;
+  init(LOOP_4712_02_TRIP) := FALSE;
+  init(LOOP_104_01_TRIP) := FALSE;
+  init(ESTOP)        := FALSE;
+  init(MANUAL_RESET) := FALSE;
+
+  -- SR trip latches: set on sensor deviation, clear on
+  -- MANUAL_RESET with no current deviation, hold otherwise.
+  -- The three-case structure below is the *same* pattern
+  -- emitted by the Safety Contract scaffold in the ST
+  -- code, so the formal model and the code use identical
+  -- transition semantics per loop.
+  next(LOOP_4750_03_TRIP) :=
+    case
+      TICSA_4750_03_HIGH | TICSA_4750_03_LOW                                   : TRUE;
+      LOOP_4750_03_TRIP & MANUAL_RESET & !TICSA_4750_03_HIGH & !TICSA_4750_03_LOW : FALSE;
+      TRUE                                                                 : LOOP_4750_03_TRIP;
+    esac;
+  next(LOOP_4712_02_TRIP) :=
+    case
+      PICSA_4712_02_HIGH | PICSA_4712_02_LOW                                   : TRUE;
+      LOOP_4712_02_TRIP & MANUAL_RESET & !PICSA_4712_02_HIGH & !PICSA_4712_02_LOW : FALSE;
+      TRUE                                                                 : LOOP_4712_02_TRIP;
+    esac;
+  next(LOOP_104_01_TRIP) :=
+    case
+      SV_104_01_HIGH | SV_104_01_LOW                                   : TRUE;
+      LOOP_104_01_TRIP & MANUAL_RESET & !SV_104_01_HIGH & !SV_104_01_LOW : FALSE;
+      TRUE                                                                 : LOOP_104_01_TRIP;
+    esac;
+
+-- ── Physical-impossibility constraints (INVAR) ──────────────────────
+-- Constrains state space: same sensor cannot read HH and LL at once.
+INVAR !(TICSA_4750_03_HIGH & TICSA_4750_03_LOW);
+INVAR !(HS_4750_01_HIGH & HS_4750_01_LOW);
+INVAR !(PI_4712_01_HIGH & PI_4712_01_LOW);
+INVAR !(PICSA_4712_02_HIGH & PICSA_4712_02_LOW);
+INVAR !(SV_104_01_HIGH & SV_104_01_LOW);
+
+-- ===== SAFETY PROPERTIES =====
+-- [LOOP_4750_03_ESTOP_PRIORITY]
+-- Loop 4750.03: Emergency stop must force SAFE_STATE in the same scan cycle
+-- Requirement: IEC 61511-1:2016 Section 10.3.4 — E-Stop override precedence
+LTLSPEC G (ESTOP -> SAFE_STATE)
+SPEC AG (ESTOP -> SAFE_STATE)
+
+-- [LOOP_4750_03_SAFE_STATE_ON_TRIP]
+-- Loop 4750.03: Any sensor deviation must drive SAFE_STATE within one scan
+-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure
+LTLSPEC G ((TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> X SAFE_STATE)
+SPEC AG ((TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> AX SAFE_STATE)
+
+-- [LOOP_4712_02_SAFE_STATE_ON_TRIP]
+-- Loop 4712.02: Any sensor deviation must drive SAFE_STATE within one scan
+-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure
+LTLSPEC G ((PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> X SAFE_STATE)
+SPEC AG ((PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> AX SAFE_STATE)
+
+-- [LOOP_104_01_SAFE_STATE_ON_TRIP]
+-- Loop 104.01: Any sensor deviation must drive SAFE_STATE within one scan
+-- Requirement: IEC 61508-3:2010 Section 7.4.7 — Safe state on failure
+LTLSPEC G ((SV_104_01_HIGH | SV_104_01_LOW) -> X SAFE_STATE)
+SPEC AG ((SV_104_01_HIGH | SV_104_01_LOW) -> AX SAFE_STATE)
+
+-- [LOOP_4750_03_INTERLOCK_ENFORCED]
+-- Loop 4750.03: Process variable above safety limit raises the trip latch next scan
+-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response
+LTLSPEC G (TICSA_4750_03_HIGH -> X LOOP_4750_03_TRIP)
+SPEC AG (TICSA_4750_03_HIGH -> AX LOOP_4750_03_TRIP)
+
+-- [LOOP_4712_02_INTERLOCK_ENFORCED]
+-- Loop 4712.02: Process variable above safety limit raises the trip latch next scan
+-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response
+LTLSPEC G (PICSA_4712_02_HIGH -> X LOOP_4712_02_TRIP)
+SPEC AG (PICSA_4712_02_HIGH -> AX LOOP_4712_02_TRIP)
+
+-- [LOOP_104_01_INTERLOCK_ENFORCED]
+-- Loop 104.01: Process variable above safety limit raises the trip latch next scan
+-- Requirement: IEC 61511-1:2016 Section 11.6.4 — SIF trip response
+LTLSPEC G (SV_104_01_HIGH -> X LOOP_104_01_TRIP)
+SPEC AG (SV_104_01_HIGH -> AX LOOP_104_01_TRIP)
+
+-- [LOOP_4750_03_MANUAL_RESET_REQUIRED]
+-- Loop 4750.03: Trip latch must persist in absence of manual reset
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement
+LTLSPEC G (LOOP_4750_03_TRIP & !MANUAL_RESET -> X LOOP_4750_03_TRIP)
+SPEC AG (LOOP_4750_03_TRIP & !MANUAL_RESET -> AX LOOP_4750_03_TRIP)
+
+-- [LOOP_4712_02_MANUAL_RESET_REQUIRED]
+-- Loop 4712.02: Trip latch must persist in absence of manual reset
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement
+LTLSPEC G (LOOP_4712_02_TRIP & !MANUAL_RESET -> X LOOP_4712_02_TRIP)
+SPEC AG (LOOP_4712_02_TRIP & !MANUAL_RESET -> AX LOOP_4712_02_TRIP)
+
+-- [LOOP_104_01_MANUAL_RESET_REQUIRED]
+-- Loop 104.01: Trip latch must persist in absence of manual reset
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset requirement
+LTLSPEC G (LOOP_104_01_TRIP & !MANUAL_RESET -> X LOOP_104_01_TRIP)
+SPEC AG (LOOP_104_01_TRIP & !MANUAL_RESET -> AX LOOP_104_01_TRIP)
+
+-- [LOOP_4750_03_RESET_CLEARS_TRIP]
+-- Loop 4750.03: Trip latch clears one scan after manual reset with no deviation
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness
+LTLSPEC G (LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> X !LOOP_4750_03_TRIP)
+SPEC AG (LOOP_4750_03_TRIP & MANUAL_RESET & !(TICSA_4750_03_HIGH | TICSA_4750_03_LOW) -> AX !LOOP_4750_03_TRIP)
+
+-- [LOOP_4712_02_RESET_CLEARS_TRIP]
+-- Loop 4712.02: Trip latch clears one scan after manual reset with no deviation
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness
+LTLSPEC G (LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> X !LOOP_4712_02_TRIP)
+SPEC AG (LOOP_4712_02_TRIP & MANUAL_RESET & !(PICSA_4712_02_HIGH | PICSA_4712_02_LOW) -> AX !LOOP_4712_02_TRIP)
+
+-- [LOOP_104_01_RESET_CLEARS_TRIP]
+-- Loop 104.01: Trip latch clears one scan after manual reset with no deviation
+-- Requirement: IEC 61511-1:2016 Section 11.9 — Manual reset effectiveness
+LTLSPEC G (LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) -> X !LOOP_104_01_TRIP)
+SPEC AG (LOOP_104_01_TRIP & MANUAL_RESET & !(SV_104_01_HIGH | SV_104_01_LOW) -> AX !LOOP_104_01_TRIP)
